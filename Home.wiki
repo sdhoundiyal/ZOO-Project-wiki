@@ -2,7 +2,7 @@
 <br>
 == Welcome to the ZOO-Project Trac  ==
 <br>
-ZOO is a WPS (Web Processing Service) open source project released under the [/ZOO-Project/ZOO-Project/wiki/Licence MIT/X-11] license. It provides an OGC WPS compliant  developer-friendly framework to create and chain WPS webservices. 
+ZOO is a WPS (Web Processing Service) open source project released under the [/ZOO-Project/ZOO-Project-svn2git/wiki/Licence MIT/X-11] license. It provides an OGC WPS compliant  developer-friendly framework to create and chain WPS webservices. 
 
 The official homepage of the project is http://zoo-project.org. 
 
@@ -24,3 +24,4 @@ The ZOO Trac is hosting ZOO Project source code in a community oriented system. 
 
 
 
+{{TracNotice|{{PAGENAME}}}}
