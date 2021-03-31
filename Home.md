@@ -13,7 +13,7 @@ system. Please feel free to \[/register Register\].
 ## Usefull Links on this Trac {#usefull_links_on_this_trac}
 
 -   [Download](Download "wikilink") the ZOO source code
--   \[/register Register\] to the ZOO Trac
+-   [Register](/register) to the ZOO Trac
 -   Read the [ZOO documentation](http://zoo-project.org/docs/)
 -   [Contact](Contact "wikilink") section
 
