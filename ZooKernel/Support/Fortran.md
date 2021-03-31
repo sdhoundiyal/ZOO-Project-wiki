@@ -1,0 +1,212 @@
+## Fortran Support in ZOO Kernel {#fortran_support_in_zoo_kernel}
+
+This page will contain full information about the Fortran support in the
+ZOO Kernel.
+
+### Fortran code snipest {#fortran_code_snipest}
+
+Let us create a small example of a Fortran function which simply
+multiply by two the value passed as argument.
+
+    C     ex4.for 
+    C     ARRAYS X, Y and Z are respectively :
+    C     main_conf, inputs and outputs
+          FUNCTION HELLOWORLD(X, Y, Z, X0) RESULT (R)
+          INTEGER(4) :: R
+          CHARACTER*1024 X(10,10)
+          CHARACTER*1024 Y(10,10)
+          CHARACTER*1024 Z(10,10)
+          CHARACTER*100 X0
+          CHARACTER*1024 TMP
+    C      CHARACTER*(*) X(1:10,1:10), Y(1:10,1:10), Z(1:10,1:10)
+          PRINT *,'FROM FORTRAN : '//X0//'\n'
+    C      PRINT *,'FROM FORTRAN Y(1,1) : ('//Y(1,1)//')\n'
+    C      DO i = 2,10 
+    C       DO j = 2, 10
+    C  PRINT *,'FROM FORTRAN Y(',j,',',i,') = ['//Y(j,i)//']\n'
+    C END DO
+    C      END DO
+          PRINT *,'FROM FORTRAN Y(1,1) = ('//Y(1,1)//')\n'
+          PRINT *,'FROM FORTRAN Y(2,1) = ('//Y(2,1)//')\n'
+          PRINT *,'FROM FORTRAN Y(3,1) = ('//Y(3,1)//')\n'
+          PRINT *,'FROM FORTRAN Y(4,1) = ('//Y(4,1)//')\n'
+
+          Z(2,1) = TRIM('name')//CHAR(0)
+          Z(5,1) = 'result'//CHAR(0)
+          Z(8,1) = 'value'//CHAR(0)
+          Z(1,2) = 'Hello from the Fortran world !'//CHAR(0)
+          Z(4,2) = 'datattype'//CHAR(0)
+          Z(7,2) = 'string'//CHAR(0)
+
+          Z(3,1) = 'name'//CHAR(0)
+          Z(6,1) = 'result'//CHAR(0)
+          Z(9,1) = 'value'//CHAR(0)
+          Z(2,2) = 'Hello from the Fortran world !'//CHAR(0)
+          Z(5,2) = 'datatype'//CHAR(0)
+          Z(8,2) = 'string'//CHAR(0)
+
+    C      DO i = 1,10 
+    C       DO j = 1, 10
+    C  PRINT *,'FROM FORTRAN Z(',j,',',i,') = ['//Z(j,i)//']\n'
+    C END DO
+    C      END DO
+    C      PRINT *,Z(1,2)
+    C      PRINT *,TMP
+          R = 3
+          END
+
+To create a shared library of this code snipest, use the following
+command :
+
+    #sh
+    gfortran -fno-f2c -shared -s -o ex4.so ex4.for
+
+Then the loading process isthe same as before, using the dlload, dlsym
+then use the funcion.
+
+The snipest C++ code bellow will load, extract the function from the
+fortran shared library then run the function and finally close the
+shared library.
+
+    #C
+    // ex4fortranloader.c
+    #include <iostream>
+    #include <dlfcn.h>
+
+    void inplace_trim(char* s)
+    {
+        int start, end = strlen(s);
+        for (start = 0; s[start] && isspace(s[start]); ++start) {}
+        if (s[start]) {
+              while (end > 0 && isspace(s[end-1]))
+              --end;
+        }
+        memmove(s, &s[start], end - start);
+        s[end - start] = '\0';
+    }
+
+    int main()
+    {
+        void *hDll = dlopen("./ex3.so", RTLD_NOW);
+        typedef int (* LPFNDLLFUNC) (char***,char***,char***,char*);
+        LPFNDLLFUNC lpFunc = NULL;
+        lpFunc = (LPFNDLLFUNC)dlsym(hDll, "helloworld_");
+        int i, numPts = 10;
+
+        /**
+    ***Creating the string matrix contigous
+    ***/
+        char main_conf[10][10][1024];
+        char inputs[10][10][1024];
+        char outputs[10][10][1024];
+        printf("first allocation has been made\n");
+        for(int i=0;i<10;i++){
+            for(int j=0;j<10;j++){
+                    memset(main_conf[i][j],0,1024);
+                    memset(inputs[i][j],0,1024);
+                    memset(outputs[i][j],0,1024);
+            }
+        }
+
+        sprintf(inputs[0][0],"name");
+        inputs[0][0][4]=0;
+        printf("inputs[0][0] = %s\n",inputs[0][0]);
+        sprintf(inputs[0][1],"S");
+        inputs[0][1][1]=0;
+        printf("inputs[0][1] = %s\n",inputs[0][1]);
+        sprintf(inputs[0][2],"value");
+        inputs[0][2][5]=0;
+        printf("inputs[0][2] = %s\n",inputs[0][2]);
+        sprintf(inputs[0][3]," Your Name Here ");
+        inputs[0][3][16]=0;
+        printf("inputs[0][3] = %s\n",inputs[0][3]);
+        printf("Allocation made of inputs values\n");
+        char *tmp=(char*)malloc(100*sizeof(char));
+        sprintf(tmp,"My Test String");
+        int res=lpFunc(main_conf,inputs,outputs,tmp);
+        printf("function ran successfully and retruned : %d\n",res);
+
+        fflush(stderr);
+        fflush(stdout);
+
+        i=0;
+         for(int j=0;j<10;j++){
+            inplace_trim(inputs[i][j]);
+         printf("Y(%d,%d)='%s' ",j+1,i+1,inputs[i][j]);
+         }
+         printf("\n****************\n");
+         for(int j=0;j<10;j++){
+            inplace_trim(outputs[i][j]);
+          printf("Z(%d,%d)='%s' ",j+1,i+1,outputs[i][j]);
+         }
+         printf("\n****************\n");
+
+        dlclose(hDll);
+        return 0;
+    }
+
+Compile this code using the following command :
+
+    #sh
+    g++ -o ex1fortranloader ex1fortranloader.cpp -ldl
+
+Now, to process the function you\'ll only have to run the following
+command :
+
+    #sh
+    ./ex1fortranloader 
+
+Which should output :
+
+    #sh
+    first allocation has been made
+    inputs[0][0] = name
+    inputs[0][1] = S
+    inputs[0][2] = value
+    inputs[0][3] = Your Name Here
+    Allocation made of inputs values
+     FROM FORTRAN : Your Name Here
+
+     FROM FORTRAN Y(2,1) = ( name)
+
+     FROM FORTRAN Y(5,1) = ( S)
+
+     FROM FORTRAN Y(8,1) = ( value)
+
+     FROM FORTRAN Y(1,2) = ( Your Name Here)
+
+    function ran successfully and retruned : 3
+    Y(1,1)='name' Y(2,1)='result' Y(3,1)='value' Y(4,1)='Hello from the Fortran world !' Y(5,1)='datatype' Y(6,1)='string' Y(7,1)='' Y(8,1)='' Y(9,1)='' Y(10,1)='' 
+    ****************
+    Z(1,1)='' Z(2,1)='' Z(3,1)='' Z(4,1)='' Z(5,1)='' Z(6,1)='' Z(7,1)='' Z(8,1)='' Z(9,1)='' Z(10,1)='' 
+    ****************
+
+### Conclusion
+
+So we can say that loading a C SSO (Service Shared Object) or a Fortran
+one work in the same way.
+
+The goal is now to be able to pass maps\* datastructure to the fortran
+function then let user easily get/set its data using this datastructure.
+Maybe a simple multidimentional array of CHARACTER\* can be used. This
+way maps will be translated into CHARACTERS\*1024 A(10,10) before being
+passed to the Fortran function. So this way we would get a 10\*10 matrix
+of 1024 bytes length string.
+
+Hopefully the code provided here display well the result value in the
+right array (matrix!? :) ).
+
+### Documentation list {#documentation_list}
+
+-   [Using C and C++ with
+    Fortran](http://www.math.utah.edu/software/c-with-fortran.html)
+-   [Fortran 77 for
+    beginners](http://www.idris.fr/data/cours/lang/fortran/f90/F77.html#p2.1)
+-   [Fortran
+    Tutorial](http://folk.uio.no/steikr/doc/f77/tutorial/index.html)
+-   [FORTRAN 77 Reference](http://www.obliquity.com/computer/fortran/)
+-   [Mixed language programming using C++ and FORTRAN
+    77](http://arnholm.org/software/cppf77/cppf77.htm)
+-   [INITIATION AU
+    FORTRAN](http://perso.enstimac.fr/~gaborit/lang/CoursDeFortran/) (in
+    french only)

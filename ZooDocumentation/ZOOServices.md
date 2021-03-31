@@ -1,0 +1,25 @@
+## ZOO Service Documentation {#zoo_service_documentation}
+
+Here you\'ll find documentations about the ZOO Services and ZOO Services
+Providers.
+
+## Python
+
+You can use python to develop your service, it\'s possible to use all
+python library (for example python GDAL/OGR - Numpy/Scipy ), you must
+only give space to your imagination.\
+The ZCFG file should contain the following :\
+
+    serviceType = Python
+    serviceProvider = the name of the Python module to use as a ZOO Service Provider without .py
+
+The arguments as passed from the request as dictionary; using
+**inputs\[*yourVariables*\]\[value\]** it\'s possible to obtain the
+value/data and you have the result using
+**outputs\[*yourVariables*\]\[value\]** (where **\'\'yourVariables***is
+the name of variables that you are set in the zcfg file); at the end
+there is **conf\[main\]\[*value*\]** (where ***value**\'\' is one of
+value set in the main.cfg file of ZOO) this parameter is very important
+to pass tmpPath where you should save the files\
+When you have***yourVariables*** in python variable you can made what do
+you have in your mind

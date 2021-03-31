@@ -1,0 +1,19 @@
+## PSC meeting 9 {#psc_meeting_9}
+
+The PSC meeting was held on irc.freenode.net in the \#zoo-project
+channel
+
+### Date
+
+22 December 2010, 22:00:00 UTC time
+
+### Agenda
+
+-   ZOO New Web Site Feedback
+-   ZOO Presentations in Hanoi, Vietnam
+-   ZOO Chinese Translation Status
+-   ZOO 1.2.0 release status
+
+### Summary
+
+-   This meeting was canceled.

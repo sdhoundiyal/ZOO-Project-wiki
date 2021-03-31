@@ -1,0 +1,77 @@
+## はじめに
+
+\_\_TOC\_\_ \[/ZOO-Project/ZOO-Project/wiki/ZooWorkshop/FOSS4GJapan/ja
+ワークショップ 目次\] \|
+\[/ZOO-Project/ZOO-Project/wiki/ZooWorkshop/FOSS4GJapan/ja/UsingZooFromOSGeoLiveVM
+次へ\]
+
+### ZOOとは？
+
+ZOOプロジェクトは \[/ZOO-Project/ZOO-Project/wiki/Licence
+MIT/X-11\]ライセンスのもとに公開されたWPS（Web Processing Service)
+オープンソースプロジェクトです。 ZOOはWPS Web
+サービスを生成、チェイン（サービスとサービスを連携）し、さらにOGC
+WPS準拠の親切なフレームワークを提供します。ZOOは、３つの主要なパートにより構成されています:
+
+-   \[/ZOO-Project/ZOO-Project/wiki/ZooWebSite/ZooKernel/Introduction
+    ZOOカーネル\]:
+    様々なプログラミング言語によって作成されたWebサービスを管理、そしてサービスチェインを可能にする強力なサーバーサイドのCカーネルです。
+-   \[/ZOO-Project/ZOO-Project/wiki/ZooWebSite/ZooServices/Introduction
+    ZOOサービス\]:
+    多様なオープンソースライブラリを基に開発されたWebサービスの一式
+-   \[/ZOO-Project/ZOO-Project/wiki/ZooWebSite/ZOOAPI/Introduction ZOO
+    API\]: サーバーサイドのJavaScript API は、ZOO
+    サービスを呼びだし、チェインを行う。　このことは開発や処理の連携を容易にします。
+
+ZOOはWPS 準拠のクエリ
+を理解・実行する強力なシステムを提供することで、WPSサービスの開発を、円滑に行うためにデザインされました。ZOOはいくつかのプログラミング言語をサポートすることで、既存のコードから好みの言語でWebサービスを生成することができます。プロジェクトに関する詳しい情報は、[ZOOプロジェクトオフィシャルサイト](http://www.zoo-project.org)を参照ください。
+
+### ZOOはどのように動作するのか
+
+ZOOは、ZOOの コアシステム (別名 ZOO
+Kernel)を構成する'WPSサービスカーネル'に基づいています。そのコアシステムは、動的ライブラリを取り込み（ロードし）、
+オンデマンドWebサービスとしてそれらを扱うことができます。\[/ZOO-Project/ZOO-Project/wiki/ZooWebSite/ZooKernel/Introduction
+ZOOカーネル\]はC言語で書かれていますが、\[ZooWebSite/ZooServices/Introduction
+ZOOサービス\]を生成するために、いくつかのプログラム言語をサポートします。
+\[ZooWebSite/ZooServices/Introduction ZOOサービス\]は
+ZOOメタファイル(.zcfg)
+と、それと対応する実装についてのコードを構成する一つのリンクです。メタファイルはすべての利用可能な機能を記載しており、そのファイルは任意の入出力
+と同様にWPS
+Executeリクエストによって呼び出すことができます。サービスはアルゴリズムや機能を含み、現在、C/C++,
+Fortran, Java, Python,
+PHPそしてJavaScriptによって実装することができます。
+\[/ZOO-Project/ZOO-Project/wiki/ZooWebSite/ZooKernel/Introduction
+ZOOカーネル\]はApacheと共に動作し、地図生成エンジンやWebマッピングクライアントと通信が行えます。
+\[/ZOO-Project/ZOO-Project/wiki/ZooWebSite/ZooKernel/Introduction
+ZOOカーネル\]は、あなたの空間情報基盤（SDI）システムや、Webマッピングアプリケーションに、WPS機能を簡単に追加できます。
+GDAL/OGRによってサポートされたすべての形式のデータを、入力データを使用でき、あなたの地図生成エンジンや、Webマッピングクライアントに適したベクトル・ラスター形式のデータ出力を生成できます。
+
+### このワークショップで行うこと
+
+このワークショップは、ZOOプロジェクトとその特徴、また[OGC WPS 1.0.0
+仕様](http://www.opengeospatial.org/standards/wps)に関する機能についての紹介を目的としています。参加者は3時間に及び、ZOOカーネルの使用方法、ZOOサービスとその設定ファイルの作り方、最後に、作成したサービスをクライエント側のウェブマッピングアプリケーションにリンクする方法を学びます。
+プリコンパイルされたZOO
+1.0のバージョンは、OSGeo公式ライブDVDのOSGeoLiveで提供しています。ワークショップを簡潔にするために、OSGeoLive仮想マシンイメージディスクは、すでにあなたのコンピュータにインストールされています。そのため、参加者は手動でZOOカーネルをコンパイルし、インストールする必要はありません。
+よって、ワークショップの最初のステップは、このOSGeoLiveイメージディスクからZOOカーネルを動作、及びテストすることであり、全参加者が少なくとも30分でZOOカーネルを動かすことができるでしょう。
+
+GetCapabilitiesリクエストを利用して、ウェブブラウザからZOOカーネルがテストされると、参加者はベクトルデータにおける基本的な空間処理を目的とした、OGRベースのZOOサービスプロバイダを作成してもらうことになるでしょう。参加者にはまず、C言語またはPythonのどちらを使用するか選択して頂きます。ZOOサービスプロバイダー、および関連したサービスのすべてのプログラミングステップは、C言語とPythonで詳記されます。
+
+ZOOサービスが準備され、ZOO カーネルによって起動可能になると、参加者は
+[OpenLayers](http://www.openlayers.org)
+の簡単なアプリケーションから、様々な機能の使い方を学びます。サンプルデータは、オークニー社から提供されたもので、
+OSGeoライブDVDの中に含まれています。また、データは
+[MapServer](http://www.mapserver.org) によりOGC
+WMS/WFS標準Webサービスとして利用可能であり、簡単な地図上に表示、そしてZOOの入力データとして使用されます。さらに、いくつかの特定の操作・実行コントロール機能は、表示されるポリゴン上で単一及び、複数のジオメトリを実行するためにJavaScriptコードに追加されます。
+
+すべての手順は段階的にまとめられ、様々なコードの抜粋と、その説明をそれぞれ行ないます。
+講師が各マシンのZOOカーネルが機能しているかなどをチェックし、コードディング中のサポートを行ないます。
+ワークショップ中、技術に関するご質問があればいつでも受け付けます。
+
+### 読解に役立つコツ :
+
+\[\...\]\
+**Let\'s go !**\
+\[/ZOO-Project/ZOO-Project/wiki/ZooWorkshop/FOSS4GJapan/ja
+ワークショップ 目次\] \|
+\[/ZOO-Project/ZOO-Project/wiki/ZooWorkshop/FOSS4GJapan/ja/UsingZooFromOSGeoLiveVM
+次へ\]

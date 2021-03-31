@@ -1,0 +1,23 @@
+## ZOO Documentation {#zoo_documentation}
+
+The ZOO Project documentation is under construction. Here are listed the
+available docs on differents components of the ZOO Project. Feel free to
+use it and help us to write it !
+
+-   \[/ZOO-Project/ZOO-Project/wiki/ZooDocumentation/ZOOKernel ZOO
+    Kernel\] documentation
+-   \[/ZOO-Project/ZOO-Project/wiki/ZooDocumentation/ZOOServices ZOO
+    Services\] documentation
+-   \[/ZOO-Project/ZOO-Project/wiki/ZooDocumentation/ZOOAPI ZOO API\]
+    documentation
+
+## Workshop
+
+### Practical introduction to ZOO: The Open WPS Platform\'\'\' {#practical_introduction_to_zoo_the_open_wps_platform}
+
+-   Wiki Material in \[/../site/ZooWorkshop/FOSS4GJapan english\] or in
+    \[/../site/ZooWorkshop/FOSS4GJapan/ja japanese\].
+-   ODT or PDF Material in \[/../site/ZooWorkshop2010/Content english\],
+    \[/ZOO-Project/ZOO-Project/wiki/ZooWorkshop/FOSS4GJapan/ja\#attachments
+    japanese\],
+    [italian](http://gis.fem-environment.eu/tutorials/#main).

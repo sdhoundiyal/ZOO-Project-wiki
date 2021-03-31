@@ -1,0 +1,68 @@
+## ZOO-Project 1.8.0 release notes {#zoo_project_1.8.0_release_notes}
+
+This new ZOO-Project release contains new features and fixes.
+
+Amongst new features, we can quote the docker-compose environment
+created by Samuel Souk-Aloun which offer to deploy the ZOO-Project with
+few very simple services. We may also refer to the new support of the
+OGC API - Processes. Indeed, this version offers a preview of the
+current, slightly modified, standard as discussed at OGC. Also, with
+this new OGC API - Processes comes support a specific basic web user
+interface that let the user browse and execute services.
+
+### New Features and Fixes {#new_features_and_fixes}
+
+-   -   Support raw response in OGC API - Processes
+    -   Add a ZOO-API section to the howtos documentation
+    -   OGC API - Processes support:
+
+` `[`https://github.com/gfenoy/wps-rest-binding/tree/change-request/95`](https://github.com/gfenoy/wps-rest-binding/tree/change-request/95)
+
+-   -   Support two inputs/outputs syntaxes discussed (using json object
+
+` or array of json object) for ZOO-Kernel and the HTML client`
+
+-   -   Fix issue in kvParseInput when memory!=load and handle session
+
+` from the OGC API - Processes`
+
+-   -   Update OGC API - Processes documentation
+    -   Add open-api directory in utils services containing a reddis
+
+` subscription example, the HTML UI and the display service using`\
+` Cheetah templating system`
+
+-   -   Update the oas.cfg file to reflect new api definition
+    -   Include basic microdata in the HTML home page
+    -   Add HTML support for basic interractions with OGC API -
+        Processes
+
+` including execution of service from the service-desc link`
+
+-   -   OGC API - Processes added support for syncrhonous Execute
+        requests
+    -   Reuse service_callback in OGC API - Processes when subscriber
+
+` object is provided in the JSON request`
+
+-   -   OGC API - Processes implementation as available on 2020-10-19
+    -   Produce value string only when memory=load for Python support.
+    -   Make local files uris usable when cache is used
+    -   Make GDAL/profile service usable in case memory=protect
+    -   Add Dockerfile and docker-compose environment with pgbouncer,
+        see \#177
+    -   Add documentation on how to use asyncrhonous execution using the
+        Javascript
+
+` ZOO-API`
+
+-   -   Start simplification of the runRequest function
+    -   Integrate optional support for OGC API - Processing
+        implementation
+    -   Add the optional handleText parameter to provide pure text for
+
+` complex data node with mimetype="text/*"`
+
+-   -   Fix issue in case JavaScript support is activated
+    -   Fix issue with GDAL profile service
+    -   Fix \#172 for https support

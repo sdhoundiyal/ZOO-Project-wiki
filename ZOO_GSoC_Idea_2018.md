@@ -1,0 +1,75 @@
+## ZOO-Project GSoC Ideas {#zoo_project_gsoc_ideas}
+
+[PageOutline](PageOutline "wikilink")
+
+Enter ideas for development projects here. \'Note these are just
+suggestions - students are welcome to propose projects based on their
+own interests that involve the ZOO-Project.
+
+Any member of the ZOO-Project or developers are welcome to add their
+names as mentor in any places or their own ideas on this page.
+
+### ZOO-Project powered Java through JGrasstools {#zoo_project_powered_java_through_jgrasstools}
+
+#### Involved projects {#involved_projects}
+
+-   [ZOO-Project](http://www.zoo-project.org/)
+-   [JGrasstools](http://moovida.github.io/jgrasstools/)
+
+#### Proposal
+
+The ZOO-Project is a solid WPS server able to handle services
+implemented in various different programming languages. The Java
+bindings have never been tested in advanced configurations and complex
+data types. The JGrasstools project is a modular processing library and
+its highly annotated nature makes it possible to adapt quite easily to
+other toolboxes. One example has been the adaptation to the Geotools
+Process API. The JGrasstools project, as well as other java based
+projects (as JTS and even GeoTools) would benefit a lot from the
+possibility to be used within a WPS environment. The proposal is to
+bring the Java binding to a mature level and validate them by
+integrating the JGrasstools libraries. This will allow them to work
+inside the ZOO-Project and serve its modules under the WPS standard.
+
+#### Mentors
+
+The following individuals are willing to serve as ZOO-Project mentors or
+co-mentors.
+
+-   Gérald Fenoy as mentor
+-   Andrea Antonello as co-mentor
+
+### Moving the ZOO-Kernel JavaScript support from SpiderMonkey to V8 {#moving_the_zoo_kernel_javascript_support_from_spidermonkey_to_v8}
+
+When the ZOO-Project decided to implement the JavaScript in 2009,
+SpiderMonkey was a well-known technology. Nevertheless, time has changed
+and now the Google V8 implementation is now becoming more and more
+popular over the year.
+
+The goal of this GSoC project is to **provide an optional V8 support for
+the ZOO-Kernel**. The main goal is to provide a similar implementation
+to the one already available. So to say, the goal is to provide an
+implementation which can support the exact same ZOO-Services already
+existing and implemented using the JavaScript language with the V8
+engine in place of the current SpiderMonkey implementation.
+
+For this purpose, the implementation should be able to load the
+following JavaScripts files:
+[ZOO-API](http://zoo-project.org/trac/browser/trunk/zoo-project/zoo-api/js/ZOO-api.js)
+and
+[ZOO-prj4js](http://zoo-project.org/trac/browser/trunk/zoo-project/zoo-api/js/ZOO-proj4js.js).
+The [C functions exposed to the JavaScript
+language](http://zoo-project.org/trac/browser/trunk/zoo-project/zoo-kernel/service_internal_js.c#L150)
+should also be available, they are:
+[alert](http://zoo-project.org/trac/browser/trunk/zoo-project/zoo-kernel/service_internal_js.c#L34),
+[ZOOTranslate](http://zoo-project.org/trac/browser/trunk/zoo-project/zoo-kernel/service_internal_js.c#L849),
+[ZOORequest](http://zoo-project.org/trac/browser/trunk/zoo-project/zoo-kernel/service_internal_js.c#L870),
+[ZOOUpdateStatus](http://zoo-project.org/trac/browser/trunk/zoo-project/zoo-kernel/service_internal_js.c#L955)
+and
+[importScripts](http://zoo-project.org/trac/browser/trunk/zoo-project/zoo-kernel/service_internal_js.c#L59).
+
+#### Mentors {#mentors_1}
+
+The following individuals are willing to serve as ZOO-Project mentors.
+
+-   Gérald Fenoy as mentor

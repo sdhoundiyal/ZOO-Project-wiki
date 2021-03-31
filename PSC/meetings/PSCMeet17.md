@@ -1,0 +1,68 @@
+## PSC meeting 17 {#psc_meeting_17}
+
+The PSC meeting was held on Skype.
+
+### Date
+
+Thursday, 13 September 2012, [at, 13:00
+UTC](http://www.timeanddate.com/worldclock/fixedtime.html?year=2012&month=09&day=13&hour=13&min=0&sec=0)
+
+### Agenda
+
+-   ZOO-Project Status
+-   ZOO-Project OSGeo incubation Process status
+-   ZOO-Project release plan
+-   ZOO-Project packaging
+
+### Summary
+
+The PSC meeting was held skype on September 13th 2012 at [at, 13:00
+UTC](http://www.timeanddate.com/worldclock/fixedtime.html?year=2012&month=09&day=13&hour=13&min=0&sec=0)
+
+7 ZOO-PSC members attended this meeting (Daniel , Gerald, Hayashi, Jeff,
+Markus, Nicolas, Venka).
+
+-   Agenda 1: ZOO-Project Status
+
+a\) Gerald mentioned new release of ZOO-Kernel is almost there. b) The
+new Kernel release will include .NET (C\# support) support for coding
+services c) mapserver+javascript+python support included in the new
+ZOO-kernel and also successfully working on Win32 and Win64 would need
+some more time and effort d) New way of developing GRASS7 based
+processes is also in the works and more details will be discussed on the
+mailing list e) Venka mentioned about some requests for ZOO-Training
+from Vietnam and India. He also suggested to have ZOO-Trainers
+(train-the-trainer) kind of workshop when updated ZOO-Kernel package us
+released.
+
+-   Agenda 2: ZOO-Project OSGeo incubation Process status
+
+a\) Not much progress with incubation as yet. Need to follow-up (Nicolas
+and Gerald) with Incubation Committee and also mentor (FrankW) and also
+explore possibility to have an additional mentor if that could help in
+speeding up the incubation process. b) The OSGeo Website still mentions
+\"ZOO-Project\" as only Zoo and the links is to OSGeo Live-DVD
+(http://live.osgeo.org/en/overview/zoo-project_overview.html) instead of
+www.zoo-project.org. Need to be fixed and Jeff agreed to take up on this
+matter with OSGeo IncoM
+
+-   Agenda item 3) ZOO-Project release plan 4) ZOO-Project packaging
+    were related discussions made under items 1 and 2 above.
+
+a\) Venka proposed Gerald to send draft release plan on the PSC ML and
+all PSC members present at the meeting voted +1 for Gerald to prepare
+and send the plan including packaging details to PSC ML.
+
+-   Agenda item 5) Proposal from Venka about inviting Angelos to the
+    ZOO-PSC. The proposal to be voted on the PSC ML
+
+```{=html}
+<!-- -->
+```
+-   Agenda item 6) Next PSC meeting scheduled for October 10th 2012
+    22:00UTC
+
+```{=html}
+<!-- -->
+```
+-   Meeting closed

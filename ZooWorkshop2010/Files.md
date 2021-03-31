@@ -1,0 +1,208 @@
+## ZOO Workshop 2010 Files {#zoo_workshop_2010_files}
+
+As some files cause many trouble when we use copy and paste, we\'ve put
+the examples in this page.
+
+### ogr_ws_service_provider.py File {#ogr_ws_service_provider.py_file}
+
+    #python
+    import osgeo.ogr
+    import libxml2
+
+    def createGeometryFromWFS(my_wfs_response):
+            doc=libxml2.parseMemory(my_wfs_response,len(my_wfs_response))
+            ctxt = doc.xpathNewContext()
+            res=ctxt.xpathEval("/*/*/*/*/*[local-name()='Polygon' or local- name()='MultiPolygon']")
+            for node in res:
+                    geometry_as_string=node.serialize()
+                    geometry=osgeo.ogr.CreateGeometryFromGML(geometry_as_string)
+                    return geometry
+            return geometry
+
+    def Boundary(conf,inputs,outputs):
+            if inputs["InputPolygon"]["mimeType"]=="application/json":
+                    geometry=osgeo.ogr.CreateGeometryFromJson(inputs["InputPolygon"]["value"])
+            else:
+                    geometry=createGeometryFromWFS(inputs["InputPolygon"]["value"])
+            rgeom=geometry.GetBoundary()
+            if outputs["Result"]["mimeType"]=="application/json":
+                    outputs["Result"]["value"]=rgeom.ExportToJson()
+                    outputs["Result"]["mimeType"]="text/plain"
+            else:
+                    outputs["Result"]["value"]=rgeom.ExportToGML()
+            geometry.Destroy()
+            rgeom.Destroy()
+            return 3
+
+### XML POST Request on page 22 {#xml_post_request_on_page_22}
+
+    #xml
+    <wps:Execute service="WPS" version="1.0.0" xmlns:wps="http://www.opengis.net /wps/1.0.0" xmlns:ows="http://www.opengis.net/ows/1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opengis.net/wps/1.0.0 ../wpsExecute_request.xsd">
+    <ows:Identifier>Boundary</ows:Identifier>
+    <wps:DataInputs>
+    <wps:Input>
+    <ows:Identifier>InputPolygon</ows:Identifier>
+    <ows:Title>Playground area</ows:Title>
+    <wps:Reference xlink:href="http://localhost:8082/geoserver/ows/?SERVICE=WFS&amp;REQUEST=GetFeature&amp;VERSION=1.0.0&amp;typename=topp:states&amp;SRS=EPSG:4326&amp;FeatureID=states.15"/>
+    </wps:Input>
+    </wps:DataInputs>
+    <wps:ResponseForm>
+    <wps:ResponseDocument>
+    <wps:Output>
+    <ows:Identifier>Result</ows:Identifier>
+    <ows:Title>Area serviced by playground.</ows:Title>
+    <ows:Abstract>Area within which most users of this playground will live.</ows:Abstract>
+    </wps:Output>
+    </wps:ResponseDocument>
+    </wps:ResponseForm>
+    </wps:Execute>
+
+### XML POST Request on page 23 {#xml_post_request_on_page_23}
+
+    #xml
+    <wps:Execute service="WPS" version="1.0.0" xmlns:wps="http://www.opengis.net/wps/1.0.0" xmlns:ows="http://www.opengis.net/ows/1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opengis.net/wps/1.0.0 ../wpsExecute_request.xsda">
+    <ows:Identifier>Boundary</ows:Identifier>
+    <wps:DataInputs>
+    <wps:Input>
+    <ows:Identifier>InputPolygon</ows:Identifier>
+    <wps:Data>
+    <wps:ComplexData mimeType="application/json">
+    { "type": "MultiPolygon", "coordinates": [ [ [ [ -105.998360, 31.393818 ], [ -106.212753, 31.478128 ], [ -106.383041, 31.733763 ], [ -106.538971, 31.786198 ], [-106.614441, 31.817728 ], [ -105.769730, 31.170780 ], [ -105.998360, 31.393818 ] ] ], [ [ [-94.913429, 29.257572 ], [ -94.767380, 29.342451 ], [ -94.748405, 29.319490 ], [-95.105415, 29.096958 ], [ -94.913429, 29.257572 ] ] ] ] }
+    </wps:ComplexData>
+    </wps:Data>
+    </wps:Input>
+    </wps:DataInputs>
+    <wps:ResponseForm>
+    <wps:ResponseDocument>
+    <wps:Output>
+    <ows:Identifier>Result</ows:Identifier>
+    <ows:Title>Area serviced by playground.</ows:Title>
+    <ows:Abstract>Area within which most users of this
+    playground will live.</ows:Abstract>
+    </wps:Output>
+    </wps:ResponseDocument>
+    </wps:ResponseForm>
+    </wps:Execute>
+
+### Second code block on page 26 {#second_code_block_on_page_26}
+
+    #python
+    def extractInputs(obj):
+        if obj["mimeType"]=="application/json":
+            return osgeo.ogr.CreateGeometryFromJson(obj["value"])
+        else:
+            return createGeometryFromWFS(obj["value"])
+        return null
+
+    def outputResult(obj,geom):
+        if obj["mimeType"]=="application/json":
+            obj["value"]=geom.ExportToJson()
+            obj["mimeType"]="text/plain"
+        else:
+            obj["value"]=geom.ExportToGML()
+
+### Third code block on page 26 {#third_code_block_on_page_26}
+
+    #python
+    def Boundary(conf,inputs,outputs):
+        geometry=extractInputs(inputs["InputPolygon"])
+        rgeom=geometry.GetBoundary()
+        outputResult(outputs["Result"],rgeom)
+        geometry.Destroy()
+        rgeom.Destroy()
+        return 3 
+
+### Code block on page 27 {#code_block_on_page_27}
+
+    #python
+    def ConvexHull(conf,inputs,outputs):
+        geometry=extractInputs(inputs["InputPolygon"])
+        rgeom=geometry.ConvexHull()
+        outputResult(outputs["Result"],rgeom)
+        geometry.Destroy()
+        rgeom.Destroy()
+        return 3 
+
+    def Centroid(conf,inputs,outputs):
+        geometry=extractInputs(inputs["InputPolygon"])
+        if geometry.GetGeometryType()!=3:
+            geometry=geometry.ConvexHull()
+        rgeom=geometry.Centroid()
+        outputResult(outputs["Result"],rgeom)
+        geometry.Destroy()
+        rgeom.Destroy()
+        return 3 
+
+### zoo-ogr.html File {#zoo_ogr.html_file}
+
+    <h3>Single geometry processing</h3>
+    <ul>
+      <li>
+       <input type="button" onclick="simpleProcessing(this.value);" value="Buffer"/>
+       Distance:
+       <input id="bufferDist" value="1"/>
+      </li>
+      <li>
+       <input type="button" onclick="simpleProcessing(this.value);" value="ConvexHull"/>
+      </li>
+      <li>
+       <input type="button" onclick="simpleProcessing(this.value);" value="Boundary"/>
+      </li>
+      <li>
+       <input type="button" onclick="simpleProcessing(this.value);" value="Centroid"/>
+      </li>
+    </ul>
+
+### Part 4.4 Page 35 code section {#part_4.4_page_35_code_section}
+
+    function multiProcessing(aProcess) {
+    {| border=1 class="simple"
+    ! hover.features.length == 0)
+    |}
+
+       return alert("No feature created!");
+     var url = '/zoo/';
+     var xlink = control.protocol.url +"?SERVICE=WFS&REQUEST=GetFeature&VERSION=1.0.0";
+     xlink += '&typename='+control.protocol.featurePrefix;
+     xlink += ':'+control.protocol.featureType;
+     xlink += '&SRS='+control.protocol.srsName;
+     xlink += '&FeatureID='+select.features[0].fid;
+     var GeoJSON = new OpenLayers.Format.GeoJSON();
+     try {
+        var params = '<wps:Execute service="WPS" version="1.0.0" xmlns:wps="http://www.opengis.net/wps/1.0.0" xmlns:ows="http://www.opengis.net/ows/1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opengis.net/wps/1.0.0/../wpsExecute_request.xsd">';
+        params += ' <ows:Identifier>'+aProcess+'</ows:Identifier>';
+        params += ' <wps:DataInputs>';
+        params += ' <wps:Input>';
+        params += ' <ows:Identifier>InputEntity1</ows:Identifier>';
+        params += ' <wps:Reference xlink:href="'+xlink.replace(/&/gi,'&amp;')+'"/>';
+        params += ' </wps:Input>';
+        params += ' <wps:Input>';
+        params += ' <ows:Identifier>InputEntity2</ows:Identifier>';
+        params += ' <wps:Data>';
+        params += ' <wps:ComplexData mimeType="application/json"> '+GeoJSON.write(hover.features[0].geometry)+' </wps:ComplexData>';
+        params += ' </wps:Data>';
+        params += ' </wps:Input>';
+        params += ' </wps:DataInputs>';
+        params += ' <wps:ResponseForm>';
+        params += ' <wps:RawDataOutput>';
+        params += ' <ows:Identifier>Result</ows:Identifier>';
+        params += ' </wps:RawDataOutput>';
+        params += ' </wps:ResponseForm>';
+        params += ' </wps:Execute>';
+     } catch(e) {
+        alert(e);
+        return false;
+     }
+     var request = new OpenLayers.Request.XMLHttpRequest();
+     request.open('POST',url,true);
+     request.setRequestHeader('Content-Type','text/xml');
+     request.onreadystatechange = function() {
+       if(request.readyState == OpenLayers.Request.XMLHttpRequest.DONE) {
+         var GeoJSON = new OpenLayers.Format.GeoJSON();
+         var features = GeoJSON.read(request.responseText);
+         multi.removeFeatures(multi.features);
+         multi.addFeatures(features);
+       }
+     }
+     request.send(params);
+    }

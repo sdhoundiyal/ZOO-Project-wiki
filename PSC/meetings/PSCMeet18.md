@@ -1,0 +1,34 @@
+## PSC meeting 18 {#psc_meeting_18}
+
+The PSC meeting will be on irc.freenode.net in the \#zoo-project
+channel. If some IRC problem occur, the meeting will be exceptionally
+held on Skype.
+
+### Date
+
+Monday, 16 November 2015 [at, 13:00
+UTC](http://www.timeanddate.com/worldclock/fixedtime.html?year=2015&month=11&day=16&hour=13&min=0&sec=0)
+
+### Agenda
+
+-   ZOO-Project presentation status (including MapMint)
+-   Future plans (new website, priorities etc)
+-   others
+
+### Summary
+
+The main points which were discussed during this meeting was:
+
+-   -   release of ZOO-1.6 in early 2016
+    -   ZOO-1.6 will support Mapserver 7.
+    -   GDAL 2.0 will be supported in future releases after other
+        packages like SAGA start supporting them, some implementation to
+        support both versions at the same time will be investigated
+    -   ZOO-Website will be updated before 15 Dec 2015. Nick will be the
+        leader. Please volunteer to help
+    -   MapMint will be displayed in ZOO-Project site and will be a part
+        of the ZOO-Project Suite in the future.
+    -   ZOO-Discuss and ZOO-PSC ML will also be used for MM
+    -   MapMint documentation. Nick, Venka and need more volunteers
+
+[irc log](http://zoo-project.org/irclogs/psc_meeting18.log)

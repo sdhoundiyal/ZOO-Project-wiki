@@ -1,0 +1,163 @@
+### Default files found in OpenOffice.org.app {#default_files_found_in_openoffice.org.app}
+
+Files and libraries allready included in Binary distribution of
+OpenOffice :
+
+    /Users/djay/geolabs/Devel/OpenOffice.org3.0_SDK//idl/com/sun/star/mozilla/xpcom/
+    /Applications/OpenOffice.org.app/Contents//basis-link/program/components/libxpcom_compat_c.dylib
+    /Applications/OpenOffice.org.app/Contents//basis-link/program/components/xpcom_base.xpt
+    /Applications/OpenOffice.org.app/Contents//basis-link/program/components/xpcom_components.xpt
+    /Applications/OpenOffice.org.app/Contents//basis-link/program/components/xpcom_ds.xpt
+    /Applications/OpenOffice.org.app/Contents//basis-link/program/components/xpcom_io.xpt
+    /Applications/OpenOffice.org.app/Contents//basis-link/program/components/xpcom_obsolete.xpt
+    /Applications/OpenOffice.org.app/Contents//basis-link/program/components/xpcom_threads.xpt
+    /Applications/OpenOffice.org.app/Contents//basis-link/program/components/xpcom_xpti.xpt
+    /Applications/OpenOffice.org.app/Contents//basis-link/program/libxpcom.dylib
+    /Applications/OpenOffice.org.app/Contents//basis-link/program/libxpcom_compat.dylib
+
+### XPCOM_UNO COMPILATION {#xpcom_uno_compilation}
+
+#### Sources code access {#sources_code_access}
+
+The sources code I tried to compile was the following
+[tree](http://udk.openoffice.org/source/browse/udk/xpcom_uno/).
+
+[Here](http://lxr.go-oo.org/source/udk/xpcom_uno/) is the tree from
+go-oo.org.
+
+#### Compilation tests {#compilation_tests}
+
+To compile the xpcom_uno component I started using the following tools :
+OpenOffice SDK 3.0 and distribution of xulrunner-sdk
+(xulrunner-1.9.0.3.en-US.mac-pkg.dmg) for MacOSX.
+
+Environment variables used in the following setences(I give in
+parenthesis where thoses sqks are installed on my system - useless) :
+
+-   OpenOffice SDK 3.0 : `$OO_SDK_HOME`
+    (/Users/djay/geolabs/Devel/OpenOffice.org3.0_SDK)
+-   xulrunner-sdk : `$XULRUN_SDK_HOME` (/Volumes/Geolabs\\
+    Rugged/BackUp/Desktop/xulrunner-sdk)
+
+OpenOffice SDK description (extracted from results of a
+`$OO_SDK_HOME/setsdkenv_unix` call on my local system - useless) :
+
+    ************************************************************************
+     *
+    *SDK environment is prepared for MacOSX
+     *
+    *SDK = /Users/djay/geolabs/Devel/OpenOffice.org3.0_SDK
+    *Office = /Applications/OpenOffice.org.app
+    *Office Base = /Applications/OpenOffice.org.app/Contents/basis-link
+    *URE = /Applications/OpenOffice.org.app/Contents/basis-link/ure-link
+    *Make = /usr/bin
+    *Zip = /usr/bin
+    *C++ Compiler = /usr/bin
+    *Java = /System/Library/Frameworks/JavaVM.Framework/Versions/1.5.0
+    *SDK Output directory = /Users/djay/OpenOffice.org3.0_SDK
+    *Auto deployment = YES
+     *
+    ************************************************************************
+
+First test :
+
+     for i in *cxx ; do 
+      echo $i start ; 
+      gcc -malign-natural -c -O -fPIC -fno-common \
+       -I /Users/djay/Gentoo/usr/include/\
+       -I$XULRUN_SDK_HOME/include/string/\
+       -I../unotypes/\
+       -I$XULRUN_SDK_HOME/sdk/include\
+       -I$OO_SDK_HOME/include/\
+       -I$OO_SDK_HOME/include/rtl/\
+       -I$OO_SDK_HOME/include/cppuhelper/\
+       -I$XULRUN_SDK_HOME/include/xpcom/\
+       -I../inc\
+       -I. -I/Users/djay/OpenOffice.org3.0_SDK/MACOSXexample.out/inc\
+       -I/Users/djay/OpenOffice.org3.0_SDK/MACOSXexample.out/inc/examples\
+       -I../../../include\
+       -I/Users/djay/geolabs/Projets/IGO/HTC_fw/test/binaries/include/\
+       -I/Users/djay/OpenOffice.org3.0_SDK/MACOSXexample.out/inc/toto\
+       -DUNX -DGCC -DMACOSX -DCPPU_ENV=gcc3 \
+       -DGXX_INCLUDE_PATH=/usr/include/c++/4.0.0\
+       -o/Users/djay/OpenOffice.org3.0_SDK/MACOSXexample.out/obj/\
+       $i; 
+      echo $i end;
+     done >& log
+
+1\) Produce URD files :
+
+From xpcom_uno sources directory `udk/xpcom_uno/source/xpcom_uno` :
+
+    cp ../unotypes/com/sun/star/mozilla/xpcom/*idl $OO_SDK_HOME/idl/com/sun/star/mozilla/xpcom/
+    for i in $OO_SDK_HOME/idl/com/sun/star/mozilla/xpcom/*idl; do 
+      idlc -w -I$OO_SDK_HOME/idl/ -I$OO_SDK_OUT $i;
+    done
+
+2\) Produce RDB files and view informations on produced files :
+
+    for i in $OO_SDK_HOME/idl/com/sun/star/mozilla/xpcom/*urd; do 
+      regmerge -v $(echo $i|sed "s:urd:rdb:g") /UCR $i
+      regview $(echo $i|sed "s:urd:rdb:g")
+    done
+
+3\) Produce header files :
+
+    cppumaker -Gc -BUCR -O$OO_SDK_OUT/inc -Tcom.sun.star.mozilla.xpcom.XUnoRuntimeEnvironment \
+     $OO_SDK_HOME/idl/com/sun/star/mozilla/xpcom/XUnoRuntimeEnvironment.rdb\
+     /Applications/OpenOffice.org.app/Contents//basis-link/ure-link/share/misc/types.rdb\
+     /Applications/OpenOffice.org.app/Contents//basis-link/ure-link/share/misc/services.rdb\
+     $OO_SDK_HOME/idl/com/sun/star/mozilla/xpcom/XUnoType.rdb\
+     $OO_SDK_HOME/idl/com/sun/star/mozilla/xpcom/XUnoEnum.rdb \
+     $OO_SDK_HOME/idl/com/sun/star/mozilla/xpcom/XUnoStruct.rdb
+
+4\) Compilation of cxx files in the sources/xpcom_uno directory :
+
+    for i in *cxx ; do 
+      echo $i start ;
+      # gcc -DMOZILLA_INTERNAL_API=" ZOO-1.0 " -DMOZILLA_CLIENT -DXP_UNIX  -DTRACING -malign-natural -c -O -fPIC -fno-common -I"$MOZ_INC/string" -I"$MOZ_INC/rdf" -I"$MOZ_INC/msgbase" -I"$MOZ_INC/addrbook" -I"$MOZ_INC/mork" -I"$MOZ_INC/locale" -I"$MOZ_INC/pref" -I"$MOZ_INC/mime" -I"$MOZ_INC/chrome" -I"$MOZ_INC/necko" -I"$MOZ_INC/intl" -I"$MOZ_INC//profile" -I"$MOZ_INC/embed_base" -I"$MOZ_INC/mozldap" -I"$MOZ_INC/uconv" -I"$MOZ_INC/xpcom_obsolete" -I"$MOZ_INC/xpconnect" -I"$MOZ_INC/js" -I"$MOZ_INC/content"  -I"$MOZ_INC//widget" -I"$MOZ_INC/webshell" -I"$MOZ_INC/find" -I"$MOZ_INC/windowwatcher" -I"$MOZ_INC/gfx" -I"$MOZ_INC/profdirserviceprovider" -I"$MOZ_INC/webbrowserpersist" -I"$MOZ_INC/webbrwsr" -I"$MOZ_INC/docshell" -I"$MOZ_INC/uriloader" -I"$MOZ_INC/shistory" -I"$MOZ_INC/dom" -I/Users/djay/OpenOffice.org3.0_SDK/inc/ -I/Volumes/Geolabs\ Rugged/BackUp/Desktop/xulrunner-sdk/include/string/ -I../unotypes/ -I/Volumes/Geolabs\ Rugged/BackUp/Desktop/xulrunner-sdk/sdk/include -I/Users/djay/geolabs/Devel/OpenOffice.org3.0_SDK/include/ -I/Users/djay/geolabs/Devel/OpenOffice.org3.0_SDK//include/rtl/ -I/Users/djay/geolabs/Devel/OpenOffice.org3.0_SDK//include/cppuhelper/ -I/Volumes/Geolabs\ Rugged/BackUp/Desktop/xulrunner-sdk/include/xpcom/ -I../inc -I. -I/Users/djay/OpenOffice.org3.0_SDK/MACOSXexample.out/inc -I/Users/djay/OpenOffice.org3.0_SDK/MACOSXexample.out/inc/examples -I../../../include -I/Users/djay/geolabs/Projets/IGO/HTC_fw/test/binaries/include/ -I/Users/djay/OpenOffice.org3.0_SDK/MACOSXexample.out/inc/toto -DUNX -DGCC -DMACOSX -DCPPU_ENV=gcc3 -DGXX_INCLUDE_PATH=/usr/include/c++/4.0.0/ -o/Users/djay/OpenOffice.org3.0_SDK/MACOSXexample.out/obj/$(echo $i|sed "s:cxx:o:g") $i; echo $i end; done >& log
+
+    for i in *cxx ; do 
+     echo $i start ; 
+     gcc -DMOZILLA_INTERNAL_API=" ZOO-1.0 " -DMOZILLA_CLIENT -DXP_UNIX  -DTRACING -malign-natural -c -O -fPIC -fno-common \
+      -I/Users/djay/OpenOffice.org3.0_SDK/inc/ \
+      -I /Users/djay/Gentoo/usr/include/ \
+      -I$XULRUN_SDK_HOME/include/string/ \
+      -I../unotypes/ \
+      -I$XULRUN_SDK_HOME/sdk/include \
+      -I$OO_SDK_HOME/include/ \
+      -I$OO_SDK_HOME/include/rtl/ \
+      -I$OO_SDK_HOME/include/cppuhelper/ \
+      -I$XULRUN_SDK_HOME/include/xpcom/ \
+      -I../inc \
+      -I. \
+      -I/Users/djay/OpenOffice.org3.0_SDK/MACOSXexample.out/inc \
+      -I/Users/djay/OpenOffice.org3.0_SDK/MACOSXexample.out/inc/examples \
+      -I../../../include \
+      -I/Users/djay/geolabs/Projets/IGO/HTC_fw/test/binaries/include/ \
+      -I/Users/djay/OpenOffice.org3.0_SDK/MACOSXexample.out/inc/toto \
+      -DUNX -DGCC -DMACOSX -DCPPU_ENV=gcc3 \
+      -DGXX_INCLUDE_PATH=/usr/include/c++/4.0.0 \
+      -o/Users/djay/OpenOffice.org3.0_SDK/MACOSXexample.out/obj/$(echo $i|sed "s:cxx:o:g") $i; 
+     echo $i end; 
+    done >& log
+
+Compile results :
+
+-   leakcheck.o
+-   xpcomvariant.o
+
+The others don\'t compile.
+
+The following error occurs :
+
+    ../inc/xpcomreference.hxx: In member function ‘IfaceT* xpcom_uno::XpcomReference<IfaceT>::query(OtherIfaceT*)’:
+    ../inc/xpcomreference.hxx:180: error: ‘::IfaceT’ has not been declared
+    ../inc/xpcomreference.hxx:180: error: ‘COMTypeInfo’ was not declared in this scope
+    ../inc/xpcomreference.hxx:180: error: expected primary-expression before ‘>’ token
+    ../inc/xpcomreference.hxx:180: error: ‘::kIID’ has not been declared
+    ../inc/xpcomreference.hxx: In member function ‘IfaceT* xpcom_uno::XpcomReference<IfaceT>::query_throw(OtherIfaceT*)’:
+    ../inc/xpcomreference.hxx:191: error: ‘::IfaceT’ has not been declared
+    ../inc/xpcomreference.hxx:191: error: ‘COMTypeInfo’ was not declared in this scope
+    ../inc/xpcomreference.hxx:191: error: expected primary-expression before ‘>’ token
+    ../inc/xpcomreference.hxx:191: error: ‘::kIID’ has not been declared

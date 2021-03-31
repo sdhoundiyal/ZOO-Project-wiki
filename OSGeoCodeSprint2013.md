@@ -1,0 +1,67 @@
+### ZOO-Project OSGeo Code Sprint 213 Plan {#zoo_project_osgeo_code_sprint_213_plan}
+
+#### Dealing with OSGeo Incubation Process {#dealing_with_osgeo_incubation_process}
+
+I would like to follow the next steps for the OSGeo Incubation. Indeed I
+think this will be a real asset for making the project better by
+learning from other exeprience and knowledge in Open Source software. I
+think that now it is also time for the ZOO-Project to make sure we
+didn\'t do anything wrong with our licences or lack any in any parts.
+
+#### Embedding version number / revision {#embedding_version_number_revision}
+
+It may be great for third party software to know whith which version of
+the ZOO-Kernel it is dealing with. Indeed, many software are providing
+such version information but not ZOO-Kernel so we should probably fixe
+this by adding the capability to display version info from various
+languages (first hich come to my mind are the most used : C, Python,
+JavaScript and JAVA).
+
+#### Fixing tickets by priority {#fixing_tickets_by_priority}
+
+Double check individualy all the tickets again to make sure some are not
+becoming obsolete. Maybe the ticket about W\*S work sponsored by
+Fundazione Edmund Mach should probably be integrated into the
+documentation.
+
+One important ticket is the one provided by Luca \#75 which mention one
+problem that ZOO-Service developper are familliar with and can bypass by
+using the inRequest attribute. Nevertheless, I think it may be a real
+enhancement to remove the value for not provided inputs or set it to
+None in case of Python language. Anyway, I think that this won\'t hurt
+and may be more convenient for developer which simply have to ensure
+that the key \"value\" is present in the map or not.
+
+It may be a great idea to come back to the patch provided by Farkas for
+enhencing the cache mechanism and make it able to use proxy.
+
+#### Cleaning code / improving {#cleaning_code_improving}
+
+I will spend my days working on ZOO-Project so I will try to fix some
+part of the code to make it more easy to use and more safe if needed.
+
+#### Investigate the \"Program wrapper\" mechanisms {#investigate_the_program_wrapper_mechanisms}
+
+I think that it may be usefull in many cases to not have to modify the
+source code of some programs as they evolve along the time and ti may
+become difficult to follow each version of te software. So one solution
+may be to use a wrapper for the program which will be loaded from the C
+ZOO-Service
+
+#### Integrating the work made for C\# Services {#integrating_the_work_made_for_c_services}
+
+6 months ago I got a Mono embedded working from the ZOO-Kernel on my
+linux platform. So this code sprint may be the right place to finish
+this work and publish the C\# support expected for so long.
+
+#### Improve documentation {#improve_documentation}
+
+Luca would like to see an improving in the ZOO documentation and he
+could work on it remotely. The topics that could be improved are:
+
+-   Mapserver output (starting from \#34)
+-   More about how to create services (Luca will work on Python service)
+-   Internal proprieties like env, lenv, for example how to use cookies
+-   Review the installation procedure
+
+to be continued\...
