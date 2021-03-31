@@ -137,4 +137,3 @@ The <tt>Makefile</tt> and the code of the C and Python Service Shared Object wil
 
 
 
-{{TracNotice|{{PAGENAME}}}}

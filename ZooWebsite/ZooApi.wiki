@@ -15,4 +15,3 @@ The ZOO API let you orchestrate WPS services simply and offers the ability to ad
 
 
 
-{{TracNotice|{{PAGENAME}}}}

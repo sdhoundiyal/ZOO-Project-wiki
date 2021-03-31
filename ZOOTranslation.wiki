@@ -57,4 +57,3 @@ msgfmt compilation.po -o /usr/share/locale/fr/LC_MESSAGES/zoo-services.mo
 
 
 
-{{TracNotice|{{PAGENAME}}}}

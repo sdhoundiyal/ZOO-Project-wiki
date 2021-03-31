@@ -15,4 +15,3 @@ The ZOO Project documentation is under construction. Here are listed the availab
 
 
 
-{{TracNotice|{{PAGENAME}}}}

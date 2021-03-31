@@ -28,4 +28,3 @@ You find here who is curently subscribed to the zoo-discuss mailing list:
 
 
 
-{{TracNotice|{{PAGENAME}}}}

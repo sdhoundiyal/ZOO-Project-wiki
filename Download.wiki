@@ -20,4 +20,3 @@ svn checkout svn+zoo-ssh://svn.zoo-project.org/var/svn/repos/trunk zoo
 
 
 
-{{TracNotice|{{PAGENAME}}}}

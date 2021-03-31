@@ -172,4 +172,3 @@ http://zoo-project.org/trac/wiki/Release/1.7.0/Notes
 
 
 
-{{TracNotice|{{PAGENAME}}}}

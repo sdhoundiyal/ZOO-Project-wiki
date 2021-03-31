@@ -174,4 +174,3 @@ ZOO-Project global licensing informations can be found in the [http://www.zoo-pr
 
 
 
-{{TracNotice|{{PAGENAME}}}}

@@ -14,4 +14,3 @@ Participants are the following :
 
 
 
-{{TracNotice|{{PAGENAME}}}}

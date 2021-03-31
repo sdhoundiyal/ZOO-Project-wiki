@@ -101,4 +101,3 @@ You are ready to go now, developing your own services following the ZOODeveloper
 
 
 
-{{TracNotice|{{PAGENAME}}}}

@@ -61,4 +61,3 @@ Release versions lead to an update in documentation and standard tarballs. This 
 
 
 
-{{TracNotice|{{PAGENAME}}}}

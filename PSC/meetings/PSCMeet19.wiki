@@ -47,4 +47,3 @@ This PSC meeting was held face to face on Friday, 18 July 2014 during the FOSS4G
 
 
 
-{{TracNotice|{{PAGENAME}}}}

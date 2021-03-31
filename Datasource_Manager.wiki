@@ -280,4 +280,3 @@ The output could be XML, GML, KML or GeoJSON.
 
 
 
-{{TracNotice|{{PAGENAME}}}}

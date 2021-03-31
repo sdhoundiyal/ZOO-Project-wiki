@@ -263,4 +263,3 @@ Some sample (using POST XML requests), to use those examples you will have to pu
 
 
 
-{{TracNotice|{{PAGENAME}}}}

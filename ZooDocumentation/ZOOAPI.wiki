@@ -7,4 +7,3 @@ Here are listed the ZOO API documentation material.
 
 
 
-{{TracNotice|{{PAGENAME}}}}

@@ -101,4 +101,3 @@ For registred developers, you can use SSH or HTTPS protocol. Information on how 
 
 
 
-{{TracNotice|{{PAGENAME}}}}

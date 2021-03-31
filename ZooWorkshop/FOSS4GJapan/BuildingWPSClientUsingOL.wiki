@@ -294,4 +294,3 @@ It seems that something is missing in your Services Provider to get the same res
 
 
 
-{{TracNotice|{{PAGENAME}}}}

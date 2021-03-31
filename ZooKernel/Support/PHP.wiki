@@ -19,4 +19,3 @@ Simply copy the zcfg and the PHP script in your cgi-bin directory or whatever me
 
 
 
-{{TracNotice|{{PAGENAME}}}}

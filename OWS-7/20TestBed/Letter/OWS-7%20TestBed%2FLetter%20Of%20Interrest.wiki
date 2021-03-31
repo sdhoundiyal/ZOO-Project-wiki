@@ -26,4 +26,3 @@ A ZOO Project Monkey
 
 
 
-{{TracNotice|{{PAGENAME}}}}

@@ -16,4 +16,3 @@ When you have '''''yourVariables''''' in python variable you can made what do yo
 
 
 
-{{TracNotice|{{PAGENAME}}}}

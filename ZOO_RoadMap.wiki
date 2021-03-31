@@ -51,4 +51,3 @@ g)  ZOO-Kernel-1.4.0 release could coincide FOSS4G2011.
 
 
 
-{{TracNotice|{{PAGENAME}}}}

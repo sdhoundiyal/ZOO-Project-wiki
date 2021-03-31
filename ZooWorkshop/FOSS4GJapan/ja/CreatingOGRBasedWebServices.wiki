@@ -1019,4 +1019,3 @@ http://zoo-project.org/trac/browser/trunk/zoo-services/ogr/base-vect-ops/cgi-env
 
 
 
-{{TracNotice|{{PAGENAME}}}}

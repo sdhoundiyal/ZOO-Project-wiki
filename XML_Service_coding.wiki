@@ -54,4 +54,3 @@ This example is a process to generate KML
 
 
 
-{{TracNotice|{{PAGENAME}}}}

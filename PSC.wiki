@@ -29,4 +29,3 @@ See [/ZOO-Project/ZOO-Project/wiki/PSC/meetings PSC meetings] page
 
 
 
-{{TracNotice|{{PAGENAME}}}}

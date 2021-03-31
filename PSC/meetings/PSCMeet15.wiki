@@ -31,4 +31,3 @@ The PSC meeting was held on irc.freenode.net in the  irc://irc.freenode.net/#zoo
 
 
 
-{{TracNotice|{{PAGENAME}}}}

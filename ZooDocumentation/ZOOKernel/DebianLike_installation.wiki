@@ -77,4 +77,3 @@ PYTHONPATH=<YOUR_PYTHONPATH>
 
 
 
-{{TracNotice|{{PAGENAME}}}}

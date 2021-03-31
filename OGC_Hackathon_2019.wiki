@@ -167,4 +167,3 @@ This is a direct output of the hackathon participation, based on the old demo co
 
 
 
-{{TracNotice|{{PAGENAME}}}}

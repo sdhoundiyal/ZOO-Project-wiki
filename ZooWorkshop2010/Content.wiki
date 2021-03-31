@@ -11,4 +11,3 @@ The Workshop material :
 
 
 
-{{TracNotice|{{PAGENAME}}}}

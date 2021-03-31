@@ -24,4 +24,3 @@ The ZOO Trac is hosting ZOO Project source code in a community oriented system. 
 
 
 
-{{TracNotice|{{PAGENAME}}}}

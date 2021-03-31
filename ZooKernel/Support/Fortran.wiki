@@ -203,4 +203,3 @@ Hopefully the code provided here display well the result value in the right arra
 
 
 
-{{TracNotice|{{PAGENAME}}}}

@@ -31,4 +31,3 @@ Basics of WPS, bascis of C and Python language.
 
 
 
-{{TracNotice|{{PAGENAME}}}}

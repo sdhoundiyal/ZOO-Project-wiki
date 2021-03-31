@@ -15,4 +15,3 @@ Here are listed all the available documentation about ZOO Kernel.
 
 
 
-{{TracNotice|{{PAGENAME}}}}

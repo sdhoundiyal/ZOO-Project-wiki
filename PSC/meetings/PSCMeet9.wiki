@@ -20,4 +20,3 @@ The PSC meeting was held on irc.freenode.net in the #zoo-project channel
 
 
 
-{{TracNotice|{{PAGENAME}}}}

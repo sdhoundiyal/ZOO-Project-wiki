@@ -21,4 +21,3 @@ You can now access the SVN server using https protocol using your <tt><DEV_USER>
 
 
 
-{{TracNotice|{{PAGENAME}}}}

@@ -47,4 +47,3 @@ Additionally, there is the option of adding the zoo-wps-grass-bridge package. Th
 
 
 
-{{TracNotice|{{PAGENAME}}}}

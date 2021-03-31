@@ -75,4 +75,3 @@ http://zoo-project.org/irclogs/psc_meeting1.log
 
 
 
-{{TracNotice|{{PAGENAME}}}}

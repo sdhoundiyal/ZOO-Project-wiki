@@ -9,4 +9,3 @@ List ideas pages
 
 
 
-{{TracNotice|{{PAGENAME}}}}
