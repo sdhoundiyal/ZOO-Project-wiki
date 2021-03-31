@@ -1,0 +1,14 @@
+
+== FOSS4G 2010 ZOO Workshop Material ==
+
+Requirements :
+**The [http://zoo-project.org/trac/attachment/wiki/ZooWorkshop2010/Content/README README] file describe how to get ZOO Kernel installed on your OSGeoLive LiveDVD.
+**The [http://zoo-project.org/trac/attachment/wiki/ZooWorkshop2010/Content/zoows.tar.bz2 zoows.tar.bz2]
+
+The Workshop material :
+**[http://zoo-project.org/trac/raw-attachment/wiki/ZooWorkshop2010/Content/Practical%20introduction%20to%20ZOO%20-%20The%20Open%20WPS%20Platform.odt The OpenDocumentText version]
+**[http://zoo-project.org/trac/raw-attachment/wiki/ZooWorkshop2010/Content/Practical%20introduction%20to%20ZOO%20-%20The%20Open%20WPS%20Platform.pdf The PDF version]
+
+
+
+{{TracNotice|{{PAGENAME}}}}

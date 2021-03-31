@@ -1,0 +1,104 @@
+
+== ZooKernel Installation Guide == 
+
+On this page you will find informations about how to compile and use ZOO Kernel with your Apache web server.
+
+=== Requirements ===
+
+To be able to compile the current ZOO Kernel, you need to have some libraries allready availlable on your system :
+
+*[http://www.fastcgi.com/drupal/node/5 FastCGI] (installed in /path/to/trunk/dist/, using --prefix=/path/to/trunk/dist configure option),
+*[browser:/trunk/cgic cgic] (same, use just <tt>make</tt> from the <tt>/path/to/trunk/../third/cgic/</tt> ) .
+*[http://www.xmlsoft.org/index.html libxml2],
+*[http://curl.haxx.se/ cURL],
+*[http://www.openssl;org OpenSSL],
+*[http://www.python.org Python],
+*[http://www.php.net PHP Embedded]  (optional, see [http://trac.zoo-project.org/wiki/ZooKernel/Embed/PHP#ConfigureandInstallPHPEmbedlibrary compilations notes]),
+*[Java SDK]  (optional),
+*[http://www.mozilla.org/js/spidermonkey/ SpiderMonkey] (optional)
+
+==== Getting the source code ====
+
+To get the source code and compile on your platform, use the following command :
+<pre>
+#sh
+cd zoo/
+svn checkout svn+ssh://dev.cartography.st/mnt/data3/zoo-project/trunk/ trunk
+</pre>
+
+Now you get your local copy of the official ZOO svn server.
+
+=== Compilation ===
+
+==== GNU/Linux ====
+
+ZOO Kernel use Autotools, to compile the ZOO Kernel just use the following command (please use <tt>./configure --help</tt> to get more informations about options) : 
+
+<pre>
+#sh
+cd trunk/zoo-kernel
+./configure --with-js=/usr/ --with-gdal-config=/usr/bin/gdal-config --with-php=/usr/lib/php5.2.10/ --with-java=no
+make zoo_loader.cgi
+</pre>
+
+==== WIN32 ====
+
+ZOO Kernel can be compiled on WIN32 platforms using [http://www.microsoft.com/express/Windows/ Microsoft Visual C++ Express Edition 2008] this way (please note that you should probably edit the makefile.vc file to suit your needs) : 
+
+<pre>
+#sh
+cd trunk/zoo-kernel
+nmake /f makefile.vc zoo_loader.cgi
+</pre>
+
+=== Install ZOO Kernel and ZOO ServiceProvider ===
+
+Suppose that your Apache server handle cgi-scripts located in <tt>/var/www/localhost/cgi-bin</tt>. You should copy the <tt>zoo_loader.cgi</tt> script in this directory as the <tt>main.cfg</tt> file (see bellow).
+
+<pre>
+#sh
+# Install your ZOO Kernel
+cp main.cfg /var/www/localhost/cgi-bin
+cp zoo_loader.cgi /var/www/localhost/cgi-bin
+# Install your ZOO ServiceProvider :
+cp ../zoo-services/hello-py/cgi-env/*.zcfg /var/www/localhost/cgi-bin
+cp ../zoo-services/hello-py/*.py /var/www/localhost/cgi-bin/
+</pre>
+
+The main configuration file, <tt>main.cfg</tt>, contains configuration parameters (in the <tt>main</tt> section) which can be accessed from your service (using the <tt>main_cfg</tt> parameter) or by the ZOO Kernel (for instance, we set that <tt>env</tt> is for the automaticaly setting of environement variable), and metadata.
+
+You should edit the main configuration file before running yoru first request to your ZOO Kernel.
+
+=== Apache ZOO .htaccess ===
+
+From your Apache <tt>DocumentRoot</tt>, create and fill a file called <tt>.htaccess</tt> in a <tt>zoo</tt> directory, using the following command.
+
+<pre>
+#sh
+mkdir /var/www/localhost/htdocs/zoo/
+cat > /var/www/localhost/htdocs/zoo/.htaccess << EOF
+  RewriteEngine on
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{DOCUMENT_ROOT}/%{REQUEST_FILENAME} !=%{DOCUMENT_ROOT}/login.php
+  RewriteRule (.*)/(.*)/(.*) /cgi-bin/zoo_loader.cgi?ServiceProvider=$2&metapath=$1 [L,QSA]
+  RewriteRule (.*)/(.*)/ /cgi-bin/zoo_loader.cgi?ServiceProvider=$2&metapath=$1 [L,QSA]
+  RewriteRule (.*)/(.*) /cgi-bin/zoo_loader.cgi?ServiceProvider=$1&metapath= [L,QSA]
+EOF
+</pre>
+
+=== Testing ===
+
+Run first requests to your ZOO Kernel installation :
+
+<pre>
+http://my.website/zoo/?Service=WPS&Request=GetCapabilities&Version=1.0.0
+http://my.website/zoo/?Service=WPS&Request=DescribeProcess&Version=1.0.0&Identifier=HelloPy
+http://my.website/zoo/?Service=WPS&Request=Execute&Version=1.0.0&Identifier=HelloPy&DataInputs=a=My%20Name@dataType=string
+</pre>
+
+You are ready to go now, developing your own services following the ZOODeveloperGuide.
+
+
+
+{{TracNotice|{{PAGENAME}}}}

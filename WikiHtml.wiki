@@ -1,0 +1,466 @@
+
+== Using HTML in Wiki Text ==
+
+Trac supports the display of HTML in any wiki context, by using the <tt>#html</tt> [/ZOO-Project/ZOO-Project/wiki/WikiProcessors WikiProcessor]. 
+
+However, this HTML has to be [http://en.wikipedia.org/wiki/Well-formed_element well-formed].
+In particular, you can't insert a start tag in an <tt>#html</tt> block, resume normal wiki text and insert the corresponding end tag in a second <tt>#html</tt> block. 
+
+Fortunately, for creating styled <div>s, <span>s  or even complex tables containing arbitrary Wiki text, there is a powerful alternative: <tt>#div</tt>, <tt>#span</tt> and <tt>#table</tt>, <tt>#tr</tt>, <tt>#td</tt> and <tt>#th</tt> blocks. Those Wiki processors are built-in and do not require additional packages to be installed.
+
+=== How to use <tt>#html</tt> === #HowtoUseHTML
+To inform the wiki engine that a block of text should be treated as HTML, use the ''html'' processor:
+
+{| border=1 class="simple"
+!= Wiki Markup =
+!= Display =
+|}
+
+<pre>#td
+  <pre>
+  <pre>
+  #html
+  <h1 style="text-align: right; color: blue">HTML Test</h1>
+  </pre>
+  </pre>
+</pre>
+<pre>#td style="padding-left: 2em"
+  <pre>
+  #html
+  <h1 style="text-align: right; color: blue">HTML Test</h1>
+  </pre>
+</pre>
+
+Note that Trac sanitizes your HTML code before displaying it. That means that potentially dangerous constructs, such as Javascript event handlers, will be removed from the output. 
+
+The filtering is done by [http://genshi.edgewall.org/ Genshi] and the output will be a well-formed fragment of HTML. This means that you can no longer use two HTML blocks, one for opening a <div> and another for closing it, in order to wrap arbitrary wiki text.
+The new way to wrap any wiki content inside a <div> is to use the <tt>#div</tt> Wiki processor.
+
+=== How to use <tt>#div</tt> and <tt>#span</tt> === #HowtoUseDivSpan
+
+{| border=1 class="simple"
+!= Wiki Markup =
+!= Display =
+|}
+
+<pre>#td
+  <pre>
+  <pre>
+  #div class="important" 
+***important** is a predefined class.
+  </pre>
+  </pre>
+  <pre>
+  <pre>
+  #div style="border: 1pt dotted; margin: 1em"
+***wikipage** is another predefined class that will 
+  be used when no class is specified.
+  </pre>
+  </pre>
+  <pre>
+  <pre>
+  #div class="compact" style="border: 1pt dotted; margin: 1em"
+***compact** is another predefined class reducing
+  the padding within the <tt><div></tt> to a minimum.
+  </pre>
+  </pre>
+  <pre>
+  <pre>
+  #div class="wikipage compact" style="border: 1pt dotted"
+  Classes can be combined (here **wikipage** and **compact**)
+  which results in this case in reduced //vertical// 
+  padding but there's still some horizontal space for coping
+  with headings.
+  </pre>
+  </pre>
+  <pre>
+  <pre>
+  #div class="" style="border: 1pt dotted; margin: 1em"
+  Explicitly specifying no classes is //not// the same
+  as specifying no class attribute, as this will remove
+  the //wikipage// default class.
+  </pre>
+  </pre>
+</pre>
+<pre>#td style="padding-left: 2em"
+
+  <pre>
+  #div class="important" 
+***important** is a predefined class.
+  </pre>
+
+  <pre>
+  #div style="border: 1pt dotted; margin: 1em"
+***wikipage** is another predefined class that will 
+  be used when no class is specified.
+  </pre>
+
+  <pre>
+  #div class="compact" style="border: 1pt dotted; margin: 1em"
+***compact** is another predefined class reducing
+  the padding within the <tt><div></tt> to a minimum.
+  </pre>
+
+  <pre>
+  #div class="wikipage compact" style="border: 1pt dotted"
+  Classes can be combined (here **wikipage** and **compact**)
+  which results in this case in reduced //vertical// 
+  padding but there's still some horizontal space for coping
+  with headings.
+  </pre>
+
+  <pre>
+  #div class="" style="border: 1pt dotted; margin: 1em"
+  Explicitly specifying no classes is //not// the same
+  as specifying no class attribute, as this will remove
+  the //wikipage// default class.
+  </pre>
+
+</pre>
+
+Note that the contents of a <tt>#div</tt> block are contained in one or more paragraphs, which have a non-zero top and bottom margin. This leads to the top and bottom padding in the example above. To remove the top and bottom margin of the content, add the <tt>compact</tt> class to the <tt>#div</tt>. Another predefined class besides <tt>wikipage</tt> and <tt>compact</tt> is <tt>important</tt>, which can be used to make a paragraph stand out. Extra CSS classes can be defined via the <tt>site/style.css</tt> file for example, see TracInterfaceCustomization#SiteAppearance.
+
+For spans, you should use the Macro call syntax:
+{| border=1 class="simple"
+!= Wiki Markup =
+|}
+
+<pre>#td
+  <pre>
+  Hello 
+  [[span(''WORLD'' (click [#anchor here]), style=color: green; font-size: 120%, id=anchor)]]!
+  </pre>
+</pre>
+|---------------------------------------------------------------------------------
+{| border=1 class="simple"
+!= Display =
+|}
+
+<pre>#td style="padding-left: 2em"
+  Hello
+  [[span(''WORLD'' (click [#anchor here]), style=color: green; font-size: 120%, id=anchor)]]!
+</pre>
+
+=== How to use <tt>#td</tt> and other table related processors === #Tables
+
+The <tt>#td</tt> or <tt>#th</tt> processors should be used to create table data and table header cells, respectively. The other processors <tt>#table</tt> and <tt>#tr</tt> are not required for introducing a table structure, as <tt>#td</tt> and <tt>#th</tt> will do this automatically. The <tt>|-</tt> row separator can be used to start a new row when needed, but some may prefer to use a <tt>#tr</tt> block for that, as this introduces a more formal grouping and offers the possibility to use an extra level of indentation. The main purpose of the <tt>#table</tt> and <tt>#tr</tt> is to give the possibility to specify HTML attributes, like ''style'' or ''valign'' to these elements.
+
+{| border=1 class="simple"
+!= Wiki Markup =
+!= Display =
+|}
+
+<pre>#td
+ <pre>
+ Simple 2x2 table with rich content:
+ <pre>#th align=left
+  - Left
+  - Header
+ </pre>
+ <pre>#th align=left
+  - Right
+  - Header
+ </pre>
+ |----------------------------------
+ <pre>#td style="background: #ffd"
+  - Left
+  - Content
+ </pre>
+ <pre>#td style="vertical-align: top"
+ RightContent
+ </pre>
+ |----------------------------------
+{| border=1 class="simple"
+! ... and this can be mixed
+!\
+|}
+
+{| border=1 class="simple"
+!with pipe-based cells 
+|}
+
+ <pre>#td colspan=2
+ Pick the style the more appropriate
+ to your content
+ 
+ See WikiFormatting#Tables for details
+ on the pipe-based table syntax.
+ </pre>
+ 
+ If one needs to add some 
+ attributes to the table itself...
+ 
+ <pre>
+ #table style="border:none;text-align:center;margin:auto"
+   <pre>#tr ====================================
+     <pre>#th style="border: none"
+     Left header
+     </pre>
+     <pre>#th style="border: none"
+     Right header
+     </pre>
+   </pre>
+   <pre>#tr ==== style="border: 1px dotted grey"
+     <pre>#td style="border: none"
+###1
+     </pre>
+     <pre>#td style="border: none"
+###2
+     </pre>
+   </pre>
+   <pre>#tr ====================================
+     <pre>#td style="border: none"
+     2.1
+     </pre>
+     <pre>#td
+     2.2
+     </pre>
+   </pre>
+ </pre>
+
+
+ </pre>
+</pre>
+<pre>#td valign=top
+Simple 2x2 table with rich content:
+<pre>#th align=left
+ - Left
+ - Header
+</pre>
+<pre>#th align=left
+ - Right
+ - Header
+</pre>
+|----------------------------------
+<pre>#td style="background: #ffd"
+ - Left
+ - Content
+</pre>
+<pre>#td style="vertical-align: top"
+RightContent
+</pre>
+|----------------------------------
+{| border=1 class="simple"
+! ... and this can be mixed
+!\
+|- 
+| colspan=2|with pipe-based cells 
+|}
+
+<pre>#td colspan=2
+Pick the style the more appropriate
+to your content
+
+See WikiFormatting#Tables for details
+on the pipe-based table syntax.
+</pre>
+
+If one needs to add some 
+attributes to the table itself...
+
+<pre>
+#table style="border:none;text-align:center;margin:auto"
+  <pre>#tr ====================================
+    <pre>#th style="border: none"
+    Left header
+    </pre>
+    <pre>#th style="border: none"
+    Right header
+    </pre>
+  </pre>
+  <pre>#tr ==== style="border: 1px dotted grey"
+    <pre>#td style="border: none"
+###1
+    </pre>
+    <pre>#td style="border: none"
+###2
+    </pre>
+  </pre>
+  <pre>#tr ====================================
+    <pre>#td style="border: none"
+    2.1
+    </pre>
+    <pre>#td
+    2.2
+    </pre>
+  </pre>
+</pre>
+</pre>
+
+Note that by default tables are assigned the "wiki" CSS class, which gives a distinctive look to the header cells and a default border to the table and cells, as can be seen for the tables on this page. By removing this class (<tt>#table class=""</tt>), one regains complete control on the table presentation. In particular, neither the table nor the rows nor the cells will have a border, so this is a more effective way to get such an effect rather than having to specify a <tt>style="border: no"</tt> parameter everywhere. 
+
+<pre>#table class=""
+{| border=1 class="simple"
+!= Wiki Markup =
+!= Display =
+|}
+
+ <pre>#td
+  <pre>
+  <pre>#table class=""
+{| border=1 class="simple"
+!  0
+!  1
+!  2
+|}
+
+{| border=1 class="simple"
+! 10
+! 20
+! 30
+|}
+
+{| border=1 class="simple"
+! 11
+! 22
+! 33
+|}
+
+{| border=1 class="simple"
+!
+!
+!=  numbers  =
+|}
+
+  </pre>
+  </pre>
+ </pre>
+ <pre>#td
+  <pre>#table class=""
+{| border=1 class="simple"
+!  0
+!  1
+!  2
+|}
+
+{| border=1 class="simple"
+! 10
+! 20
+! 30
+|}
+
+{| border=1 class="simple"
+! 11
+! 22
+! 33
+|}
+
+{| border=1 class="simple"
+!
+!
+!=  numbers  =
+|}
+
+  </pre>
+ </pre>
+</pre>
+
+Other classes can be specified as alternatives (remember that you can define your own in [TracInterfaceCustomization#SiteAppearance site/style.css]).
+
+{| border=1 class="simple"
+!= Wiki Markup =
+!= Display =
+|}
+
+<pre>#td
+  <pre>
+  <pre>#table class="listing"
+{| border=1 class="simple"
+!  0
+!  1
+!  2
+|}
+
+{| border=1 class="simple"
+! 10
+! 20
+! 30
+|}
+
+{| border=1 class="simple"
+! 11
+! 22
+! 33
+|}
+
+{| border=1 class="simple"
+!
+!
+!=  numbers  =
+|}
+
+  </pre>
+  </pre>
+</pre>
+<pre>#td
+  <pre>#table class="listing"
+{| border=1 class="simple"
+!  0
+!  1
+!  2
+|}
+
+{| border=1 class="simple"
+! 10
+! 20
+! 30
+|}
+
+{| border=1 class="simple"
+! 11
+! 22
+! 33
+|}
+
+{| border=1 class="simple"
+!
+!
+!=  numbers  =
+|}
+
+  </pre>
+</pre>
+
+=== HTML comments ===
+HTML comments are stripped from the output of the <tt>html</tt> processor. To add an HTML comment to a wiki page, use the <tt>htmlcomment</tt> processor, available since Trac 0.12:
+{| border=1 class="simple"
+!= Wiki Markup =
+|}
+
+<pre>#td
+  <pre>
+  <pre>
+  #htmlcomment
+  This block is translated to an HTML comment.
+  It can contain <tags> and &entities; that will not be escaped in the output.
+  </pre>
+  </pre>
+</pre>
+|---------------------------------------------------------------------------------
+{| border=1 class="simple"
+!= Display =
+|}
+
+<pre>#td
+  <pre>
+  <!--
+  This block is translated to an HTML comment.
+  It can contain <tags> and &entities; that will not be escaped in the output.
+  -->
+  </pre>
+</pre>
+
+Please note that the character sequence "<tt>--</tt>" is not allowed in HTML comments, and will generate a rendering error.
+
+
+=== More Information ===
+
+*http://www.w3.org/ -- World Wide Web Consortium
+*http://www.w3.org/MarkUp/ -- HTML Markup Home Page
+
+----
+See also:  WikiProcessors, WikiFormatting, WikiRestructuredText
+
+
+
+{{TracNotice|{{PAGENAME}}}}

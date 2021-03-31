@@ -1,0 +1,27 @@
+
+== PSC meeting 25 ==
+
+The PSC meeting is to be held on irc.freenode.net at the  #zoo-project channel.
+
+=== Proposed Time and Date ===
+
+Thursday, 25 March 2021 at https://www.timeanddate.com/worldclock/fixedtime.html?year=2021&month=3&day=25&hour=12&min=0&sec=0&msg=ZOO-Project+PSC+Meeting
+
+=== Agenda ===
+
+*Review and approve minutes of PSC Meeting 24​http://zoo-project.org/trac/wiki/PSC/meetings/PSCMeet24
+*Update on Action items from PSC Meeting 24http://zoo-project.org/trac/wiki/PSC/meetings/PSCMeet24
+*Add Agenda items (preferably by 23 March 2021 (Tue))
+
+
+=== Summary ===
+
+ZOO PSC Meeting 25 \\
+Participants: \\
+to be added
+
+*Summary to be added
+
+
+
+{{TracNotice|{{PAGENAME}}}}

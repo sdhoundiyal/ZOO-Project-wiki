@@ -1,0 +1,77 @@
+
+== ZOO-Project 1.7.0 release notes ==
+
+This new ZOO-Project release contains new features and fixes,including two brand new supports: R language and HPC.
+
+For people familiar with the ZOO-Project the R language will be very easy to use for developers willing to develop their services in this language. For more information about this new support, please refer to [http://zoo-project.org/docs/services/howtos.html#r the official documentation].
+
+On the other hand, the HPC support is something totally new in the ZOO-Project ecosystem. Usually, the ZOO-Kernel is handling the execution of a service on its own but, using this HPC support,  it is now possible to execute asynchronously WPS services using a remote scheduler. This support has been implemented to support Slurm as the remote scheduler and the communication with the host is made using SSH.
+
+=== Upgrade notes: ===
+
+A specific <tt>memory</tt> parameter has been added to the <tt>main.cfg</tt> file. With it, you can now decide if you want every input data to be loaded in memory or to be stored as files. For information about this option, please refer to [http://zoo-project.org/docs/kernel/configuration.html#main-section the official documentation].
+
+A specific <tt>[metadb]</tt> section can be added to the <tt>main.cfg</tt> file to search for WPS Services metadata in a database. For more information about this support, please refer to [http://zoo-project.org/docs/kernel/configuration.html#metadb-section the official documentation].
+
+=== New Features and Fixes ===
+
+**Parse text/ mimetype ComplexData without using CDATA
+**Use proper declaration of const char*
+**Build against OTB 6.6.1 
+**Fix issue with UOM definitions in zcfg2sql
+**Make callback and HPC support independent from each other
+**Update SAGA-GIS support to version 7.2.0
+**Add support for custom MapServer style definition for raster output
+**Fix returned bbox definition #170 
+**Store semaphore status in lenv section for future deletion 
+**Update Windows support to newer compiler
+**Fix issue with UpdateStatus function from the Mono ZOO-API
+**Add logging functionality and other utility functions to the C-API
+**Return an exception for every output for which nb_pixel or
+  nb_features is 0 
+**Add a shared key to the security section to differentiate the
+  referenced data 
+**Add MapServer output style definition depending on the geometry
+  type 
+**Add ogr.tindex service
+**Add support for literaldata input arrays and to call services
+  asyncrhonously from the JavaScript ZOO-API   
+**Expose a sleep function to the JavaScript ZOO-API
+**Provide FinalizeHPC and FinalizeHPC1 services using scontrol and
+  sacct respectively  
+**Store md5sum of the cached file (so, local to the WPS server) to
+  compare before uploading (if different md5sum) on the HPC server 
+**Add support for R language
+**Add support for using "file://"  for referenced data input
+**Add an optional ecookie key for returning third-party cookies
+**Fix issue when parsing BoundingBox input #163 
+**Add memory key to the main section to force the ZOO-Kernel to load
+  data into memory or use local file 
+**Add the dialect input to the ogr2ogr service
+**Store the list of generated mapfiles in a file (cf DeleteData service)
+**Define the correct MS_IMAGEMODE in the generated mapfile 
+**Option to use MapServer support to publish heatmap
+**Add status_code key to the lenv for setting Status HTTP response header 
+**Add the Creation Option inputs to the Gdal_Dem service
+**Add prohibited key in the callback section to define a list of
+  services not requiring any invocation
+**Produce zcfg for OTB applications using the correct default pixel type
+**Add asynchronous callback invocation to send information about
+  the ongoing services to a third-party software
+**Add mapsToJson, mapsToJson, and elementsToJson to the API 
+**Provide a zcfg2sql tool to convert a zcfg metadata file to SQL script
+**Add support to store service metadata information into a database
+**Add HPC Support for remote execution of SBATCH scripts through Slurm
+**Add cookie reference to _HINTERNET
+**Support headers for GET requests from the js ZOO-API 
+**Pass all headers listed in the attributes parameter from the
+  [security] section to the hosts listed in the hosts parameter of the
+  same section (ticket #139)
+
+Source code: [http://zoo-project.org/dl/zoo-project-1.7.0.zip zip file] | [http://zoo-project.org/dl/zoo-project-1.7.0.tar.bz2 tar.bz2 file]
+
+Download page: [http://zoo-project.org/new/Code/Download Download]
+
+
+
+{{TracNotice|{{PAGENAME}}}}

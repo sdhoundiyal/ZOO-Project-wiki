@@ -1,0 +1,46 @@
+
+== Exercise ==
+
+__TOC__
+[/ZOO-Project/ZOO-Project/wiki/ZooWorkshop/FOSS4GJapan WorkShop table of content]
+
+You know everything now about writting zcfg matadata files and get short pieces of code in <tt>service.c</tt> or <tt>ogr_service_provider.py</tt> depending if you choosen C or Python programming language respectively.
+
+The goal of this exercise is to implement the following multiple geometries services :
+
+*Intersection
+*Union
+*Difference
+*SymDifference
+
+=== C version ===
+
+Your are now invited to edit the <tt>source.c</tt> file you have created during this workshop to add the multiple geometries, using the following OGR C-API functions :
+
+*[http://www.gdal.org/ogr/ogr__api_8h.html#5a271b5c7b72994120e7a6bbc7e7e5cb OGR_G_Intersection](OGRGeometryH, OGRGeometryH)
+*[http://www.gdal.org/ogr/ogr__api_8h.html#f58f2cfbdb2497659d2eabea73d3b8a0 OGR_G_Union](OGRGeometryH, OGRGeometryH)
+*[http://www.gdal.org/ogr/ogr__api_8h.html#497977bec6ecd9dade7a9694f776be64 OGR_G_Difference](OGRGeometryH, OGRGeometryH)
+*[http://www.gdal.org/ogr/ogr__api_8h.html#d6dacf495617a230c6f19950bc415f17 OGR_G_SymmetricDifference](OGRGeometryH, OGRGeometryH)
+
+You can use the <tt>Boundary.zcfg</tt> file as example, rename the <tt>InputPolygon</tt> input to <tt>InputEntity1</tt> and add a similar input named <tt>IntputEntity2</tt>. You are invited to update other values in the ZOO Metadata File to set the proper metadata informations.
+
+=== Python Version ===
+
+Your are invited to edit the <tt>ogr_ws_service_provider.py</tt> file you created during this workshop to add the multiple geometries using the following <tt>osgeo.ogr</tt> <tt>Geometry</tt> methods applied on the first <tt>Geometry</tt> instance :
+
+*Intersection(Geometry)
+*Union(Geometry)
+*Difference(Geometry)
+*SymmetricDifference(Geometry)
+
+You can once again use the <tt>Boundary.zcfg</tt> file as example, rename the <tt>InputPolygon</tt> input to <tt>InputEntity1</tt> and add a similar input named <tt>IntputEntity2</tt>. You are invited to update other values in the ZOO metadata file to set the proper metadata informations.
+
+=== Testing your services ===
+
+Once the multiple geometries Services are deployed on your local environment, please reload the <tt>zoo-ogr.html</tt> file created during the previous section from your browser and test your brand new ZOO Services.
+<br>
+[/ZOO-Project/ZOO-Project/wiki/ZooWorkshop/FOSS4GJapan WorkShop table of content]
+
+
+
+{{TracNotice|{{PAGENAME}}}}

@@ -1,0 +1,27 @@
+
+== ZOO Project Trac registered users ==
+
+The current registered users on the ZOO Trac System are the following : 
+
+*René-Luc D'Hont (aka [mailto:rldhont@gmail.com rldhont]),
+*Nicolas Bozon (aka [mailto:nicolas.bozon@gmail.com nicboz]),
+*Jeff McKenna (aka [mailto:jmckenna@gatewaygeomatics.com jmckenna]),
+*Venkatesh Raghavan (aka [mailto:raghavan@media.osaka-cu.ac.jp venka]),
+*Bernd Deckert (aka [mailto:bernd.deckert@geolabs.fr bernd]),
+*Gérald Fenoy (aka [mailto:gerald.fenoy@geolabs.fr djay]),
+*David Saggiorato (aka [mailto:david@saggiorato.net david]),
+*Daisuke Yoshida (aka [mailto:yoshida@la.tezuka-gu.ac.jp daisuke]),
+*Guillaume Sueur (aka [mailto:guillaume.sueur@neogeo-online.net guillaume]),
+*Xianfeng SONG (aka [mailto:xfsong@gucas.ac.cn song]),
+*Frank Warmerdam (aka [mailto:warmerdam@pobox.com FrankW]),
+*Hirofumi  Hayashi (aka [mailto:hayashi@apptec.co.jp hayashi]),
+*Soeren Gebbert (aka [mailto:soerengebbert@googlemail.com soeren]),
+*Markus Neteler (aka [mailto:markus.neteler@iasma.it markusn]),
+*Luca Delucchi (aka [mailto:lucadeluge@gmail.com lucadelu]),
+*Daniel Kastl (aka [mailto:daniel@georepublic.de dkastl]).
+
+Click [mailto:zoo-discuss@gisws.media.osaka-cu.ac.jp here] if you want to contact everybody in this list.
+
+
+
+{{TracNotice|{{PAGENAME}}}}

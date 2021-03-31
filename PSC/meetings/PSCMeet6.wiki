@@ -1,0 +1,46 @@
+
+== PSC meeting 6 ==
+
+=== Date ===
+
+8 Sept 2010, 7:45 am
+
+Face2Face, Barcelona @ FOSS4G 2010 
+
+=== Agenda ===
+
+...
+
+=== Summary ===
+
+Meeting from 7:55 am to 8:55 am, conference hall.
+
+1 ) First we welcomed Maria Antonia BROVELLI as a new PSC member: Welcome on board Maria !
+
+2 ) Then we started to discuss about the feedbacks from the Workshop, then from the WPS BOF which was proposed by Venka.
+
+3 ) Then we continue on presenting the current status of the ZOO Project including : 
+
+     a) Workshop Material, 
+
+     b) Future Translation in Italian (thanks to Luca Delucchi), 
+
+     c) SVN source tree which wasn't available yet except in the Workshop Material,
+
+4 ) Then we planned the future of the ZOO Project including : Perl support (shall be supported really soon as announced during this PSC meeting), C# support, 
+
+5 ) Then we stated that the Sponsorship of the ZOO Project will cost 1000 $US per year for standard sponsoring. For example, standard sponsoring should be 1000$ and that premium sponsoring could be setup at 2000/3000$
+
+6 ) We invited PSC which come from university to make them establishment as knowledge partner for the ZOO Project (sponsoring which is obviously free of charge),
+
+7 ) We talked about interacting with other projects : QGIS and MapServer mainly, also GRASS community interaction is suggestion to give back.
+
+8 ) We spoke about the next Google Summer of code and the way to get a ZOO Project Google summer of code project, Daniel will help us in this work as he got already experiences doing similar work for the [http://pgrouting.postlbs.org/ PgRouting] project.
+
+9 ) We briefly discussed about prospects of using ZOO to offer commercial services
+
+10 ) PSC ended
+
+
+
+{{TracNotice|{{PAGENAME}}}}

@@ -1,0 +1,283 @@
+
+== Datasource Manager Service ==
+
+This service could give the capability to manage a datasource like :
+*addLayer
+*updateLayer
+*deleteLayer
+
+=== Processes ===
+
+This is the processes list of the Datasource Manager Service :
+*GetLayers
+*CreateLayer
+*DeleteLayer
+*AddLayerField
+*DelLayerField
+*GetFeatures
+*AddFeature
+*DelFeature
+*UpdateFeature
+*UpdateGeometry
+*UpdateAttributes
+
+=== GetLayers ===
+This process returns the layers list available in the datasource.
+
+=== CreateLayer ===
+This process create a layer available in the datasource
+
+==== Inputs ====
+{| border=1 class="simple"
+! id 
+! string 
+! M 
+! to identify a layer in the datasource 
+|- 
+|  srs 
+|  string 
+|  O 
+|  to define the layer spatial reference 
+|- 
+|  geometry 
+|  string 
+|  O 
+|  to define the geometry type, default is GEOMETRY 
+|- 
+|  fields 
+|  string 
+|  O 
+|  to define the fields list and type, format to specify 
+|}
+
+
+==== Output ====
+This process returns the layer description.<br>
+The output format could be XML or JSON.
+
+=== DeleteLayer ===
+This process removes a layer available in the datasource
+
+==== Inputs ====
+{| border=1 class="simple"
+! id 
+! string 
+! M 
+! layer's id 
+|}
+
+
+==== Output ====
+This process returns a message or only http status ?
+
+=== AddLayerField ===
+This process provide the capability to add a layer field
+
+==== Inputs ====
+{| border=1 class="simple"
+! id 
+! string 
+! M 
+! layer id 
+|- 
+|  field 
+|  string 
+|  M 
+|  field id 
+|- 
+|  format 
+|  string 
+|  M 
+|  field format 
+|- 
+|  default 
+|  string 
+|  O 
+|  default value 
+|- 
+|  expression 
+|  string 
+|  O 
+|  an expression used during the creation (fieldA + fieldB) 
+|}
+
+
+==== Output ====
+This process returns the layer description.<br>
+The output format could be XML or JSON.
+
+=== DelLayerField ===
+This process provide the capability to del a layer field
+
+==== Inputs ====
+{| border=1 class="simple"
+! id 
+! string 
+! M 
+! layer id 
+|- 
+|  field 
+|  string 
+|  M 
+|  field id 
+|}
+
+
+==== Output ====
+This process returns the layer description.<br>
+The output format could be XML or JSON.
+
+=== GetFeatures ===
+This process is like the WFS GetFeature request, but with our own parameters ;-)
+
+==== Inputs ====
+{| border=1 class="simple"
+! id 
+! string 
+! M 
+! layer id 
+|- 
+|  filter 
+|  string 
+|  O 
+|  a string or XML filter description 
+|- 
+|  length 
+|  integer 
+|  O 
+|  features max length 
+|- 
+|  startIndex 
+|  string 
+|  O 
+|  a feature id to start with 
+|}
+
+
+==== Output ====
+This process returns the feature collection.<br>
+The output format could be XML, GML, KML or GeoJSON.
+
+=== AddFeature ===
+This process gives the possibility to add a feature.
+
+==== Inputs ====
+{| border=1 class="simple"
+! id 
+! string 
+! M 
+! layer id 
+|- 
+|  feature 
+|  string 
+|  M 
+|  a feature or just a geometry in WKT, GML, KML or GeoJSON 
+|}
+
+
+==== Output ====
+This process returns the feature.<br>
+The output could be XML, GML, KML or GeoJSON.
+
+=== DelFeature ===
+This process gives the possibility to delete a feature.
+
+==== Inputs ====
+{| border=1 class="simple"
+! id 
+! string 
+! M 
+! layer id 
+|- 
+|  fid 
+|  string 
+|  M 
+|  feature id 
+|}
+
+
+==== Output ====
+This process returns a message or only http status ?
+
+=== UpdateFeature ===
+This process gives the possibility to update a feature.
+
+==== Inputs ====
+{| border=1 class="simple"
+! id 
+! string 
+! M 
+! layer id 
+|- 
+|  fid 
+|  string 
+|  M 
+|  feature id 
+|- 
+|  feature 
+|  string 
+|  M 
+|  a feature or just a geometry in WKT, GML, KML or GeoJSON 
+|}
+
+Only the informations provided are updated
+
+==== Output ====
+This process returns the feature.<br>
+The output could be XML, GML, KML or GeoJSON.
+
+=== UpdateGeometry ===
+This process gives the possibility to update a feature geometry.
+
+==== Inputs ====
+{| border=1 class="simple"
+! id 
+! string 
+! M 
+! layer id 
+|- 
+|  fid 
+|  string 
+|  M 
+|  feature id 
+|- 
+|  geometry 
+|  string 
+|  M 
+|  a geometry in WKT, GML, KML or GeoJSON 
+|}
+
+
+==== Output ====
+This process returns the feature.<br>
+The output could be XML, GML, KML or GeoJSON.
+
+=== UpdateAttributes ===
+This process gives the possibility to update a feature attributes.
+
+==== Inputs ====
+{| border=1 class="simple"
+! id 
+! string 
+! M 
+! layer id 
+|- 
+|  fid 
+|  string 
+|  M 
+|  feature id 
+|- 
+|  attributes 
+|  string 
+|  M 
+|  a string, JSON or XML representing attributes 
+|}
+
+
+==== Output ====
+This process returns the feature.<br>
+The output could be XML, GML, KML or GeoJSON.
+
+
+
+{{TracNotice|{{PAGENAME}}}}

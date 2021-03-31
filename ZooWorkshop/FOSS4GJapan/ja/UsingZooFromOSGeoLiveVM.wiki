@@ -1,0 +1,140 @@
+
+== OSGeoLiveの仮想マシンによる ZOO の利用 ==
+
+__TOC__
+[/ZOO-Project/ZOO-Project/wiki/ZooWorkshop/FOSS4GJapan/ja/Introduction/ 前へ] | [/ZOO-Project/ZOO-Project/wiki/ZooWorkshop/FOSS4GJapan/ja ワークショップ 目次] | [/ZOO-Project/ZOO-Project/wiki/ZooWorkshop/FOSS4GJapan/ja/CreatingOGRBasedWebServices 次へ]
+
+[http://live.osgeo.org/ OSGeoLive] は [http://www.xubuntu.org/ Xubuntu] を基にしたライブDVDの一つであり、インストールをすることなく、多くのオープンソース地理空間情報に関連するソフトウェアを利用することができる。これは全てフリーオープンソースソフトウェアから構成され、今年からテストを目的としてZOO1.0も含んでいます。
+
+
+=== ZOOカーネルのインストール  ===
+導入部分での説明の通り、すぐにZOOカーネルを利用できるように、OSGeoLive仮想マシンイメージディスクが、あなたのコンピュータにインストールされています。仮想マシンイメージディスクの使用は、ZOOカーネルの使用や、ローカル環境でのZOOサービス開発のための最も簡単な方法であり、Cサービスのコンパイルや、Pythonの動作をするための必要な設定はすべて行われています。ZOOに関連するすべての教材やソースコードは、 <tt>/home/user/zoows</tt> ディレクトリに置かれています。ワークショップ中は、このディレクトリ内で作業します。　ZOOカーネルのバイナリバージョンもまた、 <tt>/home/user/zoows/sources/zoo-kernel</tt> にコンパイルされ保存されているので、ZOOカーネルを使用するためには、<tt>/usr/lib/cgi-bin</tt> ディレクトリの<tt>zoo_loader.cgi</tt>と <tt>main.cfg</tt> の２つの重要なファイルをコピーするだけです。以下のコマンドに従ってください。:
+
+<pre>
+#sh
+sudo cp ~/zoows/sources/zoo-kernel/zoo_loader.cgi /usr/lib/cgi-bin
+sudo cp ~/zoows/sources/zoo-kernel/main.cfg /usr/lib/cgi-bin
+</pre>
+
+このワークショップ中は、ZOOカーネルと <tt>zoo_loader.cgi</tt> スクリプトについては、同じものとして扱いますので注意してください。
+
+<tt>main.cfg</tt> ファイルは、<tt>identification</tt>や<tt>provider</tt>に関するメタ情報だけでなく、いくつかの重要な設定情報も含まれています。ファイルは様々なセクション、主に<tt>main</tt>, <tt>identification</tt>と<tt>provider</tt>をデフォルトとして構成されています。もちろん特定のサービスのために、新しいセクションの追加は自由に行ってください。
+しかし、<tt>env</tt> 及び<tt>lenv</tt>セクションの名前は、特定の方法で扱われることに注意してください。 <tt>env</tt> は、実行中のあなたのサービスに必要とする環境変数を定義します。例えば、あなたのサービスがフレームバッファ上のXサーバーへのアクセスを要求したとき、この特異性を考慮するためにDISPLAY=:1の１行をenvセクション中に追加することができます。<tt>env</tt>セクションと同様に、<tt>main.cfg</tt>には<tt>lenv</tt> セクションがあります。これは、ZOOカーネルやZOOサービスによって、実行中のサービスのステータス情報が記述されます。例えば、あなたのサービスがうまく動作しなかった際、クライアントに返答される<tt>ExecuteResponse</tt> の<tt>Status</tt>ノード中に表示されるように、<tt>lenv</tt>の中の<tt>message</tt>の値を設定することができます。 また、もしあなたのサービスが実行に時間がかり、処理ステータスの情報が取得できる場合、完了した実行中のサービスタスクをパーセンテージを表示するために 、<tt>lenv</tt>に値を0から100の間で設定できます。
+
+このファイルを確認してください。３つの重要なパラメーターが下記に示されています。
+
+*<tt>serverAddress</tt> : ZOOカーネルへ接続するためのURL
+*<tt>tmpPath</tt> : 一時ファイル保存場所へのフルパス
+*<tt>tmpUrl</tt> : serverAddressに関連した一時ディレクトリへアクセスするためのURLフルパス
+
+実行中の仮想マシンから使用される<tt>main.cfg</tt>ファイルの値は次の通りです：
+
+<pre>
+#sh
+serverAddress=http://localhost/zoo
+tmpPath=/var/www/temp
+tmpUrl=../temp/
+</pre>
+
+気がついているかもしれませんが、<tt>tmpUrl</tt>は<tt>serverAddress</tt>からの相対URLであり、ディレクトリでなければなりません。ZOOカーネルが<tt>zoo_loader.cgi</tt>スクリプトの完全URLとして使用できるとしても、ZOOカーネルの完全な機能や読み易さのため、http://localhost/zoo/ として直接URLを使用できるように、Apacheの標準設定を変更しなければなりません。
+
+最初に、zooディレクトリを<tt>/var/www/</tt>（ApacheのDocumentRootディレクトリ）の中に作成してください。次に <tt>/etc/apache2/sites-available/default</tt>の設定ファイルを編集し、<tt>/var/www</tt>に関する<tt>Directory</tt>ブロックの後に、下記の数行を追加してください:
+
+<pre>
+#sh
+<Directory /var/www/zoo/>
+    Options Indexes FollowSymLinks MultiViews
+    AllowOverride All
+    Order allow,deny
+    allow from all
+</Directory>
+</pre>
+
+<tt>/var/www/zoo</tt> のなかに、 <tt>.htaccess</tt> を新しく作り、下記の数行を記述してください:
+
+<pre>
+#sh
+RewriteEngine on
+RewriteRule call/(.*)/(.*) /cgi-bin/zoo_loader.cgi?request=Execute&service=WPS&version=1.0.0&Identifier=$1&DataInputs=sid=$2&RawDataOutput=Result [L,QSA]
+RewriteRule (.*)/(.*) /cgi-bin/zoo_loader.cgi?metapath=$1 [L,QSA]
+RewriteRule (.*) /cgi-bin/zoo_loader.cgi [L,QSA]
+</pre>
+
+
+この最後のファイルをApacheで実行するためには、以下のようにロードファイルをコピーして、Apache モジュールの書き換えを実行しなければなりません。:
+
+<pre>
+#sh
+sudo cp /etc/apache2/mods-available/rewrite.load /etc/apache2/mods-enabled/
+</pre>
+
+または、<tt>a2enmod</tt> ツールを次のように使用してください:
+
+<pre>
+#sh
+a2enmod rewrite
+</pre>
+
+Apacheウェブサーバーを再起動することで、ZOOカーネルにアクセスできます。:
+
+<pre>
+#sh 
+sudo /etc/init.d/apache2 restart
+</pre>
+
+このワークショップではOSGeoLive環境から、その他の２つのソフトウェアを使用します。
+
+まず MapServer は、これから設定していくZOOサービスのためのWFS入力データとして使用します。[/ZOO-Project/ZOO-Project/wiki/ZooWorkshop/FOSS4GJapan/ja/CreatingOGRBasedWebServices セクション３] では、オークニー社（日本のポリゴンデータ）から提供された MapServer データセットを、作成したサービスで使用されます。
+
+OpenLayers ライブラリもまた、OSGeo Live 仮想マシンイメージディスクの中で利用できます。[/ZOO-Project/ZOO-Project/wiki/ZooWorkshop/FOSS4GJapan/BuildingWPSClientUsingOL#BuildingaWPSclientusingOpenLayers セクション４] で、新しく作られた ZOO サービスの問合せに使う簡単な WPS クライアントアプリケーションに利用されます。
+
+GDALライブラリのPythonモジュールとOGR C-APIを使用するため、対応するヘッダーファイル、ライブラリ、関連ファイルを必要とします。すべてがデフォルトで、OSGeoLiveパッケージ上で使用できる状態になっています。
+
+=== GetCapabilities で ZOO のインストレーションをテストする ===
+
+ブラウザからの以下のリクエストに従って簡単にZOOカーネルのクエリーを実行できます:
+
+http://localhost/cgi-bin/zoo_loader.cgi?Request=GetCapabilities&Service=WPS
+
+これで、以下の有効な <tt>Capabilities</tt> XMLドキュメントを得ることができます:
+
+[[Image(http://www.zoo-project.org/trac/raw-attachment/wiki/ZooWorkshop/FOSS4GJapan/UsingZooFromOSGeoLiveVM/Practical%20introduction%20to%20ZOO%20-%202.png,width=550px,align=center,nolink)]]
+
+利用可能なZOOサービスがないと、<tt>ProcessOfferings</tt> セクションで、<tt>no Process</tt> ノードが戻ってくることに注意してください。以下のコマンドをつかってコマンドラインからの <tt>GetCapabilities</tt> リクエストも行うことができます:
+
+<pre>
+#sh
+cd /usr/lib/cgi-bin
+./zoo_loader.cgi “request=GetCapabilities&service=WPS”
+</pre>
+
+次のスクリーンショットに表示されているように、ブラウザと同様の結果が返されます:
+
+[[Image(http://www.zoo-project.org/trac/raw-attachment/wiki/ZooWorkshop/FOSS4GJapan/UsingZooFromOSGeoLiveVM/Practical%20introduction%20to%20ZOO%20-%203.png,width=400px,align=center,nolink)]]
+
+コマンドラインからのZOOカーネルの実行は、新しいサービスの開発に便利です。
+
+=== ZOO Services Providerディレクトリの準備 ===
+
+まず作業を簡略化するために、新しいServices Providerを作成する際に使用されるディレクトリ構造について説明します:
+
+*メインServices Providerディレクトリはこれらを含みます:
+**すべての <tt>zcfg</tt> メタファイルと 共有オブジェクト（C Shared Library あるいは Python もモジュール）サービスを含む <tt>cgi-env</tt> ディレクトリ
+**Services Providerをコンパイルするためには <tt>Makefile</tt> と <tt>*c</tt> ファイルが必要です。
+
+上記のことに注意しながら、ws_sp メイン Services Provider ディレクトリを、<tt>/home/user/zoows/sources/</tt>にある既存の zoo-servicesディレクトリに作成してください。
+
+
+<pre>
+#sh
+mkdir -p /home/user/zoows/sources/zoo-services/ws_sp/cgi-env
+</pre>
+
+次のセクションで <tt>Makefile</tt> とC 、Python Service Shared Objectのコードについて説明していきます。
+
+<br>
+[/ZOO-Project/ZOO-Project/wiki/ZooWorkshop/FOSS4GJapan/ja/Introduction/ 前へ.] | [/ZOO-Project/ZOO-Project/wiki/ZooWorkshop/FOSS4GJapan/ja ワークショップ 目次] | [/ZOO-Project/ZOO-Project/wiki/ZooWorkshop/FOSS4GJapan/ja/CreatingOGRBasedWebServices 次へ]
+
+
+
+{{TracNotice|{{PAGENAME}}}}

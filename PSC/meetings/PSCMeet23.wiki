@@ -1,0 +1,63 @@
+
+== PSC meeting 23 ==
+
+The PSC meeting was held on irc.freenode.net at the  #zoo-project channel.
+
+=== Proposed Time and Date ===
+
+Thursday, 28 January 2021 at [http://www.timeanddate.com/worldclock/fixedtime.html?year=2021&month=1&day=28&hour=13&min=0&sec=0&msg=ZOO-Project+PSC+Meeting 13:00 UTC]
+
+=== Agenda ===
+
+*Review and approve minutes of PSCMeet22http://zoo-project.org/trac/wiki/PSC/meetings/PSCMeet22
+*Incubation: status updates
+*Apache code sprint: status update and plan 
+*Presentation of the new jobs position, implication for the implementation, how should it be handled.
+*New release plan for a version 1.8.1, including this jobs location
+*Proposition to handle development of the new AMQP version in a new amqp branch on the SVN server
+*Docker images publication and availability
+*Documentation review process and report
+*Add other items 
+
+=== Summary ===
+
+ZOO PSC Meeting 23 \\
+Participants: \\
+djay, venka, kalxas[m], jmckenna, omshinde
+
+*Motion 1: Approve past minutes of PSC Meeting 22 http://zoo-project.org/trac/wiki/PSC/meetings/PSCMeet22 \\
+  djay, venka, kalxas[m], jmckenna, omshinde: +1
+
+*Motion 2: Approve plan for upcoming  OGC/OSGeo/ASF sprint \\
+  Plan: 
+##Work on new OGC API -Processes release
+  2. Publish Github repository on ZOO-Project repo with demo UI
+  3. Work on documentation 
+
+  djay, venka, kalxas[m], jmckenna, omshinde: +1
+
+*Motion 3: Approval for publishing the demo UI on Github in a repository named demo available here: https://github.com/ZOO-Project \\
+  djay, venka, kalxas[m], jmckenna, omshinde: +1
+
+*Motion 4: Using Doodle link to plan the next PSC meeting targeting the incubation process \\
+  djay, venka, kalxas[m], jmckenna, omshinde: +1
+
+*Motion 5: Keeping everything that sounds useful for a future use in the code as vendor specific and support the standard invocations \\
+  djay, venka, jmckenna, omshinde: +1
+
+*Motion 6: Approve 1.8.1 release plan \\
+  Plan: Make the release during the Apache code sprint
+
+  djay, venka, kalxas[m], jmckenna, omshinde: +1
+
+*Motion 7: Regarding working on the default branch instead of new branch  \\
+  Dropped
+
+*Motion 8 & 9: To be discussed over emails \\
+
+*Motion 10: Next PSC Meeting on https://www.worldtimebuddy.com/?qm=1&lid=100,30&h=100&date=2021-2-25&sln=13-14&hf=1 \\
+  venka, jmckenna, omshinde: +1
+
+
+
+{{TracNotice|{{PAGENAME}}}}

@@ -1,0 +1,30 @@
+
+== ZOO Contacts ==
+
+Please use the following to get in touch with the ZOO Tribe
+
+=== ZOO Mailing List ===
+
+<pre>
+#html
+<a href="http://lists.osgeo.org/cgi-bin/mailman/listinfo/zoo-discuss" target="_blank">zoo-discuss@lists.osgeo.org</a>
+</pre>
+
+===  ZOO IRC Channel ===
+
+
+<pre>
+#html
+<a href="irc://irc.freenode.net/zoo-project" target="_blank">#zoo-project@irc.freenode.net</a> | <a href="http://webchat.freenode.net/">WebIRC</a> (channel: zoo-project)
+</pre>
+
+=== ZOO Twitter ===
+
+<pre>
+#html
+<a href="http://twitter.com/ZOO_Project" target="_blank">http://twitter.com/ZOO_Project</a>
+</pre>
+
+
+
+{{TracNotice|{{PAGENAME}}}}

@@ -1,0 +1,66 @@
+
+== PSC meeting #4 ==
+
+=== Date ===
+
+Scheduled for Wednesday, 16 June 2010 [http://www.timeanddate.com/worldclock/fixedtime.html?year=2010&month=6&day=16&hour=13&min=0&sec=0 at , 13:00 UTC time]
+
+=== Agenda ===
+
+*Decide meeting Chair
+*ZOO Workshop at FOSS4G2010
+*Report on ZOO presentation at Trento, Italy
+*PSC [/ZOO-Project/ZOO-Project/wiki/PSC/process PSC guidelines proposal] page review and approval
+*Next meeting schedule
+
+=== Summary ===
+
+Date/Time: 16th June, 2010. 13:00 till 14:20 UTC Members: Nicolas BOZON, 
+Massimiliano CANNATA (aka Maxi), Gerald FENOY, Hirofumi HAYASHI, 
+Venkatesh RAGHAVAN (aka Venka), Satoshi SEKIGUCHI were present. Daniel 
+KASTL, Jeff McKENNA, Markus NETELER could not be present because of 
+other engagements.
+
+PSC members decided to have a meeting chair on rotation basis. Venka 
+volunteered to be the Chair for the meeting.
+
+Agenda 1) ZOO Workshop at FOSS4G2010
+
+PSC members were briefed by Gerald and Nicolas about preparations for 
+ZOO Workshop at FOSS4G2010-Barcelona. The workshop will consists on a 
+first short presentation of internal mechanisms, and participants would 
+be shown how to create their own services in both C and Python. The PSC 
+members could review the workshop material before final submission to 
+FOSS4G2010 organizers on 15th July 2010.
+
+Agenda 2)  Report on ZOO presentation at Trento, Italy.
+
+PSC members were briefed by Gerald and Nicolas about preparations for 
+ZOO Workshop at FOSS4G2010-Barcelona. This was very interesting meeting, 
+and interaction with PyWPS and 52°N communities was very useful.
+
+Agenda 3) PSC PSC guidelines proposal page review and approval
+Massimiliano has made minor changes in the PSC guidelines at 
+http://www.zoo-project.org/trac/wiki/PSC/process. Modifications are 
+related to requirement of PSC members voting for SVN access and for 
+quorum during voting procedure. Further discussion about these 
+modifications can be done on PSC ML, if necessary
+
+Agenda 4) Other items
+
+a)	Gerald to contact Christian Kiehle of LatLon to discuss about WPS for 
+Grid and possibility of implementing WPS as Grid Services using ZOO-Kernel
+b)	Sekiguchi-san reported possibilities of funding WPS for Grid. The 
+modalities will be discussed separately.
+
+Agenda 4) Next meeting Schedule a) It was agreed that the next PSC 
+meeting to be scheduled as below;
+ 
+http://www.timeanddate.com/worldclock/fixedtime.html?year=2010&month=7&day=21&hour=22&min=0&sec=0
+
+Venka moved motion to close the meeting and provide draft summary of 
+PSC-ML. The motion was accepted and the meeting was closed.
+
+
+
+{{TracNotice|{{PAGENAME}}}}

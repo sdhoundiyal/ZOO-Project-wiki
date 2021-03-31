@@ -1,0 +1,186 @@
+
+== ZooKernel/Embed/PHP Setup ==
+
+Do you have a lot of existing PHP code and need to use it as a ZOO Service with the least modifications possible? Then this page is made for you :)
+
+On this page, you will find advice on how to implement your services directly in PHP.
+
+=== Configure and Install the PHP Embeded library ===
+
+ZOO Kernel requires a PHP installation that is compiled with the following configure settings: '''--enable-embed''' and ''''--enable-maintainer-zts'''. If you already have PHP installed on your system, but not with those settings (you can check by looking at a phpinfo for your server, which lists the configure command that was used to build PHP), we recommend installing a fresh and independent PHP library on your system.
+
+Here is a sample configure call to ensure the PHP support on your platform :
+
+<pre>
+#sh
+./configure' '--prefix=/usr/lib/php5.2.10' \
+             '--host=i686-pc-linux-gnu'\
+             '--mandir=/usr/lib/php5.2.10/man'\
+             '--infodir=/usr/lib/php5.2.10/info'\
+             '--sysconfdir=/etc'\
+             '--cache-file=./config.cache'\
+             '--with-pcre-regex=/usr'\
+             '--enable-maintainer-zts'\
+             '--with-config-file-path=/etc/php/apache2-php5.2.10'\
+             '--with-config-file-scan-dir=/etc/php/apache2-php5.2.10/ext-active'\
+             '--without-pear'\
+             '--disable-bcmath'\
+             '--with-bz2'\
+             '--disable-calendar'\
+             '--with-curl'\
+             '--without-curlwrappers'\
+             '--disable-dbase'\
+             '--enable-exif'\
+             '--without-fbsql'\
+             '--without-fdftk'\
+             '--disable-filter'\
+             '--enable-ftp'\
+             '--with-gettext'\
+             '--without-gmp'\
+             '--disable-hash'\
+             '--without-kerberos'\
+             '--enable-mbstring'\
+             '--with-mcrypt'\
+             '--without-mhash'\
+             '--without-msql'\
+             '--without-mssql'\
+             '--with-ncurses'\
+             '--with-openssl'\
+             '--with-openssl-dir=/usr'\
+             '--disable-pcntl'\
+             '--disable-pdo'\
+             '--with-pgsql'\
+             '--disable-posix'\
+             '--without-pspell'\
+             '--without-recode'\
+             '--disable-shmop'\
+             '--without-snmp'\
+             '--enable-soap'\
+             '--enable-sockets'\
+             '--without-sybase'\
+             '--without-sybase-ct'\
+             '--disable-sysvmsg'\
+             '--disable-sysvsem'\
+             '--disable-sysvshm'\
+             '--without-tidy'\
+             '--enable-wddx'\
+             '--with-xmlrpc'\
+             '--with-xsl'\
+             '--enable-zip'\
+             '--with-zlib'\
+             '--disable-debug'\
+             '--enable-dba'\
+             '--without-cdb'\
+             '--with-db4'\
+             '--disable-flatfile'\
+             '--with-gdbm'\
+             '--disable-inifile'\
+             '--without-qdbm'\
+             '--with-freetype-dir=/usr'\
+             '--with-t1lib=/usr'\
+             '--disable-gd-jis-conv'\
+             '--with-jpeg-dir=/usr'\
+             '--with-png-dir=/usr'\
+             '--with-xpm-dir=/usr'\
+             '--with-gd'\
+             '--without-mysqli'\
+             '--with-readline'\
+             '--without-libedit'\
+             '--without-mm'\
+             '--with-sqlite=/usr'\
+             '--enable-sqlite-utf8'\
+             '--with-pic'\
+             '--enable-embed'
+</pre>
+
+As you could seen above, there are lot of configure options used. Nevertheless, two configure options are required to get a full PHP support in your ZooKernel : '''--enable-embed''' and ''''--enable-maintainer-zts'''. You should also note that the php library will be installed in the <tt>/usr/lib/php5.2.10</tt> directory, as we need a well separated installation of php to not interfere with your possibly already installed PHP version.
+
+Once you configure script ends with success, you're now ready to compile and install the PHP embed library, using the following commands :
+
+<pre>
+#sh
+make 
+make test
+make install
+</pre>
+
+=== Verify PHP Embed Install ===
+
+==== Sample C Script ====
+
+The following C script  loads and runs a PHP script. Save the file as ''test_phpembed.c''
+
+<pre>
+#c
+/**
+**Filename : test_phpembed.c
+**/ 
+#include <stdio.h>
+#include <sapi/embed/php_embed.h>
+#include <zend_stream.h>
+
+int main(int argc,char*argv[]){
+  zend_file_handle script;
+  if(argc<=1){
+    fprintf(stderr,"Usage: embed filename.php <arguments>\n");
+    return -1;
+  }
+
+  script.type=ZEND_HANDLE_FP;
+  script.filename=argv[1];
+  script.opened_path=NULL;
+  script.free_filename=0;
+  if(!(script.handle.fp=fopen(script.filename,"rb"))){
+    fprintf(stderr,"Unable to open : %s\n",argv[1]);
+    return -1;
+  }
+  
+  argc--;
+  argv++;
+
+  PHP_EMBED_START_BLOCK(argc,argv)
+    php_execute_script(&script TSRMLS_CC);
+  PHP_EMBED_END_BLOCK()
+
+  return 0;
+}
+</pre>
+
+==== Compile the code snippet ====
+
+Now that you have the file ''test_phpembed.c'' you must compile it using the following commands :
+
+<pre>
+#sh
+gcc -o test_phpembeded.o test_phpembeded.c -c $(/usr/lib/php5.2.10/bin/php-config --includes)
+gcc -o test_phpembeded test_phpembeded.o $(/usr/lib/php5.2.10/bin/php-config --ldflags) $(/usr/lib/php5.2.10/bin/php-config --libs) -L /usr/lib/php5.2.10/lib/ -lphp5
+</pre>
+
+The above commands should produce the ''test_phpembeded.o'' file and the ''test_phpembeded'' program with no errors.
+
+==== Run the code snippet ====
+
+The last step to get your PHP embeded in your C program is to write a small PHP code by:
+
+
+<pre>
+#sh
+cat > info.php <<EOF
+<? phpinfo(); ?>
+EOF
+</pre>
+
+No we can run the ''test_phpembeded'' program to see if it's able to load and run the PHP script called info.php:
+
+<pre>
+#sh
+LD_LIBRARY_PATH="/usr/lib/php5.2.10/lib/" ./test_phpembeded /var/www/localhost/htdocs/info.php | less
+</pre>
+
+The output from phpinfo() should be returned at the commandline if successful.
+
+Note that we have to set the LD_LIBRARY_PATH at runtime as we didn't install the php embed library in a standard way (not in the standard search path - /usr/lib or /usr/local/lib- to ensure that we don't interfere with your already installed php library). Nevertheless, when ZooKernel will be compiled you only have to run it once, so you could use a small batch file including this LD_LIBRARY_PATH and other required parameters when you launch your ZooKernel instance (note that firefox does something like that also).
+
+
+
+{{TracNotice|{{PAGENAME}}}}

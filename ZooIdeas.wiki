@@ -1,0 +1,29 @@
+
+== ZOO Ideas (Potential items for roadmap) ==
+
+
+=== ZOO Kernel ===
+
+*ZOO windows support improvement (ZOO4W)
+*C# language support implementation in ZOO Kernel
+*ZOO Kernel implementation as a Mozilla XPCOM component
+*YAML support (optional)
+*Add support for new natural languages (write .po files)
+
+=== ZOO Services ===
+
+*ZOO GRASS services implementation, examples and docs
+*ZOO GoGPS services implementation, examples and docs
+*Any ideas ?
+
+
+=== ZOO API ===
+
+*Documentation (for each classes)
+*Examples with OpenLayers
+*WPS Client ?
+*Any ideas ?
+
+
+
+{{TracNotice|{{PAGENAME}}}}

@@ -1,0 +1,59 @@
+
+*[http://wiki.osgeo.org/wiki/Google_Summer_of_Code_2013 Google Summer of Code 2013 OSGeo wiki page.]
+
+
+== ZOO-Project 2013 GSoC Ideas  ==
+
+Enter ideas for development projects here. '''Note these are just suggestions - students are welcome to propose projects based on their own interests''' that relate to the ZOO-Project. Our current efforts are based on the following projects: 
+
+*http://www.zoo-project.org/ 
+
+You can find the source code, tutorials, the project mailing list and various other information at the links above. 
+
+To give you an idea about possible GSoC projects, here are some suggestions: 
+
+=== ZOO-Kernel related ideas  ===
+
+Migrating the current SpiderMonkey JavaScript support by Google V8. This v8 porting should be handled in straightforward manner. Keeping the availability of the ZOO-api.js and ZOO-proj4js.js automatic loading mechanisms, keeping specific C functions made available in the JavaScript environment and which currently available in the current implementation.
+
+Add you idea here ...
+
+=== ZOO-API related ideas  ===
+
+Upgrade the JavaScript ZOO-API to the current OpenLayers version.
+
+Expand the Python ZOO-API.
+
+Add you idea here ...
+
+==== ZOO-Service related ideas ====
+
+Intgrating more GDAL raster tools as ZOO-Service.
+
+Add you idea here ...
+
+=== Other ideas ===
+
+Produce a ZOO-Project demo package for multiple plaform target (such as Windows 7, MacOS X and GNU/Linux). This demo package should contain a demo dataset and a demo application interracting with ZOO-Kernel to process the data.
+
+Add you idea here ...
+
+=== Lots of other options  ===
+
+There are a lot of other possibilities that we would be happy to discuss with any students interested. Best you contact us on the ZOO-Discuss
+mailing list:
+
+*http://lists.osgeo.org/cgi-bin/mailman/listinfo/zoo-discuss 
+
+== Mentor Candidates  ==
+
+The following individuals are potentially willing to serve as ZOO-Project mentors or co-mentors. 
+
+*If you wish to be a Mentor add your name and e-mail
+
+*Gérald Fenoy gerald [dot] fenoy [at] geolabs [dot] fr
+*Trevor Clarke - tclarke [at] ball [dot] com - I'm mentoring for Opticks as well so I do have some limited time but I'm willing to help as a co-mentor or if a student is interested in expanding the Python support or working on the v8 engine. (I have some v8 experience)
+
+
+
+{{TracNotice|{{PAGENAME}}}}

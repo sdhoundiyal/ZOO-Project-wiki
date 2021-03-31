@@ -1,0 +1,29 @@
+
+Dear OGC,
+
+please concider this document as our expression of interrest in observing the OWS-7 Test Bed initiative.
+
+ZOO Tribe members, people which are involved in the ongoing process and developments of the ZOO Project initiative, are very interrested in following, discussing about and participating into futur of some specifics OGC standards such as WPS, SOS and SAS as their particular purposes are in the specific business field of the sponsoring Companies which made the ZOO Project alive. The knowledge partners of the project have also research interrest in using the generic way we thought about (and briefly present in the following) to deploy those standards.
+
+Currently ZOO Project contains a center concept which is the ZOO Platform. ZOO Platform aims to become a standardised platform where open standards live and cohexist, interracting between each other in a standardised way. Actualy, ZOO Platform planned to contain standard which specificaly treat GIS Data but also other as documents management for instance, using linked standards such as OASIS (in this specific field) or W3C and other which will sounds relevant.
+
+The current ZOO Platform contains in his heart the ZOO Kernel. It is a multi-language environment which aims to make easier the development and integration of new processes. Abviously, in the ZOO Platform every process have to be shared and accessed using an Open standard and we decided to use the OGC WPS proposal (OGC 05-007r7).
+
+To make the process developer life beter, ZOO Kernel handles the HTTP Requests in such a way that it parses then create requested data structures and fill them with the relevant data. For instance, process developer won't have to take care about how the data are fetched, the inputs data structure was already automaticaly filled for him by the ZOO Kernel. Developer won't have to handle this kind of thing by himself as he has to do before. Furthermore, the process developer don't have to care too much about the WPS standard, things have to be as transparent as possible to him. To achieve this goal ZOO Kernel provides a data structure easy to fill for each programming language (i.e dictionaries for Python support), which was passed trough the specific language function and, then process developer just have to fill it to make it available as a standard WPS process.
+
+Even if we follow the current WPS proposal, we would like to share some ideas we get and discuss about some small and specific modificiations we made over the WPS proposal (i.e. changing some specific node name) and some question we get about how we can handle some specific requirements which seem to be treated in most case but harder to use in some specific ones (i.e. carying some semantics about the data type for ComplexData).
+
+We think that the ZOO Kernel idea, to make a « WPS aware Kernel » which makes services simple  modules dynamicaly loadable into the evironment can make the WPS acceptance faster as it make it simplier for developer to implement and integrate a new process in the infrastruture.
+
+As we already said, ZOO Project aims also to provide and follow the Sensor Web work as some planned projects will massively use SOS and SAS and be integrated into the ZOO Platform as any other interoperable components.
+
+Hope you will consider positively our current interest expression and let us follow the initiative and be kept informed about the ongoing and futur initiative.
+
+Kind regards.
+
+Gérald Fenoy
+A ZOO Project Monkey
+
+
+
+{{TracNotice|{{PAGENAME}}}}
