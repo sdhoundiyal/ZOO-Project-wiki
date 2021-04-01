@@ -1,12 +1,11 @@
 
+== PSC meeting #1 ==
 
-=== PSC meeting #1 ===
-
-==== Date ====
+=== Date ===
 
 Thursday, 18th march 2010: http://www.timeanddate.com/worldclock/fixedtime.html?year=2010&month=3&day=18&hour=22&min=0&sec=0
 
-==== Agenda ====
+=== Agenda ===
 
 *Status of ZOO-Kernel release
 *ZOO-Booth at FOSS4G2010 and Funding for ZOO-Promotions in 2010, booth sharing with ZOO-Partners.
@@ -14,7 +13,7 @@ Thursday, 18th march 2010: http://www.timeanddate.com/worldclock/fixedtime.html?
 *About Using IRC Channel for future meetings
 *Next meeting schedule
 
-==== Summary ====
+=== Summary ===
 
 #Status of ZOO-Kernel release
 
@@ -80,10 +79,6 @@ also be released under same MIT/X11 license.''
 ''Nick: ZOO Kernel and ZOO API will be both released under MIT/X-11 according to
 plans, as Kernel was coded from scratch by GeoLabs, and API was coded from
 scratch by 3LIZ.
-
-
-
-
 
 
 

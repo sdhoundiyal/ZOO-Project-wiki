@@ -1,10 +1,8 @@
-1
 
+== 演習 ==
 
-=== 演習 ===
-
-<u>TOC</u>
-[./ZooWorkshop/FOSS4GJapan/ZooWorkshop:-FOSS4GJapan:-ja ワークショップ 目次]
+__TOC__
+[/ZooWorkshop/FOSS4GJapan/ZooWorkshop:-FOSS4GJapan:-ja ワークショップ 目次]
 
 以上で、zcfg メタデータファイルの記述方法と、 C言語またはPython言語の選択によって、<tt>service.c</tt> または <tt>ogr_service_provider.py</tt> の短いコードが得られました。
 この演習のゴールは、次のような複合ジオメトリサービスを実装することです :
@@ -14,7 +12,7 @@
 *Difference
 *SymDifference
 
-==== C バージョン ====
+=== C バージョン ===
 
 <tt>source.c</tt> ファイルの編集を選択された方は、このワークショップ演習を通して、追加した複合ジオメトリは、次のOGR C-API 関数を使用しています:
 
@@ -26,7 +24,7 @@
  <tt>Boundary.zcfg</tt> ファイルを例に、 <tt>InputPolygon</tt> を <tt>InputEntity1</tt> にして、同様に <tt>IntputEntity2</tt> を追加することができます。ZOOメタデータファイルのそのほかの値についても、適当なメタデータ情報を設定してください。
 
 
-==== Python バージョン====
+=== Python バージョン===
 
 <tt>ogr_ws_service_provider.py</tt> ファイルの編集を選択された方は、このワークショップ演習を通して、追加した複合ジオメトリは、次の <tt>Geometry</tt> インスタンスに適用された <tt>osgeo.ogr</tt> <tt>Geometry</tt> 関数を使用しています:
 
@@ -37,15 +35,11 @@
 
  <tt>Boundary.zcfg</tt> ファイルを例に、 <tt>InputPolygon</tt> を <tt>InputEntity1</tt> にして、同様に <tt>IntputEntity2</tt> を追加することができます。ZOOメタデータファイルのそのほかの値についても、適当なメタデータ情報を設定してください。
 
-==== サービスのテスト ====
+=== サービスのテスト ===
 
 ここで、複合ジオメトリサービスは、ローカル環境の上に配置されました。ブラウザ上から、前のセクションで作成した <tt>zoo-ogr.html</tt> をリロードしてください。そして新しいZOOサービスをテストしてください。
 <br>
-[./ZooWorkshop/FOSS4GJapan/ZooWorkshop:-FOSS4GJapan:-ja ワークショップ 目次]
-
-
-
-
+[/ZooWorkshop/FOSS4GJapan/ZooWorkshop:-FOSS4GJapan:-ja ワークショップ 目次]
 
 
 

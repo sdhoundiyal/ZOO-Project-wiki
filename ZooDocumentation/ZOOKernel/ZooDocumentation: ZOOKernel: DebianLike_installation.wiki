@@ -1,16 +1,15 @@
 
-
-=== Ubuntu 10.04 ===
+== Ubuntu 10.04 ==
 
 *Ubuntu 10.4 with ZOO Virtual Image
 
 http://www.zoo-project.org/Ubuntu10.4_ZOO.zip
 # root: ZOO.test
 
-=== Debian / Ubuntu ===
+== Debian / Ubuntu ==
 Tested on Debian Squeeze, Ubuntu 10.04 and Ubuntu 10.10
 
-=== Installation workflow===
+== Installation workflow==
 #install some dependencies<br>
 sudo apt-get install flex bison libfcgi-dev libxml2 libxml2-dev curl openssl autoconf checkinstall
 
@@ -75,10 +74,6 @@ if you have some problem in the execute request add to main.cfg
 
 [env]<br>
 PYTHONPATH=<YOUR_PYTHONPATH>
-
-
-
-
 
 
 

@@ -1,13 +1,12 @@
 
-
-=== Datasource Manager Service ===
+== Datasource Manager Service ==
 
 This service could give the capability to manage a datasource like :
 *addLayer
 *updateLayer
 *deleteLayer
 
-==== Processes ====
+=== Processes ===
 
 This is the processes list of the Datasource Manager Service :
 *GetLayers
@@ -22,10 +21,10 @@ This is the processes list of the Datasource Manager Service :
 *UpdateGeometry
 *UpdateAttributes
 
-==== GetLayers ====
+=== GetLayers ===
 This process returns the layers list available in the datasource.
 
-==== CreateLayer ====
+=== CreateLayer ===
 This process create a layer available in the datasource
 
 ==== Inputs ====
@@ -56,7 +55,7 @@ This process create a layer available in the datasource
 This process returns the layer description.<br>
 The output format could be XML or JSON.
 
-==== DeleteLayer ====
+=== DeleteLayer ===
 This process removes a layer available in the datasource
 
 ==== Inputs ====
@@ -71,7 +70,7 @@ This process removes a layer available in the datasource
 ==== Output ====
 This process returns a message or only http status ?
 
-==== AddLayerField ====
+=== AddLayerField ===
 This process provide the capability to add a layer field
 
 ==== Inputs ====
@@ -107,7 +106,7 @@ This process provide the capability to add a layer field
 This process returns the layer description.<br>
 The output format could be XML or JSON.
 
-==== DelLayerField ====
+=== DelLayerField ===
 This process provide the capability to del a layer field
 
 ==== Inputs ====
@@ -128,7 +127,7 @@ This process provide the capability to del a layer field
 This process returns the layer description.<br>
 The output format could be XML or JSON.
 
-==== GetFeatures ====
+=== GetFeatures ===
 This process is like the WFS GetFeature request, but with our own parameters ;-)
 
 ==== Inputs ====
@@ -159,7 +158,7 @@ This process is like the WFS GetFeature request, but with our own parameters ;-)
 This process returns the feature collection.<br>
 The output format could be XML, GML, KML or GeoJSON.
 
-==== AddFeature ====
+=== AddFeature ===
 This process gives the possibility to add a feature.
 
 ==== Inputs ====
@@ -180,7 +179,7 @@ This process gives the possibility to add a feature.
 This process returns the feature.<br>
 The output could be XML, GML, KML or GeoJSON.
 
-==== DelFeature ====
+=== DelFeature ===
 This process gives the possibility to delete a feature.
 
 ==== Inputs ====
@@ -200,7 +199,7 @@ This process gives the possibility to delete a feature.
 ==== Output ====
 This process returns a message or only http status ?
 
-==== UpdateFeature ====
+=== UpdateFeature ===
 This process gives the possibility to update a feature.
 
 ==== Inputs ====
@@ -227,7 +226,7 @@ Only the informations provided are updated
 This process returns the feature.<br>
 The output could be XML, GML, KML or GeoJSON.
 
-==== UpdateGeometry ====
+=== UpdateGeometry ===
 This process gives the possibility to update a feature geometry.
 
 ==== Inputs ====
@@ -253,7 +252,7 @@ This process gives the possibility to update a feature geometry.
 This process returns the feature.<br>
 The output could be XML, GML, KML or GeoJSON.
 
-==== UpdateAttributes ====
+=== UpdateAttributes ===
 This process gives the possibility to update a feature attributes.
 
 ==== Inputs ====
@@ -278,10 +277,6 @@ This process gives the possibility to update a feature attributes.
 ==== Output ====
 This process returns the feature.<br>
 The output could be XML, GML, KML or GeoJSON.
-
-
-
-
 
 
 

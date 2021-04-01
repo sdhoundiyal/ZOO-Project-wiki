@@ -1,22 +1,21 @@
 
-
-=== FOSS4G ZOO Presentation Abstract ===
+== FOSS4G ZOO Presentation Abstract ==
 
 Here is the content I've sent today on the official foss4g2009 web site.
 
-==== Name ====
+=== Name ===
 
 Gérald Fenoy
 
-==== Email ====
+=== Email ===
 
 gerald.fenoy@geolabs.fr
 
-==== Organisation ====
+=== Organisation ===
 
 GeoLabs SARL
 
-==== About you ====
+=== About you ===
 
 GeoLabs SARL owner.
 
@@ -24,11 +23,11 @@ Two authors for this presentation :
 *Gérald Fenoy, Geolabs SARL
 *Nicolas Bozon, 3LIZ SARL
 
-==== Title ====
+=== Title ===
 
 ZOO project : an open WPS Platform
 
-==== Abstract ====
+=== Abstract ===
 
 The ZOO Project was born to provide a technical solution to the online geoprocessing needs encountered by the GeoLabs and 3LIZ companies. The ZOO platefrom is made of two parts : ZOO server, a WPS compliant C++ engine, and ZOO client which is a JSON based javascript API built on top of OpenLayers.
 
@@ -36,13 +35,9 @@ The ZOO server is based on a « WPS Service Kernel » which constitutes the ZOO 
 
 The ZOO client is a JSON based javascript API designed to communicate with ZOO server using a GeoJSON proxy to make use of ZOO Server input/ouptut only with Javascript and Mapserver.
 
-==== Tags ====
+=== Tags ===
 
 wps server service oriented architecture modular approach geoprocessing service creation metadata json based web client
-
-
-
-
 
 
 

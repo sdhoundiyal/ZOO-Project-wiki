@@ -1,5 +1,4 @@
 
-
 '''Sponsoring ZOO-Project'''
 
 The development and maintenance of the ZOO-Project is supported by 
@@ -83,10 +82,6 @@ Details at http://www.zoo-project.org/trac/wiki/ZooWebSite/Support/Sponsors
 Click the "Donate" button on the top of this page.
 
 Thank you!!
-
-
-
-
 
 
 

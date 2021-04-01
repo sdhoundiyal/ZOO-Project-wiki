@@ -1,14 +1,13 @@
 
-
-=== PSC meeting 21 ===
+== PSC meeting 21 ==
 
 The PSC meeting was conducted on irc.freenode.net in the  #zoo-project channel.
 
-==== Time and Date ====
+=== Time and Date ===
 
 Monday, 12 November 2020 [http://www.timeanddate.com/worldclock/fixedtime.html?year=2020&month=11&day=12&hour=13&min=0&sec=0 at,  13:00 UTC]
 
-==== Agenda ====
+=== Agenda ===
 
 *Short presentation of the ongoing developments in the ZOO-Project,
 *Next steps in the incubation process and organisation of a sprint,
@@ -19,7 +18,7 @@ Monday, 12 November 2020 [http://www.timeanddate.com/worldclock/fixedtime.html?y
 *Plan budget request for the next year.
 *Schedule next PSC meeting.
 
-==== Summary ====
+=== Summary ===
 
 Meeting started at 2:03 with Venka as meeting chair, no-one has taken the role of scribing.
 
@@ -61,10 +60,6 @@ Date for the next PSC meeting: 2020-11-12 same time.
 
 Motion 9: end of 2020-12-10 PSC meeting
 Votes: venka, djay, jmckenna: +1
-
-
-
-
 
 
 

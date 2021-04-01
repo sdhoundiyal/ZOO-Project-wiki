@@ -1,11 +1,10 @@
 
-
-=== ZOO Workshop 2010 Files ===
+== ZOO Workshop 2010 Files ==
 
 As some files cause many trouble when we use copy and paste, we've put the examples in this page.
 
 
-==== ogr_ws_service_provider.py File ====
+=== ogr_ws_service_provider.py File ===
 
 <pre>
 #python
@@ -38,7 +37,7 @@ def Boundary(conf,inputs,outputs):
         return 3
 </pre> 
 
-==== XML POST Request on page 22 ====
+=== XML POST Request on page 22 ===
 
 <pre>
 #xml
@@ -63,7 +62,7 @@ def Boundary(conf,inputs,outputs):
 </wps:Execute>
 </pre> 
 
-==== XML POST Request on page 23 ====
+=== XML POST Request on page 23 ===
 
 <pre>
 #xml
@@ -92,7 +91,7 @@ playground will live.</ows:Abstract>
 </wps:Execute>
 </pre>
 
-==== Second code block on page 26 ====
+=== Second code block on page 26 ===
 
 <pre>
 #python
@@ -111,7 +110,7 @@ def outputResult(obj,geom):
 		obj["value"]=geom.ExportToGML()
 </pre>
 
-==== Third code block on page 26 ====
+=== Third code block on page 26 ===
 
 <pre>
 #python
@@ -124,7 +123,7 @@ def Boundary(conf,inputs,outputs):
 	return 3 
 </pre>
 
-==== Code block on page 27 ====
+=== Code block on page 27 ===
 
 <pre>
 #python
@@ -147,7 +146,7 @@ def Centroid(conf,inputs,outputs):
 	return 3 
 </pre>
 
-==== zoo-ogr.html File ==== 
+=== zoo-ogr.html File === 
 
 
 <pre>
@@ -170,7 +169,7 @@ def Centroid(conf,inputs,outputs):
 </ul>
 </pre>
 
-==== Part 4.4 Page 35 code section ====
+=== Part 4.4 Page 35 code section ===
 
 <pre>
 function multiProcessing(aProcess) {
@@ -226,10 +225,6 @@ function multiProcessing(aProcess) {
 }
 
 </pre>
-
-
-
-
 
 
 

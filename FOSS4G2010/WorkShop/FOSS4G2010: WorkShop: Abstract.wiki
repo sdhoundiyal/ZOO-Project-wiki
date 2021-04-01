@@ -1,6 +1,5 @@
 
-
-=== W-07: Practical Introduction to ZOO, the Powerful WPS Platform ===
+== W-07: Practical Introduction to ZOO, the Powerful WPS Platform ==
 
 The ZOO-Project provides a WPS (Web Processing Service) compliant and developer-friendly framework to easily create and connect OGC Webservices.
 
@@ -9,12 +8,12 @@ During this workshop, participants will install the ZOO-Kernel and related mater
 After learning basic functionality of WPS and becoming familiar with the ZOO-Kernel internal structure, the participants will learn to setup and create Web services step-by-step. Example services will be based on converting/reprojecting vector and raster datasets online, using GDAL/OGR and ZOO's multi-language support capabilities that allow implementing of WPS in C, Python, Java, Fortran on the server-side. The ZOO configuration file (.zcfg) setup will be especially emphasized, as well as the GDAL/OGR based Web services.
 At the end of the workshop, participants will be able to install ZOO and to create fully functionnal Web services. They will also be able to download documentation, presentation and ZOO-Kernel binaries and source code from the ZOO-Project official website ( http://www.zoo-project.org ).
 
-==== presenter ====
+=== presenter ===
 
 G. Fenoy (1), N. Bozon (2).
 (1) GeoLabs SARL, (2) 3LIZ SARL.
 
-==== author's bio ====
+=== author's bio ===
 
 Gérald FENOY obtained his Master degree in Computer Science for University of Montpellier II. After graduation he worked in a private company as a developer for Web-GIS application and PostGIS based system integration.
 
@@ -22,17 +21,13 @@ He later established his company "Geolabs" in 2005 and has done several projects
 
 He is presently working on implementing an ZOO OWS Platform in C++. His present research interests are distributed geospatial web services, sensor network and cloud computing.
 
-==== workshop level ====
+=== workshop level ===
 
 Intermediate.
 
-==== attendee's previous knowledge ====
+=== attendee's previous knowledge ===
 
 Basics of WPS, bascis of C and Python language.
-
-
-
-
 
 
 

@@ -1,6 +1,5 @@
 
-
-=== ZOO API ===
+== ZOO API ==
 
 ZOO API is a Javascript library designed to make the WPS Process creation and chaining easier. 
 
@@ -13,10 +12,6 @@ The ZOO API let you orchestrate WPS services simply and offers the ability to ad
 '''Read the [http://zoo-project.org/docs/api/index.html ZOO API documentation]'''
 
 '''Check the [http://zoo-project.org/trac/browser/branches/branch-1.2/zoo-api ZOO API source code]'''
-
-
-
-
 
 
 

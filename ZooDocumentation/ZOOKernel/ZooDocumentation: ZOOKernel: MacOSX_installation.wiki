@@ -1,6 +1,5 @@
 
-
-=== How to install ZOO-Project on MacOS X===
+== How to install ZOO-Project on MacOS X==
 
 Make sure to install [http://www.kyngchaos.com/software/frameworks#proj PROJ], [http://www.kyngchaos.com/software/frameworks#geos GEOS] and [http://www.kyngchaos.com/software/frameworks#gdal GDAL] frameworks.
 
@@ -8,13 +7,13 @@ To install ZOO-Project on your MacOS X computer is to use the following [/raw-at
 
 You would need also to compile it by yourself for adding some supported languages or anything else, in this case, please follow instructions below.
 
-==== How to Compile ZOO-Project on MacOS X ====
+=== How to Compile ZOO-Project on MacOS X ===
 
-<u>TOC</u>
+__TOC__
 
 In this page you'll find all the required informations to build and run your ZOO-Kernel using a demo page.
 
-==== Requirements ====
+=== Requirements ===
 
 First of all, you'll need [http://developer.apple.com/technologies/tools/xcode.html XCode].
 
@@ -43,7 +42,7 @@ make
 sudo make install
 </pre>
 
-==== Compiling and installing your ZOO-Kernel ====
+=== Compiling and installing your ZOO-Kernel ===
 
 Download source from SVN, then use the following command to compile libcgic :
 
@@ -79,7 +78,7 @@ You should be ready to request your ZOO-Kernel installation using the following 
 
 If everything is ok, then you can follow next steps to deploy new Services Providers.
 
-==== Deploy OGR Services Provider ==== 
+=== Deploy OGR Services Provider === 
 
 ==== Requirements ====
 
@@ -167,16 +166,12 @@ if everything is ok with your setup.
 </p>
 </pre>
 
-==== Test using Local Demo Page ====
+=== Test using Local Demo Page ===
 
 Download the [http://http://openlayers.org/ OpenLayers] library and uncompress it in your personnal Sites directory (located in your home directory). Rename the OpenLayers directory as <tt>openlayers</tt>.
 Download this [/../trac/raw-attachment/wiki/ZooDocumentation/ZOOKernel/MacOSX_installation/zoo-demo.zip zip archive] then uncompress it in your personnal Sites directory. Load your local demo pages using the urls looking like the following (replacing MyUserName by your MacOS user name) :
 *http://localhost/~MyUserName/zoo-demo/spatialtools.html
 *http://localhost/~MyUserName/zoo-demo/spatialtools-py.html
-
-
-
-
 
 
 

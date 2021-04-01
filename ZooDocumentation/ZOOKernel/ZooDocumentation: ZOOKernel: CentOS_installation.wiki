@@ -1,10 +1,9 @@
 
-
-=== HowTo Install ZOO-Kernel on CentOS 5.5 ===
+== HowTo Install ZOO-Kernel on CentOS 5.5 ==
 
 This documentation was done thanks to Guillaume Sueur from Neogeo Technologies which takes time to test installing the ZOO-Kernel on CentOS 5.5 environment.
 
-==== Requirements ====
+=== Requirements ===
 
 Installing some standard tools to be able to run ZOO-Kernel on your platform :
 
@@ -100,7 +99,7 @@ echo /usr/share/java-1.6.0-openjdk-1.6.0.0/jre/lib/i386/client/ >> /etc/ld.so.co
 ldconfig
 </pre>
 
-==== Compile ZOO-Kernel and ZOO-Services ====
+=== Compile ZOO-Kernel and ZOO-Services ===
 
 Compile then install ZOO-Kernel and your first ZOO-Services.
 
@@ -141,7 +140,7 @@ To ensure that the libjvm.so will be found from apache, please restart it :
 /etc/init.d/httpd restart
 </pre>
 
-==== Testing your ZOO-Kernel ====
+=== Testing your ZOO-Kernel ===
 
 Testing your ZOO-Kernel from command line.
 
@@ -151,10 +150,6 @@ cd /var/www/cgi-bin
 ./zoo_loader.cgi "request=Execute&service=WPS&version=1.0.0&Identifier=HelloPy&DataInputs=a=Djay"
 ./zoo_loader.cgi "request=Execute&service=WPS&version=1.0.0&Identifier=Buffer&DataInputs=BufferDistance=1@datatype=interger;InputPolygon=Reference@xlink:href=http%3A%2F%2Fwww.zoo-project.org%3A8082%2Fgeoserver%2Fows%3FSERVICE%3DWFS%26REQUEST%3DGetFeature%26VERSION%3D1.0.0%26typename%3Dtopp%3Astates%26SRS%3DEPSG%3A4326%26FeatureID%3Dstates.15&RawDataOutput=Result@mimeType=application/json"
 </pre>
-
-
-
-
 
 
 

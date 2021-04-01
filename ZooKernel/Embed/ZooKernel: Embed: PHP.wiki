@@ -1,12 +1,11 @@
 
-
-=== ZooKernel/Embed/PHP Setup ===
+== ZooKernel/Embed/PHP Setup ==
 
 Do you have a lot of existing PHP code and need to use it as a ZOO Service with the least modifications possible? Then this page is made for you :)
 
 On this page, you will find advice on how to implement your services directly in PHP.
 
-==== Configure and Install the PHP Embeded library ====
+=== Configure and Install the PHP Embeded library ===
 
 ZOO Kernel requires a PHP installation that is compiled with the following configure settings: '''--enable-embed''' and ''''--enable-maintainer-zts'''. If you already have PHP installed on your system, but not with those settings (you can check by looking at a phpinfo for your server, which lists the configure command that was used to build PHP), we recommend installing a fresh and independent PHP library on your system.
 
@@ -105,7 +104,7 @@ make test
 make install
 </pre>
 
-==== Verify PHP Embed Install ====
+=== Verify PHP Embed Install ===
 
 ==== Sample C Script ====
 
@@ -181,10 +180,6 @@ LD_LIBRARY_PATH="/usr/lib/php5.2.10/lib/" ./test_phpembeded /var/www/localhost/h
 The output from phpinfo() should be returned at the commandline if successful.
 
 Note that we have to set the LD_LIBRARY_PATH at runtime as we didn't install the php embed library in a standard way (not in the standard search path - /usr/lib or /usr/local/lib- to ensure that we don't interfere with your already installed php library). Nevertheless, when ZooKernel will be compiled you only have to run it once, so you could use a small batch file including this LD_LIBRARY_PATH and other required parameters when you launch your ZooKernel instance (note that firefox does something like that also).
-
-
-
-
 
 
 

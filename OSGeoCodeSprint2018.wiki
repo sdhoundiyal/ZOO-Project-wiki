@@ -1,6 +1,5 @@
 
-
-==== ZOO-Project OSGeo Code Sprint 218 Plan ====
+=== ZOO-Project OSGeo Code Sprint 218 Plan ===
 
 This page can be used to list ideas for the upcoming Bonn code sprint (see https://wiki.osgeo.org/wiki/OSGeo_Code_Sprint_2018).
 
@@ -37,10 +36,6 @@ The [https://ci.appveyor.com/project/gfenoy/trunk-if9kv AppVeyor instance] that 
 ==== Plan the 1.7.0 release ====
 
 The plan for the  1.7.0 release should be provided by the end of the code sprint.
-
-
-
-
 
 
 

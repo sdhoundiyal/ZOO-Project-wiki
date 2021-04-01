@@ -1,11 +1,10 @@
 
-
-=== Bringing pyModis to the web through ZOO-Project === 
+== Bringing pyModis to the web through ZOO-Project == 
 
 <pre>#table class="listing"
 {| border=1 class="simple"
 !=Student Name  =
-Chingchai Humhong 
+!Chingchai Humhong 
 |- 
 | =Organization  =
 | [http://www.osgeo.org OSGeo - Open Source Geospatial Foundation]
@@ -22,20 +21,20 @@ Chingchai Humhong
 
 </pre>
 
-==== Brief description of your idea ====
+=== Brief description of your idea ===
 The pyModis project has been developed and used to work with MODIS data, it provides wxPython user interfaces which are able to download and process data using [http://www.pymodis.org/scripts/software.html pyModis scripts]. pyModis depends on a desktop graphical user interface which does not make it directly usable from a web application. The idea of this GSoC proposal is to bring pyModis to the web by publishing Python Web Processing Services using the ZOO-Project technology accessible through a minimal web application. 
 
 <pre>
 An idea which can be implemented for the future, based on this initial work, include the creation of new services by combining pyModis, GRASS, OTB and SAGA-GIS services.
 </pre>
 
-==== State of the software before GSoC ====
+=== State of the software before GSoC ===
 Currently pyModis is able to run on a local computer but cannot be directly remotely invoked on-demand. ZOO-Project is able to handle services implemented in the Python language but do not offer any pyModis capabilities.
 
-==== State of the software after GSoC ====
+=== State of the software after GSoC ===
 pyModis capabilities will be directly available online, a minimal User Interfaces will be provided and pyModis services would be able to be remotely invoked through ZOO-Project using the WPS protocol, so from any client application providing the WPS capabilities, such as QGIS for instance.
 
-==== Schedule ====
+=== Schedule ===
 Prior to the start of the GSoC period, I will learn in more details every of the involved technologies, starting with ZOO-Project and pyModis. First, by learning how to write zcfg and Python service should be implemented for ZOO-Project, then services that use specific pyModis capabilities. To finish, I will have a deep look in the Hogan templating system used by the ZOO-Client (part of the ZOO-Project). Having learnt pyModis scripts in details, I should be able to evaluate the commonly used data types to be taken into account during the User Interface design and anticipate the HTML elements to use.
 
 <pre>#table class="listing"
@@ -81,7 +80,7 @@ Prior to the start of the GSoC period, I will learn in more details every of the
 </pre>
  On the last day of each week, I will write a blog post reporting all the work done during the past week.
 
-==== Reports ====
+=== Reports ===
 
 ==== Week 1 ====
 ==== During Bounding period ====
@@ -300,7 +299,7 @@ Link to the Github: https://github.com/chingchai/pyModis/tree/gsoc-2016/zoo-pymo
 
 Link to the web application: https://github.com/chingchai/pyModis/tree/gsoc-2016/zoo-pymodis/app-service-web/appmodis
 
-==== Student's Biography ====
+=== Student's Biography ===
 
 ==== Programming and GIS ====
 I am a 28 year-old 2rd year student at the Naresuan University in Thailand. I am pursuing my Bachelors in Geography and Masters by research in Geographic Information Science. GIS is my specialization for research in my Masters. I am looking forward to pursue a career in the fields with GIS as a core concept. I am interested in open source development as it is extremely helpful to developers everywhere to create new and improved programs to solve real world problems. I have been working on WPS services implementation as a part of my research in the field of Spatial Informatics and started learning about the ZOO-Project WPS. After discussing my idea with the ZOO-Project WPS team, their feedback helped me a lot in refining and redesigning my idea.
@@ -322,10 +321,6 @@ Good Knowledge of Web Mapping Application Development, working knowledge of comp
 
 [https://wiki.osgeo.org/wiki/Bringing_pyModis_to_the_web_through_ZOO-Project_GSoC_2016 OSGeo wiki]
 [https://wiki.osgeo.org/wiki/Google_Summer_of_Code_2016_Accepted Google Summer of Code 2016 Accepted]
-
-
-
-
 
 
 

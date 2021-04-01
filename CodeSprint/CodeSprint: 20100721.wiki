@@ -1,6 +1,5 @@
 
-
-=== July code sprint ===
+== July code sprint ==
 
 From 2010 july 21 to 23 a code sprint will take place in Balaruc les Bains (France), the roadmap is as follow :
 
@@ -12,10 +11,6 @@ Participants are the following :
 **Gérald Fenoy
 **Nicolas Bozon
 **Luca Delucchi ( follow the code sprint via web )
-
-
-
-
 
 
 

@@ -1,6 +1,5 @@
 
-
-=== ZOO 1.2.0 Release notes ===
+== ZOO 1.2.0 Release notes ==
 
 **add WIN32 support
 **add GRASS support through wps-grass-bridge
@@ -31,10 +30,6 @@
 **fix Python support (ticket #29)
 
 Fixed bugs: #42, #45, #46, #50, #48, #47, #56, #57, #49, #59.
-
-
-
-
 
 
 

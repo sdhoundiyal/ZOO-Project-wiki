@@ -1,6 +1,5 @@
 
-
-=== ZOO-Project GSoC Ideas  ===
+== ZOO-Project GSoC Ideas  ==
 
 [[PageOutline]]
 
@@ -9,7 +8,7 @@ Enter ideas for development projects here. 'Note these are just suggestions - st
 Any member of the ZOO-Project or developers are welcome to add their names as mentor in any places or their own ideas on this page.
 
 
-==== ZOO-Project powered Java through JGrasstools  ====
+=== ZOO-Project powered Java through JGrasstools  ===
 
 ==== Involved projects ====
 
@@ -28,7 +27,7 @@ The following individuals are willing to serve as ZOO-Project mentors or co-ment
 *Gérald Fenoy as mentor
 *Andrea Antonello as co-mentor
 
-==== Moving the ZOO-Kernel JavaScript support from SpiderMonkey to V8 ====
+=== Moving the ZOO-Kernel JavaScript support from SpiderMonkey to V8 ===
 
 When the ZOO-Project decided to implement the JavaScript in 2009, SpiderMonkey was a well-known technology. Nevertheless, time has changed and now the Google V8 implementation is now becoming more and more popular over the year. 
 
@@ -41,10 +40,6 @@ For this purpose, the implementation should be able to load the following JavaSc
 The following individuals are willing to serve as ZOO-Project mentors. 
 
 *Gérald Fenoy as mentor
-
-
-
-
 
 
 

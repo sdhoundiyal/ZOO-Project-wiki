@@ -1,14 +1,13 @@
 
-
-=== PSC meeting 11 ===
+== PSC meeting 11 ==
 
 The PSC meeting was held on irc.freenode.net in the [irc://irc.freenode.net/#zoo-project #zoo-project] channel. If some IRC problem occur, the meeting will be exceptionally held on Skype.
 
-==== Date ====
+=== Date ===
 
 16 February 2011, [http://www.timeanddate.com/worldclock/fixedtime.html?year=2011&month=2&day=16&hour=22&min=0&sec=0 22:00:00 UTC time]
 
-==== Agenda ====
+=== Agenda ===
 
 *ZOO 1.2.0: Here we go !
 *ZOO/GRASS bridge feedbacks
@@ -27,7 +26,7 @@ The PSC meeting was held on irc.freenode.net in the [irc://irc.freenode.net/#zoo
 *Preaparing ZOO 1.3
   
 
-==== Summary ====
+=== Summary ===
 
 The PSC meeting was held on irc.freenode.net in the [irc://irc.freenode.net/#zoo-project #zoo-project] channel, on 16 February 2011, [http://www.timeanddate.com/worldclock/fixedtime.html?year=2011&month=2&day=16&hour=22&min=0&sec=0 22:00:00 UTC time]
 
@@ -73,10 +72,6 @@ Some side discussions occured and the meeting was closed.
 For more details, the irc log is available here:
 
 http://zoo-project.org/irclogs/psc_meeting1.log
-
-
-
-
 
 
 

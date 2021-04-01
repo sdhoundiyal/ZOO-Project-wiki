@@ -1,6 +1,5 @@
 
-
-=== ZOO-Project Release Procedure ===
+== ZOO-Project Release Procedure ==
 
 *Any ZOO-Project commiter can ask for a release by asking the ZOO-Project PSC and pointing a release manager. This last will then vote for accepting both the manager and the release procedure to happen.
 *If not already created, create  a wiki page (like this [http://zoo-project.org/trac/wiki/Release/1.3.0/Notes this one] using this scheme: Release/M.m.r/Notes), summarizing changes from the previous release (extracted from the revision log [http://zoo-project.org/trac/browser/trunk/zoo-project/HISTORY.txt ref.]).
@@ -13,7 +12,7 @@
 *Update documentation as needed.
 *Announce on various email list and other locations (news_item@osgeo.org, SlashGeo, etc)
 
-=== Creating an Official Release ===
+== Creating an Official Release ==
 
 Release versions lead to an update in documentation and standard tarballs. This is to help future administrators repeatably create releases.
 
@@ -59,10 +58,6 @@ Release versions lead to an update in documentation and standard tarballs. This 
 </pre>
 
 *Update the [http://zoo-project.org/site/Downloads Downloads page] to add the latest release (by editing this [http://zoo-project.org/trac/wiki/Downloads wiki page]).
-
-
-
-
 
 
 

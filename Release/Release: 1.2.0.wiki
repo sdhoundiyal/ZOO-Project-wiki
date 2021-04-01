@@ -1,7 +1,6 @@
 
-
 [[TOC]]
-==== ZOO-Project version 1.2.0 ====
+=== ZOO-Project version 1.2.0 ===
 
 [http://zoo-project.org/trac/wiki/Release/1.2.0/Notes Release Notes]
 
@@ -21,7 +20,7 @@
 *ZOO-Project Release 1.2.0-rc2: http://svn.zoo-project.org/svn/tags/rel-1.2.0-rc2
 *ZOO-Project Release 1.2.0-rc3: http://svn.zoo-project.org/svn/tags/rel-1.2.0-rc3
 
-==== ZOO-Project version 1.0.0 ====
+=== ZOO-Project version 1.0.0 ===
 
 ==== Download ====
 
@@ -29,7 +28,7 @@
 
 [http://www.zoo-project.org/dl/ZOO-Kernel-1.0.tar.bz2 ZOO-Kernel-1.0.tar.bz2] / [http://www.zoo-project.org/dl/ZOO-Kernel-1.0.zip ZOO-Kernel-1.0.zip]
 
-=== For developers ===
+== For developers ==
 
 <pre>
 #sh
@@ -46,7 +45,7 @@ For registred developers, you can use SSH or HTTPS protocol. Information on how 
 
 
 
-=== ZOO Kernel MIT/X-11 License ===
+== ZOO Kernel MIT/X-11 License ==
 
 Copyright © 2010-2011 GeoLabs
 
@@ -55,10 +54,6 @@ Permission is hereby granted, free of charge, to any person obtaining a copy of 
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-
-
-
-
 
 
 

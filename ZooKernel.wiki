@@ -1,11 +1,10 @@
 
-
-=== ZooKernel description page === 
+== ZooKernel description page == 
 
 On this page you will find everything you need to know about the ZooKernel.
 
 
-==== Current status ====
+=== Current status ===
 
 Acutaly, you could compile and use the code available on the svn server on your own GNU / LINUX platform this way :
 
@@ -103,7 +102,7 @@ Some samples requests running on the Shilpa server (using KVP requests) :
 **[http://shilpa.media.osaka-cu.ac.jp/zoo/driftx/wps/?request=Execute&service=WPS&version=1.0.0&language=en-CA&Identifier=Gdal_Translate&DataInputs=Format=AAIGrid@datatype=string;InputDSN=srtm_kashiwara@datatype=string;OutputDSN=demo007@datatype=string Using Gdal_Translate to convert a GeoTiff datasource to an AAIGrid datasource].
 **[http://shilpa.media.osaka-cu.ac.jp/zoo/driftx/wps/?request=Execute&service=WPS&version=1.0.0&language=en-CA&Identifier=Gdal_Translate&DataInputs=Format=JPEG@datatype=string;InputDSN=srtm_kashiwara@datatype=string;OutputDSN=demo007@datatype=string Using Gdal_Translate to crop a GeoTiff datasource and potentialy convert datasource format]
 **[http://shilpa.media.osaka-cu.ac.jp/zoo/driftx/wps/?request=Execute&service=WPS&version=1.0.0&language=en-CA&Identifier=Gdal_Translate&DataInputs=Format=GIF@datatype=string;InputDSN=srtm_kashiwara@datatype=string;OutputDSN=srtm_kashiwara_output6@datatype=string;ProjWin=135.6212504,34.5820833,135.6679170,34.5670833,urn:ogc:def:crs:EPSG:6.6:4326,2;demo=Reference@xlink:href=http%3A%2F%2Fexamples.oreilly.com%2Fwebmapping%2Fch7%2Fairports.gml Use an xlink:href value] [http://examples.oreilly.com/webmapping/ch7/airports.gml (this is the used url)]
-**[http://shilpa.media.osaka-cu.ac.jp/zoo/driftx/wps/?request=Execute&service=WPS&version=1.0.0&language=en-CA&Identifier=Gdal_Translate&DataInputs=Format=GIF@datatype=string;InputDSN=srtm_kashiwara@datatype=string;OutputDSN=srtm_kashiwara_output6@datatype=string;ProjWin=135.6212504,34.5820833,135.6679170,34.5670833,urn:ogc:def:crs:EPSG:6.6:4326,2;demo=Reference@xlink:href=http%3A%2F%2Fcarto.languedoc-roussillon.ecologie.gouv.fr%2Fwebservices%2Fwfs%2Fdiren_general%2F%3FVERSION%3D1.1.0%26service%3DWFS%26request%3DGetFeature%26typename%3DZnieff1%26maxfeatures%3D1 Use a WFS Request as an xlink:href valur] [http://carto.languedoc-roussillon.ecologie.gouv.fr/webservices/wfs/diren_general/?VERSION=1.1.0&service=WFS&request=GetFeature&typename=Znieff1&maxfeatures=1 (the WFS request used)]. See [./ApacheErrorLog here] to see maps data structure extracted from the apache error log correspoding to this request)
+**[http://shilpa.media.osaka-cu.ac.jp/zoo/driftx/wps/?request=Execute&service=WPS&version=1.0.0&language=en-CA&Identifier=Gdal_Translate&DataInputs=Format=GIF@datatype=string;InputDSN=srtm_kashiwara@datatype=string;OutputDSN=srtm_kashiwara_output6@datatype=string;ProjWin=135.6212504,34.5820833,135.6679170,34.5670833,urn:ogc:def:crs:EPSG:6.6:4326,2;demo=Reference@xlink:href=http%3A%2F%2Fcarto.languedoc-roussillon.ecologie.gouv.fr%2Fwebservices%2Fwfs%2Fdiren_general%2F%3FVERSION%3D1.1.0%26service%3DWFS%26request%3DGetFeature%26typename%3DZnieff1%26maxfeatures%3D1 Use a WFS Request as an xlink:href valur] [http://carto.languedoc-roussillon.ecologie.gouv.fr/webservices/wfs/diren_general/?VERSION=1.1.0&service=WFS&request=GetFeature&typename=Znieff1&maxfeatures=1 (the WFS request used)]. See [/ApacheErrorLog here] to see maps data structure extracted from the apache error log correspoding to this request)
 **Basic OGR Service :
 **The WKS (Well Known Service :) ) Buffer Operation :
 ***[http://shilpa.media.osaka-cu.ac.jp/zoo/?request=Execute&service=WPS&version=1.0.0&Identifier=Buffer&DataInputs=BufferDistance=100@datatype=interger@uom=meter;InputPolygon=Reference@xlink:href=http%3A%2F%2Fcarto.languedoc-roussillon.ecologie.gouv.fr%2Fwebservices%2Fwfs%2Fdiren_general%2F%3FVERSION%3D1.1.0%26service%3DWFS%26request%3DGetFeature%26typename%3DZnieff1%26maxfeatures%3D1&ResponseDocument=BufferedPolygon Sample using ResponseDocument]  using a xlink:href [http://carto.languedoc-roussillon.ecologie.gouv.fr/webservices/wfs/diren_general/?VERSION=1.1.0&service=WFS&request=GetFeature&typename=Znieff1&maxfeatures=1 WFS query] URL-Encoded as a DataInputs value
@@ -261,10 +260,6 @@ Some sample (using POST XML requests), to use those examples you will have to pu
         </wps:ResponseForm>
 </wps:Execute>
 </pre>
-
-
-
-
 
 
 

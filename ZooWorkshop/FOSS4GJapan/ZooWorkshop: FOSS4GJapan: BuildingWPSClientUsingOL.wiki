@@ -1,19 +1,13 @@
-1
-2
-3
-4
-5
 
+== Building a WPS client using OpenLayers ==
 
-=== Building a WPS client using OpenLayers ===
-
-<u>TOC</u>
-[./ZooWorkshop/FOSS4GJapan/ZooWorkshop:-FOSS4GJapan:-CreatingOGRBasedWebServices Prev.] | 
-[./ZooWorkshop/ZooWorkshop:-FOSS4GJapan WorkShop table of content] | [./ZooWorkshop/FOSS4GJapan/ZooWorkshop:-FOSS4GJapan:-Exercice Next]
+__TOC__
+[/ZooWorkshop/FOSS4GJapan/ZooWorkshop:-FOSS4GJapan:-CreatingOGRBasedWebServices Prev.] | 
+[/ZooWorkshop/ZooWorkshop:-FOSS4GJapan WorkShop table of content] | [/ZooWorkshop/FOSS4GJapan/ZooWorkshop:-FOSS4GJapan:-Exercice Next]
 
 The next step of our workshop is to connect to the OGR Services we have created from an OpenLayers map. This will allow to apply single or multiple geometries processes on user-selected polygons  and to display the new generated geometries.
 
-==== Creating a simple map showing the dataset as WMS ====
+=== Creating a simple map showing the dataset as WMS ===
 
 OpenLayers is also included in OSGeoLive default distribution, so it is convenient to use it for our needs. Please open <tt>/var/www/zoo-ogr.html</tt> using your favorite text editor and paste the following HTML snippet:
 
@@ -72,7 +66,7 @@ function init(){
 Once done, please save your HTML file as zoo-ogr.html in your workshop directory, then copy it in <tt>/var/www</tt> and visualize it with your favorite Web browser using this link : http://localhost/zoo-ogr.html. You should obtain a map centered on the USA with the WMS layer activated.
 
 [[Image(OL-JP-1.png,nolink,width=500px,margin=5)]]
-==== Fetching the data layer as WFS and adding selection controls ====
+=== Fetching the data layer as WFS and adding selection controls ===
 
 Before accessing the displayed data via WFS, you first have to create new vector layers dedicated to host the several interactions we are going to create. Please add the following lines within the <tt>init()</tt> function, and do not forget to add the newly created layer in the <tt>map.addLayers</tt> method:
 
@@ -127,7 +121,7 @@ control.activate();
 Please save your HTML file again. You should now be able to select a polygon only by clicking on it. The selected polygon should appear in blue color.
 
 [[Image(OL-JP-2.png,width=500px,nolink,margin: 5)]]
-==== Calling the single geometry services from JavaScript ====
+=== Calling the single geometry services from JavaScript ===
 
 Now that everything is setup, we can go on and call our OGR ZOO services with JavaScript. Please add the following lines after the <tt>init()</tt> function, which will call the single geometry processes. You can notice that we use a specific <tt>parseMapServerId</tt> function which let us remove the unecessary white space returned as fid value.
 
@@ -200,7 +194,7 @@ Then, some specific buttons must be added in the HTML, in order to be able to ca
 Save your HTML file again. You should now be able to select a polygon and to launch a Buffer, ConvexHull, Boundary or Centroid on it by clicking one of the button. The result of the process should appear as GeoJSON layer on the map, in orange color.
 
 [[Image(OL-JP-3.png,width=500px,nolink,margin: 5)]]
-==== Calling the multiples geometries processes from JavaScript ====
+=== Calling the multiples geometries processes from JavaScript ===
 
 Using the same technique, you can now write a function dedicated to the multiple geometries processes. Please add the following lines after the <tt>simpleProcessing()</tt> function, we will guide you during the exercise in section 5 on how to create such a function. 
 
@@ -295,12 +289,8 @@ Please reload the page. You should then be able to run your multiple geometries 
 
 It seems that something is missing in your Services Provider to get the same results … The multiple geometries Services ! This is what we are going to do together in the next section.
 
-[./ZooWorkshop/FOSS4GJapan/ZooWorkshop:-FOSS4GJapan:-CreatingOGRBasedWebServices Prev.] | 
-[./ZooWorkshop/ZooWorkshop:-FOSS4GJapan WorkShop table of content] | [./ZooWorkshop/FOSS4GJapan/ZooWorkshop:-FOSS4GJapan:-Exercice Next]
-
-
-
-
+[/ZooWorkshop/FOSS4GJapan/ZooWorkshop:-FOSS4GJapan:-CreatingOGRBasedWebServices Prev.] | 
+[/ZooWorkshop/ZooWorkshop:-FOSS4GJapan WorkShop table of content] | [/ZooWorkshop/FOSS4GJapan/ZooWorkshop:-FOSS4GJapan:-Exercice Next]
 
 
 

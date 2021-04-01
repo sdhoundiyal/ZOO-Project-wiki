@@ -1,10 +1,9 @@
 
-
-=== ZooKernel Installation Guide === 
+== ZooKernel Installation Guide == 
 
 On this page you will find informations about how to compile and use ZOO Kernel with your Apache web server.
 
-==== Requirements ====
+=== Requirements ===
 
 To be able to compile the current ZOO Kernel, you need to have some libraries allready availlable on your system :
 
@@ -29,7 +28,7 @@ svn checkout svn+ssh://dev.cartography.st/mnt/data3/zoo-project/trunk/ trunk
 
 Now you get your local copy of the official ZOO svn server.
 
-==== Compilation ====
+=== Compilation ===
 
 ==== GNU/Linux ====
 
@@ -52,7 +51,7 @@ cd trunk/zoo-kernel
 nmake /f makefile.vc zoo_loader.cgi
 </pre>
 
-==== Install ZOO Kernel and ZOO ServiceProvider ====
+=== Install ZOO Kernel and ZOO ServiceProvider ===
 
 Suppose that your Apache server handle cgi-scripts located in <tt>/var/www/localhost/cgi-bin</tt>. You should copy the <tt>zoo_loader.cgi</tt> script in this directory as the <tt>main.cfg</tt> file (see bellow).
 
@@ -70,7 +69,7 @@ The main configuration file, <tt>main.cfg</tt>, contains configuration parameter
 
 You should edit the main configuration file before running yoru first request to your ZOO Kernel.
 
-==== Apache ZOO .htaccess ====
+=== Apache ZOO .htaccess ===
 
 From your Apache <tt>DocumentRoot</tt>, create and fill a file called <tt>.htaccess</tt> in a <tt>zoo</tt> directory, using the following command.
 
@@ -88,7 +87,7 @@ cat > /var/www/localhost/htdocs/zoo/.htaccess << EOF
 EOF
 </pre>
 
-==== Testing ====
+=== Testing ===
 
 Run first requests to your ZOO Kernel installation :
 
@@ -99,10 +98,6 @@ http://my.website/zoo/?Service=WPS&Request=Execute&Version=1.0.0&Identifier=Hell
 </pre>
 
 You are ready to go now, developing your own services following the ZOODeveloperGuide.
-
-
-
-
 
 
 

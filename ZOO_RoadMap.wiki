@@ -1,5 +1,4 @@
 
-
 This is a proposal for setting up ZOO roadmap and versions. It will be voted by PSC soon.
 
 a) ZOO-Kernel (presently Version 1.0) will have a
@@ -49,10 +48,6 @@ f) New features to be included in ZOO-Kernel-1.3.0devel before
 ***Any ideas ?
 
 g)  ZOO-Kernel-1.4.0 release could coincide FOSS4G2011.
-
-
-
-
 
 
 

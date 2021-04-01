@@ -1,16 +1,15 @@
 
-
-=== PSC meeting 20 ===
+== PSC meeting 20 ==
 
 The PSC meeting will be held face to face at FOSS4G-Asia in Bangkok, Thailand.
 
-==== Time, Date and Place ====
+=== Time, Date and Place ===
 
 Amari Hotel Don Muang 
 
 Thursday, 4 december 2014 from 9:30 to 10:30  PM
 
-==== Agenda ====
+=== Agenda ===
 
 *Release of ZOO 1.4 (new features and changes by Gerald)
 
@@ -18,7 +17,7 @@ Thursday, 4 december 2014 from 9:30 to 10:30  PM
 
 *Website and documentation
 
-==== Summary ====
+=== Summary ===
 
 This PSC meeting was held face to face on Thursday 4 December 2014 at Amari Hotel during the FOSS4G Asia conference in Bangkok.
 
@@ -43,10 +42,6 @@ This PSC meeting was held face to face on Thursday 4 December 2014 at Amari Hote
 ***Both remaining tasks may be supported by sponsors if a new call for sponsorship is organized.
 
 *End of meeting.
-
-
-
-
 
 
 

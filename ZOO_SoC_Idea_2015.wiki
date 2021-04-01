@@ -1,10 +1,9 @@
 
-
-=== ZOO-Project 2015 GSoC Ideas  ===
+== ZOO-Project 2015 GSoC Ideas  ==
 
 Enter ideas for development projects here. 'Note these are just suggestions - students are welcome to propose projects based on their own interests that involve the ZOO-Project. 
 
-==== Zoo-Project powered Java through JGrasstools  ====
+=== Zoo-Project powered Java through JGrasstools  ===
 
 ==== Involved projects ====
 
@@ -22,10 +21,6 @@ The following individuals are willing to serve as ZOO-Project mentors or co-ment
 
 *Gérald Fenoy as mentor
 *Andrea Antonello as co-mentor
-
-
-
-
 
 
 

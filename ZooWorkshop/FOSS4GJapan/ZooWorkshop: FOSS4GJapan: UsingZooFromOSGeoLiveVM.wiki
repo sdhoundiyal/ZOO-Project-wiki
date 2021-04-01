@@ -1,20 +1,12 @@
-1
-2
-3
-4
-5
-6
-7
 
+== Using ZOO from an OSGeoLive virtual machine ==
 
-=== Using ZOO from an OSGeoLive virtual machine ===
-
-<u>TOC</u>
-[./ZooWorkshop/FOSS4GJapan/ZooWorkshop:-FOSS4GJapan:-Introduction Prev.] | [./ZooWorkshop/ZooWorkshop:-FOSS4GJapan WorkShop table of content] | [./ZooWorkshop/FOSS4GJapan/ZooWorkshop:-FOSS4GJapan:-CreatingOGRBasedWebServices Next]
+__TOC__
+[/ZooWorkshop/FOSS4GJapan/ZooWorkshop:-FOSS4GJapan:-Introduction Prev.] | [/ZooWorkshop/ZooWorkshop:-FOSS4GJapan WorkShop table of content] | [/ZooWorkshop/FOSS4GJapan/ZooWorkshop:-FOSS4GJapan:-CreatingOGRBasedWebServices Next]
 
 [http://live.osgeo.org/ OSGeoLive] is a live DVD and virtual machine based on [http://www.xubuntu.org/ Xubuntu] that allows you to try a wide variety of open source geospatial software without installing anything. It is composed entirely of free software and include ZOO 1.0 this year, for testing purpose.
 
-==== ZOO Kernel Installation  ====
+=== ZOO Kernel Installation  ===
 
 As already said in introduction, an OSGeoLive virtual machine image disk has been installed on your computer, allowing you to use ZOO Kernel in a development environment directly. Using a virtual machine image disk seems to be the simplest way to use ZOO Kernel and to develop ZOO Services locally, as we can ensure that everything requested for compiling C Services and running Python ones is available and ready to use. Every ZOO related material and source code have been placed in <tt>/home/user/zoows</tt> directory. We will work inside it during this workshop. As the binary version of ZOO Kernel is already compiled and stored in <tt>/home/user/zoows/sources/zoo-kernel</tt>, you only have to copy two important files inside the<tt>/usr/lib/cgi-bin</tt> directory : <tt>zoo_loader.cgi</tt> and the <tt>main.cfg</tt> in order to make ZOO Kernel available, using the following commands :
 
@@ -93,13 +85,13 @@ Now you should be able to access the ZOO Kernel using a simplified by restarting
 sudo /etc/init.d/apache2 restart
 </pre>
 
-Two other softwares form the OSGeoLive environment will be used during this workshop. MapServer will first be used to provide WFS input data for the ZOO Services we are going to develop. The MapServer dataset providen by Orkney (japanese regions polygons) will be passed to our service during [./ZooWorkshop/FOSS4GJapan/ZooWorkshop:-FOSS4GJapan:-CreatingOGRBasedWebServices#CallingthesinglegeometryservicesfromJavaScript section 4]. 
+Two other softwares form the OSGeoLive environment will be used during this workshop. MapServer will first be used to provide WFS input data for the ZOO Services we are going to develop. The MapServer dataset providen by Orkney (japanese regions polygons) will be passed to our service during [/ZooWorkshop/FOSS4GJapan/ZooWorkshop:-FOSS4GJapan:-CreatingOGRBasedWebServices#CallingthesinglegeometryservicesfromJavaScript section 4]. 
 
-OpenLayers library is also available on the OSGeoLive virtual machine image disk, and it will be used during [./ZooWorkshop/FOSS4GJapan/ZooWorkshop:-FOSS4GJapan:-BuildingWPSClientUsingOL section 4], for building a simple WPS client application able to query the newly developed ZOO Services. 
+OpenLayers library is also available on the OSGeoLive virtual machine image disk, and it will be used during [/ZooWorkshop/FOSS4GJapan/ZooWorkshop:-FOSS4GJapan:-BuildingWPSClientUsingOL section 4], for building a simple WPS client application able to query the newly developed ZOO Services. 
 
 As we planned to use OGR C-API and Python module of the GDAL library, we will need the corresponding header files, libraries and associated files. Hopefully everything was already available per default and so ready to use on the OSGeoLive packaging.
 
-==== Testing the ZOO installation with GetCapabilities ====
+=== Testing the ZOO installation with GetCapabilities ===
 
 You can now simply query ZOO Kernel using the following request from your Internet browser:
 
@@ -123,7 +115,7 @@ The same result as in your browser will be returned, as shown in the following s
 
 Invoking ZOO Kernel from command line can be helpful during development process of new Services.
 
-==== Preparing your ZOO Services Provider directory ====
+=== Preparing your ZOO Services Provider directory ===
 
 In order to simplify the task, we will first comment the directory structure which should be used when creating a new Services Provider :
 
@@ -141,11 +133,7 @@ mkdir -p /home/user/zoows/sources/zoo-services/ws_sp/cgi-env
 The <tt>Makefile</tt> and the code of the C and Python Service Shared Object will be detailed in the next sections.
 
 <br>
-[./ZooWorkshop/FOSS4GJapan/ZooWorkshop:-FOSS4GJapan:-Introduction Prev.] | [./ZooWorkshop/ZooWorkshop:-FOSS4GJapan WorkShop table of content] | [./ZooWorkshop/FOSS4GJapan/ZooWorkshop:-FOSS4GJapan:-CreatingOGRBasedWebServices Next]
-
-
-
-
+[/ZooWorkshop/FOSS4GJapan/ZooWorkshop:-FOSS4GJapan:-Introduction Prev.] | [/ZooWorkshop/ZooWorkshop:-FOSS4GJapan WorkShop table of content] | [/ZooWorkshop/FOSS4GJapan/ZooWorkshop:-FOSS4GJapan:-CreatingOGRBasedWebServices Next]
 
 
 

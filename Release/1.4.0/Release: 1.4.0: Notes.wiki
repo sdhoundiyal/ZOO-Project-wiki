@@ -1,6 +1,5 @@
 
-
-=== ZOO-Project 1.4.0 release notes ===
+== ZOO-Project 1.4.0 release notes ==
 
 **Small fix for mimeType of results for CGAL services
 **Binary support for PHP language
@@ -26,10 +25,6 @@
 **Add dynamic definition of serverAddress from the main section
 
 ([http://lists.osgeo.org/pipermail/zoo-discuss/2014-December/001205.html Reference])
-
-
-
-
 
 
 

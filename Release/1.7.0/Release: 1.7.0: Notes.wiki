@@ -1,6 +1,5 @@
 
-
-=== ZOO-Project 1.7.0 release notes ===
+== ZOO-Project 1.7.0 release notes ==
 
 This new ZOO-Project release contains new features and fixes,including two brand new supports: R language and HPC.
 
@@ -8,13 +7,13 @@ For people familiar with the ZOO-Project the R language will be very easy to use
 
 On the other hand, the HPC support is something totally new in the ZOO-Project ecosystem. Usually, the ZOO-Kernel is handling the execution of a service on its own but, using this HPC support,  it is now possible to execute asynchronously WPS services using a remote scheduler. This support has been implemented to support Slurm as the remote scheduler and the communication with the host is made using SSH.
 
-==== Upgrade notes: ====
+=== Upgrade notes: ===
 
 A specific <tt>memory</tt> parameter has been added to the <tt>main.cfg</tt> file. With it, you can now decide if you want every input data to be loaded in memory or to be stored as files. For information about this option, please refer to [http://zoo-project.org/docs/kernel/configuration.html#main-section the official documentation].
 
 A specific <tt>[metadb]</tt> section can be added to the <tt>main.cfg</tt> file to search for WPS Services metadata in a database. For more information about this support, please refer to [http://zoo-project.org/docs/kernel/configuration.html#metadb-section the official documentation].
 
-==== New Features and Fixes ====
+=== New Features and Fixes ===
 
 **Parse text/ mimetype ComplexData without using CDATA
 **Use proper declaration of const char*
@@ -72,10 +71,6 @@ A specific <tt>[metadb]</tt> section can be added to the <tt>main.cfg</tt> file 
 Source code: [http://zoo-project.org/dl/zoo-project-1.7.0.zip zip file] | [http://zoo-project.org/dl/zoo-project-1.7.0.tar.bz2 tar.bz2 file]
 
 Download page: [http://zoo-project.org/new/Code/Download Download]
-
-
-
-
 
 
 

@@ -1,19 +1,13 @@
-1
-2
-3
-4
-5
 
+== OpenLayers を使用したWPSクライアントの構築 ==
 
-=== OpenLayers を使用したWPSクライアントの構築 ===
-
-<u>TOC</u>
-[./ZooWorkshop/FOSS4GJapan/ja/ZooWorkshop:-FOSS4GJapan:-ja:-CreatingOGRBasedWebServices 前へ] | 
-[./ZooWorkshop/FOSS4GJapan/ZooWorkshop:-FOSS4GJapan:-ja ワークショップ 目次] | [./ZooWorkshop/FOSS4GJapan/ja/ZooWorkshop:-FOSS4GJapan:-ja:-Exercice 次へ]
+__TOC__
+[/ZooWorkshop/FOSS4GJapan/ja/ZooWorkshop:-FOSS4GJapan:-ja:-CreatingOGRBasedWebServices 前へ] | 
+[/ZooWorkshop/FOSS4GJapan/ZooWorkshop:-FOSS4GJapan:-ja ワークショップ 目次] | [/ZooWorkshop/FOSS4GJapan/ja/ZooWorkshop:-FOSS4GJapan:-ja:-Exercice 次へ]
 
 次のステップではOpenLayers mapから作成したOGR Servicesに関連付けます。こうすることで、選択したポリゴン上で単一または複数の幾何処理を行い、新規作成したジオメトリを表示することができます。
 
-==== WMSのデータセットを表示する簡単なマップの作成 ====
+=== WMSのデータセットを表示する簡単なマップの作成 ===
 
 OpenLayersはOSGeoLiveのデフォルトのディストリビューションにも含まれているため、便宜上これを使用します。好きなテキストエディタで <tt>/var/www/zoo-ogr.html</tt> を開き、次のHTMLをペーストしてください：
 
@@ -73,7 +67,7 @@ function init(){
 
 [[Image(http://www.zoo-project.org/trac/raw-attachment/wiki/ZooWorkshop/FOSS4GJapan/BuildingWPSClientUsingOL/OL-JP-1.png,nolink,width=500px,margin=5)]]
 
-==== WFSのデータレイヤー取得と選択コントロールの追加 ====
+=== WFSのデータレイヤー取得と選択コントロールの追加 ===
 
 WFSを通じて表示されているデータにアクセスする前に、先ずはこれから作成するいくつもの相互作用をすることを目的とするに新規ベクトルレイヤーを作成しなければなりません。<tt>init()</tt> 関数内に次のラインを追加します。 <tt>map.addLayers</tt> メソッドに新規作成したレイヤーを忘れず追加して下さい：
 
@@ -123,7 +117,7 @@ HTMファイルを再度保存して下さい。ポリゴン上でクリック�
 [[Image(http://www.zoo-project.org/trac/raw-attachment/wiki/ZooWorkshop/FOSS4GJapan/BuildingWPSClientUsingOL/OL-JP-2.png,width=500px,nolink,margin: 5)]]
 
 
-==== JavaScript から呼び出される単一ジオメトリサービス ====
+=== JavaScript から呼び出される単一ジオメトリサービス ===
 
 これで全て設定できたので、JavaScriptでOGR ZOO サービスを呼び出してみましょう。 <tt>init()</tt> 関数のあとに次の行を追加してください。一つのジオメトリ処理を呼び出します。fid 値として返された不要な空白を削除する特定の <tt>parseMapServerId</tt> 関数を使うことに気づくでしょう。
 
@@ -198,7 +192,7 @@ function simpleProcessing(aProcess) {
 [[Image(http://www.zoo-project.org/trac/raw-attachment/wiki/ZooWorkshop/FOSS4GJapan/BuildingWPSClientUsingOL/OL-JP-3.png,width=500px,nolink,margin: 5)]]
 
 
-==== JavaScript から呼び出される複合ジオメトリサービス ====
+=== JavaScript から呼び出される複合ジオメトリサービス ===
 
 同じテクニックを使って、複数のジオメトリ処理のために作られている関数を書き込むことができます。<tt>simpleProcessing()</tt> 関数のあとに次の行を追加してください。このような関数を作成する方法はセクション5のエクササイズで説明します。
 
@@ -293,12 +287,8 @@ function multiProcessing(aProcess) {
 
 同じ結果を得るには、Services Providerに何かが足りないように思われます … 複数のジオメトリサービスです! これは次のセクションで行います。
 
-[./ZooWorkshop/FOSS4GJapan/ja/ZooWorkshop:-FOSS4GJapan:-ja:-CreatingOGRBasedWebServices 前へ] | 
-[./ZooWorkshop/FOSS4GJapan/ZooWorkshop:-FOSS4GJapan:-ja ワークショップ 目次] | [./ZooWorkshop/FOSS4GJapan/ja/ZooWorkshop:-FOSS4GJapan:-ja:-Exercice 次へ]
-
-
-
-
+[/ZooWorkshop/FOSS4GJapan/ja/ZooWorkshop:-FOSS4GJapan:-ja:-CreatingOGRBasedWebServices 前へ] | 
+[/ZooWorkshop/FOSS4GJapan/ZooWorkshop:-FOSS4GJapan:-ja ワークショップ 目次] | [/ZooWorkshop/FOSS4GJapan/ja/ZooWorkshop:-FOSS4GJapan:-ja:-Exercice 次へ]
 
 
 

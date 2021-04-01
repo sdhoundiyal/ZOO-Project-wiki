@@ -1,14 +1,13 @@
 
-
-=== PSC meeting 15 ===
+== PSC meeting 15 ==
 
 The PSC meeting will be on irc.freenode.net in the  #zoo-project channel. If some IRC problem occur, the meeting will be exceptionally held on Skype. 
 
-==== Date ====
+=== Date ===
 
 Wednesday, 23 November 2011, [http://www.timeanddate.com/worldclock/fixedtime.html?year=2011&month=11&day=23&hour=13&min=0&sec=0 13:00:00 UTC time]
 
-==== Agenda ====
+=== Agenda ===
 
 *ZOO-Project OSGeo incubation Process: current status, request for help in handling.
 *ZOO-1.3dev status: should we need to publish a 1.3.0 banch and tag ?
@@ -17,7 +16,7 @@ Wednesday, 23 November 2011, [http://www.timeanddate.com/worldclock/fixedtime.ht
 *Any plan for ZOO-Project Packages for Linux / MacOS X / Win32 ?
 *ZOO-Project Web Site Mirror 
 
-==== Summary ====
+=== Summary ===
 
 The PSC meeting was held on irc.freenode.net in the  irc://irc.freenode.net/#zoo-project channel, on 2011 Noverner 23rd.
 5 ZOO-PSC members attended this meeting (M. Cannata, G. Fenoy, D. Kast, J. McKenna, V. Raghavan). 
@@ -29,10 +28,6 @@ The PSC meeting was held on irc.freenode.net in the  irc://irc.freenode.net/#zoo
 **Agenda items 5,6 to be discussed further on PSC mailing list to consider action plan.
 
 [http://zoo-project.org/psc_meetings_logs/psc15.txt IRC logs].
-
-
-
-
 
 
 

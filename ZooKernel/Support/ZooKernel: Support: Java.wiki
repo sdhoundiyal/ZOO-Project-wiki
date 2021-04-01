@@ -1,6 +1,5 @@
 
-
-=== Java Support in ZOO  Kernel ===
+== Java Support in ZOO  Kernel ==
 
 This is a sample program which  dynamicaly loads JVM then load a Class to run one of its static methods :
 
@@ -137,10 +136,6 @@ The data structure selected was java.util.HashMap to share data fom/to C to/from
  else
  printf("Unable to find java.util.HashMap constructor !\n");
 </pre>
-
-
-
-
 
 
 

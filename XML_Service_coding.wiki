@@ -1,6 +1,5 @@
 
-
-=== Coding Process with XML ===
+== Coding Process with XML ==
 
 The idea is to prepare chaining process in XML server side.
 
@@ -52,10 +51,6 @@ Example :
 </pre>
 
 This example is a process to generate KML
-
-
-
-
 
 
 

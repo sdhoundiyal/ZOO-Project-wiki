@@ -1,7 +1,6 @@
 
 
-
-==== ZOO-Project version 1.7.0 ====
+=== ZOO-Project version 1.7.0 ===
 <pre>
 #html
 <div class="well well-lg" style="color: #97907d;">
@@ -23,7 +22,7 @@ http://zoo-project.org/trac/wiki/Release/1.7.0/Notes
 #html
 </div>
 </pre>
-==== ZOO-Project version 1.6.0 ====
+=== ZOO-Project version 1.6.0 ===
 <pre>
 #html
 <div class="well well-lg" style="color: #97907d;">
@@ -47,7 +46,7 @@ http://zoo-project.org/trac/wiki/Release/1.7.0/Notes
 #html
 </div>
 </pre>
-==== ZOO-Project version 1.5.0 ====
+=== ZOO-Project version 1.5.0 ===
 <pre>
 #html
 <div class="well well-lg" style="color: #97907d;">
@@ -71,7 +70,7 @@ http://zoo-project.org/trac/wiki/Release/1.7.0/Notes
 </div>
 </pre>
 
-==== ZOO-Project version 1.4.0 ====
+=== ZOO-Project version 1.4.0 ===
 <pre>
 #html
 <div class="well well-lg" style="color: #97907d;">
@@ -95,7 +94,7 @@ http://zoo-project.org/trac/wiki/Release/1.7.0/Notes
 </div>
 </pre>
 
-==== ZOO-Project version 1.3.0 ====
+=== ZOO-Project version 1.3.0 ===
 
 <pre>
 #html
@@ -123,7 +122,7 @@ http://zoo-project.org/trac/wiki/Release/1.7.0/Notes
 </div>
 </pre>
 
-==== ZOO-Project version 1.2.0 ====
+=== ZOO-Project version 1.2.0 ===
 
 <pre>
 #html
@@ -151,7 +150,7 @@ http://zoo-project.org/trac/wiki/Release/1.7.0/Notes
 #html
 </div>
 </pre>
-==== ZOO-Project version 1.0.0 ====
+=== ZOO-Project version 1.0.0 ===
 
 <pre>
 #html
@@ -170,10 +169,6 @@ http://zoo-project.org/trac/wiki/Release/1.7.0/Notes
 #html
 </div>
 </pre>
-
-
-
-
 
 
 

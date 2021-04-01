@@ -1,6 +1,5 @@
 
-
-=== ZOO-Project 1.6.0 release notes ===
+== ZOO-Project 1.6.0 release notes ==
  
 **Install symbols.sym and updateStatus.xsl in dataPath 
 **Generate main.cfg setting dataPath to SHAREDSTATEDIR 
@@ -24,10 +23,6 @@
 **Add status update for contour lines computation
 **Fix FASTCGI location using the --with-fastcgi option.
 **Redefined the API function addToMapWithSize to fix problem with Python/PHP support.
-
-
-
-
 
 
 

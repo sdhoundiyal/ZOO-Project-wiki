@@ -1,14 +1,13 @@
 
-
-=== PSC meeting 14 ===
+== PSC meeting 14 ==
 
 The PSC meeting was held on irc.freenode.net in the [irc://irc.freenode.net/#zoo-project #zoo-project] channel. If some IRC problem occur, the meeting will be exceptionally held on Skype.
 
-==== Date ====
+=== Date ===
 
 20 July 2011, [http://www.timeanddate.com/worldclock/fixedtime.html?year=2011&month=7&day=20&hour=13&min=0&sec=0 13:00:00 UTC time]
 
-==== Agenda ====
+=== Agenda ===
 
 *ZOO-Kernel-1.2.0rc2 release
 *ZOO-Docs release status
@@ -17,7 +16,7 @@ The PSC meeting was held on irc.freenode.net in the [irc://irc.freenode.net/#zoo
 *Report on WPS Benchmarking progress for FOSS4G2011
 *Add more
 
-==== Summary ====
+=== Summary ===
 
 The PSC meeting was held on irc.freenode.net in the  irc://irc.freenode.net/#zoo-project channel, on 2011 july 20th.
 
@@ -28,10 +27,6 @@ Action items:
 **djay: publish and announce 1.2.0-rc3
 
 [http://zoo-project.org/psc_meetings_logs/psc14.log IRC logs].
-
-
-
-
 
 
 

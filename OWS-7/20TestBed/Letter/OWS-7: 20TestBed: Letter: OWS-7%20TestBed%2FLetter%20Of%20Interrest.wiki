@@ -1,5 +1,4 @@
 
-
 Dear OGC,
 
 please concider this document as our expression of interrest in observing the OWS-7 Test Bed initiative.
@@ -24,10 +23,6 @@ Kind regards.
 
 Gérald Fenoy
 A ZOO Project Monkey
-
-
-
-
 
 
 

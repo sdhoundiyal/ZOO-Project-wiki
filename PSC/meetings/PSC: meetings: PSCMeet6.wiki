@@ -1,18 +1,17 @@
 
+== PSC meeting 6 ==
 
-=== PSC meeting 6 ===
-
-==== Date ====
+=== Date ===
 
 8 Sept 2010, 7:45 am
 
 Face2Face, Barcelona @ FOSS4G 2010 
 
-==== Agenda ====
+=== Agenda ===
 
 ...
 
-==== Summary ====
+=== Summary ===
 
 Meeting from 7:55 am to 8:55 am, conference hall.
 
@@ -41,10 +40,6 @@ Meeting from 7:55 am to 8:55 am, conference hall.
 9 ) We briefly discussed about prospects of using ZOO to offer commercial services
 
 10 ) PSC ended
-
-
-
-
 
 
 

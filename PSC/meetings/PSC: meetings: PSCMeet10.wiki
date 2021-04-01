@@ -1,20 +1,19 @@
 
-
-=== PSC meeting 10 ===
+== PSC meeting 10 ==
 
 The PSC meeting will be held on irc.freenode.net in the [irc://irc.freenode.net/#zoo-project #zoo-project] channel. If some IRC problem occur, the meeting will be exceptionally held on Skype.
 
-==== Date ====
+=== Date ===
 
 17 January 2011, [http://www.timeanddate.com/worldclock/fixedtime.html?day=17&month=1&year=2011&hour=12&min=0&sec=0&p1=0 12:00:00 UTC time]
 
-==== Agenda ====
+=== Agenda ===
 
 *ZOO 1.2.0 release status
 *Launching ZOO [[Sponsorship]] Plan
 *ZOO New Web Site Feedback
 
-==== Summary ====
+=== Summary ===
 
 7 PSC members attended the meeting.
 
@@ -54,10 +53,6 @@ Agenda 3: ZOO New Web Site Feedback
 ****Members agreed that the copyright should be updated to 2010-2011 in both ZOO Website and ZOO trunk files.
 
 Meeting closed.
-
-
-
-
 
 
 

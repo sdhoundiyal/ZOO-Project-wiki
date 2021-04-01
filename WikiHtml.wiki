@@ -1,15 +1,14 @@
 
+== Using HTML in Wiki Text ==
 
-=== Using HTML in Wiki Text ===
-
-Trac supports the display of HTML in any wiki context, by using the <tt>#html</tt> [./WikiProcessors WikiProcessor]. 
+Trac supports the display of HTML in any wiki context, by using the <tt>#html</tt> [/WikiProcessors WikiProcessor]. 
 
 However, this HTML has to be [http://en.wikipedia.org/wiki/Well-formed_element well-formed].
 In particular, you can't insert a start tag in an <tt>#html</tt> block, resume normal wiki text and insert the corresponding end tag in a second <tt>#html</tt> block. 
 
 Fortunately, for creating styled <div>s, <span>s  or even complex tables containing arbitrary Wiki text, there is a powerful alternative: <tt>#div</tt>, <tt>#span</tt> and <tt>#table</tt>, <tt>#tr</tt>, <tt>#td</tt> and <tt>#th</tt> blocks. Those Wiki processors are built-in and do not require additional packages to be installed.
 
-==== How to use <tt>#html</tt> ==== #HowtoUseHTML
+=== How to use <tt>#html</tt> === #HowtoUseHTML
 To inform the wiki engine that a block of text should be treated as HTML, use the ''html'' processor:
 
 {| border=1 class="simple"
@@ -37,7 +36,7 @@ Note that Trac sanitizes your HTML code before displaying it. That means that po
 The filtering is done by [http://genshi.edgewall.org/ Genshi] and the output will be a well-formed fragment of HTML. This means that you can no longer use two HTML blocks, one for opening a <div> and another for closing it, in order to wrap arbitrary wiki text.
 The new way to wrap any wiki content inside a <div> is to use the <tt>#div</tt> Wiki processor.
 
-==== How to use <tt>#div</tt> and <tt>#span</tt> ==== #HowtoUseDivSpan
+=== How to use <tt>#div</tt> and <tt>#span</tt> === #HowtoUseDivSpan
 
 {| border=1 class="simple"
 != Wiki Markup =
@@ -142,7 +141,7 @@ For spans, you should use the Macro call syntax:
   [[span(''WORLD'' (click [#anchor here]), style=color: green; font-size: 120%, id=anchor)]]!
 </pre>
 
-==== How to use <tt>#td</tt> and other table related processors ==== #Tables
+=== How to use <tt>#td</tt> and other table related processors === #Tables
 
 The <tt>#td</tt> or <tt>#th</tt> processors should be used to create table data and table header cells, respectively. The other processors <tt>#table</tt> and <tt>#tr</tt> are not required for introducing a table structure, as <tt>#td</tt> and <tt>#th</tt> will do this automatically. The <tt>|-</tt> row separator can be used to start a new row when needed, but some may prefer to use a <tt>#tr</tt> block for that, as this introduces a more formal grouping and offers the possibility to use an extra level of indentation. The main purpose of the <tt>#table</tt> and <tt>#tr</tt> is to give the possibility to specify HTML attributes, like ''style'' or ''valign'' to these elements.
 
@@ -177,7 +176,7 @@ The <tt>#td</tt> or <tt>#th</tt> processors should be used to create table data 
 |}
 
 {| border=1 class="simple"
-with pipe-based cells 
+!with pipe-based cells 
 |}
 
  <pre>#td colspan=2
@@ -422,7 +421,7 @@ Other classes can be specified as alternatives (remember that you can define you
   </pre>
 </pre>
 
-==== HTML comments ====
+=== HTML comments ===
 HTML comments are stripped from the output of the <tt>html</tt> processor. To add an HTML comment to a wiki page, use the <tt>htmlcomment</tt> processor, available since Trac 0.12:
 {| border=1 class="simple"
 != Wiki Markup =
@@ -454,17 +453,13 @@ HTML comments are stripped from the output of the <tt>html</tt> processor. To ad
 Please note that the character sequence "<tt>--</tt>" is not allowed in HTML comments, and will generate a rendering error.
 
 
-==== More Information ====
+=== More Information ===
 
 *http://www.w3.org/ -- World Wide Web Consortium
 *http://www.w3.org/MarkUp/ -- HTML Markup Home Page
 
 ----
 See also:  WikiProcessors, WikiFormatting, WikiRestructuredText
-
-
-
-
 
 
 

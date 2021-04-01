@@ -1,12 +1,11 @@
 
-
-=== Compilation ===
+== Compilation ==
 [[TOC()]]
 
 This page provides documentation on how to compile then install ZOO-Kernel on Unix and Win32 platforms.
 
 IMPORTANT: more detailed notes you can [http://zoo-project.org/docs/kernel/installation.html#kernel-installation find here].
-==== Unix ====
+=== Unix ===
 
 For Unix users, ZOO-Kernel comes with a GNU autoconf "configure" script that
 should take care of (hopefully!) all compilation issues for you.
@@ -223,7 +222,7 @@ This suppose that the <tt>/usr/include/js</tt> exists and contains the <tt>js_ap
 file and <tt>/usr/lib</tt> contains <tt>libmozjs.so</tt> file.
 
 
-==== WIN32 ====
+=== WIN32 ===
 
 ==== Requirements ====
 
@@ -301,10 +300,6 @@ nmake /f makefile.vc
 As this <tt>makefile.vc</tt> uses <tt>nmake.opt</tt> you modified earlier, it should succeed.
 
 Now you just need to copy files from the <tt>cgi-env</tt> directory into <tt>c:\OSGeo4W\bin</tt> to deploy your ServiceProvider (should contain at least a <tt>.zo</tt> and a <tt>.zcfg</tt>).
-
-
-
-
 
 
 

@@ -1,26 +1,21 @@
 
+== PSC meeting #3 ==
 
-=== PSC meeting #3 ===
-
-==== Date ====
+=== Date ===
 
 held on Wednesday, 19 May 2010 [http://www.timeanddate.com/worldclock/fixedtime.html?year=2010&month=5&day=19&hour=22&min=0&sec=0 at , 22:00 UTC time]
 
-==== Agenda ====
+=== Agenda ===
 
 *Decide meeting Chair
 *ZOO Workshop at FOSS4G2010
 *Report on ZOO presentation at Trento, Italy
-*PSC [./PSC/PSC:-process PSC guidelines proposal] page review and approval
+*PSC [/PSC/PSC:-process PSC guidelines proposal] page review and approval
 *Next meeting schedule
 
-==== Summary ====
+=== Summary ===
 
 This meeting was canceled. The Agenda items will be discussed in the next meeting scheduled for Wednesday, 16 June 2010 [http://www.timeanddate.com/worldclock/fixedtime.html?year=2010&month=6&day=16&hour=13&min=0&sec=0 at,  13:00 UTC]
-
-
-
-
 
 
 

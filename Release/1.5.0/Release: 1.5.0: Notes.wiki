@@ -1,6 +1,5 @@
 
-
-=== ZOO-Project 1.5.0 release notes ===
+== ZOO-Project 1.5.0 release notes ==
 
 **Completely rewrite of the documentation to use moderne style
 **Fix asynchronous POST request on WIN32 platforms
@@ -30,10 +29,6 @@
 
 
 ([http://lists.osgeo.org/pipermail/zoo-discuss/2015-July/001293.html Reference])
-
-
-
-
 
 
 

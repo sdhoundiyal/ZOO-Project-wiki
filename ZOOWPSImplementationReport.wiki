@@ -1,6 +1,5 @@
 
-
-=== ZOO Project WPS implementation testing ===
+== ZOO Project WPS implementation testing ==
 
 ZOO-PSC would like to report results of tests conducted on ZOO-Kernel WPS 
 implementation. 
@@ -9,7 +8,7 @@ Our testing results are presented in more details below. These validity test hav
 
 Gérald Fenoy (Chair ZOO PSC)
 
-=== ZOO Project WPS testing details ===
+== ZOO Project WPS testing details ==
 
 In light of some unusual  behavior of the ZOO Kernel reported, the ZOO PSC decided to conduct our own tests with ZOO WPS implementation using the same method reported in the FOSS4G2010 presentation.
 
@@ -48,7 +47,7 @@ http://www.zoo-project.org/zoo/../ms_tmp//ogr_service.zo_21774.xml validates
 
 You can also consult [http://zoo-project.org/ZOODEMOREP/demoReport1.html this report] which is autogenrated periodically using the same URLs and requests than the one used in this document.
 
-==== GetCapabilities request ====
+=== GetCapabilities request ===
 
 An error was pointed out about some unexpected metadata : namely Test attribute to the Metadata node getting the "Demo" value. This was due to wrong ZCFG files of the first Services we made in the beginning of the 2009 year.
 
@@ -64,7 +63,7 @@ The annex II linked to this section contains strangely a ProcessDescription docu
 </pre>
 So, for the GetCapabilities request, the Capabilities document output by the ZOO Kernel is '''Valid'''.
 
-==== DescribeProcess request ====
+=== DescribeProcess request ===
 
 ZOO Kernel handle the DescribeProcess request and output a valid ProcessDescriptions Document. Indeed the first versions of ZOO Kernel was wrong in that, but hopefully the last one, included in OSGeoLiveDVD 4.0 returns already the valid ProcessDescriptions document.
 
@@ -76,7 +75,7 @@ Note that this request is '''Valid''' also :
 
 http://zoo-project.org/cgi-bin-new/zoo_loader.cgi?REQUEST=DescribeProcess&SERVICE=WPS&version=1.0.0&Identifier=Buffer,Boundary,Centroid,ConvexHull,Simplify,Union,Intersection,Difference,SymDifference
 
-==== Execute request ====
+=== Execute request ===
 
 ZOO WPS provides valid response for Execute as XML POST requests, as it is the mandatory method.
 
@@ -232,10 +231,6 @@ The resulting document and the statusLocation document are both '''Valid'''.
 </pre>
 
 The result is valid in the sense that it is a JSON string representing the resulting polygon.
-
-
-
-
 
 
 

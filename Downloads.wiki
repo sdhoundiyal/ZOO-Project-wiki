@@ -1,11 +1,10 @@
 
-
 [[TOC]]
-=== ZOO-Project Download section ===
+== ZOO-Project Download section ==
 
 In this page you'll find all the ZOO-Project releases.
 
-==== ZOO-Project version 1.5.0 ====
+=== ZOO-Project version 1.5.0 ===
 
 [http://zoo-project.org/trac/wiki/Release/1.5.0/Notes Release Notes]
 
@@ -22,7 +21,7 @@ In this page you'll find all the ZOO-Project releases.
 *ZOO-Project Release 1.5.0-rc1: http://svn.zoo-project.org/svn/tags/rel-1.5.0-rc1
 
 
-==== ZOO-Project version 1.4.0 ====
+=== ZOO-Project version 1.4.0 ===
 
 [http://zoo-project.org/trac/wiki/Release/1.4.0/Notes Release Notes]
 
@@ -38,7 +37,7 @@ In this page you'll find all the ZOO-Project releases.
 *'''ZOO-Project Release 1.4.0: http://svn.zoo-project.org/svn/tags/rel-1.4.0'''
 *ZOO-Project Release 1.4.0-rc1: http://svn.zoo-project.org/svn/tags/rel-1.4.0-rc1
 
-==== ZOO-Project version 1.3.0 ====
+=== ZOO-Project version 1.3.0 ===
 
 [http://zoo-project.org/trac/wiki/Release/1.3.0/Notes Release Notes]
 
@@ -56,7 +55,7 @@ In this page you'll find all the ZOO-Project releases.
 *ZOO-Project Release 1.3.0-rc1: http://svn.zoo-project.org/svn/tags/rel-1.3.0-rc1
 *ZOO-Project Release 1.3.0-rc2: http://svn.zoo-project.org/svn/tags/rel-1.3.0-rc2
 
-==== ZOO-Project version 1.2.0 ====
+=== ZOO-Project version 1.2.0 ===
 
 [http://zoo-project.org/trac/wiki/Release/1.2.0/Notes Release Notes]
 
@@ -76,7 +75,7 @@ In this page you'll find all the ZOO-Project releases.
 *ZOO-Project Release 1.2.0-rc2: http://svn.zoo-project.org/svn/tags/rel-1.2.0-rc2
 *ZOO-Project Release 1.2.0-rc3: http://svn.zoo-project.org/svn/tags/rel-1.2.0-rc3
 
-==== ZOO-Project version 1.0.0 ====
+=== ZOO-Project version 1.0.0 ===
 
 ==== Download ====
 
@@ -85,7 +84,7 @@ In this page you'll find all the ZOO-Project releases.
 [http://www.zoo-project.org/dl/ZOO-Kernel-1.0.tar.bz2 ZOO-Kernel-1.0.tar.bz2] / [http://www.zoo-project.org/dl/ZOO-Kernel-1.0.zip ZOO-Kernel-1.0.zip]
 
 ([http://lists.osgeo.org/pipermail/zoo-discuss/2010-April/000221.html Reference])
-==== For developers ====
+=== For developers ===
 
 <pre>
 #sh
@@ -99,10 +98,6 @@ For registred developers, you can use SSH or HTTPS protocol. Information on how 
 # sed "s:\[tunnels\]:\[tunnels\]\nzoossh = /usr/bin/ssh -p 1046:g" -i ~/.subversion/config
 # svn co svn+zoossh://svn.zoo-project.org/var/svn/repos/trunk zoo-project
 </pre>
-
-
-
-
 
 
 

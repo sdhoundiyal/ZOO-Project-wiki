@@ -1,7 +1,5 @@
-1
 
-
-=== Project Steering Committee Guidelines ===
+== Project Steering Committee Guidelines ==
 
 <br>
 > Date: 2010/03/29<br>
@@ -10,7 +8,7 @@
 > Status: Accepted
 <br>
 
-==== Summary ====
+=== Summary ===
 
 This document describes how the ZOO-Project Project Steering Committee determines membership, and makes decisions on all aspects of the ZOO-Project project - both technical and non-technical.
 
@@ -27,9 +25,9 @@ This document describes how the ZOO-Project Project Steering Committee determine
 
 In brief the project team votes on proposals on [http://lists.osgeo.org/cgi-bin/mailman/listinfo/zoo-psc ZOO-Project PSC mailing list]. Proposals are available for review for at least four days, and a single veto is sufficient delay progress though ultimately a majority of members can pass a proposal.
 
-==== Detailed Process ====
+=== Detailed Process ===
 
-*Proposals are written up on the [./ ZOO-Project wiki] or submitted on the  [http://gisws.media.osaka-cu.ac.jp/mailman/listinfo/zoo-discuss ZOO-Project mailing list] for discussion and voting, by any interested party, not just committee members.
+*Proposals are written up on the [/ ZOO-Project wiki] or submitted on the  [http://gisws.media.osaka-cu.ac.jp/mailman/listinfo/zoo-discuss ZOO-Project mailing list] for discussion and voting, by any interested party, not just committee members.
 *Proposals need to be available for review for at least four business days before a final decision can be made.
 *Respondents may vote “+1” to indicate support for the proposal and a willingness to support implementation.
 *Respondents may vote “-1” to veto a proposal, but must provide clear reasoning and alternate approaches to resolving the problem within the two  days. Otherwise the veto will be considered invalid.
@@ -43,7 +41,7 @@ In brief the project team votes on proposals on [http://lists.osgeo.org/cgi-bin/
 *Addition and removal of members from the committee, as well as selection of a Chair should be handled as a proposal to the committee.
 *The Chair adjudicates in cases of disputes about voting.
 
-==== When is Vote Required? ====
+=== When is Vote Required? ===
 
 *Any change to committee membership (new members, removing inactive members)
 *Changes to project infrastructure (e.g. tool, location or substantive configuration)
@@ -56,25 +54,25 @@ In brief the project team votes on proposals on [http://lists.osgeo.org/cgi-bin/
 *Anything dealing with relationships with external entities such as OSGeo
 *Anything that might be controversial.
 
-==== Observations ====
+=== Observations ===
 
 *The Chair is the ultimate adjudicator if things break down.
 *The absolute majority rule can be used to override an obstructionist veto, but it is intended that in normal circumstances vetoers need to be convinced to withdraw their veto. We are trying to reach consensus.
 *It is anticipated that separate “committees” will exist to manage conferences, documentation and web sites. That said, it is expected that the PSC will be the entity largely responsible for creating any such committees.
 
-==== Committee Membership ====
+=== Committee Membership ===
 
 The PSC is made up of individuals consisting of technical contributors (e.g. developers) and prominent members of the  ZOO-Project user community. There is no set number of members for the PSC although the initial desire to have members from all previously main contributing parties.
 
 ==== Adding Members ====
 
-Any member of the [./ ZOO-Project wiki] and submitted on the  [http://gisws.media.osaka-cu.ac.jp/mailman/listinfo/zoo-discuss ZOO-Project mailing list] may nominate someone for committee membership at any time. Only existing PSC committee members may vote on new members. Nominees must receive a majority vote from existing members to be added to the PSC.
+Any member of the [/ ZOO-Project wiki] and submitted on the  [http://gisws.media.osaka-cu.ac.jp/mailman/listinfo/zoo-discuss ZOO-Project mailing list] may nominate someone for committee membership at any time. Only existing PSC committee members may vote on new members. Nominees must receive a majority vote from existing members to be added to the PSC.
 
 ==== Stepping Down ====
 
 If for any reason a PSC member is not able to fully participate then they certainly are free to step down. If a member is not active (e.g. no voting, no IRC, forum or email participation) for a period of six months then the committee reserves the right to seek nominations to fill that position. Should that person become active again then they would certainly be welcome, but would require a nomination.
 
-==== Membership Responsibilities ====
+=== Membership Responsibilities ===
 
 ==== Guiding Development ====
 
@@ -84,7 +82,7 @@ Members should take an active role guiding the development of new features they 
 
 PSC members are expected to be active on [http://gisws.media.osaka-cu.ac.jp/mailman/listinfo/zoo-discuss ZOO-Project mailing list], subject to open source mailing list etiquette. Non-developer members of the PSC are not expected to respond to coding level questions on the developer mailing list, however they are expected to provide their thoughts and opinions on user level requirements and compatibility issues when RFC discussions take place.
 
-==== Bootstrapping ====
+=== Bootstrapping ===
 
 Initial members of the the Project Steering Committe are:
 
@@ -102,10 +100,6 @@ Initial members of the the Project Steering Committe are:
 Gerald FENOY is declared initial Chair of the Project Steering Committee.
 
 For an updated committee membership list, see [[PSC]]. 
-
-
-
-
 
 
 

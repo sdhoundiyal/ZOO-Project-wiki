@@ -1,29 +1,21 @@
-1
-2
-3
-4
-5
-6
-7
 
+== Creating OGR based Web Services ==
 
-=== Creating OGR based Web Services ===
-
-<u>TOC</u>
-[./ZooWorkshop/FOSS4GJapan/ZooWorkshop:-FOSS4GJapan:-UsingZooFromOSGeoLiveVM Prev.] | [./ZooWorkshop/ZooWorkshop:-FOSS4GJapan WorkShop table of content] | [./ZooWorkshop/FOSS4GJapan/ZooWorkshop:-FOSS4GJapan:-BuildingWPSClientUsingOL Next]
+__TOC__
+[/ZooWorkshop/FOSS4GJapan/ZooWorkshop:-FOSS4GJapan:-UsingZooFromOSGeoLiveVM Prev.] | [/ZooWorkshop/ZooWorkshop:-FOSS4GJapan WorkShop table of content] | [/ZooWorkshop/FOSS4GJapan/ZooWorkshop:-FOSS4GJapan:-BuildingWPSClientUsingOL Next]
 
 [[Image(http://www.lafon-svv.com/html/images/ligne_horizontale.gif,width=530px,height=0.5px,nolink)]]
 
 
-==== Introduction ====
+=== Introduction ===
 
 In this part, we are going to create a ZOO ServicesProvider containing several Services based on the OGR C API or on the OGR Python module, which have also been placed in the ZOO installation on OSGeoLive. The intended goal is to use OGR and its GEOS based simple spatial functions as WPS Services.
 
-We will first start with the Boundary spatial function, which will be explained, codded and tested gradually as a ZOO Service. The same procedure will then be used to enable the Buffer, Centroid and Convex Hull functions. Once done, some multiple geometries processes such as Intersection, Union, Difference and Symetric Difference will be implemented through an [./ZooWorkshop/FOSS4GJapan/ZooWorkshop:-FOSS4GJapan:-Exercice exercise] at the end of the workshop.
+We will first start with the Boundary spatial function, which will be explained, codded and tested gradually as a ZOO Service. The same procedure will then be used to enable the Buffer, Centroid and Convex Hull functions. Once done, some multiple geometries processes such as Intersection, Union, Difference and Symetric Difference will be implemented through an [/ZooWorkshop/FOSS4GJapan/ZooWorkshop:-FOSS4GJapan:-Exercice exercise] at the end of the workshop.
 
 As already said in the introduction, you have the choice to code your service in C or Python (or both!) during this workshop. Explanations will be based on the C part, but will be very helpful for those who will choose Python. Please decide according to your habits and preferences and tell your choice to the instructors. The results will be the same in both case.
 
-==== Preparing ZOO metadata file ====
+=== Preparing ZOO metadata file ===
 
 A ZOO Service is a combination of a ZOO metadata file (.zcfg) and the runtime module for the corresponding implementation, which is commonly called ZOO Service Provider. We will first prepare a .zcfg file step-by-step. Please open your preferred text editor and edit a file named <tt>Boundary.zcfg</tt> in your <tt>/home/user/zoows/sources/zoo-services/ws_sp directory</tt>. First, you need to name the service between brackets at the top of the file, as the following:
 
@@ -157,7 +149,7 @@ A similar error message will be returned if you try to run your Python Service :
 
 [[Image(Practical introduction to ZOO - 6.png,width=550px,nolink)]]
 
-==== Implementing single geometry services ====
+=== Implementing single geometry services ===
 
 In order to learn the Services Provider creation and deployement step-by-step, we will first focus on creating a very simple one dedicated to the Boundary function. Similar procedure will then be used for the Buffer, Centroid and ConvexHull implementation.
 
@@ -668,7 +660,7 @@ rewriteUrl=call
 dataPath=/var/www/data
 </pre>
 
-Here you define the path where the service is able to find the xsl file, specified in the <tt>dataPath</tt> parameter. You also tell the ZOO Kernel that you want to use the rewriteUrl we defined in the [./ZooWorkshop/FOSS4GJapan/ZooWorkshop:-FOSS4GJapan:-UsingZooFromOSGeoLiveVM previous section].
+Here you define the path where the service is able to find the xsl file, specified in the <tt>dataPath</tt> parameter. You also tell the ZOO Kernel that you want to use the rewriteUrl we defined in the [/ZooWorkshop/FOSS4GJapan/ZooWorkshop:-FOSS4GJapan:-UsingZooFromOSGeoLiveVM previous section].
 
 To finish your deployment, you'll have now to copy the xsl file in the defined <tt>dataPath</tt> directory. You can use the following command :
 
@@ -1051,11 +1043,7 @@ http://zoo-project.org/trac/browser/trunk/zoo-services/ogr/base-vect-ops/cgi-env
 
 You can now ask ZOO Kernel for GetCapabilities, DescribeProcess and Execute for the Buffer Service.
 
-[./ZooWorkshop/FOSS4GJapan/ZooWorkshop:-FOSS4GJapan:-UsingZooFromOSGeoLiveVM Prev.] | [./ZooWorkshop/ZooWorkshop:-FOSS4GJapan WorkShop table of content] | [./ZooWorkshop/FOSS4GJapan/ZooWorkshop:-FOSS4GJapan:-BuildingWPSClientUsingOL Next]
-
-
-
-
+[/ZooWorkshop/FOSS4GJapan/ZooWorkshop:-FOSS4GJapan:-UsingZooFromOSGeoLiveVM Prev.] | [/ZooWorkshop/ZooWorkshop:-FOSS4GJapan WorkShop table of content] | [/ZooWorkshop/FOSS4GJapan/ZooWorkshop:-FOSS4GJapan:-BuildingWPSClientUsingOL Next]
 
 
 

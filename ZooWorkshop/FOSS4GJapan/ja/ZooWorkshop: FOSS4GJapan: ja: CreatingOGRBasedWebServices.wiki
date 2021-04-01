@@ -1,20 +1,14 @@
-1
-2
-3
-4
-5
 
+== OGRのWeb サービス作成 ==
 
-=== OGRのWeb サービス作成 ===
-
-<u>TOC</u>
-[./ZooWorkshop/FOSS4GJapan/ja/ZooWorkshop:-FOSS4GJapan:-ja:-UsingZooFromOSGeoLiveVM 前へ] | [./ZooWorkshop/FOSS4GJapan/ZooWorkshop:-FOSS4GJapan:-ja ワークショップ 目次] | [./ZooWorkshop/FOSS4GJapan/ja/ZooWorkshop:-FOSS4GJapan:-ja:-BuildingWPSClientUsingOL 次へ]
+__TOC__
+[/ZooWorkshop/FOSS4GJapan/ja/ZooWorkshop:-FOSS4GJapan:-ja:-UsingZooFromOSGeoLiveVM 前へ] | [/ZooWorkshop/FOSS4GJapan/ZooWorkshop:-FOSS4GJapan:-ja ワークショップ 目次] | [/ZooWorkshop/FOSS4GJapan/ja/ZooWorkshop:-FOSS4GJapan:-ja:-BuildingWPSClientUsingOL 次へ]
 
 [[Image(http://www.lafon-svv.com/html/images/ligne_horizontale.gif,width=530px,height=0.5px,nolink)]]
 
 
 
-==== イントロダクション ====
+=== イントロダクション ===
 
 このパートではZOOのサービス提供機能を作成します。これにはOSGeoLiveのDVDに含まれているZOOのインストーラーで組み込まれるOGRのC言語API、Pythonモジュールを使います。目標とするゴールは、OGRとGEOSベースの簡単な空間関数をWPSサービスとして使うことです。
 
@@ -23,7 +17,7 @@
 
 既に述べたように、このワークショップではサービスを記述する言語はCもしくはPython（もしくは両方！）を選ぶことができます。解説はC言語に沿って行いますが、この解説はPythonを利用する方にも非常に役立つ内容になっています。どちらの言語を使用するか決めたらインストラクターに報告してください。どちらの言語を選択されても、ワークショップの結果は同じです。
 
-==== ZOO メタデータファイルの準備 ====
+=== ZOO メタデータファイルの準備 ===
 
 ZOOメタデータの用意
 
@@ -176,7 +170,7 @@ GetCapabilities と DescribeProcess　を実行には　.zfgファイルさえ�
 [[Image(http://www.zoo-project.org/trac/raw-attachment/wiki/ZooWorkshop/FOSS4GJapan/CreatingOGRBasedWebServices/Practical%20introduction%20to%20ZOO%20-%206.png,width=550px,nolink)]]
 
 
-==== ジオメトリサービスの実装 ====
+=== ジオメトリサービスの実装 ===
 
 サービスプロバイダー作成と開発をステップバイステップで学習するため、はじめに Boundary 関数専用の非常に簡単なものの作成に着目しましょう。
 同様の手段を Buffer、 Centroid と ConvexHull の実装に用います。
@@ -1021,11 +1015,7 @@ http://zoo-project.org/trac/browser/trunk/zoo-services/ogr/base-vect-ops/cgi-env
 
 あなたは､バッファサービスついて GetCapabilities や DescribeProcess そして Execute をZOOカーネルにたずねることができます｡
 
-[./ZooWorkshop/FOSS4GJapan/ja/ZooWorkshop:-FOSS4GJapan:-ja:-UsingZooFromOSGeoLiveVM 前へ] | [./ZooWorkshop/FOSS4GJapan/ZooWorkshop:-FOSS4GJapan:-ja ワークショップ 目次] | [./ZooWorkshop/FOSS4GJapan/ja/ZooWorkshop:-FOSS4GJapan:-ja:-BuildingWPSClientUsingOL 次へ]
-
-
-
-
+[/ZooWorkshop/FOSS4GJapan/ja/ZooWorkshop:-FOSS4GJapan:-ja:-UsingZooFromOSGeoLiveVM 前へ] | [/ZooWorkshop/FOSS4GJapan/ZooWorkshop:-FOSS4GJapan:-ja ワークショップ 目次] | [/ZooWorkshop/FOSS4GJapan/ja/ZooWorkshop:-FOSS4GJapan:-ja:-BuildingWPSClientUsingOL 次へ]
 
 
 

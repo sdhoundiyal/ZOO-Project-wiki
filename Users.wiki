@@ -1,6 +1,5 @@
 
-
-=== ZOO Project Trac registered users ===
+== ZOO Project Trac registered users ==
 
 The current registered users on the ZOO Trac System are the following : 
 
@@ -22,10 +21,6 @@ The current registered users on the ZOO Trac System are the following :
 *Daniel Kastl (aka [mailto:daniel@georepublic.de dkastl]).
 
 Click [mailto:zoo-discuss@gisws.media.osaka-cu.ac.jp here] if you want to contact everybody in this list.
-
-
-
-
 
 
 

@@ -1,10 +1,9 @@
 
-
-=== ZOO Translation page ===
+== ZOO Translation page ==
 
 You'll find here information about how the ZOO Kernel use the ''gettext'' technology to translate on the fly both ZOO Kernel internal messages and also ZOO Services Provider internal messages and zcfg content.
 
-==== Method to get your zcfg translated ====
+=== Method to get your zcfg translated ===
 
 First, use the following commands from your Services Provider directory to extract all translatable messages from your ZCFG files :
 
@@ -55,10 +54,6 @@ As many Services Provider Metadata File (zcfg) can be already translated, it can
 msgcat -o compilation.po $(find ../../ -name fr_FR.utf8.po)
 msgfmt compilation.po -o /usr/share/locale/fr/LC_MESSAGES/zoo-services.mo
 </pre>
-
-
-
-
 
 
 

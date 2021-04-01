@@ -1,20 +1,19 @@
 
-
-=== ZooKernel Internal mechanisms ===
+== ZooKernel Internal mechanisms ==
 
 The ZooKernel is the core of the Zoo WPS Server. Indeed, it is responsible to run services or get informations from an available service and provide a well formed output document.
 
-==== Services ====
+=== Services ===
 
 Before explaining processes involved in the ZooKernel we will explain what is a service from the ZooKernel point of view. A service is simply a metadata file (file using MetadataSyntax and using the <tt>.zcfg</tt> extension) which describe the specific service metadata, such as Title, Metadata, Inputs, Outputs. Coupled to this metadata description file, ZooKernel use a dynamic library (or python module or ..., called service shared object) which it dynamicaly load and run specified function (the Identifier passed through a request).
 
-==== General Principles ====
+=== General Principles ===
 
 ZooKernel always parse the request provided by the web server. If the request has been sent using the GET method, then the ZooKernel will treat parameters in a normal way (using KVP). To treat the POST method, ZooKernel will use the request parameter sent as an XML file containing a specific operation request document (GetCapabilities, DescribeProcess or Execute).
 
 ZooKernel store parsed values in a maps datastructure.
 
-==== Requests ====
+=== Requests ===
 
 ==== GetCapabilities ====
 
@@ -27,10 +26,6 @@ As the response to this request should simply include metadata of one (or more) 
 ==== Execute ====
 
 In this case, ZooKernel first parse the metadata file to get specific requested informations, such as default value formating (if nothing was speficified in request or to check if specified was acceptable), then dynamicaly load the service shared object, try to call the process and output a well formed ResponseDocument or the returned file in case of RawDataOutput was queried.
-
-
-
-
 
 
 

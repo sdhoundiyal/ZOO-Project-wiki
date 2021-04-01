@@ -1,6 +1,5 @@
 
-
-==== Default files found in OpenOffice.org.app ====
+=== Default files found in OpenOffice.org.app ===
 
 Files and libraries allready included in Binary distribution of OpenOffice : 
 
@@ -18,7 +17,7 @@ Files and libraries allready included in Binary distribution of OpenOffice :
 /Applications/OpenOffice.org.app/Contents//basis-link/program/libxpcom_compat.dylib
 </pre>
 
-==== XPCOM_UNO COMPILATION ====
+=== XPCOM_UNO COMPILATION ===
 
 ==== Sources code access ====
 
@@ -169,10 +168,6 @@ The following error occurs :
 ../inc/xpcomreference.hxx:191: error: expected primary-expression before ‘>’ token
 ../inc/xpcomreference.hxx:191: error: ‘::kIID’ has not been declared
 </pre>
-
-
-
-
 
 
 

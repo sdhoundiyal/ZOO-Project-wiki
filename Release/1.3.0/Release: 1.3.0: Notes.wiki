@@ -1,6 +1,5 @@
 
-
-=== ZOO-Project 1.3.0 release notes ===
+== ZOO-Project 1.3.0 release notes ==
 
 **Updating ZOO.Class object with the OpenLayers.Class Updating ZOO.Class with the (ticket #64)
 **Correct the content of proj4js (ticket #63)
@@ -27,10 +26,6 @@
 **Add COMMITTERS  and LICENSE files
 
 ([http://lists.osgeo.org/pipermail/zoo-discuss/2013-July/000992.html Reference])
-
-
-
-
 
 
 

@@ -1,8 +1,7 @@
 
+== OSGeo Incubation Status ==
 
-=== OSGeo Incubation Status ===
-
-==== General ====
+=== General ===
 
 Has the project been approved for incubation by the OSGeo board?
     Yes 
@@ -10,7 +9,7 @@ Has the project been approved for incubation by the OSGeo board?
 Has an Incubation Mentor been assigned to the project?
     Frank Warmerdam.
 
-==== Infrastructure Transition ====
+=== Infrastructure Transition ===
 
 Note, for each of the following it isn't necessary to move to foundation infrastructure, but if you aren't a reason should be provided.
 
@@ -29,7 +28,7 @@ Is the OSGeo SVN being used for the project?
 Are binary and source downloads available from http://download.osgeo.org ?
     Binary and source downloads are not available on download.osgeo.org cause we do not get access to the FTP server to upload the sources. Note that we try to avoid providing binary versions of our software by now.
 
-==== Community Functioning ====
+=== Community Functioning ===
 
 Is there a functioning user support mechanisms (ie. mailing list)?
     There is firstly the Trac system where users can fill tickets, it is used when required by users and developper community. There is also the mailing list. Unfortunatelly from our experience it seems that more users prefer to use mailing lit rather than Trac but some prefer tickets.
@@ -46,7 +45,7 @@ Does the Project Steering Committee have documentation on project procedures for
 How many active developers are there? Are they from multiple organizations?
     Indicate number and some organizations involved. 
 
-==== Foundation Membership ====
+=== Foundation Membership ===
 
 Have project documents been updated to reflect membership in the foundation, and the relationship of the project to the foundation?
     No, I don't think so.
@@ -54,7 +53,7 @@ Have project documents been updated to reflect membership in the foundation, and
 Has an effort been made to brand the project web site with OSGeo foundation web styling and branding marks?
     There was always a link with OSGeo (including branding such as logos) as the ZOO-Project's initial goal was to become a "standardized bus" on top of OSGeo softwares so reference to OSGeo was there from the begining. note that the OSGeo Project in Incubation was added when we was accepted by the board to enter in incubation process. Nevertheless, there was no adaptation by applying a non-existing style. 
 
-==== Code Copyright Review ====
+=== Code Copyright Review ===
 
 Has a Code Provenance Review document been prepared for the project?
     Yes, the Code Provenance Review is [http://zoo-project.org/trac/wiki/Provenance%20Review here].
@@ -64,10 +63,6 @@ Have issues raised in the provenance review been adequately addressed?
 
 Are Commiter Responsibilities Guidelines covering legal issues in place?
     Yes, we used the GDAL Project RFC 3 as a base document to create our own, available [http://zoo-project.org/docs/community/developer.html here].  PSC should adopt the document. Committers agreement are coming.
-
-
-
-
 
 
 

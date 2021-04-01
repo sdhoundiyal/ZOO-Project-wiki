@@ -1,6 +1,5 @@
 
-
-=== zoo-discuss Mailing Subscribed Users List === 
+== zoo-discuss Mailing Subscribed Users List == 
 
 You find here who is curently subscribed to the zoo-discuss mailing list:
 
@@ -26,10 +25,6 @@ You find here who is curently subscribed to the zoo-discuss mailing list:
 *soerengebbert@googlemail.com
 *song.osgeo@gmail.com
 *warmerdam@pobox.com
-
-
-
-
 
 
 

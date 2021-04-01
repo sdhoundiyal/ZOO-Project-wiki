@@ -1,5 +1,4 @@
 
-
 Inputs maps data structure for this [http://shilpa.media.osaka-cu.ac.jp/zoo/driftx/gdal_service.zo/?request=Execute&service=WPS&version=1.0.0&language=en-CA&Identifier=Gdal_Translate&DataInputs=Format=GIF@datatype=string;InputDSN=srtm_kashiwara@datatype=string;OutputDSN=srtm_kashiwara_output6@datatype=string;ProjWin=135.6212504,34.5820833,135.6679170,34.5670833,urn:ogc:def:crs:EPSG:6.6:4326,2;demo=Reference@xlink:href=http%3A%2F%2Fcarto.languedoc-roussillon.ecologie.gouv.fr%2Fwebservices%2Fwfs%2Fdiren_general%2F%3FVERSION%3D1.1.0%26service%3DWFS%26request%3DGetFeature%26typename%3DZnieff1%26maxfeatures%3D1 request] :
 
 <pre>
@@ -54,10 +53,6 @@ MAP => [demo]
     </gml:featureMember>
 </wfs:FeatureCollection>] 
 </pre>
-
-
-
-
 
 
 

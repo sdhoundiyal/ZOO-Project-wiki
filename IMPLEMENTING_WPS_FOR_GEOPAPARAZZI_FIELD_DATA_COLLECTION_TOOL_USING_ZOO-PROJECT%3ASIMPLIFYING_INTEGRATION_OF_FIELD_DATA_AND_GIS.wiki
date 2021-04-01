@@ -1,12 +1,11 @@
 
-
-=== Implementing WPS for Geopaparazzi field data collection tool using ZOO-Project: Simplifying integration of field data and GIS ===
+== Implementing WPS for Geopaparazzi field data collection tool using ZOO-Project: Simplifying integration of field data and GIS ==
 
 
 <pre>#table class="listing"
 {| border=1 class="simple"
 !=Students' Name  =
-Niroshan Sanjaya 
+!Niroshan Sanjaya 
 |- 
 | =Mentors  =
 | Gerald Fenoy, Andrea Antonello 
@@ -14,21 +13,21 @@ Niroshan Sanjaya
 
 </pre>
 
-==== Brief description of your idea ====
+=== Brief description of your idea ===
 JGrasstools is a library which contains a variety of geoprocessing functionalities. It has been used for many GIS framework to provide a comprehensive Java solution for GIS packages for data access, editing, visualization and analysis. On the other hand Geopaparazzi is a standalone mobile app for field data collection. It enables user to collect georeferenced field data. Idea of this proposal is to enable the JGrasstools library to serve as geoprocessing engine using the WPS standard implemented in the ZOO­Project (http://zoo­project.org/). The main task in this proposal would the preparation and conversion of field data from geopaparazzi projects to Web­GIS platform enabling data analysis and sharing. The project will demonstrate and document the methods to deploy WPS using JGrasstools as the geoprocessing engine. As a future possibility, the project would facilitate Web­GIS platform with rich set functionality especially in hydrology and water management needs. The results of this project will be useful for deploying Web application for Monitoring and Evaluation (M&E) needs.
 
 
-==== State of the software before GSoC ====
+=== State of the software before GSoC ===
 The JGrasstools can be adopted quite easily to other toolboxes such as gvSIG, since it is a modular processing library. It already used by some desktop GIS and toolkits. And currently geopaparazzi data can be exported to some desktop GIS clients like GRASS, QGIS, gvSIG. STAGE (https://github.com/geopaparazzi/geopaparazzi/wiki) is also available as a stand alone application to create background maps (tiles) that can be offline to assist in field survey. Further, STAGE also provides tools to get the field data into desktop for visualization and further analysis.
 
 Presently existing solutions would require users to familiarize with desktop tools to effectively use geopaparazzi as a field data collection tools. The project aims at providing data import/export functionality as WPS which are unavailable at present and this will significantly simplify the workflow for collection, sharing, analysis and integration of field data in geospatial analysis.
 
-==== State of the software after GSoC ====
+=== State of the software after GSoC ===
 
 Capabilities of JGrasstools will be firstly integrated with geopaparazzi and it will be directly available online. Ports for other capabilities of JGrasstools also directly available online. Further, a simple user interface will be provided to run the services remotely.
 This enables users to utilize Geopaparazzi for field data collection without having an experience on desktop GIS. User will be able to import/export and convert the Geopaparazzi data through WPS. Apart from that user will be able to analyse the data being in the same platform.
 
-==== Schedule ====
+=== Schedule ===
 Basically this project based on ZOO­Project and the JGrasstools. Those two has many capabilities and functions. In order to focus this project, those functions and capabilities will be studied before start the GSoC.
 
 |-
@@ -85,11 +84,11 @@ Basically this project based on ZOO­Project and the JGrasstools. Those two has 
 
 While we are doing above steps, all the steps and action will be documented as a blog posts including all the errors and issues as a discussion.
 
-==== Reports ====
+=== Reports ===
 
 No reports yet.
 
-==== Student's Biography ====
+=== Student's Biography ===
 
 I am a student at Osaka City University, Japan. I am following a Master programme on Urban Information study at Graduate School of Creative Cities. I have completed my Bachelor degree in Town and Country Planning, specialized on Planning technology. Basically, My Master research focus on Crowdsourced geo­spatial data integration with web based GIS services. I have been working as a research assistant on Open Source technologies after the graduation. With that I have realized the importance of open source technologies for research and the development.
 Now I am trying to develop a crowdsourced spatial data collection system for real time disaster simulation and modeling as a part of my research. It helps me to understand the concept of ZOO­Project and it capabilities. It inspired me to do this project.
@@ -128,10 +127,6 @@ Assess the level of vulnerability to climate exaggerated disasters in Sri Lankan
 
 
 '''OSGEO Wiki:''' https://wiki.osgeo.org/wiki/IMPLEMENTING_WPS_FOR_GEOPAPARAZZI_FIELD_DATA_COLLECTION_TOOL_USING_ZOO-PROJECT:SIMPLIFYING_INTEGRATION_OF_FIELD_DATA_AND_GIS
-
-
-
-
 
 
 

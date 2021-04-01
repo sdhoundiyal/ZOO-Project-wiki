@@ -1,14 +1,13 @@
 
-
-=== PSC meeting 7 ===
+== PSC meeting 7 ==
 
 The PSC meetings was held on irc.freenode.net in the #zoo-project channel
 
-==== Date ====
+=== Date ===
 
 20 October 2010, 13:00 till 14:45 UTC
 
-==== Agenda ====
+=== Agenda ===
 
 *ZOO Kernel recent improvements and release plans
 *ZOO [http://www.zoo-project.org/trac/wiki/Sponsorship Sponsorship Plan] and PayPal account
@@ -17,7 +16,7 @@ The PSC meetings was held on irc.freenode.net in the #zoo-project channel
 *Using OSGeo infrastructure (SVN, Trac, mailing lists, etc.)
 *Time and date for next meeting
 
-==== Summary ====
+=== Summary ===
 '''DRAFT Version (23 October 2010)'''
 
 '''Date&Time'''  20th Oct, 2010. 13:00 till 14:45 UTC Members: Nicolas BOZON, Maria BROVELLI, Massimiliano CANNATA, Gerald FENOY, Hirofumi HAYASHI, Venkatesh RAGHAVAN, Daniel KASTL, Jeff McKENNA, Markus NETELER were present at the meeting. Satoshi SEKIGUCHI was not present at the meeting.
@@ -74,10 +73,6 @@ improved documentation to be added in the renewed website.
 Date&Time to be decided on PSC ML.
 
 Gerald moved motion to close the meeting. The motion was accepted and the meeting was closed.
-
-
-
-
 
 
 

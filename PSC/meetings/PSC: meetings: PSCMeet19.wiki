@@ -1,14 +1,13 @@
 
-
-=== PSC meeting 19 ===
+== PSC meeting 19 ==
 
 The PSC meeting will be held face to face at FOSS4G-Europe in Bremen, Germany.
 
-==== Proposed Time and Date ====
+=== Proposed Time and Date ===
 
 Friday, 18 July 2014 [http://www.timeanddate.com/worldclock/fixedtime.html?year=2014&month=07&day=18&hour=11:00&min=0&sec=0 at,  11:00 UTC]
 
-==== Agenda ====
+=== Agenda ===
 
 *Upcoming ZOO 1.4 release (new features and changesets by Gerald)
 
@@ -24,7 +23,7 @@ Friday, 18 July 2014 [http://www.timeanddate.com/worldclock/fixedtime.html?year=
 
 *Add your ideas
 
-==== Summary ====
+=== Summary ===
 
 This PSC meeting was held face to face on Friday, 18 July 2014 during the FOSS4G Europe conference in Bremen.
 
@@ -45,10 +44,6 @@ This PSC meeting was held face to face on Friday, 18 July 2014 during the FOSS4G
 *Explanations about plans for the new ZOO website by Nicolas
 
 *End of meeting.
-
-
-
-
 
 
 

@@ -1,10 +1,9 @@
 
-
-=== Fortran Support in ZOO Kernel ===
+== Fortran Support in ZOO Kernel ==
 
 This page will contain full information about the Fortran support in the ZOO Kernel.
 
-==== Fortran code snipest ====
+=== Fortran code snipest ===
 
 Let us create a small example of a Fortran function which simply multiply by two the value passed as argument.
 
@@ -185,7 +184,7 @@ Z(1,1)='' Z(2,1)='' Z(3,1)='' Z(4,1)='' Z(5,1)='' Z(6,1)='' Z(7,1)='' Z(8,1)='' 
 ****************
 </pre>
 
-==== Conclusion ====
+=== Conclusion ===
 
 So we can say that loading a C SSO (Service Shared Object) or a Fortran one work in the same way.
 
@@ -193,7 +192,7 @@ The goal is now to be able to pass maps* datastructure to the fortran function t
 
 Hopefully the code provided here display well the result value in the right array (matrix!? :) ).
 
-==== Documentation list ====
+=== Documentation list ===
 
 *[http://www.math.utah.edu/software/c-with-fortran.html Using C and C++ with Fortran]
 *[http://www.idris.fr/data/cours/lang/fortran/f90/F77.html#p2.1 Fortran 77 for beginners]
@@ -201,10 +200,6 @@ Hopefully the code provided here display well the result value in the right arra
 *[http://www.obliquity.com/computer/fortran/ FORTRAN 77 Reference]
 *[http://arnholm.org/software/cppf77/cppf77.htm Mixed language programming using C++ and FORTRAN 77]
 *[http://perso.enstimac.fr/~gaborit/lang/CoursDeFortran/ INITIATION AU FORTRAN] (in french only)
-
-
-
-
 
 
 

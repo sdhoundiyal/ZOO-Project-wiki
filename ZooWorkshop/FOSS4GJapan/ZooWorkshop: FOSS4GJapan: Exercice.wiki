@@ -1,10 +1,8 @@
-1
 
+== Exercise ==
 
-=== Exercise ===
-
-<u>TOC</u>
-[./ZooWorkshop/ZooWorkshop:-FOSS4GJapan WorkShop table of content]
+__TOC__
+[/ZooWorkshop/ZooWorkshop:-FOSS4GJapan WorkShop table of content]
 
 You know everything now about writting zcfg matadata files and get short pieces of code in <tt>service.c</tt> or <tt>ogr_service_provider.py</tt> depending if you choosen C or Python programming language respectively.
 
@@ -15,7 +13,7 @@ The goal of this exercise is to implement the following multiple geometries serv
 *Difference
 *SymDifference
 
-==== C version ====
+=== C version ===
 
 Your are now invited to edit the <tt>source.c</tt> file you have created during this workshop to add the multiple geometries, using the following OGR C-API functions :
 
@@ -26,7 +24,7 @@ Your are now invited to edit the <tt>source.c</tt> file you have created during 
 
 You can use the <tt>Boundary.zcfg</tt> file as example, rename the <tt>InputPolygon</tt> input to <tt>InputEntity1</tt> and add a similar input named <tt>IntputEntity2</tt>. You are invited to update other values in the ZOO Metadata File to set the proper metadata informations.
 
-==== Python Version ====
+=== Python Version ===
 
 Your are invited to edit the <tt>ogr_ws_service_provider.py</tt> file you created during this workshop to add the multiple geometries using the following <tt>osgeo.ogr</tt> <tt>Geometry</tt> methods applied on the first <tt>Geometry</tt> instance :
 
@@ -37,15 +35,11 @@ Your are invited to edit the <tt>ogr_ws_service_provider.py</tt> file you create
 
 You can once again use the <tt>Boundary.zcfg</tt> file as example, rename the <tt>InputPolygon</tt> input to <tt>InputEntity1</tt> and add a similar input named <tt>IntputEntity2</tt>. You are invited to update other values in the ZOO metadata file to set the proper metadata informations.
 
-==== Testing your services ====
+=== Testing your services ===
 
 Once the multiple geometries Services are deployed on your local environment, please reload the <tt>zoo-ogr.html</tt> file created during the previous section from your browser and test your brand new ZOO Services.
 <br>
-[./ZooWorkshop/ZooWorkshop:-FOSS4GJapan WorkShop table of content]
-
-
-
-
+[/ZooWorkshop/ZooWorkshop:-FOSS4GJapan WorkShop table of content]
 
 
 

@@ -1,8 +1,7 @@
 
+== Download ZOO source code  ==
 
-=== Download ZOO source code  ===
-
-==== SVN Repository ====
+=== SVN Repository ===
 
 To download the lastest repository of this project use the following command :
 
@@ -18,10 +17,6 @@ If you have a ZOO Developer account you can use the following command :
 sed "s:\[tunnels\]:\[tunnels\]\nzoo-ssh = /usr/bin/ssh -p 1046:g" -i ~/.subversion/config
 svn checkout svn+zoo-ssh://svn.zoo-project.org/var/svn/repos/trunk zoo
 </pre>
-
-
-
-
 
 
 

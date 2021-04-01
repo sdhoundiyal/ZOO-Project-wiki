@@ -1,6 +1,5 @@
 
-
-==== ZOO-Project OSGeo Code Sprint 213 Plan ====
+=== ZOO-Project OSGeo Code Sprint 213 Plan ===
 
 ==== Dealing with OSGeo Incubation Process ====
 
@@ -39,10 +38,6 @@ Luca would like to see an improving in the ZOO documentation and he could work o
 *Review the installation procedure
 
 to be continued...
-
-
-
-
 
 
 
