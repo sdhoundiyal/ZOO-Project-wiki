@@ -14,9 +14,9 @@ When starting implenting this new wps-rest-binding support I mainly used the hel
 You can find below every step to run the existing OGR base vector operations by using the wps-rest-api.
 
 #Load the swagger interface from [https://demo.mapmint.com/swagger-ui/dist/ here].
- 2. Search for Execute EndPoint and click on the green line below (showing "/processes/{id}/jobs").
- 3. Press the "Try it out" button to display the interface to run an Execute request.
- 4. Set: "vector-tools.BufferPy" in the process id field then, in the "Request body" part, please enter the following content:
+# Search for Execute EndPoint and click on the green line below (showing "/processes/{id}/jobs").
+# Press the "Try it out" button to display the interface to run an Execute request.
+# Set: "vector-tools.BufferPy" in the process id field then, in the "Request body" part, please enter the following content:
 
 <pre>
 {
@@ -54,7 +54,7 @@ You can find below every step to run the existing OGR base vector operations by 
 }
 </pre>
 
- 5. In case you want to get directly the json object containing the result directly within the answer you may use the following for "Request Body":
+# In case you want to get directly the json object containing the result directly within the answer you may use the following for "Request Body":
 
 <pre>
 {
@@ -92,7 +92,7 @@ You can find below every step to run the existing OGR base vector operations by 
 }
 </pre>
 
- 6. To visualize the result, please go to http://geojson.io and load the result content from there.
+# To visualize the result, please go to http://geojson.io and load the result content from there.
 
 
 
@@ -103,9 +103,9 @@ By looking at the demonstration available online and in the OSGeoLiveDVD I think
 Below is a list of steps with some screenshots showing the result you should get for running Orfeo ToolBox BandMath application using the wps-rest-bind.
 
 #Load the swagger interface from [https://demo.mapmint.com/swagger-ui/dist/ here].
- 2. Search for Execute EndPoint and click on the green line below ("/processes/{id}/jobs").
- 3. Press the "Try it out" button to display the interface to run an Execute request.
- 3. Set: "OTB.BandMath" in the process id field, select "respond-async" option in the select list then, in the "Request body" part, please enter the following content:
+# Search for Execute EndPoint and click on the green line below ("/processes/{id}/jobs").
+# Press the "Try it out" button to display the interface to run an Execute request.
+# Set: "OTB.BandMath" in the process id field, select "respond-async" option in the select list then, in the "Request body" part, please enter the following content:
 
 <pre>
 {
@@ -152,14 +152,14 @@ Below is a list of steps with some screenshots showing the result you should get
 }
 </pre>
 
- 5. Press the "Execute" button down the form, you should see something like in the following.
+# Press the "Execute" button down the form, you should see something like in the following.
 
 [[/OGC_Hackathon_2019_attachments/Capture d'écran 2019-06-24 19.11.46.png​​​​]]
 
- 6. You should identify the line showing the Location header returned by the server (providing the jobId created)
- 7. You can can either go down the "GetStatus" or "GetResult" section to access the status of your running service or the result (set "OTB.BandMath" in the id field and the returned jobId found in the Location header). You can see below an example of "GetResult" for the execution.
+# You should identify the line showing the Location header returned by the server (providing the jobId created)
+# You can can either go down the "GetStatus" or "GetResult" section to access the status of your running service or the result (set "OTB.BandMath" in the id field and the returned jobId found in the Location header). You can see below an example of "GetResult" for the execution.
 
-[[/OGC_Hackathon_2019_attachments/Capture d'écran 2019-06-24 19.11.32.png]]
+[[/OGC_Hackathon_2019_attachments/Capture_d'écran_2019-06-24_19.11.32.png]]
 
 === Simple OpenLayers interface ===
 
