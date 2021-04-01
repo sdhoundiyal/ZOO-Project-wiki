@@ -3,7 +3,7 @@
 
 * Small fix for mimeType of results for CGAL services
 * Binary support for PHP language
-* ZOO-API for the Java language and enhancements (ticket #105,#106 and #107)
+* ZOO-API for the Java language and enhancements (ticket https://svn.zoo-project.org/trac/ticket/105,https://svn.zoo-project.org/trac/ticket/106 and https://svn.zoo-project.org/trac/ticket/107)
 * ZOO-Client Javascript API (with its [http://zoo-project.org/docs/client/introduction.html documentation])
 * FastCGI fixes
 * JavaScript ZOO-API enhancements (COOKIE use and Output in generated XML)
@@ -11,15 +11,15 @@
 * Inputs passed by reference downloaded in parallel
 * Conform behavior for DescribeProcess when the Identifier was not found
 * Add support of maximumMegabytes keywords for ComplexData Inputs
-* Add the optional YAML ZCFG support #4 and the zcfg2yaml converter
-* Return error messages that enable the service provider to quickly identify the root cause of errors due to configuration file syntax (ticket #90)
-* Fix logic in addMapToMap (ticket #91)
+* Add the optional YAML ZCFG support https://svn.zoo-project.org/trac/ticket/4 and the zcfg2yaml converter
+* Return error messages that enable the service provider to quickly identify the root cause of errors due to configuration file syntax (ticket https://svn.zoo-project.org/trac/ticket/90)
+* Fix logic in addMapToMap (ticket https://svn.zoo-project.org/trac/ticket/91)
 * Enable AllowedValue and multiple Range definitions using default and supported blocks
 * Add the lastest revision number in version.h (available in Python ZOO-API)
 * Add the optional Ruby Language Support to the ZOO-Kernel with an API similar to the Python ZOO-API
 * Small rewrite of Python support
-* Inputs can be requested over https protocol (ticket #86)
-* Add capability to define both percentage of execution and a message (ticket #87). 
+* Inputs can be requested over https protocol (ticket https://svn.zoo-project.org/trac/ticket/86)
+* Add capability to define both percentage of execution and a message (ticket https://svn.zoo-project.org/trac/ticket/87). 
 * Add usid in lenv section used to generate an unique identifier based on time and the process identifier.
 * Add gdal_contour and Delaunay services
 * Add dynamic definition of serverAddress from the main section

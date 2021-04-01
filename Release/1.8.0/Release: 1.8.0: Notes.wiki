@@ -30,7 +30,7 @@ Amongst new features, we can quote the docker-compose environment created by Sam
 * Produce value string only when memory=load for Python support.
 * Make local files uris usable when cache is used
 * Make GDAL/profile service usable in case memory=protect 
-* Add Dockerfile and docker-compose environment with pgbouncer, see #177
+* Add Dockerfile and docker-compose environment with pgbouncer, see https://svn.zoo-project.org/trac/ticket/177
 * Add documentation on how to use asyncrhonous execution using the Javascript
   ZOO-API
 * Start simplification of the runRequest function
@@ -39,7 +39,7 @@ Amongst new features, we can quote the docker-compose environment created by Sam
   complex data node with mimetype="text/*"
 * Fix issue in case JavaScript support is activated
 * Fix issue with GDAL profile service
-* Fix #172 for https support 
+* Fix https://svn.zoo-project.org/trac/ticket/172 for https support 
 
 
 

@@ -23,13 +23,13 @@
 * big fix for storage of Session maps on disk
 * support for <tt><Default /></tt> node in ZCFG files
 * fastcgi version now support both GetCapabilities and DescribeProcess requests
-* add basic SOAP Envelope support (ticket #49)
-* support request when Content-Length header is not set by the client (ticket #57)
-* fix issue when POST request is empty (ticket #45)
-* add minimalist cache system (ticket #51)
-* fix Python support (ticket #29)
+* add basic SOAP Envelope support (ticket https://svn.zoo-project.org/trac/ticket/49)
+* support request when Content-Length header is not set by the client (ticket https://svn.zoo-project.org/trac/ticket/57)
+* fix issue when POST request is empty (ticket https://svn.zoo-project.org/trac/ticket/45)
+* add minimalist cache system (ticket https://svn.zoo-project.org/trac/ticket/51)
+* fix Python support (ticket https://svn.zoo-project.org/trac/ticket/29)
 
-Fixed bugs: #42, #45, #46, #50, #48, #47, #56, #57, #49, #59.
+Fixed bugs: https://svn.zoo-project.org/trac/ticket/42, https://svn.zoo-project.org/trac/ticket/45, https://svn.zoo-project.org/trac/ticket/46, https://svn.zoo-project.org/trac/ticket/50, https://svn.zoo-project.org/trac/ticket/48, https://svn.zoo-project.org/trac/ticket/47, https://svn.zoo-project.org/trac/ticket/56, https://svn.zoo-project.org/trac/ticket/57, https://svn.zoo-project.org/trac/ticket/49, https://svn.zoo-project.org/trac/ticket/59.
 
 
 

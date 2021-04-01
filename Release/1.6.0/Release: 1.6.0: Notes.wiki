@@ -6,7 +6,7 @@
 * Fix to fetch default iotype when no value is provided
 * Fixes for building with OTB 5.8 support and ITK 4.10
 * Fix issue with nested xml Data
-* Add the C# as a supported programming language for Services
+* Add the Chttps://svn.zoo-project.org/trac/ticket/ as a supported programming language for Services
 * Add nested inputs and outputs support (WPS 2.0.0)
 * Add servicePath special key to specify the service location
 * Add the PHP version 7 support
