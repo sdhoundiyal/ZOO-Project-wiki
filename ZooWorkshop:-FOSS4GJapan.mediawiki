@@ -12,8 +12,6 @@ http://www.osgeo.jp/foss4g2010-in-osaka/
 http://www.osgeo.jp/foss4g2010tokyo/
 
 <pre>
-#html
-<br style="clear:both" />
 </pre>
 
 === Sponsored By ===
