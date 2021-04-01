@@ -5,7 +5,8 @@
 </br> 
 </pre> 
 
-[[Image(ZOO_WS_flyer_2013.jpg,align=center,link=http://2013.foss4g.org/conf/programme/workshops#W6)]]
+[[/ZooWorkshop2013/Invitation_attachments/ZOO_WS_flyer_2013.jpg]]
+http://2013.foss4g.org/conf/programme/workshops#W6
 
 
 

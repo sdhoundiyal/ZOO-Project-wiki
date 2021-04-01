@@ -65,7 +65,7 @@ function init(){
 
 Once done, please save your HTML file as zoo-ogr.html in your workshop directory, then copy it in <tt>/var/www</tt> and visualize it with your favorite Web browser using this link : http://localhost/zoo-ogr.html. You should obtain a map centered on the USA with the WMS layer activated.
 
-[[Image(OL-JP-1.png,nolink,width=500px,margin=5)]]
+[[/ZooWorkshop/FOSS4GJapan/BuildingWPSClientUsingOL_attachments/OL-JP-1.png]]
 === Fetching the data layer as WFS and adding selection controls ===
 
 Before accessing the displayed data via WFS, you first have to create new vector layers dedicated to host the several interactions we are going to create. Please add the following lines within the <tt>init()</tt> function, and do not forget to add the newly created layer in the <tt>map.addLayers</tt> method:
@@ -120,7 +120,7 @@ control.activate();
 
 Please save your HTML file again. You should now be able to select a polygon only by clicking on it. The selected polygon should appear in blue color.
 
-[[Image(OL-JP-2.png,width=500px,nolink,margin: 5)]]
+[[/ZooWorkshop/FOSS4GJapan/BuildingWPSClientUsingOL_attachments/OL-JP-2.png]]
 === Calling the single geometry services from JavaScript ===
 
 Now that everything is setup, we can go on and call our OGR ZOO services with JavaScript. Please add the following lines after the <tt>init()</tt> function, which will call the single geometry processes. You can notice that we use a specific <tt>parseMapServerId</tt> function which let us remove the unecessary white space returned as fid value.
@@ -193,7 +193,7 @@ Then, some specific buttons must be added in the HTML, in order to be able to ca
 
 Save your HTML file again. You should now be able to select a polygon and to launch a Buffer, ConvexHull, Boundary or Centroid on it by clicking one of the button. The result of the process should appear as GeoJSON layer on the map, in orange color.
 
-[[Image(OL-JP-3.png,width=500px,nolink,margin: 5)]]
+[[/ZooWorkshop/FOSS4GJapan/BuildingWPSClientUsingOL_attachments/OL-JP-3.png]]
 === Calling the multiples geometries processes from JavaScript ===
 
 Using the same technique, you can now write a function dedicated to the multiple geometries processes. Please add the following lines after the <tt>simpleProcessing()</tt> function, we will guide you during the exercise in section 5 on how to create such a function. 
@@ -279,11 +279,11 @@ Once you get the functions to call your multiple geometries processes, you' must
 Please reload the page. You should then be able to run your multiple geometries services and you should get results displayed in red as shown by the following screenshots :
 
 {| border=1 class="simple"
-![[Image(OL-JP-4.png,width=250px,align=left,margin: 5px)]]
-![[Image(OL-JP-5.png,width=250px,align=left,margin: 5px)]]
+![[/ZooWorkshop/FOSS4GJapan/BuildingWPSClientUsingOL_attachments/OL-JP-4.png]]
+![[/ZooWorkshop/FOSS4GJapan/BuildingWPSClientUsingOL_attachments/OL-JP-5.png]]
 |- 
-| [[Image(OL-JP-6.png,width=250px,align=left,margin: 5px)]]
-| [[Image(OL-JP-7.png,width=250px,align=left,margin: 5px)]]
+| [[/ZooWorkshop/FOSS4GJapan/BuildingWPSClientUsingOL_attachments/OL-JP-6.png]]
+| [[/ZooWorkshop/FOSS4GJapan/BuildingWPSClientUsingOL_attachments/OL-JP-7.png]]
 |}
 
 

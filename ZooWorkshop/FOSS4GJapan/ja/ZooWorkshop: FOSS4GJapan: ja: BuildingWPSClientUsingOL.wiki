@@ -65,7 +65,7 @@ function init(){
 
 終了したらHTMLファイルをzoo-ogr.htmlとしてワークショップディレクトリに保存し、<tt>/var/www</tt> にコピーします。好きなウェブブラウザでリンク<tt>/var/www</tt>  http://localhost/zoo-ogr.html. を開き、これを使って可視化してください。WMSレイヤーが選択されている、USAを中心とするマップを手に入れることができます。
 
-[[Image(http://www.zoo-project.org/trac/raw-attachment/wiki/ZooWorkshop/FOSS4GJapan/BuildingWPSClientUsingOL/OL-JP-1.png,nolink,width=500px,margin=5)]]
+[[http://www.zoo-project.org/trac/raw-attachment/wiki/ZooWorkshop/FOSS4GJapan/BuildingWPSClientUsingOL/OL-JP-1.png]]
 
 === WFSのデータレイヤー取得と選択コントロールの追加 ===
 
@@ -114,7 +114,7 @@ control.activate();
 
 HTMファイルを再度保存して下さい。ポリゴン上でクリックすると選択することができます。選択されたポリゴンは青色で表示されます。
 
-[[Image(http://www.zoo-project.org/trac/raw-attachment/wiki/ZooWorkshop/FOSS4GJapan/BuildingWPSClientUsingOL/OL-JP-2.png,width=500px,nolink,margin: 5)]]
+[[http://www.zoo-project.org/trac/raw-attachment/wiki/ZooWorkshop/FOSS4GJapan/BuildingWPSClientUsingOL/OL-JP-2.png]]
 
 
 === JavaScript から呼び出される単一ジオメトリサービス ===
@@ -189,7 +189,7 @@ function simpleProcessing(aProcess) {
 
 再びHTMLファイルを保存してください。これでボタンの一つをクリックして、ポリゴンを選択し、Buffer、ConvexHull、Boundary あるいは Centroidを起動できます。処理の結果はマップ上にGeoJSONレイヤーとしてオレンジ色で表示されます。
 
-[[Image(http://www.zoo-project.org/trac/raw-attachment/wiki/ZooWorkshop/FOSS4GJapan/BuildingWPSClientUsingOL/OL-JP-3.png,width=500px,nolink,margin: 5)]]
+[[http://www.zoo-project.org/trac/raw-attachment/wiki/ZooWorkshop/FOSS4GJapan/BuildingWPSClientUsingOL/OL-JP-3.png]]
 
 
 === JavaScript から呼び出される複合ジオメトリサービス ===
@@ -277,11 +277,11 @@ function multiProcessing(aProcess) {
 ページをリロードしてください。すると、複数のジオメトリサービスを実行でき、次のスクリーンショットのように赤色で表示された結果を得ることができます:
 
 {| border=1 class="simple"
-![[Image(http://www.zoo-project.org/trac/raw-attachment/wiki/ZooWorkshop/FOSS4GJapan/BuildingWPSClientUsingOL/OL-JP-4.png,width=250px,align=left,margin: 5px)]]
-![[Image(http://www.zoo-project.org/trac/raw-attachment/wiki/ZooWorkshop/FOSS4GJapan/BuildingWPSClientUsingOL/OL-JP-5.png,width=250px,align=left,margin: 5px)]]
+![[http://www.zoo-project.org/trac/raw-attachment/wiki/ZooWorkshop/FOSS4GJapan/BuildingWPSClientUsingOL/OL-JP-4.png]]
+![[http://www.zoo-project.org/trac/raw-attachment/wiki/ZooWorkshop/FOSS4GJapan/BuildingWPSClientUsingOL/OL-JP-5.png]]
 |- 
-| [[Image(http://www.zoo-project.org/trac/raw-attachment/wiki/ZooWorkshop/FOSS4GJapan/BuildingWPSClientUsingOL/OL-JP-6.png,width=250px,align=left,margin: 5px)]]
-| [[Image(http://www.zoo-project.org/trac/raw-attachment/wiki/ZooWorkshop/FOSS4GJapan/BuildingWPSClientUsingOL/OL-JP-7.png,width=250px,align=left,margin: 5px)]]
+| [[http://www.zoo-project.org/trac/raw-attachment/wiki/ZooWorkshop/FOSS4GJapan/BuildingWPSClientUsingOL/OL-JP-6.png]]
+| [[http://www.zoo-project.org/trac/raw-attachment/wiki/ZooWorkshop/FOSS4GJapan/BuildingWPSClientUsingOL/OL-JP-7.png]]
 |}
 
 

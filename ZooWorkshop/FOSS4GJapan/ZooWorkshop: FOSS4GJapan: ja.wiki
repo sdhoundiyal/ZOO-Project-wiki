@@ -1,41 +1,52 @@
 
 == Practical introduction to ZOO: The Open WPS Platform ==
 
-[[Image(http://www.zoo-project.org/trac/raw-attachment/wiki/ZooWorkshop/FOSS4GJapan/Practical%20introduction%20to%20ZOO%20-%20FP.png,width=500px,nolink)]]
+[[http://www.zoo-project.org/trac/raw-attachment/wiki/ZooWorkshop/FOSS4GJapan/Practical%20introduction%20to%20ZOO%20-%20FP.png]]
 
 === FOSS4G 2010 Osaka / Tokyo ===
 
   
 
-[[Image(http://www.osgeo.jp/wordpress/wp-content/uploads/2010/08/molamola_gps1.png,width=150px,align=left,link=http://www.osgeo.jp/foss4g2010-in-osaka/,target=_blank)]]
-[[Image(http://www.osgeo.jp/wordpress/wp-content/uploads/2010/10/foss4g2010tokyo.png,width=300px,align=right,link=http://www.osgeo.jp/foss4g2010tokyo/,target=_blank)]]
+[[http://www.osgeo.jp/wordpress/wp-content/uploads/2010/08/molamola_gps1.png]]
+http://www.osgeo.jp/foss4g2010-in-osaka/
+[[http://www.osgeo.jp/wordpress/wp-content/uploads/2010/10/foss4g2010tokyo.png]]
+http://www.osgeo.jp/foss4g2010tokyo/
 
 === Sponsored By ===
 
-[[Image(http://www.zoo-project.org/trac/chrome/site/img/geolabs-logo.png,link=http://www.geolabs.fr,margin=5)]]
-[[Image(http://www.zoo-project.org/trac/chrome/site/img/3liz-logo.png,link=http://www.3liz.com,margin=5)]]
-[[Image(http://www.zoo-project.org/trac/chrome/site/img/neogeo-logo.png,link=http://www-neogeo-online.net,margin=5)]]
+[[http://www.zoo-project.org/trac/chrome/site/img/geolabs-logo.png]]
+http://www.geolabs.fr
+[[http://www.zoo-project.org/trac/chrome/site/img/3liz-logo.png]]
+http://www.3liz.com
+[[http://www.zoo-project.org/trac/chrome/site/img/neogeo-logo.png]]
+http://www-neogeo-online.net
 
   
 
-[[Image(http://www.zoo-project.org/trac/chrome/site/img/apptech-logo.png,link=http://www.apptec.co.jp/,margin=25)]]
-[[Image(http://www.zoo-project.org/trac/chrome/site/img/gateway-logo.png,link=http://www.gatewaygeomatics.com/,margin=25)]]
+[[http://www.zoo-project.org/trac/chrome/site/img/apptech-logo.png]]
+http://www.apptec.co.jp/
+[[http://www.zoo-project.org/trac/chrome/site/img/gateway-logo.png]]
+http://www.gatewaygeomatics.com/
 
   
 === Special thanks to our Knowledge Partners ===
 
-[[Image(http://www.zoo-project.org/trac/chrome/site/img/ocu-logo.png,http://www.osaka-cu.ac.jp/index-e.html)]]
-[[Image(http://www.zoo-project.org/trac/chrome/site/img/gucas-logo.png,link=http://www.gucas.ac.cn/gscasenglish/index.aspx)]]
-[[Image(http://www.zoo-project.org/trac/chrome/site/img/polimi-logo.png,link=http://www.polimi.it/)]]
-[[Image(http://zoo-project.org/trac/raw-attachment/wiki/ZooWorkshop/FOSS4GJapan/logo-fem.png,link=http://www.fondazioneedmundmach.it/)]]
-[[Image(http://zoo-project.org/trac/raw-attachment/wiki/ZooWorkshop/FOSS4GJapan/logo-supsi.png,link=http://www.supsi.ch/home.html,align=center)]]
+[[http://www.zoo-project.org/trac/chrome/site/img/ocu-logo.png]]
+[[http://www.zoo-project.org/trac/chrome/site/img/gucas-logo.png]]
+http://www.gucas.ac.cn/gscasenglish/index.aspx
+[[http://www.zoo-project.org/trac/chrome/site/img/polimi-logo.png]]
+http://www.polimi.it/
+[[http://zoo-project.org/trac/raw-attachment/wiki/ZooWorkshop/FOSS4GJapan/logo-fem.png]]
+http://www.fondazioneedmundmach.it/
+[[http://zoo-project.org/trac/raw-attachment/wiki/ZooWorkshop/FOSS4GJapan/logo-supsi.png]]
+http://www.supsi.ch/home.html
 
   
 
 
 __TOC__ 
 
-[[Image(http://www.zoo-project.org/images/ligne_horizontale.gif,width=530px,height=0.5px,nolink)]]
+[[http://www.zoo-project.org/images/ligne_horizontale.gif]]
 
 
 

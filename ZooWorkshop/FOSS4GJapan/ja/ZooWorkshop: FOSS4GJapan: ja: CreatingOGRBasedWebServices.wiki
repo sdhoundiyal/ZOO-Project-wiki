@@ -4,7 +4,7 @@
 __TOC__
 [/ZOO-Project/ZOO-Project/wiki/ZooWorkshop:-FOSS4GJapan:-ja:-UsingZooFromOSGeoLiveVM 前へ] | [/ZOO-Project/ZOO-Project/wiki/ZooWorkshop:-FOSS4GJapan:-ja ワークショップ 目次] | [/ZOO-Project/ZOO-Project/wiki/ZooWorkshop:-FOSS4GJapan:-ja:-BuildingWPSClientUsingOL 次へ]
 
-[[Image(http://www.lafon-svv.com/html/images/ligne_horizontale.gif,width=530px,height=0.5px,nolink)]]
+[[http://www.lafon-svv.com/html/images/ligne_horizontale.gif]]
 
 
 
@@ -158,16 +158,16 @@ http://localhost/zoo/?Request=DescribeProcess&Service=WPS&Identifier=Boundary&ve
 
 返って来る ProcessDescriptions XML ドキュメントは、以下のようになっているはずです :
 
-[[Image(http://www.zoo-project.org/trac/raw-attachment/wiki/ZooWorkshop/FOSS4GJapan/CreatingOGRBasedWebServices/Practical%20introduction%20to%20ZOO%20-%204.png,width=550px,nolink)]]
+[[http://www.zoo-project.org/trac/raw-attachment/wiki/ZooWorkshop/FOSS4GJapan/CreatingOGRBasedWebServices/Practical%20introduction%20to%20ZOO%20-%204.png]]
 
 GetCapabilities と DescribeProcess　を実行には　.zfgファイルさえあれば完了します。簡単ですね？
 このステップでは、ZOOカーネルに <tt>Execute</tt>をリクエストすれば、 以下のような <tt>ExceptionReport</tt> ドキュメントのレスポンスが返ってきます：
 
-[[Image(http://www.zoo-project.org/trac/raw-attachment/wiki/ZooWorkshop/FOSS4GJapan/CreatingOGRBasedWebServices/Practical%20introduction%20to%20ZOO%20-%205.png,width=550px,nolink)]]
+[[http://www.zoo-project.org/trac/raw-attachment/wiki/ZooWorkshop/FOSS4GJapan/CreatingOGRBasedWebServices/Practical%20introduction%20to%20ZOO%20-%205.png]]
 
 もしPythonのサービスで実行すれば、同じようなエラーメッセージが返ってきます :
 
-[[Image(http://www.zoo-project.org/trac/raw-attachment/wiki/ZooWorkshop/FOSS4GJapan/CreatingOGRBasedWebServices/Practical%20introduction%20to%20ZOO%20-%206.png,width=550px,nolink)]]
+[[http://www.zoo-project.org/trac/raw-attachment/wiki/ZooWorkshop/FOSS4GJapan/CreatingOGRBasedWebServices/Practical%20introduction%20to%20ZOO%20-%206.png]]
 
 
 === ジオメトリサービスの実装 ===
@@ -565,7 +565,7 @@ http://localhost/cgi-bin/mapserv?map=/var/www/wfs.map&SERVICE=WFS&REQUEST=GetFea
 
 リクエスト中で <tt>storeExecuteResponse</tt> が true に設定された場合、 <tt>ExecuteResponse</tt> がどのようになるかの例は次の通りです:
 
-[[Image(http://www.zoo-project.org/trac/raw-attachment/wiki/ZooWorkshop/FOSS4GJapan/CreatingOGRBasedWebServices/Practical%20introduction%20to%20ZOO%20-%207.png,width=550px)]]
+[[http://www.zoo-project.org/trac/raw-attachment/wiki/ZooWorkshop/FOSS4GJapan/CreatingOGRBasedWebServices/Practical%20introduction%20to%20ZOO%20-%207.png]]
 
 statusLocation にしたがって、以前にリクエストした時に得られたものと同じ <tt>ExecuteResponse</tt> が得られました。クライアントアプリケーションのキャッシングシステムを備えているということで大変便利になるということに注意してください。
 
@@ -619,7 +619,7 @@ XML リクエストを簡単に実行するために、test_services.html と呼
 
 ブラウザでこのページを開いてください、テキストエリアフィールド内に簡単に XML リクエストを埋めて、« run using XML Request » 送信ボタンをクリックします。サービスが GET リクエストを使用して実行したときと同様に結果を得られます。スクリーンショットは、上記に示されたリクエストを含む HTML フォームとページの下部にある iframe に表示された <tt>ExecuteResponse</tt>を示します:
 
-[[Image(http://www.zoo-project.org/trac/raw-attachment/wiki/ZooWorkshop/FOSS4GJapan/CreatingOGRBasedWebServices/Practical%20introduction%20to%20ZOO%20-%208.png,width=550px)]]
+[[http://www.zoo-project.org/trac/raw-attachment/wiki/ZooWorkshop/FOSS4GJapan/CreatingOGRBasedWebServices/Practical%20introduction%20to%20ZOO%20-%208.png]]
 
 <tt>xlink:href</tt> の値はこのようなデータ入力を取り扱うもっとも簡単な方法です。もちろん、ジオメトリの完全なJSON文字列を使う事もでき、それは次に示す XML リクエスト例のとおりです:
 

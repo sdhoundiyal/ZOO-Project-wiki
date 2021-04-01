@@ -98,7 +98,7 @@ http://localhost/cgi-bin/zoo_loader.cgi?Request=GetCapabilities&Service=WPS
 
 これで、以下の有効な <tt>Capabilities</tt> XMLドキュメントを得ることができます:
 
-[[Image(http://www.zoo-project.org/trac/raw-attachment/wiki/ZooWorkshop/FOSS4GJapan/UsingZooFromOSGeoLiveVM/Practical%20introduction%20to%20ZOO%20-%202.png,width=550px,align=center,nolink)]]
+[[http://www.zoo-project.org/trac/raw-attachment/wiki/ZooWorkshop/FOSS4GJapan/UsingZooFromOSGeoLiveVM/Practical%20introduction%20to%20ZOO%20-%202.png]]
 
 利用可能なZOOサービスがないと、<tt>ProcessOfferings</tt> セクションで、<tt>no Process</tt> ノードが戻ってくることに注意してください。以下のコマンドをつかってコマンドラインからの <tt>GetCapabilities</tt> リクエストも行うことができます:
 
@@ -110,7 +110,7 @@ cd /usr/lib/cgi-bin
 
 次のスクリーンショットに表示されているように、ブラウザと同様の結果が返されます:
 
-[[Image(http://www.zoo-project.org/trac/raw-attachment/wiki/ZooWorkshop/FOSS4GJapan/UsingZooFromOSGeoLiveVM/Practical%20introduction%20to%20ZOO%20-%203.png,width=400px,align=center,nolink)]]
+[[http://www.zoo-project.org/trac/raw-attachment/wiki/ZooWorkshop/FOSS4GJapan/UsingZooFromOSGeoLiveVM/Practical%20introduction%20to%20ZOO%20-%203.png]]
 
 コマンドラインからのZOOカーネルの実行は、新しいサービスの開発に便利です。
 

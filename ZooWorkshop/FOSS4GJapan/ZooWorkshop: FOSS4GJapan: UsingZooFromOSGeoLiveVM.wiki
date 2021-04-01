@@ -99,7 +99,7 @@ http://localhost/cgi-bin/zoo_loader.cgi?Request=GetCapabilities&Service=WPS
 
 You should then get a valid <tt>Capabilities</tt> XML document, as the following :
 
-[[Image(Practical introduction to ZOO - 2.png,width=550px,align=center,nolink)]]
+[[/ZooWorkshop/FOSS4GJapan/UsingZooFromOSGeoLiveVM_attachments/Practical introduction to ZOO - 2.png]]
 
 Please note that no <tt>Process</tt> node is returned in the <tt>ProcessOfferings</tt> section, as no ZOO Service is available yet. You can also proceed to a <tt>GetCapabilities</tt> request from the command line, using the following command:
 
@@ -111,7 +111,7 @@ cd /usr/lib/cgi-bin
 
 The same result as in your browser will be returned, as shown in the following screenshot:
 
-[[Image(Practical introduction to ZOO - 3.png,width=400px,align=center,nolink)]]
+[[/ZooWorkshop/FOSS4GJapan/UsingZooFromOSGeoLiveVM_attachments/Practical introduction to ZOO - 3.png]]
 
 Invoking ZOO Kernel from command line can be helpful during development process of new Services.
 

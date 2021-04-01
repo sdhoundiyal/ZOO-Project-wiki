@@ -4,7 +4,7 @@
 __TOC__
 [/ZOO-Project/ZOO-Project/wiki/ZooWorkshop:-FOSS4GJapan:-UsingZooFromOSGeoLiveVM Prev.] | [/ZOO-Project/ZOO-Project/wiki/ZooWorkshop:-FOSS4GJapan WorkShop table of content] | [/ZOO-Project/ZOO-Project/wiki/ZooWorkshop:-FOSS4GJapan:-BuildingWPSClientUsingOL Next]
 
-[[Image(http://www.lafon-svv.com/html/images/ligne_horizontale.gif,width=530px,height=0.5px,nolink)]]
+[[http://www.lafon-svv.com/html/images/ligne_horizontale.gif]]
 
 
 === Introduction ===
@@ -139,15 +139,15 @@ http://localhost/zoo/?Request=DescribeProcess&Service=WPS&Identifier=Boundary&ve
 
 The returned ProcessDescriptions XML document should look like the following :
 
-[[Image(Practical introduction to ZOO - 4.png,width=550px,nolink)]]
+[[/ZooWorkshop/FOSS4GJapan/CreatingOGRBasedWebServices_attachments/Practical introduction to ZOO - 4.png]]
 
 Please note that the GetCapabilities and DescribeProcess only need a .zcfg file to be completed. Simple, isn't it ? At this step, if you request ZOO Kernel for an <tt>Execute</tt>, you will get an <tt>ExceptionReport</tt> document as response, looking as the following :
 
-[[Image(Practical introduction to ZOO - 5.png,width=550px,nolink)]]
+[[/ZooWorkshop/FOSS4GJapan/CreatingOGRBasedWebServices_attachments/Practical introduction to ZOO - 5.png]]
 
 A similar error message will be returned if you try to run your Python Service :
 
-[[Image(Practical introduction to ZOO - 6.png,width=550px,nolink)]]
+[[/ZooWorkshop/FOSS4GJapan/CreatingOGRBasedWebServices_attachments/Practical introduction to ZOO - 6.png]]
 
 === Implementing single geometry services ===
 
@@ -536,7 +536,7 @@ Please note that you can add lineage=true to the previous request if you need to
 
 Here is an example of what the <tt>ExecuteResponse</tt> would look like in case <tt>storeExecuteResponse</tt> was set to true in the request :
 
-[[Image(Practical introduction to ZOO - 7.png,width=550px)]]
+[[/ZooWorkshop/FOSS4GJapan/CreatingOGRBasedWebServices_attachments/Practical introduction to ZOO - 7.png]]
 
 Then, according to the statusLocation, you should get the <tt>ExecuteResponse</tt> as you get before using the previous request. Note that can be really useful to provide some caching system for a client application.
 
@@ -572,7 +572,7 @@ http://localhost/cgi-bin/zoo_loader.cgi?request=Execute&service=WPS&version=1.0.
 
 You can see bellow what kind of result can be expected :
 
-[[Image(screenshot-ZOO-asReference-attribute.png,width=550px)]]
+[[/ZooWorkshop/FOSS4GJapan/CreatingOGRBasedWebServices_attachments/screenshot-ZOO-asReference-attribute.png]]
  
 ===== Simplification and readability of request =====
 
@@ -605,7 +605,7 @@ In order to let you easily run the XML requests, a simple HTML form called test_
 
 Please open this page in your browser, simply fill the XML request content into the textarea field and click the « run using XML Request » submit button. You will get exactly the same result as when running your Service using the GET request. The screenshot above show the HTML form including the request and the <tt>ExecuteResponse</tt> document displayed in the iframe at the bottom of the page :
 
-[[Image(Practical introduction to ZOO - 8.png,width=550px)]]
+[[/ZooWorkshop/FOSS4GJapan/CreatingOGRBasedWebServices_attachments/Practical introduction to ZOO - 8.png]]
 
 The <tt>xlink:href</tt> value is used in the simplest way to deal with such data input. Obviously, you can also use a full JSON string of the geometry, as shown in the following XML Request example :
 
@@ -676,11 +676,11 @@ http://localhost/zoo/?request=Execute&service=WPS&version=1.0.0&Identifier=longP
 
 You shall get the a XML document looking like the following : 
 
-[[Image(Practical introduction to ZOO - 9.png,width=550px,nolink)]]
+[[/ZooWorkshop/FOSS4GJapan/CreatingOGRBasedWebServices_attachments/Practical introduction to ZOO - 9.png]]
 
 If you poll the <tt>statusLocation</tt> url provider in the answer you'll then be able to view the evolution of the <tt>percentCompleted</tt> attribute value growing, like you can see in the following screenshot.
 
-[[Image(Practical introduction to ZOO - 10.png,width=550px,nolink)]]
+[[/ZooWorkshop/FOSS4GJapan/CreatingOGRBasedWebServices_attachments/Practical introduction to ZOO - 10.png]]
 
 This won't be used during this workshop but can be useful for really time consuming services.
 ==== Creating Services for other functions (ConvexHull and Centroid) ====

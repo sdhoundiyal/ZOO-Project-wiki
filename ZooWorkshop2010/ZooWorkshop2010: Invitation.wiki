@@ -1,7 +1,7 @@
 
 == ZOO Workshop Invitation Flyer ==
 
-[[Image(/../img/ZOO_WS_flyer.jpg,center,title="Invitation Flyer for the FOSS4G event in Barcelona 2010 ")]]
+[[/ZooWorkshop2010/Invitation_attachments//../img/ZOO_WS_flyer.jpg]]
 
 
 
