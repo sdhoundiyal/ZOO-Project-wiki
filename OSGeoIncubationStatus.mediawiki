@@ -40,7 +40,7 @@ Yes the source code is available for the package. By now, one package is provide
 Yes a Project Steering Committee has been formed and have effective control on the project.
 
 ===== Does the Project Steering Committee have documentation on project procedures for PSC decisions, contributor guidelines, etc. ===== 
-Yes, there is a contributor guidelines [http://zoo-project.org/docs/community/developer.html here] and for PSC decisions there is the Project Steering Committee Guidelines [http://zoo-project.org/trac/wiki/PSC/process here].
+Yes, there is a contributor guidelines [http://zoo-project.org/docs/community/developer.html here] and for PSC decisions there is the Project Steering Committee Guidelines available at: [[PSC:-process]].
 
 ===== How many active developers are there? Are they from multiple organizations? ===== 
 Indicate number and some organizations involved. 
@@ -56,7 +56,7 @@ There was always a link with OSGeo (including branding such as logos) as the ZOO
 === Code Copyright Review ===
 
 ===== Has a Code Provenance Review document been prepared for the project? ===== 
-Yes, the Code Provenance Review is [http://zoo-project.org/trac/wiki/Provenance%20Review here].
+Yes, the Code Provenance Review is available at: [[Provenance:-20Review]].
 
 ===== Have issues raised in the provenance review been adequately addressed? ===== 
 Some issue about the mixture between BSD and MIT-X11 was found long time ago in ZOO-API.
