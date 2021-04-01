@@ -1,0 +1,38 @@
+
+== PSC meeting 25 ==
+
+The PSC meeting is to be held on irc.freenode.net at the  #zoo-project channel.
+
+=== Proposed Time and Date ===
+
+Thursday, 25 March 2021 at https://www.timeanddate.com/worldclock/fixedtime.html?year=2021&month=3&day=25&hour=12&min=0&sec=0&msg=ZOO-Project+PSC+Meeting
+
+=== Agenda ===
+
+*Review and approve minutes of PSC Meeting 24​http://zoo-project.org/trac/wiki/PSC/meetings/PSCMeet24
+*Update on Action items from PSC Meeting 24http://zoo-project.org/trac/wiki/PSC/meetings/PSCMeet24
+* Agenda 3:Use GitHub ZOO-Project/ZOO-Project repo as our code source versioning system and Use GitHub wiki on ZOO-Project/ZOO-Project/wiki as our official wiki
+
+
+=== Summary ===
+
+ZOO PSC Meeting 25 \\
+
+Participants: venka (Chair), jmckenna, djay, omshinde
+
+Action Items: 
+
+*Action Item 1: Reviewing Github tickets and providing feedback and comments
+
+Meeting Minutes:
+*Motion 1: Approve [PSC meeting #24](https://github.com/ZOO-Project/ZOO-Project/wiki/PSC:-meetings:-PSCMeet24) minutes
+    venka, djay, jmckenna, omshinde: +1
+
+*Motion 2: 
+    1. Use GitHub ZOO-Project/ZOO-Project repo as our code source versioning system; 
+    2. Use GitHub wiki on ZOO-Project/ZOO-Project/wiki as our official wiki
+
+    venka, jmckenna, omshinde: +1
+
+* Motion 3: Tentative schedule for next PSC Meeting - [https://www.timeanddate.com/worldclock/fixedtime.html?year=2021&month=5&day=6&hour=12&min=0&sec=0](https://www.timeanddate.com/worldclock/fixedtime.html?year=2021&month=5&day=6&hour=12&min=0&sec=0)
+
