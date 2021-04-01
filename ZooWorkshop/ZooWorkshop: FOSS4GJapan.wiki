@@ -1,7 +1,7 @@
 
 == Practical introduction to ZOO: The Open WPS Platform ==
 
-[[/ZooWorkshop/FOSS4GJapan_attachments/Practical introduction to ZOO - FP.png]]
+[[/ZooWorkshop/FOSS4GJapan_attachments/Practical_introduction_to_ZOO_-_FP.png]]
 
 === FOSS4G 2010 Osaka / Tokyo / Beijing ===
 
