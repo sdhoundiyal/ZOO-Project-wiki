@@ -1,25 +1,23 @@
 
 == Bringing pyModis to the web through ZOO-Project == 
 
-<pre>#table class="listing"
 {| border=1 class="simple"
-!=Student Name  =
+!Student Name
 !Chingchai Humhong 
 |- 
-| =Organization  =
+| <b>Organization </b>
 | [http://www.osgeo.org OSGeo - Open Source Geospatial Foundation]
 |- 
-| =Mentors  =
+| <b>Mentors  </b>
 | Luca Delucchi and Gerald Fenoy 
 |- 
-| =Title  =
+| <b>Title  </b>
 | Bringing pyModis to the web through ZOO-Project 
 |- 
-| =Sources =
+| <b>Sources </b>
 | [http://zoo-project.org ZOO-Project],[http://www.pymodis.org pyModis]   
 |}
 
-</pre>
 
 === Brief description of your idea ===
 The pyModis project has been developed and used to work with MODIS data, it provides wxPython user interfaces which are able to download and process data using [http://www.pymodis.org/scripts/software.html pyModis scripts]. pyModis depends on a desktop graphical user interface which does not make it directly usable from a web application. The idea of this GSoC proposal is to bring pyModis to the web by publishing Python Web Processing Services using the ZOO-Project technology accessible through a minimal web application. 
@@ -37,11 +35,10 @@ pyModis capabilities will be directly available online, a minimal User Interface
 === Schedule ===
 Prior to the start of the GSoC period, I will learn in more details every of the involved technologies, starting with ZOO-Project and pyModis. First, by learning how to write zcfg and Python service should be implemented for ZOO-Project, then services that use specific pyModis capabilities. To finish, I will have a deep look in the Hogan templating system used by the ZOO-Client (part of the ZOO-Project). Having learnt pyModis scripts in details, I should be able to evaluate the commonly used data types to be taken into account during the User Interface design and anticipate the HTML elements to use.
 
-<pre>#table class="listing"
 {| border=1 class="simple"
-!=  Timeline  =
-!=  TODO  =
-!=  Status  =
+!Timeline  
+!TODO  
+! Status  
 |- 
 |   23 – 31 May 2016  
 |  - Starting with ZOO-Project and pyModis by learning how to write ZOO Service Configuration File (ZCFG) and Implementing the Python Service. 
@@ -77,7 +74,6 @@ Prior to the start of the GSoC period, I will learn in more details every of the
 |}
 
 
-</pre>
  On the last day of each week, I will write a blog post reporting all the work done during the past week.
 
 === Reports ===
@@ -98,27 +94,17 @@ Prior to the start of the GSoC period, I will learn in more details every of the
 *Right now, I am not blocked on anything, but I think my work is quite slow because I do not have experience in using Python. Although, I had several difficulties on setting some environments, I had solved that. I would like to thanks my mentors (Gérald Fenoy and Luca Delucchi) and my advisor Sittichai Choosumrong who helped me to solve my problems.
 
 ====  Screenshots  ====
-<pre>
-#html
-<center>
-<table style="max-width:75%;margin:0 auto;">
-<tr>
-<td>
-<a href='https://wiki.osgeo.org/wiki/File:Zoo_loader_python3x.JPG' target='_blank'>
- <img src="https://wiki.osgeo.org/images/thumb/f/fc/Zoo_loader_python3x.JPG/800px-Zoo_loader_python3x.JPG" width="320" height="200" alt="" />
- <p><span><center>Test HelloPy Service with Python 3</center></span></p>
-<a>
-</td>
-<td>
-<a href='https://wiki.osgeo.org/wiki/File:Zoo_loader_python2x.JPG' target='_blank'>
- <img src="https://wiki.osgeo.org/images/thumb/a/ac/Zoo_loader_python2x.JPG/320px-Zoo_loader_python2x.JPG" width="320" height="200" alt="" />
-  <p><span><center>Test HelloPy Service with Python 2</center></span></p>
-<a>
-</td>
-</tr>
-</table>
-</center>
-</pre>
+
+{| border=1 class="simple"
+!Test HelloPy Service with Python 3   
+!Test HelloPy Service with Python 2  
+|- 
+|  [[https://wiki.osgeo.org/images/thumb/f/fc/Zoo_loader_python3x.JPG/800px-Zoo_loader_python3x.JPG]] 
+|  [[https://wiki.osgeo.org/images/thumb/a/ac/Zoo_loader_python2x.JPG/320px-Zoo_loader_python2x.JPG]] 
+|- 
+|}
+
+
 
 ==== Week 2====
 ==== 1. What did you get done this week? ====
@@ -150,27 +136,14 @@ Below is the link to the branch I am working on
 https://github.com/chingchai/pyModis/tree/gsoc-2016/zoo-pymodis/
 
 ====  Screenshots  ====
-<pre>
-#html
-<center>
-<table style="max-width:75%;margin:0 auto;">
-<tr>
-<td>
-<a href='https://wiki.osgeo.org/images/a/ab/Modis-testonweb.png' target='_blank'>
- <img src="https://wiki.osgeo.org/images/a/ab/Modis-testonweb.png" width="320" height="200" alt="" />
- <p><span><center>Test downmodis module to download MODIS Data as a WPS Service</center></span></p>
-<a>
-</td>
-<td>
-<a href='https://wiki.osgeo.org/images/b/bd/Modisdown-resul.png' target='_blank'>
- <img src="https://wiki.osgeo.org/images/b/bd/Modisdown-resul.png" width="320" height="200" alt="" />
-  <p><span><center>Result downmodis module</center></span></p>
-<a>
-</td>
-</tr>
-</table>
-</center>
-</pre>
+{| border=1 class="simple"
+!Test downmodis module to download MODIS Data as a WPS Service   
+!Result downmodis module 
+|- 
+|  [[https://wiki.osgeo.org/images/a/ab/Modis-testonweb.png]] 
+|  [[https://wiki.osgeo.org/images/b/bd/Modisdown-resul.png]] 
+|- 
+|}
 
 ==== Week 4====
 ==== 1. What did you get done this week? ====
