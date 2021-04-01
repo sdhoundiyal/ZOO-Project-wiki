@@ -185,3 +185,4 @@ This process gives the possibility to update a feature attributes.
 
 This process returns the feature.\
 The output could be XML, GML, KML or GeoJSON.
+

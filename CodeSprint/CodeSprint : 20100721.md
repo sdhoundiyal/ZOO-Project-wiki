@@ -16,3 +16,4 @@ Participants are the following :
 -   -   Gérald Fenoy
     -   Nicolas Bozon
     -   Luca Delucchi ( follow the code sprint via web )
+

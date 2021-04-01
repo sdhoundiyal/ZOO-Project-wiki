@@ -10,8 +10,7 @@ time](http://www.timeanddate.com/worldclock/fixedtime.html?year=2010&month=5&day
 -   Decide meeting Chair
 -   ZOO Workshop at FOSS4G2010
 -   Report on ZOO presentation at Trento, Italy
--   PSC \[/ZOO-Project/ZOO-Project/wiki/PSC/process PSC guidelines
-    proposal\] page review and approval
+-   PSC [PSC guidelines    proposal](PSC : process "wikilink") page review and approval
 -   Next meeting schedule
 
 ### Summary
@@ -19,3 +18,4 @@ time](http://www.timeanddate.com/worldclock/fixedtime.html?year=2010&month=5&day
 This meeting was canceled. The Agenda items will be discussed in the
 next meeting scheduled for Wednesday, 16 June 2010 [at, 13:00
 UTC](http://www.timeanddate.com/worldclock/fixedtime.html?year=2010&month=6&day=16&hour=13&min=0&sec=0)
+

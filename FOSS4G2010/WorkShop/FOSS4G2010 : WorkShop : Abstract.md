@@ -61,3 +61,4 @@ Intermediate.
 ### attendee\'s previous knowledge {#attendees_previous_knowledge}
 
 Basics of WPS, bascis of C and Python language.
+

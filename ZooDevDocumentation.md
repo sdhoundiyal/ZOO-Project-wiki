@@ -19,3 +19,4 @@ following commands on the ZOO-Project.org server:
 
 You can now access the SVN server using https protocol using your
 `<DEV_USER>`{=html}.
+

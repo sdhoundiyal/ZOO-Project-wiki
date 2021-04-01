@@ -248,3 +248,4 @@ The resulting document and the statusLocation document are both
 
 The result is valid in the sense that it is a JSON string representing
 the resulting polygon.
+

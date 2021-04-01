@@ -13,14 +13,8 @@ Thursday, 4 december 2014 from 9:30 to 10:30 PM
 
 -   Release of ZOO 1.4 (new features and changes by Gerald)
 
-```{=html}
-<!-- -->
-```
 -   Upcoming ZOO 1.5 release plan
 
-```{=html}
-<!-- -->
-```
 -   Website and documentation
 
 ### Summary
@@ -30,9 +24,6 @@ Amari Hotel during the FOSS4G Asia conference in Bangkok.
 
 -   Introduction by Venka and proposed agenda items by Gerald and Nick.
 
-```{=html}
-<!-- -->
-```
 -   Detailed report on ZOO 1.4 rc1 by Gerald
     -   -   ZOO-Kernel evolutions (FastCGI support, Windows support,
             feedbacks and bug reports from few commiters.
@@ -42,9 +33,6 @@ Amari Hotel during the FOSS4G Asia conference in Bangkok.
             [ZOO-Client](http://zoo-project.org/trac/browser/trunk/zoo-project/zoo-client)
         -   Motion passed to release ZOO-Project 1.4
 
-```{=html}
-<!-- -->
-```
 -   Explanations on the upcoming 1.5 release by Gerald
     -   -   A new scalable ZOO-Kernel has been designed and is now being
             implemented by David
@@ -56,9 +44,6 @@ Amari Hotel during the FOSS4G Asia conference in Bangkok.
         -   Motion passed to release ZOO-1.5 by the end of first
             trimester of 2015
 
-```{=html}
-<!-- -->
-```
 -   Explanations about plans for the new ZOO website by Nicolas
     -   -   Website redesign is still ongoing. More time is needed to
             achieve it.
@@ -66,7 +51,5 @@ Amari Hotel during the FOSS4G Asia conference in Bangkok.
         -   Both remaining tasks may be supported by sponsors if a new
             call for sponsorship is organized.
 
-```{=html}
-<!-- -->
-```
 -   End of meeting.
+

@@ -5,3 +5,4 @@
     </br> 
 
 [Image(ZOO_WS_flyer_2013.jpg,align=center,link=http://2013.foss4g.org/conf/programme/workshops\#W6)](Image(ZOO_WS_flyer_2013.jpg,align=center,link=http://2013.foss4g.org/conf/programme/workshops#W6) "wikilink")
+

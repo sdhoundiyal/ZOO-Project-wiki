@@ -1,11 +1,8 @@
 ## Creating OGR based Web Services {#creating_ogr_based_web_services}
 
 \_\_TOC\_\_
-\[/ZOO-Project/ZOO-Project/wiki/ZooWorkshop/FOSS4GJapan/UsingZooFromOSGeoLiveVM
-Prev.\] \| \[/ZOO-Project/ZOO-Project/wiki/ZooWorkshop/FOSS4GJapan
-WorkShop table of content\] \|
-\[/ZOO-Project/ZOO-Project/wiki/ZooWorkshop/FOSS4GJapan/BuildingWPSClientUsingOL
-Next\]
+[/ZooWorkshop/FOSS4GJapan/UsingZooFromOSGeoLiveVMPrev.](ZooWorkshop : FOSS4GJapan : UsingZooFromOSGeoLiveVMPrev. "wikilink") \| [table of content](ZooWorkshop : FOSS4GJapanWorkShop "wikilink") \|
+[///ZooWorkshop/FOSS4GJapan/BuildingWPSClientUsingOLNext](ZooWorkshop : FOSS4GJapan : BuildingWPSClientUsingOLNext "wikilink")
 
 [Image(http://www.lafon-svv.com/html/images/ligne_horizontale.gif,width=530px,height=0.5px,nolink)](Image(http://www.lafon-svv.com/html/images/ligne_horizontale.gif,width=530px,height=0.5px,nolink) "wikilink")
 
@@ -23,8 +20,7 @@ procedure will then be used to enable the Buffer, Centroid and Convex
 Hull functions. Once done, some multiple geometries processes such as
 Intersection, Union, Difference and Symetric Difference will be
 implemented through an
-\[/ZOO-Project/ZOO-Project/wiki/ZooWorkshop/FOSS4GJapan/Exercice
-exercise\] at the end of the workshop.
+[////ZooWorkshop/FOSS4GJapan/Exerciceexercise](ZooWorkshop : FOSS4GJapan : Exerciceexercise "wikilink") at the end of the workshop.
 
 As already said in the introduction, you have the choice to code your
 service in C or Python (or both!) during this workshop. Explanations
@@ -878,8 +874,7 @@ main section :
 Here you define the path where the service is able to find the xsl file,
 specified in the `dataPath` parameter. You also tell the ZOO Kernel that
 you want to use the rewriteUrl we defined in the
-\[/ZOO-Project/ZOO-Project/wiki/ZooWorkshop/FOSS4GJapan/UsingZooFromOSGeoLiveVM
-previous section\].
+[section](ZooWorkshop : FOSS4GJapan : UsingZooFromOSGeoLiveVMprevious "wikilink").
 
 To finish your deployment, you\'ll have now to copy the xsl file in the
 defined `dataPath` directory. You can use the following command :
@@ -1317,8 +1312,6 @@ You can get a full copy of the `Buffer.zcfg` file here :
 You can now ask ZOO Kernel for GetCapabilities, DescribeProcess and
 Execute for the Buffer Service.
 
-\[/ZOO-Project/ZOO-Project/wiki/ZooWorkshop/FOSS4GJapan/UsingZooFromOSGeoLiveVM
-Prev.\] \| \[/ZOO-Project/ZOO-Project/wiki/ZooWorkshop/FOSS4GJapan
-WorkShop table of content\] \|
-\[/ZOO-Project/ZOO-Project/wiki/ZooWorkshop/FOSS4GJapan/BuildingWPSClientUsingOL
-Next\]
+[//////ZooWorkshop/FOSS4GJapan/UsingZooFromOSGeoLiveVMPrev.](ZooWorkshop : FOSS4GJapan : UsingZooFromOSGeoLiveVMPrev. "wikilink") \| [table of content](ZooWorkshop : FOSS4GJapanWorkShop "wikilink") \|
+[////////ZooWorkshop/FOSS4GJapan/BuildingWPSClientUsingOLNext](ZooWorkshop : FOSS4GJapan : BuildingWPSClientUsingOLNext "wikilink")
+

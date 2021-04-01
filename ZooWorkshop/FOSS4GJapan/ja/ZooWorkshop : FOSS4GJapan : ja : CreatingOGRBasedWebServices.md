@@ -1,11 +1,8 @@
 ## OGRのWeb サービス作成 {#ogrのweb_サービス作成}
 
 \_\_TOC\_\_
-\[/ZOO-Project/ZOO-Project/wiki/ZooWorkshop/FOSS4GJapan/ja/UsingZooFromOSGeoLiveVM
-前へ\] \| \[/ZOO-Project/ZOO-Project/wiki/ZooWorkshop/FOSS4GJapan/ja
-ワークショップ 目次\] \|
-\[/ZOO-Project/ZOO-Project/wiki/ZooWorkshop/FOSS4GJapan/ja/BuildingWPSClientUsingOL
-次へ\]
+[/ZooWorkshop/FOSS4GJapan/ja/UsingZooFromOSGeoLiveVM前へ](ZooWorkshop : FOSS4GJapan : ja : UsingZooFromOSGeoLiveVM前へ "wikilink") \| [目次](ZooWorkshop : FOSS4GJapan : jaワークショップ "wikilink") \|
+[///ZooWorkshop/FOSS4GJapan/ja/BuildingWPSClientUsingOL次へ](ZooWorkshop : FOSS4GJapan : ja : BuildingWPSClientUsingOL次へ "wikilink")
 
 [Image(http://www.lafon-svv.com/html/images/ligne_horizontale.gif,width=530px,height=0.5px,nolink)](Image(http://www.lafon-svv.com/html/images/ligne_horizontale.gif,width=530px,height=0.5px,nolink) "wikilink")
 
@@ -1109,7 +1106,7 @@ DataInputs が、セミコロンによって分割されることに注意して
         rgeom.Destroy()
         return 3
 
-ここでは、!\[\"BufferDistance\"\]!\[\"value\"\]
+ここでは、!\[\"BufferDistance\"]!\[\"value\"]
 のインプットを、ジオメトリインスタンスにおけるバッファ方法を引数として加えたのみです。一旦このコードを、ogr_ws_service_provider.py
 ファイルに追加した後で、ZOOカーネルのディレクトリの中に（もしくは、ZOOサービスプロバイダのルートディレクトリからインストールする形で）それをコピーしてください。また、次のセクションで
 Buffer.zcfg ファイルを詳述する必要があることに注意してください。
@@ -1147,8 +1144,6 @@ Buffer.zcfg ファイルを詳述する必要があることに注意してく�
 あなたは､バッファサービスついて GetCapabilities や DescribeProcess
 そして Execute をZOOカーネルにたずねることができます｡
 
-\[/ZOO-Project/ZOO-Project/wiki/ZooWorkshop/FOSS4GJapan/ja/UsingZooFromOSGeoLiveVM
-前へ\] \| \[/ZOO-Project/ZOO-Project/wiki/ZooWorkshop/FOSS4GJapan/ja
-ワークショップ 目次\] \|
-\[/ZOO-Project/ZOO-Project/wiki/ZooWorkshop/FOSS4GJapan/ja/BuildingWPSClientUsingOL
-次へ\]
+[////ZooWorkshop/FOSS4GJapan/ja/UsingZooFromOSGeoLiveVM前へ](ZooWorkshop : FOSS4GJapan : ja : UsingZooFromOSGeoLiveVM前へ "wikilink") \| [目次](ZooWorkshop : FOSS4GJapan : jaワークショップ "wikilink") \|
+[//////ZooWorkshop/FOSS4GJapan/ja/BuildingWPSClientUsingOL次へ](ZooWorkshop : FOSS4GJapan : ja : BuildingWPSClientUsingOL次へ "wikilink")
+

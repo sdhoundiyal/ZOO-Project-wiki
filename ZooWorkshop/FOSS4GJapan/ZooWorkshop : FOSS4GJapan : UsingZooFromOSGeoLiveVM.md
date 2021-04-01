@@ -1,11 +1,8 @@
 ## Using ZOO from an OSGeoLive virtual machine {#using_zoo_from_an_osgeolive_virtual_machine}
 
 \_\_TOC\_\_
-\[/ZOO-Project/ZOO-Project/wiki/ZooWorkshop/FOSS4GJapan/Introduction
-Prev.\] \| \[/ZOO-Project/ZOO-Project/wiki/ZooWorkshop/FOSS4GJapan
-WorkShop table of content\] \|
-\[/ZOO-Project/ZOO-Project/wiki/ZooWorkshop/FOSS4GJapan/CreatingOGRBasedWebServices
-Next\]
+[/ZooWorkshop/FOSS4GJapan/IntroductionPrev.](ZooWorkshop : FOSS4GJapan : IntroductionPrev. "wikilink") \| [table of content](ZooWorkshop : FOSS4GJapanWorkShop "wikilink") \|
+[///ZooWorkshop/FOSS4GJapan/CreatingOGRBasedWebServicesNext](ZooWorkshop : FOSS4GJapan : CreatingOGRBasedWebServicesNext "wikilink")
 
 [OSGeoLive](http://live.osgeo.org/) is a live DVD and virtual machine
 based on [Xubuntu](http://www.xubuntu.org/) that allows you to try a
@@ -128,13 +125,11 @@ this workshop. MapServer will first be used to provide WFS input data
 for the ZOO Services we are going to develop. The MapServer dataset
 providen by Orkney (japanese regions polygons) will be passed to our
 service during
-\[/ZOO-Project/ZOO-Project/wiki/ZooWorkshop/FOSS4GJapan/CreatingOGRBasedWebServices\#CallingthesinglegeometryservicesfromJavaScript
-section 4\].
+[4](ZooWorkshop : FOSS4GJapan : CreatingOGRBasedWebServices\#CallingthesinglegeometryservicesfromJavaScriptsection "wikilink").
 
 OpenLayers library is also available on the OSGeoLive virtual machine
 image disk, and it will be used during
-\[/ZOO-Project/ZOO-Project/wiki/ZooWorkshop/FOSS4GJapan/BuildingWPSClientUsingOL
-section 4\], for building a simple WPS client application able to query
+[4](ZooWorkshop : FOSS4GJapan : BuildingWPSClientUsingOLsection "wikilink"), for building a simple WPS client application able to query
 the newly developed ZOO Services.
 
 As we planned to use OGR C-API and Python module of the GDAL library, we
@@ -196,8 +191,6 @@ The `Makefile` and the code of the C and Python Service Shared Object
 will be detailed in the next sections.
 
 \
-\[/ZOO-Project/ZOO-Project/wiki/ZooWorkshop/FOSS4GJapan/Introduction
-Prev.\] \| \[/ZOO-Project/ZOO-Project/wiki/ZooWorkshop/FOSS4GJapan
-WorkShop table of content\] \|
-\[/ZOO-Project/ZOO-Project/wiki/ZooWorkshop/FOSS4GJapan/CreatingOGRBasedWebServices
-Next\]
+[//////ZooWorkshop/FOSS4GJapan/IntroductionPrev.](ZooWorkshop : FOSS4GJapan : IntroductionPrev. "wikilink") \| [table of content](ZooWorkshop : FOSS4GJapanWorkShop "wikilink") \|
+[////////ZooWorkshop/FOSS4GJapan/CreatingOGRBasedWebServicesNext](ZooWorkshop : FOSS4GJapan : CreatingOGRBasedWebServicesNext "wikilink")
+

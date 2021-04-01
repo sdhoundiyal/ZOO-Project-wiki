@@ -25,9 +25,6 @@
 -   ZOO-Project Release 1.7.0-rc1:
     <http://svn.zoo-project.org/svn/tags/rel-1.7.0-rc1>
 
-```{=html}
-<!-- -->
-```
     #html
     </div>
 
@@ -64,9 +61,6 @@
 -   ZOO-Project Release 1.6.0-rc2:
     <http://svn.zoo-project.org/svn/tags/rel-1.6.0-rc1>
 
-```{=html}
-<!-- -->
-```
     #html
     </div>
 
@@ -97,9 +91,6 @@
 -   ZOO-Project Release 1.5.0-rc1:
     <http://svn.zoo-project.org/svn/tags/rel-1.5.0-rc1>
 
-```{=html}
-<!-- -->
-```
     #html
     </div>
 
@@ -130,9 +121,6 @@
 -   ZOO-Project Release 1.4.0-rc1:
     <http://svn.zoo-project.org/svn/tags/rel-1.4.0-rc1>
 
-```{=html}
-<!-- -->
-```
     #html
     </div>
 
@@ -170,9 +158,6 @@
 -   ZOO-Project Release 1.3.0-rc2:
     <http://svn.zoo-project.org/svn/tags/rel-1.3.0-rc2>
 
-```{=html}
-<!-- -->
-```
     #html
     </div>
 
@@ -219,9 +204,6 @@
 -   ZOO-Project Release 1.2.0-rc3:
     <http://svn.zoo-project.org/svn/tags/rel-1.2.0-rc3>
 
-```{=html}
-<!-- -->
-```
     #html
     </div>
 
@@ -241,3 +223,4 @@
 
     #html
     </div>
+

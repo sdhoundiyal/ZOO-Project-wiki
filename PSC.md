@@ -29,8 +29,9 @@
 
 ### Project Steering Committee guidelines {#project_steering_committee_guidelines}
 
-See \[/ZOO-Project/ZOO-Project/wiki/PSC/process PSC guidelines\] page
+See [PSC guidelines](PSC : process "wikilink") page
 
 ### Project Steering Committee meetings {#project_steering_committee_meetings}
 
-See \[/ZOO-Project/ZOO-Project/wiki/PSC/meetings PSC meetings\] page
+See [PSC meetings](PSC : meetings "wikilink") page
+

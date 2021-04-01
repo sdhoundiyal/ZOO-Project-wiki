@@ -161,3 +161,4 @@ The following error occurs :
     ../inc/xpcomreference.hxx:191: error: ‘COMTypeInfo’ was not declared in this scope
     ../inc/xpcomreference.hxx:191: error: expected primary-expression before ‘>’ token
     ../inc/xpcomreference.hxx:191: error: ‘::kIID’ has not been declared
+

@@ -56,13 +56,8 @@ and send the plan including packaging details to PSC ML.
 -   Agenda item 5) Proposal from Venka about inviting Angelos to the
     ZOO-PSC. The proposal to be voted on the PSC ML
 
-```{=html}
-<!-- -->
-```
 -   Agenda item 6) Next PSC meeting scheduled for October 10th 2012
     22:00UTC
 
-```{=html}
-<!-- -->
-```
 -   Meeting closed
+

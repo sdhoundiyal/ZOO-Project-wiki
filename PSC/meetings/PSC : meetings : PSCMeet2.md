@@ -7,8 +7,7 @@ time](http://www.timeanddate.com/worldclock/fixedtime.html?year=2010&month=4&day
 
 ### Agenda
 
--   PSC \[/ZOO-Project/ZOO-Project/wiki/PSC/process PSC guidelines
-    proposal\] page review and approval
+-   PSC [PSC guidelines    proposal](PSC : process "wikilink") page review and approval
 -   Launch review (discuss initial feedback) and next steps
 -   Possible funding for development (includes documentation and quality
     assurance)
@@ -77,3 +76,4 @@ meeting to be scheduled as below;
 
 Venka moved motion to close the meeting and provide draft summary of
 PSC-ML. The motion was accepted and the meeting was closed.
+

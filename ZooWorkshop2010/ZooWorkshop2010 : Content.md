@@ -15,3 +15,4 @@ The Workshop material :
         version](http://zoo-project.org/trac/raw-attachment/wiki/ZooWorkshop2010/Content/Practical%20introduction%20to%20ZOO%20-%20The%20Open%20WPS%20Platform.odt)
     -   [The PDF
         version](http://zoo-project.org/trac/raw-attachment/wiki/ZooWorkshop2010/Content/Practical%20introduction%20to%20ZOO%20-%20The%20Open%20WPS%20Platform.pdf)
+

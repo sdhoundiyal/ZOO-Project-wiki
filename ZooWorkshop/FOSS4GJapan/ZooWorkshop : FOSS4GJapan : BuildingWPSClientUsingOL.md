@@ -1,10 +1,8 @@
 ## Building a WPS client using OpenLayers {#building_a_wps_client_using_openlayers}
 
 \_\_TOC\_\_
-\[/ZOO-Project/ZOO-Project/wiki/ZooWorkshop/FOSS4GJapan/CreatingOGRBasedWebServices
-Prev.\] \| \[/ZOO-Project/ZOO-Project/wiki/ZooWorkshop/FOSS4GJapan
-WorkShop table of content\] \|
-\[/ZOO-Project/ZOO-Project/wiki/ZooWorkshop/FOSS4GJapan/Exercice Next\]
+[/ZooWorkshop/FOSS4GJapan/CreatingOGRBasedWebServicesPrev.](ZooWorkshop : FOSS4GJapan : CreatingOGRBasedWebServicesPrev. "wikilink") \| [table of content](ZooWorkshop : FOSS4GJapanWorkShop "wikilink") \|
+[Next](ZooWorkshop : FOSS4GJapan : Exercice "wikilink")
 
 The next step of our workshop is to connect to the OGR Services we have
 created from an OpenLayers map. This will allow to apply single or
@@ -338,7 +336,6 @@ It seems that something is missing in your Services Provider to get the
 same results ... The multiple geometries Services ! This is what we are
 going to do together in the next section.
 
-\[/ZOO-Project/ZOO-Project/wiki/ZooWorkshop/FOSS4GJapan/CreatingOGRBasedWebServices
-Prev.\] \| \[/ZOO-Project/ZOO-Project/wiki/ZooWorkshop/FOSS4GJapan
-WorkShop table of content\] \|
-\[/ZOO-Project/ZOO-Project/wiki/ZooWorkshop/FOSS4GJapan/Exercice Next\]
+[////ZooWorkshop/FOSS4GJapan/CreatingOGRBasedWebServicesPrev.](ZooWorkshop : FOSS4GJapan : CreatingOGRBasedWebServicesPrev. "wikilink") \| [table of content](ZooWorkshop : FOSS4GJapanWorkShop "wikilink") \|
+[Next](ZooWorkshop : FOSS4GJapan : Exercice "wikilink")
+

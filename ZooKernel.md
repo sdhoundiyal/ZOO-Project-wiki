@@ -131,7 +131,7 @@ Some samples requests running on the Shilpa server (using KVP requests)
         valur](http://shilpa.media.osaka-cu.ac.jp/zoo/driftx/wps/?request=Execute&service=WPS&version=1.0.0&language=en-CA&Identifier=Gdal_Translate&DataInputs=Format=GIF@datatype=string;InputDSN=srtm_kashiwara@datatype=string;OutputDSN=srtm_kashiwara_output6@datatype=string;ProjWin=135.6212504,34.5820833,135.6679170,34.5670833,urn:ogc:def:crs:EPSG:6.6:4326,2;demo=Reference@xlink:href=http%3A%2F%2Fcarto.languedoc-roussillon.ecologie.gouv.fr%2Fwebservices%2Fwfs%2Fdiren_general%2F%3FVERSION%3D1.1.0%26service%3DWFS%26request%3DGetFeature%26typename%3DZnieff1%26maxfeatures%3D1)
         [(the WFS request
         used)](http://carto.languedoc-roussillon.ecologie.gouv.fr/webservices/wfs/diren_general/?VERSION=1.1.0&service=WFS&request=GetFeature&typename=Znieff1&maxfeatures=1).
-        See \[/ZOO-Project/ZOO-Project/wiki/ApacheErrorLog here\] to see
+        See [here](ApacheErrorLog "wikilink") to see
         maps data structure extracted from the apache error log
         correspoding to this request)
     -   Basic OGR Service :
@@ -167,9 +167,6 @@ query :
 
 -   A simple GetCapabilities request :
 
-```{=html}
-<!-- -->
-```
     #xml
     <wps:GetCapabilities xmlns:ows="http://www.opengis.net/ows/1.1" xmlns:wps="http://www.opengis.net/wps/1.0.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opengis.net/wps/1.0.0 ../wpsGetCapabilities_request.xsd" language="en-CA" service="WPS">
         <wps:AcceptVersions>
@@ -179,9 +176,6 @@ query :
 
 -   A simple DescribeProcess request :
 
-```{=html}
-<!-- -->
-```
     #xml
     <DescribeProcess xmlns="http://www.opengis.net/wps/1.0.0" xmlns:ows="http://www.opengis.net/ows/1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opengis.net/wps/1.0.0 ../wpsDescribeProcess_request.xsd" service="WPS" version="1.0.0" language="en-CA">
     <ows:Identifier>Buffer</ows:Identifier>
@@ -192,9 +186,6 @@ query :
 -   A sample Execute request using ResponseDocument (same as previous
     example using Buffer from basic ogr service) :
 
-```{=html}
-<!-- -->
-```
     #xml
     <wps:Execute service="WPS" version="1.0.0" xmlns:wps="http://www.opengis.net/wps/1.0.0" xmlns:ows="http://www.opengis.net/ows/1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opengis.net/wps/1.0.0
     ../wpsExecute_request.xsd">
@@ -227,9 +218,6 @@ query :
 -   A sample Execute request using RawData (same as previous example
     using Buffer from basic ogr service) :
 
-```{=html}
-<!-- -->
-```
     #xml
     <wps:Execute service="WPS" version="1.0.0" xmlns:wps="http://www.opengis.net/wps/1.0.0" xmlns:ows="http://www.opengis.net/ows/1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opengis.net/wps/1.0.0
     ../wpsExecute_request.xsd">
@@ -258,9 +246,6 @@ query :
 -   A sample using two different kind of entities (GML reference and
     JSON String) :
 
-```{=html}
-<!-- -->
-```
     #xml
     <wps:Execute service="WPS" version="1.0.0" xmlns:wps="http://www.opengis.net/wps/1.0.0" xmlns:ows="http://www.opengis.net/ows/1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opengis.net/wps/1.0.0
     ../wpsExecute_request.xsd">
@@ -290,9 +275,6 @@ query :
 
 -   same Union sample using 2 embedded JSON Strings :
 
-```{=html}
-<!-- -->
-```
     #xml
     <wps:Execute service="WPS" version="1.0.0" xmlns:wps="http://www.opengis.net/wps/1.0.0" xmlns:ows="http://www.opengis.net/ows/1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opengis.net/wps/1.0.0
     ../wpsExecute_request.xsd">
@@ -323,3 +305,4 @@ query :
                     </wps:RawDataOutput>
             </wps:ResponseForm>
     </wps:Execute>
+

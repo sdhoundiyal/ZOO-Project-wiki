@@ -77,3 +77,4 @@ come back in the coming weeks to propose a release plan.
 Date for the next PSC meeting: 2020-11-12 same time.
 
 Motion 9: end of 2020-12-10 PSC meeting Votes: venka, djay, jmckenna: +1
+

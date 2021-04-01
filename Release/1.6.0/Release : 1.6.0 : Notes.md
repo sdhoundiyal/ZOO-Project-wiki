@@ -25,3 +25,4 @@
     -   Fix FASTCGI location using the \--with-fastcgi option.
     -   Redefined the API function addToMapWithSize to fix problem with
         Python/PHP support.
+

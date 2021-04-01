@@ -147,3 +147,4 @@ Testing your ZOO-Kernel from command line.
     cd /var/www/cgi-bin
     ./zoo_loader.cgi "request=Execute&service=WPS&version=1.0.0&Identifier=HelloPy&DataInputs=a=Djay"
     ./zoo_loader.cgi "request=Execute&service=WPS&version=1.0.0&Identifier=Buffer&DataInputs=BufferDistance=1@datatype=interger;InputPolygon=Reference@xlink:href=http%3A%2F%2Fwww.zoo-project.org%3A8082%2Fgeoserver%2Fows%3FSERVICE%3DWFS%26REQUEST%3DGetFeature%26VERSION%3D1.0.0%26typename%3Dtopp%3Astates%26SRS%3DEPSG%3A4326%26FeatureID%3Dstates.15&RawDataOutput=Result@mimeType=application/json"
+

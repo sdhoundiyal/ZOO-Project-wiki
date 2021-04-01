@@ -56,3 +56,4 @@ repository instead.
 
 Additionally, there is the option of adding the zoo-wps-grass-bridge
 package. This option will automatically install grass7 (svn trunk).
+

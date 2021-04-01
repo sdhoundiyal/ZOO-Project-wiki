@@ -74,11 +74,9 @@ jmckenna, omshinde
 
 -   Motion 8 & 9: To be discussed over emails \\\\
 
-```{=html}
-<!-- -->
-```
 -   Motion 10: Next PSC Meeting on
     <https://www.worldtimebuddy.com/?qm=1&lid=100,30&h=100&date=2021-2-25&sln=13-14&hf=1>
     \\\\
 
 ` venka, jmckenna, omshinde: +1`
+

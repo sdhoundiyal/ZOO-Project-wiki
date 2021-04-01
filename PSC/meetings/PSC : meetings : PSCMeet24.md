@@ -28,9 +28,6 @@ Action items based on Incubation Meeting 1
 
 -   Action Item 1: Test suite to be updated by djay and jmckenna
 
-```{=html}
-<!-- -->
-```
 -   Action item 2: Clarification about the PSC election process and
     preparation of PSC Election Process Draft; To be done by venka and
     omshinde
@@ -57,3 +54,4 @@ Meeting Minutes:
     \\\\
 
 ` To be discussed over email`
+

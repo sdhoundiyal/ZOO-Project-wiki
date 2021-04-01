@@ -88,3 +88,4 @@ under MIT/X11. ZOO-API may also be released under same MIT/X11 license.*
 \'\'Nick: ZOO Kernel and ZOO API will be both released under MIT/X-11
 according to plans, as Kernel was coded from scratch by GeoLabs, and API
 was coded from scratch by 3LIZ.
+

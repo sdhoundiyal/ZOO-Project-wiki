@@ -66,3 +66,4 @@ interface that let the user browse and execute services.
 -   -   Fix issue in case JavaScript support is activated
     -   Fix issue with GDAL profile service
     -   Fix \#172 for https support
+

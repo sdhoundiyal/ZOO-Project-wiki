@@ -59,3 +59,4 @@ getting back all the translation for the specified language.
     #sh
     msgcat -o compilation.po $(find ../../ -name fr_FR.utf8.po)
     msgfmt compilation.po -o /usr/share/locale/fr/LC_MESSAGES/zoo-services.mo
+

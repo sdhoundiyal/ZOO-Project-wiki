@@ -1,7 +1,6 @@
 ## Exercise
 
-\_\_TOC\_\_ \[/ZOO-Project/ZOO-Project/wiki/ZooWorkshop/FOSS4GJapan
-WorkShop table of content\]
+\_\_TOC\_\_ [table of content](ZooWorkshop : FOSS4GJapanWorkShop "wikilink")
 
 You know everything now about writting zcfg matadata files and get short
 pieces of code in `service.c` or `ogr_service_provider.py` depending if
@@ -58,5 +57,5 @@ Once the multiple geometries Services are deployed on your local
 environment, please reload the `zoo-ogr.html` file created during the
 previous section from your browser and test your brand new ZOO
 Services.\
-\[/ZOO-Project/ZOO-Project/wiki/ZooWorkshop/FOSS4GJapan WorkShop table
-of content\]
+[WorkShop tableof content](ZooWorkshop : FOSS4GJapan "wikilink")
+

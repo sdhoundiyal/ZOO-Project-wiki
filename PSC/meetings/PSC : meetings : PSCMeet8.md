@@ -22,9 +22,6 @@ channel
     organized. However, we decided to go through the agenda items and to
     continue discussion via the wiki if necessary.
 
-```{=html}
-<!-- -->
-```
 -   ZOO Kernel roadmap
     -   All members agreed on the roadmap items. Some vote should be
         organized soon about the proposed features and dates. PSC needs
@@ -32,9 +29,6 @@ channel
     -   The roadmap work has been put in the following page:
         <http://www.zoo-project.org/trac/wiki/ZOO_RoadMap>
 
-```{=html}
-<!-- -->
-```
 -   ZOO Presentations and WS in Beijing, China
     -   Venka reported that ZOO was well received and that CUMTB has
         expressed interest in using ZOO and becoming a ZOO knowledge
@@ -42,32 +36,21 @@ channel
     -   Some help can probably be provided for Chinese translation of
         the WS and of .po files.
 
-```{=html}
-<!-- -->
-```
 -   ZOO [Sponsorship](Sponsorship "wikilink") Plan page
     -   Every PSC member attending the meeting agreed on the sponsorship
         levels and Paypal account transactions. Modifications can be
         done in the future. The Sponsorship plan needs to be launched
         via zoo-discuss soon.
 
-```{=html}
-<!-- -->
-```
 -   ZOO Web site update
     -   Nick reported that Gerald and him are working on new website
         template for better browser compatibility and more fluid layout.
         zoo-project.org will be updated in the coming days.
 
-```{=html}
-<!-- -->
-```
 -   Grant SVN write access to Soeren Gebbert
     -   Every PSC member attending the meeting agreed that a vote for
         SVN access to Soeren G. must be organized soon.
 
-```{=html}
-<!-- -->
-```
 -   Time & Date for next meeting
     -   To be defined.
+

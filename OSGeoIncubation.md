@@ -190,3 +190,4 @@ A first test suite was integrated for 1.2.0 release including Services
 Size of a release including documentation is approximately 20M.
 
 Expected download per release : 200 - 1000.
+

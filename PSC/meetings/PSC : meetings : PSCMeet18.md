@@ -32,3 +32,4 @@ The main points which were discussed during this meeting was:
     -   MapMint documentation. Nick, Venka and need more volunteers
 
 [irc log](http://zoo-project.org/irclogs/psc_meeting18.log)
+

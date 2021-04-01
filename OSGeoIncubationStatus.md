@@ -89,3 +89,4 @@ Have issues raised in the provenance review been adequately addressed?
 Are Commiter Responsibilities Guidelines covering legal issues in place?
 
 `   Yes, we used the GDAL Project RFC 3 as a base document to create our own, available `[`here`](http://zoo-project.org/docs/community/developer.html)`.  PSC should adopt the document. Committers agreement are coming.`
+

@@ -135,11 +135,9 @@ This is displayed as:
 
 ` `[`0.7&resolution=duplicate)`](TicketQuery(version=0.6 "wikilink")
 
-Just like the \[/ZOO-Project/ZOO-Project/wiki/TracQuery\#UsingTracLinks
-query: wiki links\], the parameter of this macro expects a query string
+Just like the [wiki links](TracQuery\#UsingTracLinksquery: "wikilink"), the parameter of this macro expects a query string
 formatted according to the rules of the simple
-\[/ZOO-Project/ZOO-Project/wiki/TracQuery\#QueryLanguage ticket query
-language\]. This also displays the link and description of a single
+[ticket querylanguage](TracQuery\#QueryLanguage "wikilink"). This also displays the link and description of a single
 ticket:
 
     [[TicketQuery(id=123)]]
@@ -168,3 +166,4 @@ This is displayed as:
 ------------------------------------------------------------------------
 
 See also: TracQuery, TracTickets, TracReports, TracGuide
+

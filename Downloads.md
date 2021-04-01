@@ -150,3 +150,4 @@ command :
     #sh
     # sed "s:\[tunnels\]:\[tunnels\]\nzoossh = /usr/bin/ssh -p 1046:g" -i ~/.subversion/config
     # svn co svn+zoossh://svn.zoo-project.org/var/svn/repos/trunk zoo-project
+

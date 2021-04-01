@@ -10,8 +10,7 @@ time](http://www.timeanddate.com/worldclock/fixedtime.html?year=2010&month=6&day
 -   Decide meeting Chair
 -   ZOO Workshop at FOSS4G2010
 -   Report on ZOO presentation at Trento, Italy
--   PSC \[/ZOO-Project/ZOO-Project/wiki/PSC/process PSC guidelines
-    proposal\] page review and approval
+-   PSC [PSC guidelines    proposal](PSC : process "wikilink") page review and approval
 -   Next meeting schedule
 
 ### Summary
@@ -61,3 +60,4 @@ meeting to be scheduled as below;
 
 Venka moved motion to close the meeting and provide draft summary of
 PSC-ML. The motion was accepted and the meeting was closed.
+

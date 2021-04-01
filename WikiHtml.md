@@ -1,7 +1,7 @@
 ## Using HTML in Wiki Text {#using_html_in_wiki_text}
 
 Trac supports the display of HTML in any wiki context, by using the
-`#html` \[/ZOO-Project/ZOO-Project/wiki/WikiProcessors WikiProcessor\].
+`#html` [WikiProcessor](WikiProcessors "wikilink").
 
 However, this HTML has to be
 [well-formed](http://en.wikipedia.org/wiki/Well-formed_element). In
@@ -462,7 +462,7 @@ parameter everywhere.
 ```
 Other classes can be specified as alternatives (remember that you can
 define your own in \[TracInterfaceCustomization\#SiteAppearance
-site/style.css\]).
+site/style.css]).
 
   = Wiki Markup =   = Display =
   ----------------- -------------
@@ -583,3 +583,4 @@ comments, and will generate a rendering error.
 ------------------------------------------------------------------------
 
 See also: WikiProcessors, WikiFormatting, WikiRestructuredText
+

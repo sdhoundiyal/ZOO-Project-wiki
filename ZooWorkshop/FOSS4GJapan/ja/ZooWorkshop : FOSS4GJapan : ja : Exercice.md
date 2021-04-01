@@ -1,7 +1,6 @@
 ## 演習
 
-\_\_TOC\_\_ \[/ZOO-Project/ZOO-Project/wiki/ZooWorkshop/FOSS4GJapan/ja
-ワークショップ 目次\]
+\_\_TOC\_\_ [目次](ZooWorkshop : FOSS4GJapan : jaワークショップ "wikilink")
 
 以上で、zcfg メタデータファイルの記述方法と、
 C言語またはPython言語の選択によって、`service.c` または
@@ -49,5 +48,5 @@ C-API 関数を使用しています:
 ここで、複合ジオメトリサービスは、ローカル環境の上に配置されました。ブラウザ上から、前のセクションで作成した
 `zoo-ogr.html`
 をリロードしてください。そして新しいZOOサービスをテストしてください。\
-\[/ZOO-Project/ZOO-Project/wiki/ZooWorkshop/FOSS4GJapan/ja
-ワークショップ 目次\]
+[目次](ZooWorkshop : FOSS4GJapan : jaワークショップ "wikilink")
+

@@ -25,3 +25,4 @@ system. Please feel free to \[/register Register\].
 ## ZOO Google Summer of Code Ideas {#zoo_google_summer_of_code_ideas}
 
 -   ZOO_SoC_Ideas [ZOO_SoC_Ideas](ZOO_SoC_Ideas "wikilink")
+

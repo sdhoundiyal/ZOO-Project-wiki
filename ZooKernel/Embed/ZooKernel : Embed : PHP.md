@@ -197,3 +197,4 @@ ZooKernel will be compiled you only have to run it once, so you could
 use a small batch file including this LD_LIBRARY_PATH and other required
 parameters when you launch your ZooKernel instance (note that firefox
 does something like that also).
+

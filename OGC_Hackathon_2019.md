@@ -191,3 +191,4 @@ very small demo
 available](https://demo.mapmint.com/examples3/spatialtools.html) where
 the interactions between the client and the server use the
 wps-rest-binding definitions with some small adaptations.
+

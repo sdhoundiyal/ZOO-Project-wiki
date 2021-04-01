@@ -1,27 +1,22 @@
 ## Introduction
 
-\_\_TOC\_\_ \[/ZOO-Project/ZOO-Project/wiki/ZooWorkshop/FOSS4GJapan
-WorkShop table of content\] \|
-\[/ZOO-Project/ZOO-Project/wiki/ZooWorkshop/FOSS4GJapan/UsingZooFromOSGeoLiveVM
-Next\]
+\_\_TOC\_\_ [table of content](ZooWorkshop : FOSS4GJapanWorkShop "wikilink") \|
+[//ZooWorkshop/FOSS4GJapan/UsingZooFromOSGeoLiveVMNext](ZooWorkshop : FOSS4GJapan : UsingZooFromOSGeoLiveVMNext "wikilink")
 
 ### What is ZOO ? {#what_is_zoo}
 
 ZOO is a WPS (Web Processing Service) open source project recently
-released under a \[/ZOO-Project/ZOO-Project/wiki/Licence MIT/X-11\]
+released under a [MIT/X-11](Licence "wikilink")
 style license. It provides an OGC WPS compliant developer-friendly
 framework to create and chain WPS Web services. ZOO is made of three
 parts:
 
--   \[/ZOO-Project/ZOO-Project/wiki/ZooWebSite/ZooKernel/Introduction
-    ZOO Kernel\]: A powerful server-side C Kernel which makes it
+-   [   ZOO Kernel](ZooWebSite : ZooKernel : Introduction "wikilink"): A powerful server-side C Kernel which makes it
     possible to manage and chain Web services coded in different
     programming languages.
--   \[/ZOO-Project/ZOO-Project/wiki/ZooWebSite/ZooServices/Introduction
-    ZOO Services\]: A growing suite of example Web Services based on
+-   [   ZOO Services](ZooWebSite : ZooServices : Introduction "wikilink"): A growing suite of example Web Services based on
     various open source libraries.
--   \[/ZOO-Project/ZOO-Project/wiki/ZooWebSite/ZOOAPI/Introduction ZOO
-    API\]: A server-side JavaScript API able to call and chain the ZOO
+-   [ZOO    API](ZooWebSite : ZOOAPI : Introduction "wikilink"): A server-side JavaScript API able to call and chain the ZOO
     Services, which makes the development and chaining processes easier.
 
 ZOO is designed to make the service development easier by providing a
@@ -36,12 +31,11 @@ website](http://www.zoo-project.org).
 ZOO is based on a \'WPS Service Kernel\' which constitutes the ZOO\'s
 core system (aka ZOO Kernel). The latter is able to load dynamic
 libraries and to handle them as on-demand Web services. The
-\[/ZOO-Project/ZOO-Project/wiki/ZooWebSite/ZooKernel/Introduction ZOO
-Kernel\] is written in C language, but supports several common
+[ZOOKernel](ZooWebSite : ZooKernel : Introduction "wikilink") is written in C language, but supports several common
 programming languages for creating \[ZooWebSite/ZooServices/Introduction
-ZOO Services\].
+ZOO Services].
 
-A \[ZooWebSite/ZooServices/Introduction ZOO Service\] is a link composed
+A \[ZooWebSite/ZooServices/Introduction ZOO Service] is a link composed
 of a ZOO metadata file (.zcfg) and the code for the corresponding
 implementation. The metadata file describes all the available functions
 which can be called using a WPS Exec Request, as well as the desired
@@ -49,8 +43,7 @@ input/output. Services contain the algorithms and functions, and can now
 be implemented in C/C++, Fortran, Java, Python, Perl, PHP and
 JavaScript.
 
-\[/ZOO-Project/ZOO-Project/wiki/ZooWebSite/ZooKernel/Introduction ZOO
-Kernel\] works with Apache and can communicate with cartographic engines
+[ZOOKernel](ZooWebSite : ZooKernel : Introduction "wikilink") works with Apache and can communicate with cartographic engines
 and Web mapping clients. It simply adds the WPS support to your spatial
 data infrastructure and your Web mapping application. It can use every
 GDAL/OGR supported formats as input data and create suitable vector or
@@ -99,9 +92,8 @@ welcome during the workshop.
 
 ### Usefull tips for reading : {#usefull_tips_for_reading}
 
-\[\...\]\
+\[\...]\
 **Let\'s go !**\
-\[/ZOO-Project/ZOO-Project/wiki/ZooWorkshop/FOSS4GJapan WorkShop table
-of content\] \|
-\[/ZOO-Project/ZOO-Project/wiki/ZooWorkshop/FOSS4GJapan/UsingZooFromOSGeoLiveVM
-Next\]
+[WorkShop tableof content](ZooWorkshop : FOSS4GJapan "wikilink") \|
+[//////////ZooWorkshop/FOSS4GJapan/UsingZooFromOSGeoLiveVMNext](ZooWorkshop : FOSS4GJapan : UsingZooFromOSGeoLiveVMNext "wikilink")
+

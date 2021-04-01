@@ -65,12 +65,10 @@ ZOO-Project mentors or co-mentors.
 
 -   If you wish to be a Mentor add your name and e-mail
 
-```{=html}
-<!-- -->
-```
 -   Gérald Fenoy gerald \[dot\] fenoy \[at\] geolabs \[dot\] fr
 -   Trevor Clarke - tclarke \[at\] ball \[dot\] com - I\'m mentoring for
     Opticks as well so I do have some limited time but I\'m willing to
     help as a co-mentor or if a student is interested in expanding the
     Python support or working on the v8 engine. (I have some v8
     experience)
+

@@ -4,19 +4,15 @@ Here are listed all the available documentation about ZOO Kernel.
 
 ### Compilation
 
--   \[/ZOO-Project/ZOO-Project/wiki/ZooDocumentation/ZOOKernel/Installation
-    How to compile and install ZOO-Kernel\]
+-   [   How to compile and install ZOO-Kernel](ZooDocumentation : ZOOKernel : Installation "wikilink")
 
 ### Installation
 
 -   How to install ZOO-Kernel on
-    \[/ZOO-Project/ZOO-Project/wiki/ZooDocumentation/ZOOKernel/DebianLike_installation
-    Debian like distributions\]
+    [   Debian like distributions](ZooDocumentation : ZOOKernel : DebianLike_installation "wikilink")
 -   How to install ZOO-Kernel on
-    \[/ZOO-Project/ZOO-Project/wiki/ZooDocumentation/ZOOKernel/CentOS_installation
-    CentOS 5.5\].
+    [   CentOS 5.5](ZooDocumentation : ZOOKernel : CentOS_installation "wikilink").
 -   How to install ZOO-Kernel on
-    \[/ZOO-Project/ZOO-Project/wiki/ZooDocumentation/ZOOKernel/OpenSUSE_installation
-    openSUSE\].
--   How to configure \[/ZOO-Project/ZOO-Project/wiki/ZooKernel/Embed/PHP
-    PHP support\]
+    [   openSUSE](ZooDocumentation : ZOOKernel : OpenSUSE_installation "wikilink").
+-   How to configure [   PHP support](ZooKernel : Embed : PHP "wikilink")
+

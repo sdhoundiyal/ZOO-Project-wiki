@@ -11,10 +11,10 @@ time](http://www.timeanddate.com/worldclock/fixedtime.html?year=2010&month=7&day
 -   ZOO Workshop at FOSS4G2010
 -   Report on ZOO presentation at OSGIS, Nottingham
 -   Recent and actual dev. (ZOO 1.1 plan)
--   PSC \[/ZOO-Project/ZOO-Project/wiki/PSC/process PSC guidelines
-    proposal\] page review and approval
+-   PSC [PSC guidelines    proposal](PSC : process "wikilink") page review and approval
 -   Next meeting schedule
 
 ### Summary
 
 To be added
+

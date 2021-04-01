@@ -20,3 +20,4 @@ The metadata configuration file is
 
 Simply copy the zcfg and the PHP script in your cgi-bin directory or
 whatever metapath you want.
+

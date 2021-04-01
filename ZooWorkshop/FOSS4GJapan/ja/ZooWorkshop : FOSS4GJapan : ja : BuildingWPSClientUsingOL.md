@@ -1,11 +1,8 @@
 ## OpenLayers を使用したWPSクライアントの構築 {#openlayers_を使用したwpsクライアントの構築}
 
 \_\_TOC\_\_
-\[/ZOO-Project/ZOO-Project/wiki/ZooWorkshop/FOSS4GJapan/ja/CreatingOGRBasedWebServices
-前へ\] \| \[/ZOO-Project/ZOO-Project/wiki/ZooWorkshop/FOSS4GJapan/ja
-ワークショップ 目次\] \|
-\[/ZOO-Project/ZOO-Project/wiki/ZooWorkshop/FOSS4GJapan/ja/Exercice
-次へ\]
+[/ZooWorkshop/FOSS4GJapan/ja/CreatingOGRBasedWebServices前へ](ZooWorkshop : FOSS4GJapan : ja : CreatingOGRBasedWebServices前へ "wikilink") \| [目次](ZooWorkshop : FOSS4GJapan : jaワークショップ "wikilink") \|
+[///ZooWorkshop/FOSS4GJapan/ja/Exercice次へ](ZooWorkshop : FOSS4GJapan : ja : Exercice次へ "wikilink")
 
 次のステップではOpenLayers mapから作成したOGR
 Servicesに関連付けます。こうすることで、選択したポリゴン上で単一または複数の幾何処理を行い、新規作成したジオメトリを表示することができます。
@@ -308,8 +305,6 @@ GETメソッド制限のためにエラーが表示されます。ジオメト�
 同じ結果を得るには、Services Providerに何かが足りないように思われます
 ... 複数のジオメトリサービスです! これは次のセクションで行います。
 
-\[/ZOO-Project/ZOO-Project/wiki/ZooWorkshop/FOSS4GJapan/ja/CreatingOGRBasedWebServices
-前へ\] \| \[/ZOO-Project/ZOO-Project/wiki/ZooWorkshop/FOSS4GJapan/ja
-ワークショップ 目次\] \|
-\[/ZOO-Project/ZOO-Project/wiki/ZooWorkshop/FOSS4GJapan/ja/Exercice
-次へ\]
+[////ZooWorkshop/FOSS4GJapan/ja/CreatingOGRBasedWebServices前へ](ZooWorkshop : FOSS4GJapan : ja : CreatingOGRBasedWebServices前へ "wikilink") \| [目次](ZooWorkshop : FOSS4GJapan : jaワークショップ "wikilink") \|
+[//////ZooWorkshop/FOSS4GJapan/ja/Exercice次へ](ZooWorkshop : FOSS4GJapan : ja : Exercice次へ "wikilink")
+

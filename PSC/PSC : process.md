@@ -38,8 +38,7 @@ members can pass a proposal.
 
 ### Detailed Process {#detailed_process}
 
--   Proposals are written up on the \[/ZOO-Project/ZOO-Project/wiki/
-    ZOO-Project wiki\] or submitted on the [ZOO-Project mailing
+-   Proposals are written up on the [   ZOO-Project wiki]( "wikilink") or submitted on the [ZOO-Project mailing
     list](http://gisws.media.osaka-cu.ac.jp/mailman/listinfo/zoo-discuss)
     for discussion and voting, by any interested party, not just
     committee members.
@@ -111,7 +110,7 @@ parties.
 
 #### Adding Members {#adding_members}
 
-Any member of the \[/ZOO-Project/ZOO-Project/wiki/ ZOO-Project wiki\]
+Any member of the [ZOO-Project wiki]( "wikilink")
 and submitted on the [ZOO-Project mailing
 list](http://gisws.media.osaka-cu.ac.jp/mailman/listinfo/zoo-discuss)
 may nominate someone for committee membership at any time. Only existing
@@ -180,3 +179,4 @@ Gerald FENOY is declared initial Chair of the Project Steering
 Committee.
 
 For an updated committee membership list, see [PSC](PSC "wikilink").
+

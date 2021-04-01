@@ -18,16 +18,10 @@ time](http://www.timeanddate.com/worldclock/fixedtime.html?year=2011&month=2&day
 -   ZOO available on openSuse: Now needs packages for other distros
 -   ZOO API docs available (need to be polished)
 
-```{=html}
-<!-- -->
-```
 -   Using Sponsorship fundings
 -   ZOO\@OSGeo Code Sprint (Montreal, CA) \> Dev Plan
 -   Improve documentation
 
-```{=html}
-<!-- -->
-```
 -   After 1.2 release
 -   Include some ZOO/GRASS demo on the website
 -   Include some ZOO/GRASS Services examples (nothing to code!)
@@ -44,9 +38,6 @@ time](http://www.timeanddate.com/worldclock/fixedtime.html?year=2011&month=2&day
 
 -   Discussion on the ZOO 1.2.0 release
 
-```{=html}
-<!-- -->
-```
 -   ZOO/GRASS bridge feedbacks
 
 The GRASS7 support was discussed and the work on both Kernel and QGIS
@@ -76,9 +67,6 @@ into Sphinx and the upcoming official doc system.
 
 -   Using Sponsorship fundings
 
-```{=html}
-<!-- -->
-```
 -   ZOO\@OSGeo Code Sprint (Montreal, CA) \> Dev Plan
 
 The use of part of the sponsorship to pay for Gerald and Nick travel
@@ -107,3 +95,4 @@ Some side discussions occured and the meeting was closed.
 For more details, the irc log is available here:
 
 <http://zoo-project.org/irclogs/psc_meeting1.log>
+

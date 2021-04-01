@@ -23,9 +23,6 @@ Agenda 1: ZOO 1.2.0 release status
 
 -   -   Nick pointed out the on-going work using the Timeline link
 
-```{=html}
-<!-- -->
-```
 -   -   Gerald gave an overview of the recent and numerous improvements
         of ZOO-Kernel
         -   Remove memory leaks
@@ -37,9 +34,6 @@ Agenda 1: ZOO 1.2.0 release status
         -   Input/Output binaries support for C, Java and Python
         -   ZOO API code and documentation improved
 
-```{=html}
-<!-- -->
-```
 -   -   Members discussed about the GRASS support for the ZOO 1.2
         release
         -   Venka said that the GRASS support is challenging and slowing
@@ -53,9 +47,6 @@ Agenda 1: ZOO 1.2.0 release status
             tests possible. He also said that Luca can help with the
             GRASS support.
 
-```{=html}
-<!-- -->
-```
 -   -   Members agreed that the date of the ZOO 1.2 release must be
         discussed and fixed by email.
 
@@ -86,3 +77,4 @@ Agenda 3: ZOO New Web Site Feedback
         in both ZOO Website and ZOO trunk files.
 
 Meeting closed.
+

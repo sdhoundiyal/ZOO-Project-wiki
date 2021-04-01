@@ -1,11 +1,8 @@
 ## OSGeoLiveの仮想マシンによる ZOO の利用 {#osgeoliveの仮想マシンによる_zoo_の利用}
 
 \_\_TOC\_\_
-\[/ZOO-Project/ZOO-Project/wiki/ZooWorkshop/FOSS4GJapan/ja/Introduction/
-前へ\] \| \[/ZOO-Project/ZOO-Project/wiki/ZooWorkshop/FOSS4GJapan/ja
-ワークショップ 目次\] \|
-\[/ZOO-Project/ZOO-Project/wiki/ZooWorkshop/FOSS4GJapan/ja/CreatingOGRBasedWebServices
-次へ\]
+[/ZooWorkshop/FOSS4GJapan/ja/Introduction/前へ](ZooWorkshop : FOSS4GJapan : ja : Introduction : 前へ "wikilink") \| [目次](ZooWorkshop : FOSS4GJapan : jaワークショップ "wikilink") \|
+[///ZooWorkshop/FOSS4GJapan/ja/CreatingOGRBasedWebServices次へ](ZooWorkshop : FOSS4GJapan : ja : CreatingOGRBasedWebServices次へ "wikilink")
 
 [OSGeoLive](http://live.osgeo.org/) は
 [Xubuntu](http://www.xubuntu.org/)
@@ -96,13 +93,11 @@ Apacheウェブサーバーを再起動することで、ZOOカーネルにア�
 このワークショップではOSGeoLive環境から、その他の２つのソフトウェアを使用します。
 
 まず MapServer
-は、これから設定していくZOOサービスのためのWFS入力データとして使用します。\[/ZOO-Project/ZOO-Project/wiki/ZooWorkshop/FOSS4GJapan/ja/CreatingOGRBasedWebServices
-セクション３\] では、オークニー社（日本のポリゴンデータ）から提供された
+は、これから設定していくZOOサービスのためのWFS入力データとして使用します。[////ZooWorkshop/FOSS4GJapan/ja/CreatingOGRBasedWebServicesセクション３](ZooWorkshop : FOSS4GJapan : ja : CreatingOGRBasedWebServicesセクション３ "wikilink") では、オークニー社（日本のポリゴンデータ）から提供された
 MapServer データセットを、作成したサービスで使用されます。
 
 OpenLayers ライブラリもまた、OSGeo Live
-仮想マシンイメージディスクの中で利用できます。\[/ZOO-Project/ZOO-Project/wiki/ZooWorkshop/FOSS4GJapan/BuildingWPSClientUsingOL\#BuildingaWPSclientusingOpenLayers
-セクション４\] で、新しく作られた ZOO サービスの問合せに使う簡単な WPS
+仮想マシンイメージディスクの中で利用できます。[/////ZooWorkshop/FOSS4GJapan/BuildingWPSClientUsingOL\#BuildingaWPSclientusingOpenLayersセクション４](ZooWorkshop : FOSS4GJapan : BuildingWPSClientUsingOL\#BuildingaWPSclientusingOpenLayersセクション４ "wikilink") で、新しく作られた ZOO サービスの問合せに使う簡単な WPS
 クライアントアプリケーションに利用されます。
 
 GDALライブラリのPythonモジュールとOGR
@@ -156,8 +151,6 @@ zoo-servicesディレクトリに作成してください。
 Objectのコードについて説明していきます。
 
 \
-\[/ZOO-Project/ZOO-Project/wiki/ZooWorkshop/FOSS4GJapan/ja/Introduction/
-前へ.\] \| \[/ZOO-Project/ZOO-Project/wiki/ZooWorkshop/FOSS4GJapan/ja
-ワークショップ 目次\] \|
-\[/ZOO-Project/ZOO-Project/wiki/ZooWorkshop/FOSS4GJapan/ja/CreatingOGRBasedWebServices
-次へ\]
+[//////ZooWorkshop/FOSS4GJapan/ja/Introduction/前へ.](ZooWorkshop : FOSS4GJapan : ja : Introduction : 前へ. "wikilink") \| [目次](ZooWorkshop : FOSS4GJapan : jaワークショップ "wikilink") \|
+[////////ZooWorkshop/FOSS4GJapan/ja/CreatingOGRBasedWebServices次へ](ZooWorkshop : FOSS4GJapan : ja : CreatingOGRBasedWebServices次へ "wikilink")
+

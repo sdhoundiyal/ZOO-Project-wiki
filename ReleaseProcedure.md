@@ -43,37 +43,22 @@ releases.
 -   Double check that the latest build file matches the current
     revisions number.
 
-```{=html}
-<!-- -->
-```
 -   If this is a new major release create a branch and a tag.
 
-```{=html}
-<!-- -->
-```
         cd zoo-project-svn/
         svn cp trunk branches/branch-1.6
         svn cp trunk tags/rel-1.6.0
 
 -   If this is a major or minor relase, create a tag.
 
-```{=html}
-<!-- -->
-```
         svn cp branches/branch-1.6 tags/rel-1.6.1
 
 -   Commit the tags or branches with the version numbers.
 
-```{=html}
-<!-- -->
-```
         svn commit -m 'Created branch/tags for the X.Y.Z release'
 
 -   Create version archives
 
-```{=html}
-<!-- -->
-```
        export VERSION=2.6.0
        cd zoo-propject-svn
        cp -r trunk zoo-project-$VERSION
@@ -91,3 +76,4 @@ releases.
 -   Update the [Downloads page](http://zoo-project.org/site/Downloads)
     to add the latest release (by editing this [wiki
     page](http://zoo-project.org/trac/wiki/Downloads)).
+
