@@ -154,12 +154,12 @@ Below is a list of steps with some screenshots showing the result you should get
 
 # Press the "Execute" button down the form, you should see something like in the following.
 
-[[/OGC_Hackathon_2019_attachments/Capture_decran_2019-06-24_19.11.46.png​​​​]]
+[[/OGC_Hackathon_2019_attachments/Capture_decran_2019-06-24_19_11_46.png]]
 
 # You should identify the line showing the Location header returned by the server (providing the jobId created)
 # You can can either go down the "GetStatus" or "GetResult" section to access the status of your running service or the result (set "OTB.BandMath" in the id field and the returned jobId found in the Location header). You can see below an example of "GetResult" for the execution.
 
-[[/OGC_Hackathon_2019_attachments/Capture_d'écran_2019-06-24_19.11.32.png]]
+[[/OGC_Hackathon_2019_attachments/Capture_decran_2019-06-24_19_11_32.png]]
 
 === Simple OpenLayers interface ===
 
