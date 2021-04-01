@@ -9,9 +9,9 @@ Thursday, 25 March 2021 at https://www.timeanddate.com/worldclock/fixedtime.html
 
 === Agenda ===
 
-*Review and approve minutes of PSC Meeting 24​http://zoo-project.org/trac/wiki/PSC/meetings/PSCMeet24
-*Update on Action items from PSC Meeting 24http://zoo-project.org/trac/wiki/PSC/meetings/PSCMeet24
-*Use GitHub ZOO-Project/ZOO-Project repo as our code source versioning system and Use GitHub wiki on ZOO-Project/ZOO-Project/wiki as our official wiki
+*Review and approve minutes of PSC Meeting 24​ - http://zoo-project.org/trac/wiki/PSC/meetings/PSCMeet24
+*Update on Action items from PSC Meeting 24 - http://zoo-project.org/trac/wiki/PSC/meetings/PSCMeet24
+*Use GitHub [https://github.com/ZOO-Project/ZOO-Project ZOO-Project/ZOO-Project] repo as our code source versioning system and Use GitHub wiki on ZOO-Project/ZOO-Project/wiki as our official wiki
 
 
 === Summary ===
@@ -25,12 +25,12 @@ Action Items:
 *Action Item 1: Reviewing Github tickets and providing feedback and comments
 
 Meeting Minutes:
-*Motion 1: Approve [PSC meeting #24](https://github.com/ZOO-Project/ZOO-Project/wiki/PSC:-meetings:-PSCMeet24) minutes
-    venka, djay, jmckenna, omshinde: +1
+*Motion 1: Approve [https://github.com/ZOO-Project/ZOO-Project/wiki/PSC:-meetings:-PSCMeet24 PSC meeting #24] minutes
+    venka, djay, jmckenna, omshinde: +1 
 
 *Motion 2: 
-    1. Use GitHub ZOO-Project/ZOO-Project repo as our code source versioning system; 
-    2. Use GitHub wiki on ZOO-Project/ZOO-Project/wiki as our official wiki
+** Use GitHub [https://github.com/ZOO-Project/ZOO-Project ZOO-Project/ZOO-Project] repo as our code source versioning system; 
+** Use GitHub wiki on [https://github.com/ZOO-Project/ZOO-Project/wiki/ ZOO-Project/ZOO-Project/wiki] as our official wiki
 
     venka, jmckenna, omshinde: +1
 
