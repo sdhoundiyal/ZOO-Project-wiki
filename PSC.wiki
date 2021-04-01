@@ -20,12 +20,12 @@
 
 === Project Steering Committee guidelines ===
 
-See [/PSC/PSC:-process PSC guidelines] page
+See [/ZOO-Project/ZOO-Project/wiki/PSC:-process PSC guidelines] page
 
 
 === Project Steering Committee meetings ===
 
-See [/PSC/PSC:-meetings PSC meetings] page
+See [/ZOO-Project/ZOO-Project/wiki/PSC:-meetings PSC meetings] page
 
 
 

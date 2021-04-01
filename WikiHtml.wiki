@@ -1,7 +1,7 @@
 
 == Using HTML in Wiki Text ==
 
-Trac supports the display of HTML in any wiki context, by using the <tt>#html</tt> [/WikiProcessors WikiProcessor]. 
+Trac supports the display of HTML in any wiki context, by using the <tt>#html</tt> [/ZOO-Project/ZOO-Project/wiki/WikiProcessors WikiProcessor]. 
 
 However, this HTML has to be [http://en.wikipedia.org/wiki/Well-formed_element well-formed].
 In particular, you can't insert a start tag in an <tt>#html</tt> block, resume normal wiki text and insert the corresponding end tag in a second <tt>#html</tt> block. 

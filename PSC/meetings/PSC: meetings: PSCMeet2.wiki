@@ -7,7 +7,7 @@ scheduled Wednesday, 21 April 2010 [http://www.timeanddate.com/worldclock/fixedt
 
 === Agenda ===
 
-*PSC [/PSC/PSC:-process PSC guidelines proposal] page review and approval
+*PSC [/ZOO-Project/ZOO-Project/wiki/PSC:-process PSC guidelines proposal] page review and approval
 *Launch review (discuss initial feedback) and next steps
 *Possible funding for development (includes documentation and quality assurance)
 *should the [[Users]] page have an interactive map of where users are located, or maybe we should display a map of where ZOO is being downloaded?  Thoughts?

@@ -186,7 +186,7 @@ Example:
 This is displayed as:
   [[TicketQuery(version=0.6|0.7&resolution=duplicate)]]
 
-Just like the [/TracQuery#UsingTracLinks query: wiki links], the parameter of this macro expects a query string formatted according to the rules of the simple [/TracQuery#QueryLanguage ticket query language]. This also displays the link and description of a single ticket:
+Just like the [/ZOO-Project/ZOO-Project/wiki/TracQuery#UsingTracLinks query: wiki links], the parameter of this macro expects a query string formatted according to the rules of the simple [/ZOO-Project/ZOO-Project/wiki/TracQuery#QueryLanguage ticket query language]. This also displays the link and description of a single ticket:
 <pre>
 [[TicketQuery(id=123)]]
 </pre>

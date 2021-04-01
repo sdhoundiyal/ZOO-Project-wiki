@@ -2,7 +2,7 @@
 == Exercise ==
 
 __TOC__
-[/ZooWorkshop/ZooWorkshop:-FOSS4GJapan WorkShop table of content]
+[/ZOO-Project/ZOO-Project/wiki/ZooWorkshop:-FOSS4GJapan WorkShop table of content]
 
 You know everything now about writting zcfg matadata files and get short pieces of code in <tt>service.c</tt> or <tt>ogr_service_provider.py</tt> depending if you choosen C or Python programming language respectively.
 
@@ -39,7 +39,7 @@ You can once again use the <tt>Boundary.zcfg</tt> file as example, rename the <t
 
 Once the multiple geometries Services are deployed on your local environment, please reload the <tt>zoo-ogr.html</tt> file created during the previous section from your browser and test your brand new ZOO Services.
 <br>
-[/ZooWorkshop/ZooWorkshop:-FOSS4GJapan WorkShop table of content]
+[/ZOO-Project/ZOO-Project/wiki/ZooWorkshop:-FOSS4GJapan WorkShop table of content]
 
 
 

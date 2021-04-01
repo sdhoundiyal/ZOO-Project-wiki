@@ -2,7 +2,7 @@
 == OGRのWeb サービス作成 ==
 
 __TOC__
-[/ZooWorkshop/FOSS4GJapan/ja/ZooWorkshop:-FOSS4GJapan:-ja:-UsingZooFromOSGeoLiveVM 前へ] | [/ZooWorkshop/FOSS4GJapan/ZooWorkshop:-FOSS4GJapan:-ja ワークショップ 目次] | [/ZooWorkshop/FOSS4GJapan/ja/ZooWorkshop:-FOSS4GJapan:-ja:-BuildingWPSClientUsingOL 次へ]
+[/ZOO-Project/ZOO-Project/wiki/ZooWorkshop:-FOSS4GJapan:-ja:-UsingZooFromOSGeoLiveVM 前へ] | [/ZOO-Project/ZOO-Project/wiki/ZooWorkshop:-FOSS4GJapan:-ja ワークショップ 目次] | [/ZOO-Project/ZOO-Project/wiki/ZooWorkshop:-FOSS4GJapan:-ja:-BuildingWPSClientUsingOL 次へ]
 
 [[Image(http://www.lafon-svv.com/html/images/ligne_horizontale.gif,width=530px,height=0.5px,nolink)]]
 
@@ -1015,7 +1015,7 @@ http://zoo-project.org/trac/browser/trunk/zoo-services/ogr/base-vect-ops/cgi-env
 
 あなたは､バッファサービスついて GetCapabilities や DescribeProcess そして Execute をZOOカーネルにたずねることができます｡
 
-[/ZooWorkshop/FOSS4GJapan/ja/ZooWorkshop:-FOSS4GJapan:-ja:-UsingZooFromOSGeoLiveVM 前へ] | [/ZooWorkshop/FOSS4GJapan/ZooWorkshop:-FOSS4GJapan:-ja ワークショップ 目次] | [/ZooWorkshop/FOSS4GJapan/ja/ZooWorkshop:-FOSS4GJapan:-ja:-BuildingWPSClientUsingOL 次へ]
+[/ZOO-Project/ZOO-Project/wiki/ZooWorkshop:-FOSS4GJapan:-ja:-UsingZooFromOSGeoLiveVM 前へ] | [/ZOO-Project/ZOO-Project/wiki/ZooWorkshop:-FOSS4GJapan:-ja ワークショップ 目次] | [/ZOO-Project/ZOO-Project/wiki/ZooWorkshop:-FOSS4GJapan:-ja:-BuildingWPSClientUsingOL 次へ]
 
 
 

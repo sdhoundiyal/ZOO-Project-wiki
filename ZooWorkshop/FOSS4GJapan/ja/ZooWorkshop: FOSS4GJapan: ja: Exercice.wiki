@@ -2,7 +2,7 @@
 == 演習 ==
 
 __TOC__
-[/ZooWorkshop/FOSS4GJapan/ZooWorkshop:-FOSS4GJapan:-ja ワークショップ 目次]
+[/ZOO-Project/ZOO-Project/wiki/ZooWorkshop:-FOSS4GJapan:-ja ワークショップ 目次]
 
 以上で、zcfg メタデータファイルの記述方法と、 C言語またはPython言語の選択によって、<tt>service.c</tt> または <tt>ogr_service_provider.py</tt> の短いコードが得られました。
 この演習のゴールは、次のような複合ジオメトリサービスを実装することです :
@@ -39,7 +39,7 @@ __TOC__
 
 ここで、複合ジオメトリサービスは、ローカル環境の上に配置されました。ブラウザ上から、前のセクションで作成した <tt>zoo-ogr.html</tt> をリロードしてください。そして新しいZOOサービスをテストしてください。
 <br>
-[/ZooWorkshop/FOSS4GJapan/ZooWorkshop:-FOSS4GJapan:-ja ワークショップ 目次]
+[/ZOO-Project/ZOO-Project/wiki/ZooWorkshop:-FOSS4GJapan:-ja ワークショップ 目次]
 
 
 

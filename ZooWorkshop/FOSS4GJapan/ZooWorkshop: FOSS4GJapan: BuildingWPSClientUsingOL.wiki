@@ -2,8 +2,8 @@
 == Building a WPS client using OpenLayers ==
 
 __TOC__
-[/ZooWorkshop/FOSS4GJapan/ZooWorkshop:-FOSS4GJapan:-CreatingOGRBasedWebServices Prev.] | 
-[/ZooWorkshop/ZooWorkshop:-FOSS4GJapan WorkShop table of content] | [/ZooWorkshop/FOSS4GJapan/ZooWorkshop:-FOSS4GJapan:-Exercice Next]
+[/ZOO-Project/ZOO-Project/wiki/ZooWorkshop:-FOSS4GJapan:-CreatingOGRBasedWebServices Prev.] | 
+[/ZOO-Project/ZOO-Project/wiki/ZooWorkshop:-FOSS4GJapan WorkShop table of content] | [/ZOO-Project/ZOO-Project/wiki/ZooWorkshop:-FOSS4GJapan:-Exercice Next]
 
 The next step of our workshop is to connect to the OGR Services we have created from an OpenLayers map. This will allow to apply single or multiple geometries processes on user-selected polygons  and to display the new generated geometries.
 
@@ -289,8 +289,8 @@ Please reload the page. You should then be able to run your multiple geometries 
 
 It seems that something is missing in your Services Provider to get the same results … The multiple geometries Services ! This is what we are going to do together in the next section.
 
-[/ZooWorkshop/FOSS4GJapan/ZooWorkshop:-FOSS4GJapan:-CreatingOGRBasedWebServices Prev.] | 
-[/ZooWorkshop/ZooWorkshop:-FOSS4GJapan WorkShop table of content] | [/ZooWorkshop/FOSS4GJapan/ZooWorkshop:-FOSS4GJapan:-Exercice Next]
+[/ZOO-Project/ZOO-Project/wiki/ZooWorkshop:-FOSS4GJapan:-CreatingOGRBasedWebServices Prev.] | 
+[/ZOO-Project/ZOO-Project/wiki/ZooWorkshop:-FOSS4GJapan WorkShop table of content] | [/ZOO-Project/ZOO-Project/wiki/ZooWorkshop:-FOSS4GJapan:-Exercice Next]
 
 
 
