@@ -1,0 +1,93 @@
+
+
+'''Sponsoring ZOO-Project'''
+
+The development and maintenance of the ZOO-Project is supported by 
+volunteer time and also by organizations contracting developers, testers, users, and other volunteers contributing improvements.
+
+Many tasks such as processing bug reports, writing documentation, testing,
+translations, web site updates and user support often require more than
+purely volunteer effort and time. Some new features of broad interest
+are not yet implemented because of they may not be the immediate priority
+of core-developers.
+
+In order to provide funding to support the maintenance, improvement, and
+promotion of the ZOO-Project, the Project Steering Committee (PSC) is
+'''seeking sponsors''' to provide financial support via the ZOO-Project
+Sponsorship program. Funds will be managed by the PSC and disbursed at the
+discretion of the ZOO-Project PSC.
+
+Sponsorship should not be seen as a way to control the development of
+the project directly, but rather as a way of '''ensuring the longevity and
+overall health of the project''', by funding work that is regarded as vital
+but otherwise undersupported by the contributions of core-developers.
+
+'''Sponsorship Uses'''
+
+The primary intended use of the sponsorship funds is to hire a
+maintainer on a contract basis. The responsibilities would include:
+
+*Addressing bug reports - reproducing them, then fixing them or passing on to another developer.
+*Extending the programming language support, and running the compliance
+  tests for international standards.
+*Improving and translation of documentation.
+*Other improvements to the ZOO software as well also related
+  libraries and software.
+*General user support on the mailing list.
+
+Sponsorship funds may also be used to contract personal for specific 
+improvements in the ZOO-Project, or for the provision of resources 
+such as web hosting, funding of code sprints, or funding of project promotion.
+
+'''Sponsorship Benefits'''
+
+Sponsoring the ZOO-Project provides the following benefits:
+
+**Ensures the sustainability and health of the ZOO project.
+**All sponsors will be listed on the project Credits page, ordered by contribution class (Platinum, Gold, Silver, Bronze) with a link back to the sponsor. 
+**Sponsors will be permitted to indicate they are project sponsors in web and other promotional materials, and use the ZOO-Project logo.
+**Sponsor input on project focus and direction will be solicited via a survey.
+*Sponsors will received a degree of priority in processing of bug reports by any maintainer hired with sponsorship funds.
+*Sponsors will receive a detailed annual report on the use of sponsorship funds.
+
+'''Sponsorship Process'''
+
+Sponsors can sponsor ZOO for any amount of money of at least 500 Euro. At or above the following levels a sponsor will be designated as being
+one of the following class:
+
+*5000+ Euro: Platinum Sponsor
+*2000+ Euro: Gold Sponsor
+*1000+ Euro: Silver Sponsor
+*500+ Euro: Bronze Sponsor
+
+Sponsorships last one year, after which they may be continuing with a
+new payment, or allowed to lapse.
+
+'''Micro-donations'''
+
+ZOO-Project also welcomes micro-donations for the user community.
+Micro-donations entails no particular benefit. Your micro-donations
+will help ZOO development and funds will be uses for the same purposes
+as sponsorship funds listed in the 'Sponsorship Uses' section above.
+
+*Micro-donors can donate any amount above 50 Euro.
+
+Organizations or individuals interested in sponsoring the ZOO project
+should contact the PSC Chair (gerald.fenoy at geolabs.fr, +33 670-082539)
+with questions.
+
+'''Sponsoring Payment'''
+Details at http://www.zoo-project.org/trac/wiki/ZooWebSite/Support/Sponsors
+
+'''Micro-donation Payment'''
+Click the "Donate" button on the top of this page.
+
+Thank you!!
+
+
+
+
+
+
+
+

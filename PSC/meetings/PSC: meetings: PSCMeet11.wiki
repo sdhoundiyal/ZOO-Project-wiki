@@ -1,0 +1,83 @@
+
+
+=== PSC meeting 11 ===
+
+The PSC meeting was held on irc.freenode.net in the [irc://irc.freenode.net/#zoo-project #zoo-project] channel. If some IRC problem occur, the meeting will be exceptionally held on Skype.
+
+==== Date ====
+
+16 February 2011, [http://www.timeanddate.com/worldclock/fixedtime.html?year=2011&month=2&day=16&hour=22&min=0&sec=0 22:00:00 UTC time]
+
+==== Agenda ====
+
+*ZOO 1.2.0: Here we go !
+*ZOO/GRASS bridge feedbacks
+*Java support enhancement feedbacks
+*JavaScript support enhancement feedbacks
+*ZOO available on openSuse: Now needs packages for other distros
+*ZOO API docs available (need to be polished)
+
+*Using Sponsorship fundings
+*ZOO@OSGeo Code Sprint (Montreal, CA) > Dev Plan
+*Improve documentation
+
+*After 1.2 release 
+*Include some ZOO/GRASS demo on the website
+*Include some ZOO/GRASS Services examples (nothing to code!)
+*Preaparing ZOO 1.3
+  
+
+==== Summary ====
+
+The PSC meeting was held on irc.freenode.net in the [irc://irc.freenode.net/#zoo-project #zoo-project] channel, on 16 February 2011, [http://www.timeanddate.com/worldclock/fixedtime.html?year=2011&month=2&day=16&hour=22&min=0&sec=0 22:00:00 UTC time]
+
+6 ZOO-PSC members attended thhis meeting.
+
+*Discussion on the ZOO 1.2.0 release
+
+*ZOO/GRASS bridge feedbacks
+
+The GRASS7 support was discussed and the work on both Kernel and QGIS WPS-Plugin was explained. Gerald provided the url for using ZOO from QGIS (http://zoo-project.org/cgi-grass/zoo_loader.cgi) . Jeff proposed a vote and PSC members agreed that further testing saw needed on the GRASS support on both Web or QGIS interface. No feedbacks were reported yet.
+
+*Java support enhancement feedbacks
+
+Gerald explained the work done with Yoshida-san on the use of the JIT compiler from the Java Vituel Machine to enhance the performance of Java ZOO services. Yoshida)san implemented GoGPS as a ZOO Service using this support, for his ZOO related phD work.
+
+*ZOO available on openSuse: Now needs packages for other distros
+The work from Angelos Tzotsos for packaging ZOO Kernel into OpenSuse package was discussed. PSC members then agreed that some other common distribution packages should be made available after the 1.2 release.
+
+*ZOO API docs available 
+
+The work started by reluc on Natural Docs for the ZOO-API was explained. PSC members agreed that the work should be polished, or directly port into Sphinx and the upcoming official doc system.
+
+*Using Sponsorship fundings
+
+*ZOO@OSGeo Code Sprint (Montreal, CA) > Dev Plan
+ 
+The use of part of the sponsorship to pay for Gerald and Nick travel expense to MTL CS was approved. PSC members agreed that a CS dev plan should be set up and added to the ZOO Project roadmap. 
+
+*Improve documentation
+
+Discussions occured on Sphinx and Trac/Wiki sytems, and PSC members voted +1 for a mixed website system base on Sphinx and Trac/Wiki. PSC members also agreed that part of the sponsorship could be used for improving documenation, and that work should start on Feb 21st.
+
+*After 1.2 release 
+
+The last agenda item was discussed and PSC members agreed that this discussion should continue on ML or IRC, after 1.2 is released
+
+*Include some ZOO/GRASS demo on the website
+
+PSC members agreed that some ZOO-GRASS demos and tutorial were needed to be added on the website , after 1.2 is released.
+
+Some side discussions occured and the meeting was closed.
+
+For more details, the irc log is available here:
+
+http://zoo-project.org/irclogs/psc_meeting1.log
+
+
+
+
+
+
+
+

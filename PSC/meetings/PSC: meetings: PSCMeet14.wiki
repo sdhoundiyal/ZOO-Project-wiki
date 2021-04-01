@@ -1,0 +1,38 @@
+
+
+=== PSC meeting 14 ===
+
+The PSC meeting was held on irc.freenode.net in the [irc://irc.freenode.net/#zoo-project #zoo-project] channel. If some IRC problem occur, the meeting will be exceptionally held on Skype.
+
+==== Date ====
+
+20 July 2011, [http://www.timeanddate.com/worldclock/fixedtime.html?year=2011&month=7&day=20&hour=13&min=0&sec=0 13:00:00 UTC time]
+
+==== Agenda ====
+
+*ZOO-Kernel-1.2.0rc2 release
+*ZOO-Docs release status
+*Preparations for ZOO-Workshop at FOSS4G2011
+*Quick report from Gérald about Fondazione Edmund Mach ([http://gis.cri.fmach.it/ FEM]) sponsored ZOO development
+*Report on WPS Benchmarking progress for FOSS4G2011
+*Add more
+
+==== Summary ====
+
+The PSC meeting was held on irc.freenode.net in the  irc://irc.freenode.net/#zoo-project channel, on 2011 july 20th.
+
+7 ZOO-PSC members attended this meeting (M. Cannata, G. Fenoy, H. Hayashi D. Kast, J McKenna, M. Neteler, V. Raghavan). 
+
+Action items: 
+**jmckenna: add a note in the PSC guidelines about the RFCs
+**djay: publish and announce 1.2.0-rc3
+
+[http://zoo-project.org/psc_meetings_logs/psc14.log IRC logs].
+
+
+
+
+
+
+
+

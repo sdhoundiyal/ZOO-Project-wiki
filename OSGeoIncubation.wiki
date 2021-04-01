@@ -1,0 +1,168 @@
+
+
+=== Incubator Application Questionnaire (ZOO-Project) ===
+
+
+==== 1. Please provide the name and email address of the principal Project Owner. ====
+
+	* Gérald FENOY, Chair ZOO PSC, gerald.fenoy@geolabs.fr
+
+==== 2. Please provide the names and emails of co-project owners (if any). ====
+
+	* Venkatesh RAGHAVAN raghavan@media.osaka-cu.ac.jp
+	* Nicolas BOZON nicolas.bozon@gmail.com
+
+==== 3. Please provide the names, emails and entity affiliation of all official committers ====
+
+	* Gérald FENOY (GeoLabs) gerald.fenoy@geolabs.fr
+*****Jeff McKenna (Gateway Geomatics)
+	* David SAGGIORATO (Cleolys) david@saggiorato.net
+	* Luca DELUCCHI (Fondazioen Edmund Mach) lucadeluge@gmail.com 
+	* René-Luc D'HONT (3LIZ) rldhont@3liz.com
+	* Marco NEGRETTI (Politecnico di Milano) marco.negretti@polimi.it
+	* Angelos Tzotsos (National technical university of Athens) gcpp.kalxas@gmail.com
+
+==== 4. Please describe your Project. ====
+
+ZOO is a WPS (Web Processing Service) open source project released under a MIT/X-11 	style license . It provides an OGC WPS compliant developer-friendly framework to create 	and chain WPS Web services. ZOO is made of three parts: 
+
+ZOO Kernel: A powerful server-side C Kernel which makes it possible to manage and chain Web services coded in different programming languages. 
+
+ZOO Services : A growing suite of example Web services based on various Open Source libraries. (get inspired !) 
+
+ZOO API : A server-side JavaScript API able to call and chain the ZOO Services, which makes the development and chaining processes easier. 
+
+==== 5. Why is hosting at OSGeo good for your project? ====
+
+Hosting the ZOO-Project on the OSGeo server infrastructure is not planned.
+If 'Hosting' means to be 'under the foundation umbrella' here, then of course it would be great benefit for the project and will help it to target a larger audience. It will also probably help the projects member to promote and spread even more WPS around.
+
+==== 6. Type of application does this project represent(client, server, standalone, library, etc.): ====
+
+WPS Server
+
+==== 7. Please describe any relationships to other open source projects. ====
+
+Since its inception, ZOO-Project was designed to communicate with the other OSGeo 	librairies, and to make them communicate in a standardized way. The main task of the ZOO-	Project is to make OSGeo libraires run on the server-side as WPS Services.
+
+*GDAL:
+	GDAL ZOO Services are available for:
+	gdalinfo, gdal_grid, gdal_translate, gdal_extractProfile
+	ogrinfo, ogr2ogr 
+
+*MapServer:
+	ZOO-Kernel has an optional support fo MapServer Support (--with mapserver at compil)
+	In this case ZOO Kernel is able to spread the ZOO Service results as WMS/WFS/WCS 	(write a mapfile on the fly)
+
+*GRASS 7.0:
+	ZOO-Kernel is abale to run most of the raster and vector GRASS 7.0 modules (using 	WPSBridge library)
+
+Some other softwares are also supported:
+*R
+*CGAL
+*OpenOffice
+*PyCSW
+*GeoKettle ....
+
+==== 8. Please describe any relationships with commercial companies or products. ====
+
+GeoLabs, Cleolys, Cartogenic and Cartworks (and probably others) are currently using 	ZOO-Project for geospatial business and SDI contracts.
+
+ZOO-Project is used by MapMint, an open source based commercial Web GIS solution powered and edited by Cartoworks Inc (see http://www.mapmint.com)
+
+==== 9. Which open source license(s) will the source code be released under? ====
+
+ZOO-Kernel is published under the term of the MIT/X11 open source licence.
+
+ZOO-Services can contain their own licence term, by now only MIT/X11 is used.
+
+ZOO-API is published under the term of BSD licence ([browser:trunk/zoo-project/zoo-api/js/ZOO-api.js ZOO-api.js]) and LGPL ([browser:trunk/zoo-project/zoo-api/js/ZOO-proj4js.js ZOO-proj4js.js]).
+
+==== 10. Is there already a beta or official release? ====
+
+Yes. ZOO-Project 1.2 is available here : http://zoo-project.org/site/Downloads
+
+==== 11. What is the origin of your project (commercial, experimental, thesis or other higher education, government, or some other source)? ====
+
+ *	Experimental
+ *	Higher Educations (Universities, thesis)
+ *	Commercial (companies involved)
+
+==== 12. Does the project support open standards? Which ones and to what extent? (OGC, w3c, ect.) Has the software been certified to any standard (CITE for example)? If not, is it the intention of the project owners to seek certification at some point? ====
+
+Yes. ZOO-Project is based on the Web Processing Service 1.0 specification.
+
+The software wasn't certified yet, but we are testing XML validation. 
+
+==== 13. Is the code free of patents, trademarks, and do you control the copyright? ====
+
+Yes, the code is free of patents and trademarks.
+
+ZOO-Kernel is copyrighted by the GeoLabs company
+
+ZOO-Services may include their own copyrights
+
+ZOO-API is copyrighted by the OpenLayers Contributors and the 3LIZ company
+
+==== 14. How many people actively contribute (code, documentation, other?) to the project at this time? ====
+
+	12 people
+
+==== 15. How many people have commit access to the source code respository? ====
+
+	6 people
+
+==== 16. Approximately how many users are currently using this project? ====
+
+From 100 to 1000 persons
+ 
+==== 17. What type of users does your project attract (government, commercial, hobby, academic research, etc. )? ====
+
+ *	Government
+ *	Academic
+ *	Commercial
+
+==== 18. If you do not intend to host any portion of this project using the OSGeo infrastructure, why should you be considered a member project of the OSGeo Foundation? ====
+
+The ZOO-Project is a mature and functionnal open source implementation of WPS 1.0.0 specifications.
+
+Incubation would help to promote the ZOO-Project to a larger audience and that will probably attract new contributors to the project.
+
+ZOO-Project is willing to use the other OSGeo softwares trough WPS and to promote both. WPS is a important field of research in the geospatial field. 
+
+ZOO-Project PSC members are active in the OSGeo activities, FOSS4G, code sprints and local chapters.
+
+==== 19. Does the project include an automated build and test? ====
+
+Automatic build system is handled by autotools.
+
+A first test suite was integrated for 1.2.0 release including Services (and Kernel) testing.
+
+==== 20. What language(s) are used in this project? (C/Java/perl/etc) ====
+
+ *	C/C++
+ *	Fortran
+ *	Java
+ *	Perl
+ *	Python
+ *	PHP
+ *	JavaScript
+
+==== 21. What is the dominant written language (i.e. English, French, Spanish, German, etc) of the core developers? ====
+
+ *	English
+ *	French
+
+==== 22. What is the (estimated) size of a full release of this project? How many users do you expect to download the project when it is released? ====
+
+Size of a release including documentation is approximately 20M.
+
+Expected download per release : 200 - 1000.
+
+
+
+
+
+
+
+

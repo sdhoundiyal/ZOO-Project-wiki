@@ -1,0 +1,152 @@
+1
+2
+3
+4
+5
+6
+7
+
+
+=== Using ZOO from an OSGeoLive virtual machine ===
+
+<u>TOC</u>
+[./ZooWorkshop/FOSS4GJapan/ZooWorkshop:-FOSS4GJapan:-Introduction Prev.] | [./ZooWorkshop/ZooWorkshop:-FOSS4GJapan WorkShop table of content] | [./ZooWorkshop/FOSS4GJapan/ZooWorkshop:-FOSS4GJapan:-CreatingOGRBasedWebServices Next]
+
+[http://live.osgeo.org/ OSGeoLive] is a live DVD and virtual machine based on [http://www.xubuntu.org/ Xubuntu] that allows you to try a wide variety of open source geospatial software without installing anything. It is composed entirely of free software and include ZOO 1.0 this year, for testing purpose.
+
+==== ZOO Kernel Installation  ====
+
+As already said in introduction, an OSGeoLive virtual machine image disk has been installed on your computer, allowing you to use ZOO Kernel in a development environment directly. Using a virtual machine image disk seems to be the simplest way to use ZOO Kernel and to develop ZOO Services locally, as we can ensure that everything requested for compiling C Services and running Python ones is available and ready to use. Every ZOO related material and source code have been placed in <tt>/home/user/zoows</tt> directory. We will work inside it during this workshop. As the binary version of ZOO Kernel is already compiled and stored in <tt>/home/user/zoows/sources/zoo-kernel</tt>, you only have to copy two important files inside the<tt>/usr/lib/cgi-bin</tt> directory : <tt>zoo_loader.cgi</tt> and the <tt>main.cfg</tt> in order to make ZOO Kernel available, using the following commands :
+
+<pre>
+#sh
+sudo cp ~/zoows/sources/zoo-kernel/zoo_loader.cgi /usr/lib/cgi-bin
+sudo cp ~/zoows/sources/zoo-kernel/main.cfg /usr/lib/cgi-bin
+</pre>
+
+Please note that we will talk about ZOO Kernel or <tt>zoo_loader.cgi</tt> script without any distinction during this workshop.
+
+The <tt>main.cfg</tt> file contains metadata informations about the identification and provider but also some important settings. The file is composed of various sections, namely <tt>main</tt>, <tt>identification</tt> and <tt>provider</tt> per default. Obviously, you are free to add new sections to the file if you need them for a specific Service. Nevertheless, you have to know that the <tt>env</tt> and <tt>lenv</tt> sections name are used in a specific way. 
+
+The <tt>env</tt> section lets you define environment variables that your Service requires during its runtime. For instance, if your Service requires to access to a X server running on framebuffer, then you will have to set the <tt>DISPLAY</tt> environnement variably, in this case you would add <tt>DISPLAY=:1</tt> line in your <tt>env</tt> section. 
+
+As for the <tt>env</tt> section, there is the section <tt>lenv</tt> where specific informations about status informations of a running Service will be written by the ZOO Kernel or the ZOO Services. For instance, when your service failed, you can set the value for <tt>message</tt> in <tt>lenv</tt> to see it displayed in the <tt>Status</tt> node of the <tt>ExecuteResponse</tt> returned back to the client. If your service will take long time and can get informations about processing status, you can then set a value between 0 and 100 to <tt>status</tt> in <tt>lenv</tt> to represent the percentage completed of the running Service task, we will talk deeper about this later in this workshop.
+
+Please take a look to your local file <tt>main.cfg</tt> file. Three important parameters are commented bellow:
+
+*<tt>serverAddress</tt> : The url to access to the ZOO Kernel
+*<tt>tmpPath</tt> : The full path to store temporary files
+*<tt>tmpUrl</tt> : The url path relative to serverAddress to access temporary directory.
+
+The values of the <tt>main.cfg</tt> file used from the running virtual machine are the following :
+
+<pre>
+#sh
+serverAddress=http://localhost/zoo
+tmpPath=/var/www/temp
+tmpUrl=../temp/
+</pre>
+
+You could have noticed that the <tt>tmpUrl</tt> is a relative url from <tt>serverAddress</tt>, so it must be a directory. Even if ZOO Kernel can be used with the full url of the <tt>zoo_loader.cgi</tt> script, for better readability and fully functional ZOO Kernel, you have to modify the default Apache configuration in order to be able to use the http://localhost/zoo/ url directly.
+
+First, please create a zoo directory in the existing <tt>/var/www</tt> which is used by Apache as the <tt>DocumentRoot</tt>. Then, please edit the <tt>/etc/apache2/sites-available/default</tt> configuration file and add the following lines after the <tt>Directory</tt> block related to <tt>/var/www</tt> directory :
+
+<pre>
+#sh
+<Directory /var/www/zoo/>
+    Options Indexes FollowSymLinks MultiViews
+    AllowOverride All
+    Order allow,deny
+    allow from all
+</Directory>
+</pre>
+
+Now create a small <tt>.htaccess</tt> file in the <tt>/var/www/zoo</tt> containing the following lines:
+
+<pre>
+#sh
+RewriteEngine on
+RewriteRule call/(.*)/(.*) /cgi-bin/zoo_loader.cgi?request=Execute&service=WPS&version=1.0.0&Identifier=$1&DataInputs=sid=$2&RawDataOutput=Result [L,QSA]
+RewriteRule (.*)/(.*) /cgi-bin/zoo_loader.cgi?metapath=$1 [L,QSA]
+RewriteRule (.*) /cgi-bin/zoo_loader.cgi [L,QSA]
+</pre>
+
+For this last file to be taken into account by Apache, you must activate the rewrite Apache module by copying a load file as bellow :
+
+<pre>
+#sh
+sudo cp /etc/apache2/mods-available/rewrite.load /etc/apache2/mods-enabled/
+</pre>
+
+Or using the <tt>a2enmod</tt> tool this way :
+
+
+<pre>
+#sh
+a2enmod rewrite
+</pre>
+
+Now you should be able to access the ZOO Kernel using a simplified by restarting your Apache Web server :
+
+<pre>
+#sh 
+sudo /etc/init.d/apache2 restart
+</pre>
+
+Two other softwares form the OSGeoLive environment will be used during this workshop. MapServer will first be used to provide WFS input data for the ZOO Services we are going to develop. The MapServer dataset providen by Orkney (japanese regions polygons) will be passed to our service during [./ZooWorkshop/FOSS4GJapan/ZooWorkshop:-FOSS4GJapan:-CreatingOGRBasedWebServices#CallingthesinglegeometryservicesfromJavaScript section 4]. 
+
+OpenLayers library is also available on the OSGeoLive virtual machine image disk, and it will be used during [./ZooWorkshop/FOSS4GJapan/ZooWorkshop:-FOSS4GJapan:-BuildingWPSClientUsingOL section 4], for building a simple WPS client application able to query the newly developed ZOO Services. 
+
+As we planned to use OGR C-API and Python module of the GDAL library, we will need the corresponding header files, libraries and associated files. Hopefully everything was already available per default and so ready to use on the OSGeoLive packaging.
+
+==== Testing the ZOO installation with GetCapabilities ====
+
+You can now simply query ZOO Kernel using the following request from your Internet browser:
+
+http://localhost/cgi-bin/zoo_loader.cgi?Request=GetCapabilities&Service=WPS
+
+You should then get a valid <tt>Capabilities</tt> XML document, as the following :
+
+[[Image(Practical introduction to ZOO - 2.png,width=550px,align=center,nolink)]]
+
+Please note that no <tt>Process</tt> node is returned in the <tt>ProcessOfferings</tt> section, as no ZOO Service is available yet. You can also proceed to a <tt>GetCapabilities</tt> request from the command line, using the following command:
+
+<pre>
+#sh
+cd /usr/lib/cgi-bin
+./zoo_loader.cgi “request=GetCapabilities&service=WPS”
+</pre>
+
+The same result as in your browser will be returned, as shown in the following screenshot:
+
+[[Image(Practical introduction to ZOO - 3.png,width=400px,align=center,nolink)]]
+
+Invoking ZOO Kernel from command line can be helpful during development process of new Services.
+
+==== Preparing your ZOO Services Provider directory ====
+
+In order to simplify the task, we will first comment the directory structure which should be used when creating a new Services Provider :
+
+*The main Services Provider directory including :
+**A <tt>cgi-env</tt> directory which will contain all the zcfg metadata files and the service shared object (C Shared Library or Python module)
+**The <tt>Makefile</tt> and the <tt>*c</tt> files needed to compile your Services Provider.
+
+Please create a ws_sp main Services Provider directory in the existing zoo-services one located in <tt>/home/user/zoows/sources/</tt>, respecting the tree above .
+
+<pre>
+#sh
+mkdir -p /home/user/zoows/sources/zoo-services/ws_sp/cgi-env
+</pre>
+
+The <tt>Makefile</tt> and the code of the C and Python Service Shared Object will be detailed in the next sections.
+
+<br>
+[./ZooWorkshop/FOSS4GJapan/ZooWorkshop:-FOSS4GJapan:-Introduction Prev.] | [./ZooWorkshop/ZooWorkshop:-FOSS4GJapan WorkShop table of content] | [./ZooWorkshop/FOSS4GJapan/ZooWorkshop:-FOSS4GJapan:-CreatingOGRBasedWebServices Next]
+
+
+
+
+
+
+
+

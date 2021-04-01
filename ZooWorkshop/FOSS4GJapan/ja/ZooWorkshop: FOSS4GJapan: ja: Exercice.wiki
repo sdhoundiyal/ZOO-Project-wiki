@@ -1,0 +1,52 @@
+1
+
+
+=== 演習 ===
+
+<u>TOC</u>
+[./ZooWorkshop/FOSS4GJapan/ZooWorkshop:-FOSS4GJapan:-ja ワークショップ 目次]
+
+以上で、zcfg メタデータファイルの記述方法と、 C言語またはPython言語の選択によって、<tt>service.c</tt> または <tt>ogr_service_provider.py</tt> の短いコードが得られました。
+この演習のゴールは、次のような複合ジオメトリサービスを実装することです :
+
+*Intersection
+*Union
+*Difference
+*SymDifference
+
+==== C バージョン ====
+
+<tt>source.c</tt> ファイルの編集を選択された方は、このワークショップ演習を通して、追加した複合ジオメトリは、次のOGR C-API 関数を使用しています:
+
+*[http://www.gdal.org/ogr/ogr__api_8h.html#5a271b5c7b72994120e7a6bbc7e7e5cb OGR_G_Intersection](OGRGeometryH, OGRGeometryH)
+*[http://www.gdal.org/ogr/ogr__api_8h.html#f58f2cfbdb2497659d2eabea73d3b8a0 OGR_G_Union](OGRGeometryH, OGRGeometryH)
+*[http://www.gdal.org/ogr/ogr__api_8h.html#497977bec6ecd9dade7a9694f776be64 OGR_G_Difference](OGRGeometryH, OGRGeometryH)
+*[http://www.gdal.org/ogr/ogr__api_8h.html#d6dacf495617a230c6f19950bc415f17 OGR_G_SymmetricDifference](OGRGeometryH, OGRGeometryH)
+
+ <tt>Boundary.zcfg</tt> ファイルを例に、 <tt>InputPolygon</tt> を <tt>InputEntity1</tt> にして、同様に <tt>IntputEntity2</tt> を追加することができます。ZOOメタデータファイルのそのほかの値についても、適当なメタデータ情報を設定してください。
+
+
+==== Python バージョン====
+
+<tt>ogr_ws_service_provider.py</tt> ファイルの編集を選択された方は、このワークショップ演習を通して、追加した複合ジオメトリは、次の <tt>Geometry</tt> インスタンスに適用された <tt>osgeo.ogr</tt> <tt>Geometry</tt> 関数を使用しています:
+
+*Intersection(Geometry)
+*Union(Geometry)
+*Difference(Geometry)
+*SymmetricDifference(Geometry)
+
+ <tt>Boundary.zcfg</tt> ファイルを例に、 <tt>InputPolygon</tt> を <tt>InputEntity1</tt> にして、同様に <tt>IntputEntity2</tt> を追加することができます。ZOOメタデータファイルのそのほかの値についても、適当なメタデータ情報を設定してください。
+
+==== サービスのテスト ====
+
+ここで、複合ジオメトリサービスは、ローカル環境の上に配置されました。ブラウザ上から、前のセクションで作成した <tt>zoo-ogr.html</tt> をリロードしてください。そして新しいZOOサービスをテストしてください。
+<br>
+[./ZooWorkshop/FOSS4GJapan/ZooWorkshop:-FOSS4GJapan:-ja ワークショップ 目次]
+
+
+
+
+
+
+
+

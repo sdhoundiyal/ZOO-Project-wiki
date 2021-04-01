@@ -1,0 +1,38 @@
+1
+
+
+=== ZOO Tribal Council (aka PSC) ===
+
+==== Members ====
+
+***Nicolas BOZON ([http://www.esrifrance.fr/ ESRI France]), FR  (irc: nbozon)
+***Gerald FENOY ([http://www.geolabs.fr/ GeoLabs]), FR''' (Chair)'''  (irc: djay)
+***Hirofumi HAYASHI ([http://www.apptec.co.jp/ AppTech]), JP (irc: hhayashi)
+***Jeff McKENNA ([http://www.gatewaygeomatics.com/ Gateway Geomatics]), CA (irc: jmckenna)
+***Venkatesh RAGHAVAN ([http://www.osaka-cu.ac.jp/index-e.html Osaka City University]), JP  (irc: venka)
+***Angelos TZOTSOS ([http://users.ntua.gr/tzotsos/ National Technical University of Athens]), GR  (irc: kalxas)
+
+==== Past PSC Members ====
+
+***Satoshi SEKIGUCHI ([http://www.aist.go.jp/index_en.html AIST GEO Grid]), JP
+***Maria BROVELLI ([http://www.polimi.it// Politecnico di Milano]), IT
+***Massimiliano CANNATA (([http://www.ist.supsi.ch/ SUPSI])), CH  
+***Daniel KASTL ([http://georepublic.de Georepublic]), DE/JP 
+***Markus NETELER ([http://www.mundialis.de/ Mundialis]), DE
+
+==== Project Steering Committee guidelines ====
+
+See [./PSC/PSC:-process PSC guidelines] page
+
+
+==== Project Steering Committee meetings ====
+
+See [./PSC/PSC:-meetings PSC meetings] page
+
+
+
+
+
+
+
+

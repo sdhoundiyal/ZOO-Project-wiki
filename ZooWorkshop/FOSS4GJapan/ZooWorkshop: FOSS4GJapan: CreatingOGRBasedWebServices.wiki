@@ -1,0 +1,1062 @@
+1
+2
+3
+4
+5
+6
+7
+
+
+=== Creating OGR based Web Services ===
+
+<u>TOC</u>
+[./ZooWorkshop/FOSS4GJapan/ZooWorkshop:-FOSS4GJapan:-UsingZooFromOSGeoLiveVM Prev.] | [./ZooWorkshop/ZooWorkshop:-FOSS4GJapan WorkShop table of content] | [./ZooWorkshop/FOSS4GJapan/ZooWorkshop:-FOSS4GJapan:-BuildingWPSClientUsingOL Next]
+
+[[Image(http://www.lafon-svv.com/html/images/ligne_horizontale.gif,width=530px,height=0.5px,nolink)]]
+
+
+==== Introduction ====
+
+In this part, we are going to create a ZOO ServicesProvider containing several Services based on the OGR C API or on the OGR Python module, which have also been placed in the ZOO installation on OSGeoLive. The intended goal is to use OGR and its GEOS based simple spatial functions as WPS Services.
+
+We will first start with the Boundary spatial function, which will be explained, codded and tested gradually as a ZOO Service. The same procedure will then be used to enable the Buffer, Centroid and Convex Hull functions. Once done, some multiple geometries processes such as Intersection, Union, Difference and Symetric Difference will be implemented through an [./ZooWorkshop/FOSS4GJapan/ZooWorkshop:-FOSS4GJapan:-Exercice exercise] at the end of the workshop.
+
+As already said in the introduction, you have the choice to code your service in C or Python (or both!) during this workshop. Explanations will be based on the C part, but will be very helpful for those who will choose Python. Please decide according to your habits and preferences and tell your choice to the instructors. The results will be the same in both case.
+
+==== Preparing ZOO metadata file ====
+
+A ZOO Service is a combination of a ZOO metadata file (.zcfg) and the runtime module for the corresponding implementation, which is commonly called ZOO Service Provider. We will first prepare a .zcfg file step-by-step. Please open your preferred text editor and edit a file named <tt>Boundary.zcfg</tt> in your <tt>/home/user/zoows/sources/zoo-services/ws_sp directory</tt>. First, you need to name the service between brackets at the top of the file, as the following:
+
+<pre>
+#sh
+[Boundary]
+</pre>
+
+This name is very important, it is the name of the Service and so the name of the function defined in the Services Provider. A title and a brief abstract must then be added to inform clients on what the service can do :
+
+<pre>
+#sh
+Title = Compute boundary.
+Abstract = Returns the boundary of the geometry on which the method is invoked.
+</pre>
+
+Such metadata informations will be returned by a GetCapabilities request.
+
+You can also add other specific informations like the <tt>processVersion</tt>. You can set if your ZOO Service can store its results, by setting the <tt>storeSupported</tt> parameter to <tt>true</tt> or <tt>false</tt>. You can also decide if the function can be run as a background task and inform on its current status, according to the <tt>statusSupported</tt> value :
+
+<pre>
+#sh
+processVersion = 1
+storeSupported = true
+statusSupported = true
+</pre>
+
+In the main section of the ZOO Service metadata file, you must also specify two important things:
+*<tt>serviceProvider</tt>, which is the name of the C shared library containing the Service function or the Python module name.
+*<tt>serviceType</tt>, which defines the programming language to be used for the Service. (value can be C or Python depending on what language you have decided to use)
+
+C ServicesProvider Example :
+<pre>
+#sh
+serviceProvider=ogr_ws_service_provider.zo
+serviceType=C
+</pre>
+
+In this case you will get an <tt>ogr_ws_service_provider.zo</tt> shared library containing the Boundary function, placed in the same directory than ZOO Kernel.
+
+Python ServicesProvider Example :
+
+<pre>
+#sh
+serviceProvider=ogr_ws_service_provider
+serviceType=Python
+</pre>
+
+In this case, you will get an <tt>ogr_ws_service_provider.py</tt> file containing the Python code of your Boundary function.
+
+In the main section you can also add any other metadata information, as the following:
+
+<pre>
+#sh
+<MetaData>
+    Title = Demo
+</MetaData>
+</pre>
+
+The main metadata informations have been declared, so you can now define data input which will be used by the ZOO Service. You can define any input needed by the Service. Please note that you can request ZOO Kernel using more data input than defined in the .zcfg file without any problem, those values will be passed to your service without filtering. In the Boundary Service example, a single polygon will be used as input, the one on which to apply the Boundary function.
+
+The data input declarations are included in a DataInputs block. They use the same syntax as the Service itself and the input name is between brackets. You can also fill a title, an abstract and a <tt>MetaData</tt> section for the input. You must set values for the <tt>minOccurs</tt> and <tt>maxOccurs</tt> parameters, as they will inform ZOO Kernel which parameters are required to be able to run the Service function.
+
+<pre>
+#sh
+[InputPolygon]
+ Title = Polygon to compute boundary
+ Abstract = URI to a set of GML that describes the polygon.
+ minOccurs = 1
+ maxOccurs = 1
+ <MetaData lang="en">
+     Test = My test
+ </MetaData>
+</pre>
+
+The metadata defines what type of data the Service supports. In the Boundary example, the input polygon can be provided as a GML file or as a JSON string. Next step is thus to define the default and supported input formats. Both formats should be declared in a <tt>LitteralData</tt> or <tt>ComplexData</tt> block depending on their types. For this first example we will use <tt>ComplexData</tt> blocks only.
+
+<pre>
+#sh
+<ComplexData>
+ <Default>
+   mimeType = text/xml
+   encoding = UTF-8
+ </Default>
+ <Supported>
+   mimeType = application/json
+   encoding = UTF-8
+ </Supported>
+</ComplexData>
+</pre>
+
+Then, the same metadata information must be defined for the output of the Service, inside a <tt>DataOutputs</tt> block, as the following:
+
+<pre>
+#sh
+[Result]
+ Title = The created geometry
+ Abstract = The geometry containing the boundary of the geometry on which the method  was invoked.
+ <MetaData lang="en">
+   Title = Result
+ </MetaData>
+ <ComplexData>
+  <Default>
+   mimeType = application/json
+   encoding = UTF-8
+  </Default>
+  <Supported>
+   mimeType = text/xml
+   encoding = UTF-8
+  </Supported>
+ </ComplexData>
+</pre>
+
+A complete copy of this .zcfg file can be found at the following URL :
+
+http://zoo-project.org/trac/browser/trunk/zoo-services/ogr/base-vect-ops/cgi-env/Boundary.zcfg
+
+Once the ZOO metadata file is modified, you have to copy it in the same directory than your ZOO Kernel (so in your case <tt>/usr/lib/cgi-bin</tt>). Then you should be able to run the following request :
+
+http://localhost/zoo/?Request=DescribeProcess&Service=WPS&Identifier=Boundary&version=1.0.0
+
+The returned ProcessDescriptions XML document should look like the following :
+
+[[Image(Practical introduction to ZOO - 4.png,width=550px,nolink)]]
+
+Please note that the GetCapabilities and DescribeProcess only need a .zcfg file to be completed. Simple, isn't it ? At this step, if you request ZOO Kernel for an <tt>Execute</tt>, you will get an <tt>ExceptionReport</tt> document as response, looking as the following :
+
+[[Image(Practical introduction to ZOO - 5.png,width=550px,nolink)]]
+
+A similar error message will be returned if you try to run your Python Service :
+
+[[Image(Practical introduction to ZOO - 6.png,width=550px,nolink)]]
+
+==== Implementing single geometry services ====
+
+In order to learn the Services Provider creation and deployement step-by-step, we will first focus on creating a very simple one dedicated to the Boundary function. Similar procedure will then be used for the Buffer, Centroid and ConvexHull implementation.
+
+Your metadata is now ok, so you now must create the code of your Service. The most important thing you must be aware of when coding ZOO Services is that the function corresponding to your Service takes three parameters (internal maps datatype or [http://docs.python.org/tutorial/datastructures.html#dictionaries Python dictionaries]) and returns an integer value representing the status of execution (<tt>SERVICE_FAILED</tt> or <tt>SERVICE_SUCCEEDED</tt>) :
+
+*<tt>conf</tt> : The main environment configuration (corresponding to the main.cfg content)
+*<tt>inputs</tt> : The requested / default inputs
+*<tt>outputs</tt> : The requested / default outputs
+
+==== Boundary ====
+
+==== C Version ====
+
+As explained before, ZOO Kernel will pass the parameters to your Service function in a specific datatype called <tt>maps</tt>. In order to code your Service in C language, you also need to learn how to access this datatype in read/write mode.
+
+The <tt>maps</tt> are simple <tt>map</tt> named linked list containing a <tt>name</tt>, a <tt>content</tt> <tt>map</tt> and a pointer to the next <tt>map</tt> in the list (or <tt>NULL</tt> if there is no more <tt>map</tt> in the list). Here is the datatype definition as you can find in the <tt>zoo-kernel/service.h</tt> file :
+
+<pre>
+#c
+typedef struct maps{
+    char* name;
+    struct map* content;
+    struct maps* next;
+} maps;
+</pre>
+
+The <tt>map</tt> included in the <tt>maps</tt> is also a simple linked list and is used to store Key Value Pair values. A <tt>map</tt> is thus a couple of <tt>name</tt> and <tt>value</tt> and a pointer to the next <tt>map</tt> in the list. Here is the datatype definition you can find in the <tt>zoo-kernel/service.h</tt> file :
+
+<pre>
+#c
+typedef struct map{
+    char* name;       /* The key */
+    char* value;      /* The value */
+    struct map* next; /* Next couple */
+} map;
+</pre>
+
+As partially or fully filled datastructures will be passed by the ZOO Kernel to your Services, this means that you do not need to deal with maps creation but directly with existing <tt>map</tt>, in other words the content of each <tt>maps</tt>. The first function you need to know is <tt>getMapFromMaps</tt> (defined in the <tt>zoo-kernel/service.h</tt> file) which let you access to a specific map of a maps.
+
+This function takes three parameters listed bellow :
+
+*<tt>m</tt> : a maps pointer representing the maps used to search the specific map
+*<tt>name</tt> : a char* representing the name of the map you are searching for
+*<tt>key</tt> : a specific key in the map named name
+
+For example, the following syntax will be used to access the <tt>InputPolygon</tt> value <tt>map</tt> of a <tt>maps</tt> named <tt>inputs</tt>, your C code should be :
+
+<pre>
+#c
+map* tmp=getMapFromMaps(inputs,"InputPolygon","value");
+</pre>
+
+Once you get the map, you can access the name or the value fields, using the following syntax :
+
+<pre>
+#c
+tmp->name
+tmp->value
+</pre>
+
+As you know how to read and access the <tt>map</tt> fields from a maps, you can now learn how to write in such a datastructure. This is done  by using the simple <tt>setMapInMaps</tt> function once again defined in <tt>zoo-kernel/service.h</tt>. The <tt>setMapInMaps</tt> function takes four parameters :
+
+*<tt>m</tt> : a <tt>maps</tt> pointer you want to update,
+*<tt>ns</tt> : the name of the <tt>maps</tt> you want you want to update,
+*<tt>n</tt> : the name of the <tt>map</tt> you want to add or update the value,
+*<tt>v</tt> : the value you want to set for this map.
+
+Here is an example of how to add or edit the values of some <tt>map</tt> in the <tt>Result</tt> <tt>maps</tt> from <tt>outputs</tt> :
+
+<pre>
+#c
+setMapInMaps(outputs,"Result","value","Hello from the C World !");
+setMapInMaps(outputs,"Result","mimeType","text/plain");
+setMapInMaps(outputs,"Result","encoding","UTF-8");
+</pre>
+
+Please note that the <tt>setMapInMaps</tt> function is able to create or update an existing <tt>map</tt>. Indeed, if a <tt>map</tt> called « value » allready exists, then its value will be updated automatically.
+
+Even if you will mainly use <tt>map</tt> from <tt>maps</tt> during this workshop, you can also add or update values in a <tt>map</tt> directly using the <tt>addToMap</tt> function defined in <tt>zoo-kernel/service.h</tt>. The <tt>addToMap</tt> function take three paramters :
+
+*<tt>m</tt> : a <tt>map</tt> pointer you want to update, 
+*<tt>n</tt> : the name of the <tt>map</tt> you want to add or update the value,
+*<tt>v</tt> : the value you want to set in this <tt>map</tt>.
+
+This datatype is really important cause it is used in every C based ZOO Services. It is also the same representation used in other languages but using their respectives datatypes. For Example in Python, the dictionaries datatype is used, so manipulation is much easier.
+
+Here is an example of the correspoding <tt>maps</tt> datatype used in Python language (this is a summarized version of the main configaration <tt>maps</tt>) :
+
+<pre>
+#python
+main={
+  "main": {
+    "encoding": "utf-8",
+    "version": "1.0.0",
+    "serverAddress": "http://www.zoo-project.org/zoo/",
+    "lang": "fr-FR,en-CA"
+  },
+  "identification": {"title": "The Zoo WPS Development Server",
+    "abstract": "Development version of ZooWPS.",
+    "fees": "None",
+    "accessConstraints": "none",
+    "keywords": "WPS,GIS,buffer"
+  }
+}
+</pre>
+
+As you know how to deal with maps and map, you are ready to code the first ZOO Service by using the OGR Boundary function.
+
+As already said in introduction we will use the MapServer WFS server available on OSGeoLive, so full WFS Response will be used as inputs values. As we will use the simple OGR Geometry functions like [http://www.gdal.org/ogr/ogr__api_8h.html#a797af4266c02846d52b9cf3207ef958 OGR_G_GetBoundary], only the Geometry object will be used rather than a full WFS Response. The first thing to do is to write a function which will extract the geometry definition from the full WFS Response. We will call it <tt>createGeometryFromWFS</tt>.
+
+Here is the code of such a function :
+
+<pre>
+#c
+OGRGeometryH createGeometryFromWFS(maps* conf,char* inputStr){
+  xmlInitParser();
+  xmlDocPtr doc = xmlParseMemory(inputStr,strlen(inputStr));
+  xmlChar *xmlbuff;
+  int buffersize;
+  xmlXPathContextPtr xpathCtx;
+  xmlXPathObjectPtr xpathObj;
+  char * xpathExpr="/*/*/*/*/*[local-name()='Polygon' or local-name()='MultiPolygon']";
+  xpathCtx = xmlXPathNewContext(doc);
+  xpathObj = xmlXPathEvalExpression(BAD_CAST xpathExpr,xpathCtx);
+  if(xpathObj->nodesetval){
+    errorException(conf, "Unable to parse Input Polygon","InvalidParameterValue");
+    exit(0);
+  }
+  int size = (xpathObj->nodesetval) ? xpathObj->nodesetval->nodeNr : 0;
+  xmlDocPtr ndoc = xmlNewDoc(BAD_CAST "1.0");
+  for(int k=size-1;k>=0;k--){
+    xmlDocSetRootElement(ndoc, xpathObj->nodesetval->nodeTab[k]);
+  }
+  xmlDocDumpFormatMemory(ndoc, &xmlbuff, &buffersize, 1);
+  char *tmp=strdup(strstr((char*)xmlbuff,"?>")+2);
+  xmlXPathFreeObject(xpathObj);
+  xmlXPathFreeContext(xpathCtx);
+  xmlFree(xmlbuff);
+  xmlFreeDoc(doc);
+  xmlCleanupParser();
+  OGRGeometryH res=OGR_G_CreateFromGML(tmp);
+  if(res==NULL){
+    errorException(conf, "Unable to call OGR_G_CreatFromGML","NoApplicableCode");
+    exit(0);
+  }
+  else
+    return res;
+}
+</pre>
+
+The only thing we will focus on is the call to the errorException function used in the function body. This function is declared in the <tt>zoo-kernel/service_internal.h</tt> and defined in <tt>zoo-kernel/service_internal.c</tt> file. It takes three parameters as follow :
+
+*the main environment <tt>maps</tt>,
+*a <tt>char*</tt> representing the error message to display,
+*a <tt>char*</tt> representing the error code (as defined in the WPS specification – Table 62).
+
+In other words, if the WFS response cannot be parsed properly, then you will return an <tt>ExceptionReport</tt> document informing the client that a problem occured.
+
+The function to extract the geometry object from a WFS Response is written, so you can now start defining the Boundary Service. Here is the full code for the Boundary Service :
+
+<pre>
+#c
+int Boundary(maps*& conf,maps*& inputs,maps*& outputs){
+  OGRGeometryH geometry,res;
+  map* tmp=getMapFromMaps(inputs,"InputPolygon","value");
+  if(tmp==NULL){
+    setMapInMaps(m,"lenv","message","Unable to parse InputPolygon");
+    return SERVICE_FAILED;
+  }
+  map* tmp1=getMapFromMaps(inputs,"InputPolygon","mimeType");
+  if(strncmp(tmp1->value,"application/json",16)==0)
+    geometry=OGR_G_CreateGeometryFromJson(tmp->value);
+  else
+    geometry=createGeometryFromWFS(conf,tmp->value);
+  if(geometry==NULL){
+    setMapInMaps(m,"lenv","message","Unable to parse InputPolygon");
+    return SERVICE_FAILED;
+  }
+  res=OGR_G_GetBoundary(geometry);
+  tmp1=getMapFromMaps(outputs,"Result","mimeType");
+  if(strncmp(tmp1->value,"application/json",16)==0){
+    char *tmp=OGR_G_ExportToJson(res);
+    setMapInMaps(outputs,"Result","value",tmp);
+    setMapInMaps(outputs,"Result","mimeType","text/plain");
+    free(tmp);
+  }
+  else{
+    char *tmp=OGR_G_ExportToGML(res);
+    setMapInMaps(outputs,"Result","value",tmp);
+    free(tmp);
+  }
+  outputs->next=NULL;
+  OGR_G_DestroyGeometry(geometry);
+  OGR_G_DestroyGeometry(res);
+  return SERVICE_SUCCEEDED;
+}
+</pre>
+
+As you can see in the code above, the mimeType of the data inputs passed to our Service is first checked :
+
+<pre>
+#c
+  map* tmp1=getMapFromMaps(inputs,"InputPolygon","mimeType");
+  if(strncmp(tmp1->value,"application/json",16)==0)
+    geometry=OGR_G_CreateGeometryFromJson(tmp->value);
+  else
+    geometry=createGeometryFromWFS(conf,tmp->value);
+</pre>
+
+Basicaly, if we get an input with a <tt>mimeType</tt> set to <tt>application/json</tt>, then we will use our <tt>OGR_G_CreateGeometryFromJson</tt> in other case, our <tt>createGeometryFromWFS</tt> local function.
+
+Please note that in some sense the data inputs are not really of the same kind. Indeed as we used directly <tt>OGR_G_CreateGeometryFromJson</tt> it means that the JSON string include only the geometry object and not the full GeoJSON string. Nevertheless, you can easily change this code to be able to use a full GeoJSON string, simply by creating a function which will extract the geometry object from the GeoJSON string (using the json-c library for instance, which is also used by the OGR GeoJSON Driver).
+
+Once you can access the input geometry object, you can use the [http://www.gdal.org/ogr/ogr__api_8h.html#a797af4266c02846d52b9cf3207ef958 OGR_G_GetBoundary] function and store the result in the res geometry variable. Then, you only have to store the value in the right format : GeoJSON per default or GML as we declared it as a supported output format.
+
+Please note that ZOO Kernel will give you pre-filled outputs values, so you will only have to fill the value for the key named value, even if in our example we override the mimeType using the <tt>text/plain</tt> value rather than the <tt>application/json</tt> (to show that we can also edit other fields of a map). Indeed, depending on the format requested by the client (or the default one) we will provide JSON or GML representation of the geometry.
+
+<pre>
+#c
+  tmp1=getMapFromMaps(outputs,"Result","mimeType");
+  if(strncmp(tmp1->value,"application/json",16)==0){
+    char *tmp=OGR_G_ExportToJson(res);
+    setMapInMaps(outputs,"Result","value",tmp);
+    setMapInMaps(outputs,"Result","mimeType","text/plain");
+    free(tmp);
+  }
+  else{
+    char *tmp=OGR_G_ExportToGML(res);
+    setMapInMaps(outputs,"Result","value",tmp);
+    free(tmp);
+  }
+</pre>
+
+The Boundary ZOO Service is now implemented and you need to compile it to produce a Shared Library. As you just used functions defined in service.h (<tt>getMapFromMaps</tt>, <tt>setMapInMaps</tt> and <tt>addToMap</tt>), you must include this file in your C code. The same requirement is needed to be able to use the errorException function declared in <tt>zoo-kernel/service_internal.h</tt>, you also must link your service object file to the <tt>zoo-kernel/service_internal.o</tt> in order to use <tt>errorException</tt> on runtime. You must then include the required files to access the libxml2 and OGR C-API.
+
+For the need of the Shared Library, you have to put your code in a block declared as <tt>extern "C"</tt>. The final Service code should be stored in a service.c file located in the root of the Services Provider directory (so in <tt>/home/zoows/sources/zoo-services/ws_sp</tt>). It should look like this :
+
+<pre>
+#c
+#include "ogr_api.h"
+#include "service.h"
+extern "C" {
+#include <libxml/tree.h>
+#include <libxml/parser.h>
+#include <libxml/xpath.h>
+#include <libxml/xpathInternals.h>
+<YOUR SERVICE CODE AND OTHER UTILITIES FUNCTIONS>
+}
+</pre>
+
+The full source code of your Service is now ready and you must produce the corresponding Service Shared Object by compiling the code as a Shared Library. This can be done using the following command:
+
+<pre>
+#c
+g++ $CFLAGS -shared -fpic -o cgi-env/ServicesProvider.zo ./service.c $LDFLAGS
+</pre>
+
+Please note that the <tt>CFLAGS</tt> and <tt>LDFLAGS</tt> environment variables values must be set before.
+
+The <tt>CFLAGS</tt> must contain all the requested paths to find included headers, so the path to the directories where the <tt>ogr_api.h</tt>, libxml2 directory, <tt>service.h</tt> and <tt>service_internal.h</tt> files are located. Thanks to the OSGeoLive environment, some of the provided tools can be used to retrieve those values : <tt>xml2-config</tt> and <tt>gdal-config</tt>, both used with the <tt>--cflags</tt> argument. They will produce the desired paths for you.
+
+If you follow the instructions to create your ZOO Services Provider main directory in <tt>zoo-services</tt>, then you should find the ZOO Kernel headers and source tree which is located in the <tt>../../zoo-kernel</tt> directory relatively to your current path (<tt>/home/user/zoows/sources/zoo-services/ws_sp</tt>). Note that you can also use a full path to the zoo-kernel directory but using relative path will let you move your sources tree somewhere else and keep your code compiling using exactly the same command line. So you must add a <tt>-I../../zoo-kernel</tt> to your <tt>CFLAGS</tt> to make the compiler able to find the <tt>service.h</tt> and <tt>service_internal.h</tt> files.
+
+The full <tt>CFLAGS</tt> definition should look like this :
+
+<pre>
+#sh
+CFLAGS=<tt>gdal-config --cflags</tt> <tt>xml2-config --clfags</tt> -I../../zoo-kernel/
+</pre>
+
+Once you get the included paths correctly set in your <tt>CFLAGS</tt> , it is time to concentrate on the library we have to link against (defined in the <tt>LDFLAGS</tt> environment variable). In order to link against the gdal and libxml2 libraries, you can use the same tools than above using the <tt>--libs</tt> argument rather than <tt>--cflags</tt>. The full <tt>LDFLAGS</tt> definition must look like this :
+
+<pre>
+#sh
+LDFLAGS=<tt>gdal-config --libs</tt> <tt>xml2-config --libs</tt> ../../zoo-kernel/service_internal.o
+</pre>
+
+Let's now create a Makefile which will help you compiling your code over the time. Please write a short Makefile in the root of your ZOO Services Provider directory, containing the following lines :
+
+<pre>
+#sh
+ZOO_SRC_ROOT=../../zoo-kernel/
+CFLAGS=-I${ZOO_SRC_ROOT} <tt>xml2-config --cflags</tt> <tt>gdal-config --cflags</tt>
+LDFLAGS=<tt>xml2-config --libs</tt> <tt>gdal-config --libs</tt>${ZOO_SRC_ROOT}/service_internal.o
+
+cgi-env/ogr_ws_service_provider.zo: service.c
+    g++ ${CFLAGS} -shared -fpic -o cgi-env/ogr_ws_service_provider.zo ./service.c $ {LDFLAGS}
+clean:
+    rm -f cgi-env/ogr_ws_service_provider.zo
+</pre>
+
+Using this <tt>Makefile</tt>, you should be able to run make from your ZOO Service Provider main directory and to get the resulting <tt>ogr_ws_service_provider.zo</tt> file located in the <tt>cgi-env</tt> directory.
+
+The metadata file and the ZOO Service Shared Object are now both located in the <tt>cgi-env</tt> directory. In order to deploy your new ServicesProvider, you only have to copy the ZOO Service Shared Object and its corresponding metadata file in the directory where ZOO Kernel is located, so in<tt>/usr/lib/cgi-bin</tt>. You must use a <tt>sudo</tt> command to achieve this task:
+
+<pre>
+#sh
+sudo cp ./cgi-env/* /usr/lib/cgi-bin
+</pre>
+
+You should now understand more clearly the meannings of the ZOO Service Provider source tree ! The <tt>cgi-env</tt> directory will let you deploy your new Services or Services Provider in an easy way , simply by copying the whole <tt>cgi-env</tt> content in your <tt>cgi-bin</tt> directory.
+
+Please note that you can add the following lines to your <tt>Makefile</tt> to be able to type make install directly and to get your new Services Provider available for use from ZOO Kernel :
+
+<pre>
+#sh
+install:
+    sudo cp ./cgi-env/* /usr/lib/cgi-bin
+</pre>
+
+Your ZOO Services Provider is now ready to use from an Execute request passed to ZOO Kernel.
+
+==== Python Version ====
+
+For those using Python to implement their ZOO Services Provider, the full code to copy in ogr_ws_service_provider.py in cgi-env directory is shown bellow. Indeed, as Python is an interpreted language, you do not have to compile anything before deploying your service which makes the deployement step much easier :
+
+<pre>
+#python
+import osgeo.ogr
+import libxml2
+
+def createGeometryFromWFS(my_wfs_response):
+    doc=libxml2.parseMemory(my_wfs_response,len(my_wfs_response))
+    ctxt = doc.xpathNewContext()
+    res=ctxt.xpathEval("/*/*/*/*/*[local-name()='Polygon' or local- name()='MultiPolygon']")
+    for node in res:
+        geometry_as_string=node.serialize()
+        geometry=osgeo.ogr.CreateGeometryFromGML(geometry_as_string)
+        return geometry
+    return geometry
+
+def Boundary(conf,inputs,outputs):
+    if inputs["InputPolygon"]["mimeType"]=="application/json":
+        geometry=osgeo.ogr.CreateGeometryFromJson(inputs["InputPolygon"]["value"])
+    else:
+        geometry=createGeometryFromWFS(inputs["InputPolygon"]["value"])
+    rgeom=geometry.GetBoundary()
+    if outputs["Result"]["mimeType"]=="application/json":
+        outputs["Result"]["value"]=rgeom.ExportToJson()
+        outputs["Result"]["mimeType"]="text/plain"
+    else:
+        outputs["Result"]["value"]=rgeom.ExportToGML()
+    geometry.Destroy()
+    rgeom.Destroy()
+    return 3
+</pre>
+
+We do not dicuss the functions body here as we already gave all the details before and the code was volontary made in a similar way.
+
+As done before, you only have to copy the <tt>cgi-env</tt> files into your <tt>cgi-bin</tt> directory :
+
+<pre>
+#sh
+sudo cp ./cgi-env/* /usr/lib/cgi-bin
+</pre>
+
+A simple <tt>Makefile</tt> containing the install section can be written as the following :
+
+<pre>
+#sh
+install:
+	sudo cp ./cgi-env/* /usr/lib/cgi-bin/
+</pre>
+
+Finally, simply run make install from the ZOO Services Provider main directory, in order to deploy your ZOO Service Provider.
+
+==== Testing the Service using Execute Request ====
+
+===== The simple and unreadable way =====
+
+Everybody should now get his own copy of the OGR Boundary Service stored as a ZOO Services Provider called ogr_ws_service_provider and deployed in the ZOO Kernel tree, so the following Execute request can be used to test the Service :
+
+[http://localhost/cgi-bin/zoo_loader.cgi?request=Execute&service=WPS&version=1.0.0&Identifier=Boundary&DataInputs=InputPolygon=Reference@xlink:href=http%3A%2F%2Flocalhost%2Fcgi-bin%2Fmapserv%3Fmap%3D%2Fvar%2Fwww%2Fwfs.map%26SERVICE%3DWFS%26REQUEST%3DGetFeature%26VERSION%3D1.0.0%26typename%3Dregions%26SRS%3DEPSG%3A4326%26FeatureID%3Dregions.3192 link]
+
+<pre>
+http://localhost/cgi-bin/zoo_loader.cgi?request=Execute&service=WPS&version=1.0.0&Identifier=Boundary&DataInputs=InputPolygon=Reference@xlink:href=http%3A%2F%2Flocalhost%2Fcgi-bin%2Fmapserv%3Fmap%3D%2Fvar%2Fwww%2Fwfs.map%26SERVICE%3DWFS%26REQUEST%3DGetFeature%26VERSION%3D1.0.0%26typename%3Dregions%26SRS%3DEPSG%3A4326%26FeatureID%3Dregions.3192
+</pre>
+
+As you can see in the url above, we use an URLEncoded WFS request to the MapServer WFS server available on OSGeoLive as a <tt>xlink:href</tt> key in the <tt>DataInputs</tt> KVP value, and set the <tt>InputPolygon</tt> value to <tt>Reference</tt>. The corresponding non encoded WFS request is as follow :
+
+http://localhost/cgi-bin/mapserv?map=/var/www/wfs.map&SERVICE=WFS&REQUEST=GetFeature&VERSION=1.0.0&typename=regions&SRS=EPSG:4326&featureid=regions.3192
+
+Please note that you can add lineage=true to the previous request if you need to get information about the input values used to run your Service. Furthermore, you may need to store the <tt>ExecuteResponse</tt> document of your ZOO Service to re-use it later. In this case you must add <tt>storeExecuteResponse=true</tt> to the previous request. Note that is an important thing as the behavior of ZOO Kernel is not exactly the same than when running without this parameter settled to true. Indeed, in such a request, ZOO Kernel will give you an <tt>ExecuteResponse</tt> document which will contain the attribute statusLocation, which inform the client where the ongoing status or the final <tt>ExecuteResponse</tt> will be located.
+
+Here is an example of what the <tt>ExecuteResponse</tt> would look like in case <tt>storeExecuteResponse</tt> was set to true in the request :
+
+[[Image(Practical introduction to ZOO - 7.png,width=550px)]]
+
+Then, according to the statusLocation, you should get the <tt>ExecuteResponse</tt> as you get before using the previous request. Note that can be really useful to provide some caching system for a client application.
+
+You didn't specify any <tt>ResponseForm</tt> in the previous request, it is not requested and should return a <tt>ResponseDocument</tt> per default using the <tt>application/json</tt> <tt>mimeType</tt> as you defined in you zcfg file. Nevertheless, you can tell ZOO Kernel what kind of data you want to get in result of your query adding the attribute <tt>mimeType=text/xml</tt> to your <tt>ResponseDocument</tt> parameter. Adding this parameter to the previous request will give us the result as its GML representation :
+
+[http://localhost/cgi-bin/zoo_loader.cgi?request=Execute&service=WPS&version=1.0.0&Identifier=Boundary&DataInputs=InputPolygon=Reference@xlink:href=http%3A%2F%2Flocalhost%2Fcgi-bin%2Fmapserv%3Fmap%3D%2Fvar%2Fwww%2Fwfs.map%26SERVICE%3DWFS%26REQUEST%3DGetFeature%26VERSION%3D1.0.0%26typename%3Dregions%26SRS%3DEPSG%3A4326%26FeatureID%3Dregions.3192&ResponseDocument=Result@mimeType=text/xml link]
+
+<pre>
+http://localhost/cgi-bin/zoo_loader.cgi?request=Execute&service=WPS&version=1.0.0&Identifier=Boundary&DataInputs=InputPolygon=Reference@xlink:href=http%3A%2F%2Flocalhost%2Fcgi-bin%2Fmapserv%3Fmap%3D%2Fvar%2Fwww%2Fwfs.map%26SERVICE%3DWFS%26REQUEST%3DGetFeature%26VERSION%3D1.0.0%26typename%3Dregions%26SRS%3DEPSG%3A4326%26FeatureID%3Dregions.3192&ResponseDocument=Result@mimeType=text/xml
+</pre>
+
+As defined by the WPS specifications, you can also ask for a <tt>RawDataOutput</tt> to get only the data without the full <tt>ResponseDocument</tt>. To do that, you only have to replace the <tt>ResponseDocument</tt> of your request by <tt>RawDataOutput</tt>, like in the following request :
+
+[http://localhost/cgi-bin/zoo_loader.cgi?request=Execute&service=WPS&version=1.0.0&Identifier=Boundary&DataInputs=InputPolygon=Reference@xlink:href=http%3A%2F%2Flocalhost%2Fcgi-bin%2Fmapserv%3Fmap%3D%2Fvar%2Fwww%2Fwfs.map%26SERVICE%3DWFS%26REQUEST%3DGetFeature%26VERSION%3D1.0.0%26typename%3Dregions%26SRS%3DEPSG%3A4326%26FeatureID%3Dregions.3192&RawDataOutput=Result@mimeType=application/json link]
+
+<pre>
+http://localhost/cgi-bin/zoo_loader.cgi?request=Execute&service=WPS&version=1.0.0&Identifier=Boundary&DataInputs=InputPolygon=Reference@xlink:href=http%3A%2F%2Flocalhost%2Fcgi-bin%2Fmapserv%3Fmap%3D%2Fvar%2Fwww%2Fwfs.map%26SERVICE%3DWFS%26REQUEST%3DGetFeature%26VERSION%3D1.0.0%26typename%3Dregions%26SRS%3DEPSG%3A4326%26FeatureID%3Dregions.3192&RawDataOutput=Result@mimeType=application/json
+</pre>
+
+Please note that we go back to the default <tt>mimeType</tt> to directly obtain the JSON string as we will use this kind of request to develop our client application in the next section of this workshop.
+
+Now, you know how to ask ZOO Kernel to run service in background, ask for RawDataOutput specifying mimeType or any specific format to be returned by the Kernel. When you ask for ResponseDocument, you can also specify to the ZOO Kernel that you want the result to be stored on the server side.
+
+To do such a thing, you have to set the attribute <tt>asReference</tt> as <tt>true</tt> and then the resulting ExecuteResponse will contain a <tt>Reference</tt> node including the <tt>href</tt> attribute to let you access the produced file. To be able to handle this, you have to add the <tt>extension</tt> parameter in your <tt>DataOutputs</tt> node in the corresponding ZCFG file.
+
+Here is a sample url which provide such a result : 
+
+[http://localhost/cgi-bin/zoo_loader.cgi?request=Execute&service=WPS&version=1.0.0&Identifier=Boundary&DataInputs=InputPolygon=Reference@xlink:href=http%3A%2F%2Flocalhost%2Fcgi-bin%2Fmapserv%3Fmap%3D%2Fvar%2Fwww%2Fwfs.map%26SERVICE%3DWFS%26REQUEST%3DGetFeature%26VERSION%3D1.0.0%26typename%3Dregions%26SRS%3DEPSG%3A4326%26FeatureID%3Dregions.3192&ResponseDocument=Result@mimeType=application/json@asReference=true link]
+
+<pre>
+http://localhost/cgi-bin/zoo_loader.cgi?request=Execute&service=WPS&version=1.0.0&Identifier=Boundary&DataInputs=InputPolygon=Reference@xlink:href=http%3A%2F%2Flocalhost%2Fcgi-bin%2Fmapserv%3Fmap%3D%2Fvar%2Fwww%2Fwfs.map%26SERVICE%3DWFS%26REQUEST%3DGetFeature%26VERSION%3D1.0.0%26typename%3Dregions%26SRS%3DEPSG%3A4326%26FeatureID%3Dregions.3192&ResponseDocument=Result@mimeType=application/json@asReference=true
+</pre>
+
+You can see bellow what kind of result can be expected :
+
+[[Image(screenshot-ZOO-asReference-attribute.png,width=550px)]]
+ 
+===== Simplification and readability of request =====
+
+As you can see in the simple example we used since the begining of this workshop, it is sometimes hard to write the Execute requests using the GET method as it makes really long and complexe URLs. In the next requests examples, we will thus use the POST XML requests. First , here is the XML request corresponding to the previous Execute we used :
+
+<pre>
+#xml
+<wps:Execute service="WPS" version="1.0.0" xmlns:wps="http://www.opengis.net/wps/1.0.0" xmlns:ows="http://www.opengis.net/ows/1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opengis.net/wps/1.0.0 ../wpsExecute_request.xsd">
+ <ows:Identifier>Boundary</ows:Identifier>
+ <wps:DataInputs>
+  <wps:Input>
+   <ows:Identifier>InputPolygon</ows:Identifier>
+   <ows:Title>Playground area</ows:Title>
+   <wps:Reference xlink:href="http://localhost/cgi-bin/mapserv?map=/var/www/wfs.map&amp;SERVICE=WFS&amp;REQUEST=GetFeature&amp;VERSION=1.0.0&amp;typename=regions&amp;SRS=EPSG:4326&amp;featureid=regions.3192"/>
+  </wps:Input>
+ </wps:DataInputs>
+ <wps:ResponseForm>
+  <wps:ResponseDocument>
+   <wps:Output>
+    <ows:Identifier>Result</ows:Identifier>
+    <ows:Title>Area serviced by playground.</ows:Title>
+    <ows:Abstract>Area within which most users of this playground will live.</ows:Abstract>
+   </wps:Output>
+  </wps:ResponseDocument>
+ </wps:ResponseForm>
+</wps:Execute>
+</pre>
+
+In order to let you easily run the XML requests, a simple HTML form called test_services.html is available in your <tt>/var/www</tt> directory. You can access it using the following link : http://localhost/test_services.html.
+
+Please open this page in your browser, simply fill the XML request content into the textarea field and click the « run using XML Request » submit button. You will get exactly the same result as when running your Service using the GET request. The screenshot above show the HTML form including the request and the <tt>ExecuteResponse</tt> document displayed in the iframe at the bottom of the page :
+
+[[Image(Practical introduction to ZOO - 8.png,width=550px)]]
+
+The <tt>xlink:href</tt> value is used in the simplest way to deal with such data input. Obviously, you can also use a full JSON string of the geometry, as shown in the following XML Request example :
+
+<pre>
+#xml
+<wps:Execute service="WPS" version="1.0.0" xmlns:wps="http://www.opengis.net/wps/1.0.0" xmlns:ows="http://www.opengis.net/ows/1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opengis.net/wps/1.0.0 ../wpsExecute_request.xsda">
+ <ows:Identifier>Boundary</ows:Identifier>
+ <wps:DataInputs>
+  <wps:Input>
+   <ows:Identifier>InputPolygon</ows:Identifier>
+   <wps:Data>
+    <wps:ComplexData mimeType="application/json">
+{ "type": "MultiPolygon", "coordinates": [ [ [ [ -105.998360, 31.393818 ], [ -106.212753, 31.478128 ], [ -106.383041, 31.733763 ], [ -106.538971, 31.786198 ], [ -106.614441, 31.817728 ], [ -105.769730, 31.170780 ], [ -105.998360, 31.393818 ] ] ], [ [ [ -94.913429, 29.257572 ], [ -94.767380, 29.342451 ], [ -94.748405, 29.319490 ], [ -95.105415, 29.096958 ], [ -94.913429, 29.257572 ] ] ] ] }
+    </wps:ComplexData>
+   </wps:Data>
+  </wps:Input>
+ </wps:DataInputs>
+ <wps:ResponseForm>
+  <wps:ResponseDocument>
+   <wps:Output>
+    <ows:Identifier>Result</ows:Identifier>
+    <ows:Title>Area serviced by playground.</ows:Title>
+    <ows:Abstract>Area within which most users of this playground will live.</ows:Abstract>
+   </wps:Output>
+  </wps:ResponseDocument>
+ </wps:ResponseForm>
+</wps:Execute>
+</pre>
+
+If everything went well, you should get the Boundary of the JSON geometry passed as argument, and so be sure that your Service support both GML and JSON as input data. Note that in the previous request, we added a <tt>mimeType</tt> attribute to the <tt>ComplexData</tt> node to specify that the input data is not in the default <tt>text/xml</tt> <tt>mimeType</tt> but passed as an <tt>application/json</tt> string directly. It is similar to add <tt>@mimeType=application/json</tt> as we discussed before.
+
+===== storeExecuteResponse parameter and GetStatus Service =====
+
+If you go in your local <tt>/home/user/zoows/sources/zoo-services/utils/status</tt>, you'll find the code for a ServiceProvider which will provide the <tt>GetStatus</tt> service and the <tt>longProcess</tt> one. The last is a simple example to learn how to use the <tt>status</tt> variable from <tt>lenv</tt> section of the main configuration <tt>maps</tt> and the <tt>updateStatus</tt> function you have to call to take your status value into account. The main service provider is the <tt>GetStatus</tt> one, it is able to give you information about the current status value from a service running in background mode.
+
+You have to know that the ZOO Kernel will detect the presence of the <tt>GetStatus</tt> service and if it is available it will then return the link the corresponding <tt>Execute</tt> request.
+
+So now you will deploy the <tt>GetStatus</tt> and <tt>longProcess</tt> service on your local environment. As for each services, you shall be able to deploy the services simply by copying the <tt>cgi-env</tt> directory into your Apache <tt>cgi-bin</tt> directory. You can use the following command :
+
+<pre>
+#sh
+sudo cp ~user/zoows/sources/zoo-services/utils/status/cgi-env/*{zcfg,zo} /usr/lib/cgi-bin
+</pre>
+
+For simple Services it is the right way to deploy Service Providers. But in this specific case you'll have also to add some special parameter in the <tt>main</tt> section of you main configuration file and to copy an xsl file used to replace on the fly in the <tt>ResponseDocument</tt> the <tt>percentCompleted</tt> attribute of the <tt>ProcessStarted</tt> node returned by the <tt>GetStatus</tt> service.
+
+So first edit you <tt>main.cfg</tt> file to add the following lines in your main section :
+
+<pre>
+#c
+rewriteUrl=call
+dataPath=/var/www/data
+</pre>
+
+Here you define the path where the service is able to find the xsl file, specified in the <tt>dataPath</tt> parameter. You also tell the ZOO Kernel that you want to use the rewriteUrl we defined in the [./ZooWorkshop/FOSS4GJapan/ZooWorkshop:-FOSS4GJapan:-UsingZooFromOSGeoLiveVM previous section].
+
+To finish your deployment, you'll have now to copy the xsl file in the defined <tt>dataPath</tt> directory. You can use the following command :
+
+
+<pre>
+#sh
+cp ~/zoows/sources/zoo-services/utils/status/cgi-env/*xsl /var/www/data
+</pre>
+
+Now, if you run the following request to run the service longProcess :
+
+http://localhost/zoo/?request=Execute&service=WPS&version=1.0.0&Identifier=longProcess&DataInputs=&storeExecuteResponse=true
+
+You shall get the a XML document looking like the following : 
+
+[[Image(Practical introduction to ZOO - 9.png,width=550px,nolink)]]
+
+If you poll the <tt>statusLocation</tt> url provider in the answer you'll then be able to view the evolution of the <tt>percentCompleted</tt> attribute value growing, like you can see in the following screenshot.
+
+[[Image(Practical introduction to ZOO - 10.png,width=550px,nolink)]]
+
+This won't be used during this workshop but can be useful for really time consuming services.
+==== Creating Services for other functions (ConvexHull and Centroid) ====
+
+As the Boundary sample service code is available, you can now easily add ConvexHull and Centroid functions as they take exactly the same number of arguments : Only one geometry. The details for implementing and deploying the ConvexHull Service are provided bellow, and we will let you do the same thing for the Centroid one.
+
+==== C Version ====
+
+Please add first the following code to the <tt>service.c</tt> source code :
+
+<pre>
+#c
+int ConvexHull(maps*& conf,maps*& inputs,maps*& outputs){
+  OGRGeometryH geometry,res;
+  map* tmp=getMapFromMaps(inputs,"InputPolygon","value");
+  if(tmp==NULL){
+    setMapInMaps(conf,"lenv","message","Unable to fetch InputPolygon value.");
+    return SERVICE_FAILED;
+  }
+  map* tmp1=getMapFromMaps(inputs,"InputPolygon","mimeType");
+  if(strncmp(tmp1->value,"application/json",16)==0)
+    geometry=OGR_G_CreateGeometryFromJson(tmp->value);
+  else
+    geometry=createGeometryFromWFS(conf,tmp->value);
+  if(geometry==NULL){
+    setMapInMaps(conf,"lenv","message","Unable to parse InputPolygon value.");
+    return SERVICE_FAILED;
+  }
+  res=OGR_G_ConvexHull(geometry);
+  tmp1=getMapFromMaps(outputs,"Result","mimeType");
+  if(strncmp(tmp1->value,"application/json",16)==0){
+    char* tmp=OGR_G_ExportToJson(res);
+    setMapInMaps(outputs,"Result","value",tmp);
+    setMapInMaps(outputs,"Result","mimeType","text/plain");
+    free(tmp);
+  }
+  else{
+    char* tmp=OGR_G_ExportToGML(res);
+    setMapInMaps(outputs,"Result","value",tmp);
+    free(tmp);
+  }
+  OGR_G_DestroyGeometry(geometry);
+  OGR_G_DestroyGeometry(res);
+  return SERVICE_SUCCEEDED;
+}
+</pre>
+
+This new code is exactly the same as for the Boundary Service. The only thing we modified is the line where the [http://www.gdal.org/ogr/ogr__api_8h.html#7a93026cfae8ee6ce25546dba1b2df7d OGR_G_ConvexHull] function is called (rather than the <tt>OGR_G_GetBoundary</tt> you used before). It is better to not copy and paste the whole function and find a more generic way to define your new Services as the function body will be the same in every case. The following generic function is proposed to make things simpler :
+
+<pre>
+#c
+int applyOne(maps*& conf,maps*& inputs,maps*& outputs,OGRGeometryH (*myFunc) (OGRGeometryH)){
+  OGRGeometryH geometry,res;
+  map* tmp=getMapFromMaps(inputs,"InputPolygon","value");
+  if(tmp==NULL){
+    setMapInMaps(conf,"lenv","message","Unable to fetch InputPolygon value.");
+    return SERVICE_FAILED;
+  }
+  map* tmp1=getMapFromMaps(inputs,"InputPolygon","mimeType");
+  if(strncmp(tmp1->value,"application/json",16)==0)
+    geometry=OGR_G_CreateGeometryFromJson(tmp->value);
+  else
+    geometry=createGeometryFromWFS(conf,tmp->value);
+  if(geometry==NULL){
+    setMapInMaps(conf,"lenv","message","Unable to parse InputPolygon value.");
+    return SERVICE_FAILED;
+  }
+  res=(*myFunc)(geometry);
+  tmp1=getMapFromMaps(outputs,"Result","mimeType");
+  if(strncmp(tmp1->value,"application/json",16)==0){
+    char *tmp=OGR_G_ExportToJson(res);
+    setMapInMaps(outputs,"Result","value",tmp);
+    setMapInMaps(outputs,"Result","mimeType","text/plain");
+    free(tmp);
+  }
+  else{
+    char *tmp=OGR_G_ExportToGML(res);
+    setMapInMaps(outputs,"Result","value",tmp);
+    free(tmp);
+  }
+  outputs->next=NULL;
+  OGR_G_DestroyGeometry(geometry);
+  OGR_G_DestroyGeometry(res);
+  return SERVICE_SUCCEEDED;
+}
+</pre>
+
+Then, a function pointer called <tt>myFunc</tt> rather than the full function name can be used. This way we can re-implement our Boundary Service this way :
+
+<pre>
+#c
+int Boundary(maps*& conf,maps*& inputs,maps*& outputs){
+  return applyOne(conf,inputs,outputs,&OGR_G_GetBoundary);
+}
+</pre>
+
+Using this <tt>applyOne</tt> local function defined in the <tt>service.c</tt> source code, we can define other Services this way :
+
+<pre>
+#c
+int ConvexHull(maps*& conf,maps*& inputs,maps*& outputs){
+  return applyOne(conf,inputs,outputs,&OGR_G_ConvexHull);
+}
+int Centroid(maps*& conf,maps*& inputs,maps*& outputs){
+  return applyOne(conf,inputs,outputs,&MY_OGR_G_Centroid);
+}
+</pre>
+
+The genericity of the <tt>applyOne</tt> function let you add two new Services in your ZOO Services Provider : ConvexHull and Centroid.
+
+Note that you should define <tt>MY_OGR_Centroid</tt> function before the Centroid one as [http://www.gdal.org/ogr/ogr__api_8h.html#23f5a19a81628af7f9cc59a37378cb2b OGR_G_Centroid] don't return a geometry object but set the value to an already existing one and support only Polygon as input, so to ensure we use the ConvexHull for MultiPolygon. So please use the code bellow :
+
+<pre>
+#c
+OGRGeometryH MY_OGR_G_Centroid(OGRGeometryH hTarget){
+  OGRGeometryH res;
+  res=OGR_G_CreateGeometryFromJson("{\"type\": \"Point\", \"coordinates\": [0,0] }");
+  OGRwkbGeometryType gtype=OGR_G_GetGeometryType(hTarget);
+  if(gtype!=wkbPolygon){
+    hTarget=OGR_G_ConvexHull(hTarget);
+  }
+  OGR_G_Centroid(hTarget,res);
+  return res;
+}
+</pre>
+
+To deploy your Services, you only have to copy the <tt>Boundary.zcfg</tt> metadata file from your cgi-env directory as <tt>ConvexHull.zcfg</tt> and <tt>Centroid.zcfg</tt>. Then, you must rename the Service name on the first line to be able to run and test the <tt>Execute</tt> request in the same way you did before. You only have to set the Identifier value to ConvexHull or Centroid in your request depending on the Service you want to run.
+
+Note here that the <tt>GetCapabilities</tt> and <tt>DescribeProcess</tt> requests will return odd results as we didn't modified any metadata informations, you can edit the .zcfg files to set correct values. By the way it can be used for testing purpose, as the input and output get the same name and default/supported formats.
+
+==== Python Version ====
+
+<pre>
+#python
+def ConvexHull(conf,inputs,outputs):
+    if inputs["InputPolygon"]["mimeType"]=="application/json":
+        geometry=osgeo.ogr.CreateGeometryFromJson(inputs["InputPolygon"]["value"])
+    else:
+        geometry=createGeometryFromWFS(inputs["InputPolygon"]["value"])
+    rgeom=geometry.ConvexHull()
+    if outputs["Result"]["mimeType"]=="application/json":
+        outputs["Result"]["value"]=rgeom.ExportToJson()
+        outputs["Result"]["mimeType"]="text/plain"
+    else:
+        outputs["Result"]["value"]=rgeom.ExportToGML()
+    geometry.Destroy()
+    rgeom.Destroy()
+    return 3
+</pre>
+
+Once again, you can easily copy and paste the function for Boundary and simply modify the line where the Geometry method was called. Nevertheless, as we did for the C language we will give you a simple way to get things more generic.
+
+First of all, the first step which consists in extracting the InputPolygon Geometry as it will be used in the same way in each Service functions, so we will first create a function which will do that for us. The same thing can also be done for filling the output value, so we will define another function to do that automaticaly. Here is the code of this two functions (extractInputs and outputResult) :
+
+<pre>
+#python
+def extractInputs(obj):
+    if obj["mimeType"]=="application/json":
+        return osgeo.ogr.CreateGeometryFromJson(obj["value"])
+    else:
+        return createGeometryFromWFS(obj["value"])
+    return null
+
+def outputResult(obj,geom):
+    if obj["mimeType"]=="application/json":
+        obj["value"]=geom.ExportToJson()
+        obj["mimeType"]="text/plain"
+    else:
+        obj["value"]=geom.ExportToGML()
+</pre>
+
+We can so minimize the code of the Boundary function to make it simplier using the following function definition :
+
+<pre>
+#python
+def Boundary(conf,inputs,outputs):
+    geometry=extractInputs(inputs["InputPolygon"])
+    rgeom=geometry.GetBoundary()
+    outputResult(outputs["Result"],rgeom)
+    geometry.Destroy()
+    rgeom.Destroy()
+    return 3
+</pre>
+
+Then definition of the ConvexHull and Centroid Services can be achieved using the following code :
+
+<pre>
+#python
+def ConvexHull(conf,inputs,outputs):
+    geometry=extractInputs(inputs["InputPolygon"])
+    rgeom=geometry.ConvexHull()
+    outputResult(outputs["Result"],rgeom)
+    geometry.Destroy()
+    rgeom.Destroy()
+    return 3
+
+def Centroid(conf,inputs,outputs):
+    geometry=extractInputs(inputs["InputPolygon"])
+    if geometry.GetGeometryType()!=3:
+        geometry=geometry.ConvexHull()
+    rgeom=geometry.Centroid()
+    outputResult(outputs["Result"],rgeom)
+    geometry.Destroy()
+    rgeom.Destroy()
+    return 3
+</pre>
+
+Note, that in Python you also need to use ConvexHull to deal with MultiPolygons.
+
+You must now copy the Boundary.zcfg file as we explained for the C version in <tt>ConvexHull.zcfg</tt> and <tt>Centroid.zcfg</tt> respectively and then, use make install command to re-deploy and test your Services Provider.
+
+==== Create the Buffer Service ====
+
+We can now work on the Buffer Service, which takes more arguments than the other ones. Indeed, the code is a bit different from the one used to implement the Boundary, ConvexHull and Centroid Services.
+
+The Buffer service also takes an input geometry, but uses a <tt>BufferDistance</tt> parameter. It will also allow you to define <tt>LitteralData</tt> block as the <tt>BufferDistance</tt> will be simple integer value. The read access to such kind of input value is made using the same function as used before.
+
+==== C Version ====
+
+If you go back to the first Boundary Service source code, you should not find the following very complicated. Indeed, you simply have to add the access of the <tt>BufferDistance</tt> argument and modify the line whenthe [http://www.gdal.org/ogr/ogr__api_8h.html#1ca0bd5c0fcb4b1af3c3973e467b0ec0 OGR_G_Buffer] must be called (instead of <tt>OGR_G_GetBoundary</tt>). Here is the ful lcode :
+
+<pre>
+int Buffer(maps*& conf,maps*& inputs,maps*& outputs){
+  OGRGeometryH geometry,res;
+  map* tmp1=getMapFromMaps(inputs,"InputPolygon","value");
+  if(tmp==NULL){
+    setMapInMaps(conf,"lenv","message","Unable to fetch InputPolygon value.");
+    return SERVICE_FAILED;
+  }
+  map* tmp1=getMapFromMaps(inputs,"InputPolygon","mimeType");
+  if(strncmp(tmp->value,"application/json",16)==0)
+    geometry=OGR_G_CreateGeometryFromJson(tmp->value);
+  else
+    geometry=createGeometryFromWFS(conf,tmp->value);
+  double bufferDistance=1;
+  tmp=getMapFromMaps(inputs,"BufferDistance","value");
+  if(tmp!=NULL)
+    bufferDistance=atof(tmp->value);
+  res=OGR_G_Buffer(geometry,bufferDistance,30);
+  tmp1=getMapFromMaps(outputs,"Result","mimeType");
+  if(strncmp(tmp1->value,"application/json",16)==0){
+    char *tmp=OGR_G_ExportToJson(res);
+    setMapInMaps(outputs,"Result","value",tmp);
+    setMapInMaps(outputs,"Result","mimeType","text/plain");
+    free(tmp);    
+  }
+  else{
+    char *tmp=OGR_G_ExportToGML(res);
+    setMapInMaps(outputs,"Result","value",tmp);
+    free(tmp);    
+  }
+  outputs->next=NULL;
+  OGR_G_DestroyGeometry(geometry);
+  OGR_G_DestroyGeometry(res);
+  return SERVICE_SUCCEEDED;
+}
+</pre>
+
+The new code must be inserted in your <tt>service.c</tt> file and need to be recompiled and replace the older version of your ZOO Service Provider in the <tt>/usr/lib/cgi-bin/</tt> directory. You must of course place the corresponding ZOO Metadata File in the same directory.
+
+As we explained before, ZOO Kernel is permissive in the sense that you can pass more arguments than defined in you zcfg file, so let's try using a copy of the <tt>Boundary.zcfg</tt> file renamed as <tt>Buffer.zcfg</tt> and containing the Buffer identifier. Then, please test your service using an <tt>Execute</tt> request as you did before. You will obtain the buffer result in a <tt>ResponseDocument</tt>.
+
+You may have noted that the above code check if a <tt>BufferDistance</tt> input was passed to the service. If not, we will use 1 as the default value, which explains why you do not have to use one more input to your previous queries.
+
+You can change the <tt>BufferDistance</tt> value used by your Service to compute Buffer of your geometry by adding it to the DataInputs value in your request. Note that using KVP syntaxe, each DataInputs are separated by a semicolon.
+
+So, the previous request :
+
+<pre>
+DataInputs=InputPolygon=Reference@xlink:href=http%3A%2F%2Flocalhost%2Fcgi-bin%2Fmapserv%3FSERVICE%3DWFS%26REQUEST%3DGetFeature%26VERSION%3D1.0.0%26typename%3Dregions%26SRS%3DEPSG%3A4326%26FeatureID%3Dregions.3192
+</pre>
+
+Can now be rewritten this way :
+
+<pre>
+DataInputs=InputPolygon=Reference@xlink:href=http%3A%2F%2Flocalhost%2Fcgi-bin%2Fmapserv%3FSERVICE%3DWFS%26REQUEST%3DGetFeature%26VERSION%3D1.0.0%26typename%3Dregions%26SRS%3DEPSG%3A4326%26FeatureID%3Dregions.3192;BufferDistance=2
+</pre>
+
+Setting <tt>BufferDistance</tt> value to 2 would give you a different result, then don't pass any other parameter as we defined 1 as the default value in the source code.
+
+Here you can find the same query in XML format to use from the http://localhost/test_services.html HTML form :
+
+<pre>
+#xml
+<wps:Execute service="WPS" version="1.0.0" xmlns:wps="http://www.opengis.net/wps/1.0.0" xmlns:ows="http://www.opengis.net/ows/1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opengis.net/wps/1.0.0 ../wpsExecute_request.xsda">
+ <ows:Identifier>Buffer</ows:Identifier>
+ <wps:DataInputs>
+  <wps:Input>
+   <ows:Identifier>InputPolygon</ows:Identifier>
+   <ows:Title>Playground area</ows:Title>
+   <wps:Reference xlink:href="http://localhost/cgi-bin/mapserv?map=/var/www/wfs.map&amp;SERVICE=WFS&amp;REQUEST=GetFeature&amp;VERSION=1.0.0&amp;typename=regions&amp;SRS=EPSG:4326&amp;featureid=regions.3192"/>
+  </wps:Input>
+  <wps:Input>
+   <ows:Identifier>BufferDistance</ows:Identifier>
+   <wps:Data>
+    <wps:LiteralData uom="degree">2</wps:LiteralData>
+   </wps:Data>
+  </wps:Input>
+ </wps:DataInputs>
+ <wps:ResponseForm>
+  <wps:ResponseDocument>
+   <wps:Output>
+    <ows:Identifier>Buffer</ows:Identifier>
+    <ows:Title>Area serviced by playground.</ows:Title>
+    <ows:Abstract>Area within which most users of this playground will live.</ows:Abstract>
+   </wps:Output>
+  </wps:ResponseDocument>
+ </wps:ResponseForm>
+</wps:Execute>
+</pre>
+
+==== Python Version ====
+
+As we already defined the utility functions createGeometryFromWFS and outputResult, the code is as simple as this :
+
+<pre>
+#python
+def Buffer(conf,inputs,outputs):
+    geometry=extractInputs(inputs["InputPolygon"])
+    try:
+        bdist=int(inputs["BufferDistance"]["value"])
+    except:
+        bdist=10
+    rgeom=geometry.Buffer(bdist)
+    outputResult(outputs["Result"],rgeom)
+    geometry.Destroy()
+    rgeom.Destroy()
+    return 3
+</pre>
+
+We simply added the use of <tt>inputs["BufferDistance"]["value"]</tt> as arguments of the Geometry instance Buffer method. Once you get this code added to your <tt>ogr_ws_service_provider.py file, simply copy it in the ZOO Kernel directory (or type make install from your ZOO Service Provider root directory). Note that you also need the <pre>Buffer.zcfg</tt> file detailled in the next section.
+
+==== The Buffer MetadataFile file ====
+
+You must add <tt>BufferDistance</tt> to the Service Metadata File to let clients know that this Service supports this parameter. To do this, please copy your orginal Boundary.zcfg file as Buffer.zcfg and add the following lines to the DataInputs block :
+
+<pre>
+[BufferDistance]
+Title = Buffer Distance
+Abstract = Distance to be used to calculate buffer.
+minOccurs = 0
+maxOccurs = 1
+<LiteralData>
+DataType = float
+<Default>
+uom = degree
+value = 10
+</Default>
+<Supported>
+uom = meter
+</Supported>
+</LiteralData>
+</pre>
+
+Note that as <tt>minOccurs</tt> is set to 0 which means that the input parameter is optional and don't have to be passed. You must know that ZOO Kernel will pass the default value to the Service function for an optional parameter with a default value set.
+
+You can get a full copy of the <tt>Buffer.zcfg</tt> file here :
+
+http://zoo-project.org/trac/browser/trunk/zoo-services/ogr/base-vect-ops/cgi-env/Buffer.zcfg
+
+You can now ask ZOO Kernel for GetCapabilities, DescribeProcess and Execute for the Buffer Service.
+
+[./ZooWorkshop/FOSS4GJapan/ZooWorkshop:-FOSS4GJapan:-UsingZooFromOSGeoLiveVM Prev.] | [./ZooWorkshop/ZooWorkshop:-FOSS4GJapan WorkShop table of content] | [./ZooWorkshop/FOSS4GJapan/ZooWorkshop:-FOSS4GJapan:-BuildingWPSClientUsingOL Next]
+
+
+
+
+
+
+
+

@@ -1,0 +1,138 @@
+
+
+=== Implementing WPS for Geopaparazzi field data collection tool using ZOO-Project: Simplifying integration of field data and GIS ===
+
+
+<pre>#table class="listing"
+{| border=1 class="simple"
+!=Students' Name  =
+Niroshan Sanjaya 
+|- 
+| =Mentors  =
+| Gerald Fenoy, Andrea Antonello 
+|}
+
+</pre>
+
+==== Brief description of your idea ====
+JGrasstools is a library which contains a variety of geoprocessing functionalities. It has been used for many GIS framework to provide a comprehensive Java solution for GIS packages for data access, editing, visualization and analysis. On the other hand Geopaparazzi is a standalone mobile app for field data collection. It enables user to collect georeferenced field data. Idea of this proposal is to enable the JGrasstools library to serve as geoprocessing engine using the WPS standard implemented in the ZOO­Project (http://zoo­project.org/). The main task in this proposal would the preparation and conversion of field data from geopaparazzi projects to Web­GIS platform enabling data analysis and sharing. The project will demonstrate and document the methods to deploy WPS using JGrasstools as the geoprocessing engine. As a future possibility, the project would facilitate Web­GIS platform with rich set functionality especially in hydrology and water management needs. The results of this project will be useful for deploying Web application for Monitoring and Evaluation (M&E) needs.
+
+
+==== State of the software before GSoC ====
+The JGrasstools can be adopted quite easily to other toolboxes such as gvSIG, since it is a modular processing library. It already used by some desktop GIS and toolkits. And currently geopaparazzi data can be exported to some desktop GIS clients like GRASS, QGIS, gvSIG. STAGE (https://github.com/geopaparazzi/geopaparazzi/wiki) is also available as a stand alone application to create background maps (tiles) that can be offline to assist in field survey. Further, STAGE also provides tools to get the field data into desktop for visualization and further analysis.
+
+Presently existing solutions would require users to familiarize with desktop tools to effectively use geopaparazzi as a field data collection tools. The project aims at providing data import/export functionality as WPS which are unavailable at present and this will significantly simplify the workflow for collection, sharing, analysis and integration of field data in geospatial analysis.
+
+==== State of the software after GSoC ====
+
+Capabilities of JGrasstools will be firstly integrated with geopaparazzi and it will be directly available online. Ports for other capabilities of JGrasstools also directly available online. Further, a simple user interface will be provided to run the services remotely.
+This enables users to utilize Geopaparazzi for field data collection without having an experience on desktop GIS. User will be able to import/export and convert the Geopaparazzi data through WPS. Apart from that user will be able to analyse the data being in the same platform.
+
+==== Schedule ====
+Basically this project based on ZOO­Project and the JGrasstools. Those two has many capabilities and functions. In order to focus this project, those functions and capabilities will be studied before start the GSoC.
+
+|-
+
+<pre>#table class="listing"
+{| border=1 class="simple"
+!=  Timeline  =
+!=  TODO  =
+!=  Status  =
+|- 
+|   May 23 - June 04 2016  
+|  - Identifying and analysing the different capabilities of JGrasstools Simultaneously starts the ZOO­Projects and study and analyze about its capabilities by implementing example projects. 
+|   ---  
+|- 
+|   5 – 26 June 2016  
+|  - Configuration of ZOO­Project and Implementing JGrasstools as a service in it. 
+|   ---  
+|- 
+|   27 June – 09 July 2016  
+|  - Development of the function to import and export Geopaparazzi project by using JGrasstools as a service. <br>  - Analysing the converted project 
+|   ---  
+|- 
+|   09 – 16 July 2016  
+|  - Developing a simple template for web access to run the process. 
+|   ---  
+|- 
+|   17 - 30 July 2016  
+|  - Testing other capabilities of JGrasstools and identify important capabilities ( based on different criterias). <br> - Testing the ports to them and develop an access to them. 
+|   ---  
+|- 
+|   31 July – 6 August 2016  
+|  - Integrate other capabilities to the template. 
+|   ---  
+|- 
+|   7 – 9 August 2016  
+|  - Testing the template and develop user interface for web access. <br>  - Identifying the issues and problems regarding the template. 
+|   ---  
+|- 
+|   10 – 12 August 2016  
+|  - Fix and updates the identified issues and potential changes. 
+|   ---  
+|- 
+|   13 – 16 August 2016  
+|  - Fully testing the whole system and validation. <br> - Identifying bugs. <br> -  Fix all the bugs and errors. 
+|   ---  
+|- 
+|   16 – 17 August 2016 
+|  - Finalise the documentation, sources, project and the examples. 
+|   ---  
+|}
+
+
+</pre>
+
+While we are doing above steps, all the steps and action will be documented as a blog posts including all the errors and issues as a discussion.
+
+==== Reports ====
+
+No reports yet.
+
+==== Student's Biography ====
+
+I am a student at Osaka City University, Japan. I am following a Master programme on Urban Information study at Graduate School of Creative Cities. I have completed my Bachelor degree in Town and Country Planning, specialized on Planning technology. Basically, My Master research focus on Crowdsourced geo­spatial data integration with web based GIS services. I have been working as a research assistant on Open Source technologies after the graduation. With that I have realized the importance of open source technologies for research and the development.
+Now I am trying to develop a crowdsourced spatial data collection system for real time disaster simulation and modeling as a part of my research. It helps me to understand the concept of ZOO­Project and it capabilities. It inspired me to do this project.
+
+==== Programming and GIS ====
+
+I have skills on Open source GIS software packages such as QGIS, GRASS and some Open Source GIS tools like PostgreSQL/PostGIS, OpenLayers, OpenStreetMap, etc.
+
+OpenSource GIS: QGIS, GRASS GIS, gvSIG, uDig, GDAL/OGR, GeoServer, MapServer, OpenLayers, PostgreSQL/PostGIS, OSGeo Live package, OpenGeoSuite.
+
+Operating Systems: Microsoft Windows, Linux, Mac
+
+Programming languages: HTML, XML, PHP, JavaScript, Python, SQL
+
+==== Research experience ====
+Application of Mobile GIS for Mobility Mapping, ICC­ 2014, Alpha College of Engineering & Society of Information Processing (SIP), Bangalore, June 2014 (ISBN­9789351072447)
+
+An Open Source Hardware & Software online raingauge for real­time monitoring of rainwater harvesting in Sri Lanka, RWH symposium – 2014, Lanka Rainwater Harvesting Forum ( 5th September 2014)
+
+OSHW and FOSS4G for an online water valet, FOSS4G – Asia, Asian Institute of Technology, Bangkok, Thailand (December, 2014)
+
+Assess the level of vulnerability to climate exaggerated disasters in Sri Lankan Coastal Areas: An Application of Open Source Geographic Information System” FOSS4G – Asia, Asian Institute of Technology, Bangkok, Thailand (December , 2014) (Award for the best poster presentation)
+
+Water Resources Monitoring in Sri Lanka “ The Open Source Way”, FOSS4G Sri Lanka­2014, OSGeoSL & SLIIT ( February 2014)
+
+Exploring Mobility Mapping with Mobile GIS, FOSS4G Sri Lanka­2014, OSGeoSL & SLIIT (February 2014)
+
+Assessed the level of vulnerability in Sri Lankan coastal areas to climate exaggerated disasters: Application of Analytical Hierarchical Process (AHP) and Geographic Information System (GIS), International Journal of Advanced Research [Int. J. of Adv. Res. 2 8).] (ISSN 2320­5407)
+
+Space Syntax and Mobile GIS Application: Investigation of Relationship between Human Walking Pattern and Spatial Configuration, International Journal of Emerging Technology & Research [Vol 1, Issue 6, Sept ­ Oct, 2014] [ISSN (E): 2347­5900, ISSN (P): 2347­6079]
+
+A National Upgrade of the Climate Monitoring Grid in Sri Lanka. The Place of Open Design, OSHW and FOSS” European Geosciences Union General Assembly 2015, Vienna, Austria 12 – 17 April, 2015 ( Vol. 17, EGU2015­93­ 1,2015)
+
+Assess the level of vulnerability to climate exaggerated disasters in Sri Lankan Coastal Areas: An Application of Open Source Geographic Information System, International Journal of Geoinformatics, Vol. 11, No. 3, September, 2015. ISSN 1686­6576, (pp. 53­58)
+
+
+
+'''OSGEO Wiki:''' https://wiki.osgeo.org/wiki/IMPLEMENTING_WPS_FOR_GEOPAPARAZZI_FIELD_DATA_COLLECTION_TOOL_USING_ZOO-PROJECT:SIMPLIFYING_INTEGRATION_OF_FIELD_DATA_AND_GIS
+
+
+
+
+
+
+
+
