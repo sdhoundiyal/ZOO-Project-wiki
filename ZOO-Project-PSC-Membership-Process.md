@@ -134,4 +134,6 @@ The voting period will run for **10 working days**.
 
 The new PSC will be presented within **10 working days** after the conclusion of the voting period.
 
+Reference: [http://zoo-project.org/trac/wiki/PSC/process](http://zoo-project.org/trac/wiki/PSC/process)
+
 *last updated: Apr 4, 2020*
