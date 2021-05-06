@@ -9,6 +9,7 @@ Thursday, 6 May 2021 at https://www.timeanddate.com/worldclock/fixedtime.html?ye
 
 === Agenda ===
 * Discussion on draft of ZOO-Project PSC Membership Process (https://github.com/ZOO-Project/migration/issues/11)
+* FOSS4G-Asia 2021 schedule (http://www.foss4g-asia.org/2020/)
 
 === Summary ===
 
