@@ -18,8 +18,6 @@ ZOO PSC Meeting 26
 
 Participants: venka (Chair), jmckenna, djay, omshinde
 
-Action Items: 
-
 Meeting Minutes:
 *Motion 1: Officially announce the move to GitHub, for ZOO-Project source code and documentation, has completed, and all developers and users should switch to making Pull Requests to the repositories in [https://github.com/ZOO-Project](https://github.com/ZOO-Project)
     venka, djay, jmckenna, omshinde: +1 
