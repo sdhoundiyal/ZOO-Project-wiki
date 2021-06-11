@@ -9,6 +9,10 @@ Thursday, 17 June 2021 at https://www.timeanddate.com/worldclock/fixedtime.html?
 
 === Agenda ===
 * Review PSC meeting 26 (https://github.com/ZOO-Project/ZOO-Project/wiki/PSC:-meetings:-PSCMeet26) minutes
+* OGC API - Process Code Sprint report and demo
+* Discuss: reintegration of the MapServer support within OGC API - Processes (despite what was discussed before, exposing GetMap, GetFeature and GetCoverage requests would still make sense for more use cases than expected)
+* Discuss the following option: stop relying on OGC draft release for our ZOO-Project releases
+
 
 === Summary ===
 
