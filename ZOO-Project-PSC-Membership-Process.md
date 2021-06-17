@@ -21,9 +21,13 @@ Contents:
 
 # ZOO-Project PSC Membership Process
 
+- Authors: @jmckenna, @djay, @venka, @omshinde, @nbozon
+- Last updated: June 17, 2021
+- Status: Draft
+
 ## Background History
 
-ZOO-Project PSC was formed in **March 2010** with **10 initial members** who expressed interest in serving as PSC members. There was no call for nomination or voting process for the initial PSC and the membership was based on confirming the participation of potential members and nominating them to be on to the PSC. [Gérald Fenoy](https://wiki.osgeo.org/wiki/User:Djay) was elected as the initial Chair of ZOO-Project and the [PSC Guidelines](http://zoo-project.org/trac/wiki/PSC/process) were formulated at the second PSC meeting held on **21st April 2010**. The PSC functioned with the initial **10 PSC members** till **4th October 2020**. A new PSC was established after confirming the continued participation of the initial members and requesting the participation of new PSC members on the ZOO-PSC mailing list. The new PSC was announced on **5th October 2020** with **5 members** from the initial PSC continuing with Gérald Fenoy elected as Chair. A new member was nominated in the Second ZOO-Project PSC Meeting on **10th December 2020**. Presently, the ZOO-PSC functions with **6 nominated members**. 
+ZOO-Project PSC (Project Steering Committee) was formed in **March 2010** with **10 initial members** who expressed interest in serving as PSC members. There was no call for nomination or voting process for the initial PSC and the membership was based on confirming the participation of potential members and nominating them to be on to the PSC. [Gérald Fenoy](https://wiki.osgeo.org/wiki/User:Djay) was elected as the initial Chair of ZOO-Project and the [PSC Guidelines](http://zoo-project.org/trac/wiki/PSC/process) were formulated at the second PSC meeting held on **21st April 2010**. The PSC functioned with the initial **10 PSC members** till **4th October 2020**. A new PSC was established after confirming the continued participation of the initial members and requesting the participation of new PSC members on the ZOO-PSC mailing list. The new PSC was announced on **5th October 2020** with **5 members** from the initial PSC continuing with Gérald Fenoy elected as Chair. A new member was nominated in the Second ZOO-Project PSC Meeting on **10th December 2020**. Presently, the ZOO-PSC functions with **6 nominated members**. 
 
 In summary, the steps for the PSC membership process between **2010-2020** has been as follows:
 - Proposal of members by existing PSC
