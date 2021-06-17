@@ -1,7 +1,7 @@
 
 == PSC meeting 27 ==
 
-The PSC meeting is to be held on irc.freenode.net at the  #zoo-project channel.
+The PSC meeting is to be held on irc.libera.chat at the  #zoo-project channel.
 
 === Proposed Time and Date ===
 
