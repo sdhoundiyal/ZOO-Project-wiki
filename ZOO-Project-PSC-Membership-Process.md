@@ -21,7 +21,7 @@ Contents:
 
 # ZOO-Project PSC Membership Process
 
-- Authors: [@venka](https://github.com/venka-foss4g), [@jmckenna](https://github.com/jmckenna), [@djay](https://github.com/djay), [@omshinde](https://github.com/omshinde), [@nbozon](https://github.com/nbozon), [@kalxas](https://github.com/kalxas)
+- Authors: [@venka](https://github.com/venka-foss4g), [@jmckenna](https://github.com/jmckenna), [@djay](https://github.com/djay), [@nbozon](https://github.com/nbozon), [@kalxas](https://github.com/kalxas), [@omshinde](https://github.com/omshinde)
 - Last updated: 2021-06-17
 - Status: Draft
 
