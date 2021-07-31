@@ -13,7 +13,7 @@ The PSC meeting is to be held on irc.libera.chat in the #zoo-project channel (co
 
 ## Summary
 
-ZOO PSC Meeting 27
+ZOO PSC Meeting 28
 
 Participants:
 
