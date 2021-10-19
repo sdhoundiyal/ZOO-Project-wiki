@@ -21,6 +21,7 @@ ZOO PSC Meeting 28
 Participants:
 
 * Venkatesh Raghavan
+* Rajat Shinde
 * Add your name
 
 
