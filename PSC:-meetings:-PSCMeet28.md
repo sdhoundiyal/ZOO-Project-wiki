@@ -12,6 +12,7 @@ Date: 2021 October 21st [13:00 (CEST)](https://www.timeanddate.com/worldclock/fi
 * Review PSC meeting 27 (https://github.com/ZOO-Project/ZOO-Project/wiki/PSC:-meetings:-PSCMeet27) minutes
 * Documentation updates requirement for releasing
 * Handling next steps for incubation
+* Release plan, is it doable before the end of the year?
 * upgrading MS4W distribution for latest ZOO-Project source from GitHub
 * Add agenda point
 
@@ -23,6 +24,7 @@ Participants:
 
 * Venkatesh Raghavan
 * Rajat Shinde
+* Gérald Fenoy
 * Add your name
 
 
