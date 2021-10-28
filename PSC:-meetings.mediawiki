@@ -1,7 +1,7 @@
 
 == PSC Meetings == 
 
-The PSC meetings occur through IRC on irc.libera.chat in the #zoo-project channel.
+The PSC meetings occur through IRC on *irc.libera.chat* in the #zoo-project channel.
 If you don't have an IRC client (such as Thunderbird), then you can use the web interface: https://web.libera.chat/#zoo-project. If some IRC problems occur, the meeting will be held on Skype. 
 
 === Next Meeting ===
