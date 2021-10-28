@@ -25,7 +25,8 @@ Participants:
 * Venkatesh Raghavan
 * Rajat Shinde
 * Gérald Fenoy
-* Add your name
+* Nicolas Bozon
+* Jeff Mckenna 
 
 
 
