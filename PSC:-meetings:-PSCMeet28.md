@@ -27,6 +27,21 @@ Participants:
 * Gérald Fenoy
 * Nicolas Bozon
 * Jeff Mckenna 
+* Angelos Tzotsos
 
+Summary:
 
+Zoo-Project PSC Meeting 28
+Minutes:
+1. Roll call: djay (Chair), venka, jmckenna, kalxas, nbozon, omshinde (Scribe)
 
+2. Motion 1: Review and approve [PSC meeting 27](https://github.com/ZOO-Project/ZOO-Project/wiki/PSC:-meetings:-PSCMeet27)
+djay, Venka, jmckenna, nbozon, omshinde: +1
+kalxas: +0
+
+3. Agenda 2: Documentation updates requirement for releasing
+  - jmckenna created [https://github.com/ZOO-Project/migration/issues/14](https://github.com/ZOO-Project/migration/issues/14) and [https://github.com/ZOO-Project/migration/issues/15](https://github.com/ZOO-Project/migration/issues/15)
+
+4. Motion 2: PSC meeting 29 on [18 Nov 2021](https://www.timeanddate.com/worldclock/fixedtime.html?year=2021&month=11&day=18&hour=11&min=0&sec=0&msg=ZOO-Project+PSC+Meeting) (Thu)
+
+venka, jmckenna, djay, kalxas, nbozon, omshinde: +1
