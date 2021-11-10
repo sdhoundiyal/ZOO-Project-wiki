@@ -11,6 +11,7 @@ Date: 2021 November 18th [13:00 (CEST)](https://www.timeanddate.com/worldclock/f
 
 * Review PSC meeting 28 (https://github.com/ZOO-Project/ZOO-Project/wiki/PSC:-meetings:-PSCMeet28) minutes
 * Status of release manager and documentation lead roles definitions
+* Announcement about acceptance to Azure credits for open source program
 * Add agenda point
 
 
