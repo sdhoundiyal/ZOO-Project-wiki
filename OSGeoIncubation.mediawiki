@@ -13,55 +13,55 @@
 
 === 3. Please provide the names, emails and entity affiliation of all official committers ===
 
-* Gérald FENOY (GeoLabs) gerald.fenoy@geolabs.fr
-* Jeff McKenna (Gateway Geomatics)
-* David SAGGIORATO (Cleolys) david@saggiorato.net
+* Rémi Cresson (IRSTEA) remi.cresson@teledetection.fr
 * Luca DELUCCHI (Fondazioen Edmund Mach) lucadeluge@gmail.com 
 * René-Luc D'HONT (3LIZ) rldhont@3liz.com
+* Gérald FENOY (GeoLabs) gerald.fenoy@geolabs.fr
+* Jeff McKenna (Gateway Geomatics) jmckenna@gatewaygeomatics.com
+* David SAGGIORATO (Cleolys) david@saggiorato.net
 * Marco NEGRETTI (Politecnico di Milano) marco.negretti@polimi.it
 * Angelos Tzotsos (National technical university of Athens) gcpp.kalxas@gmail.com
 
+
 === 4. Please describe your Project. ===
 
-ZOO is a WPS (Web Processing Service) open source project released under a MIT/X-11 	style license . It provides an OGC WPS compliant developer-friendly framework to create 	and chain WPS Web services. ZOO is made of three parts: 
+ZOO-Project is an Open Geospatial Consortium Web Processing Service (OGC WPS) open source project released under a MIT/X-11 style license . It provides an OGC WPS compliant developer-friendly framework to create and chain WPS Web services. ZOO-Project is made of three parts: 
 
-ZOO Kernel: A powerful server-side C Kernel which makes it possible to manage and chain Web services coded in different programming languages. 
+* ZOO-Kernel: A powerful server-side C Kernel which makes it possible to manage and chain Web services coded in different programming languages. 
 
-ZOO Services : A growing suite of example Web services based on various Open Source libraries. (get inspired !) 
+* ZOO-Services: A growing suite of example Web services based on various Open Source libraries. (get inspired !) 
 
-ZOO API : A server-side JavaScript API able to call and chain the ZOO Services, which makes the development and chaining processes easier. 
+* ZOO-API: A server-side JavaScript API able to call and chain the ZOO Services, which makes the development and chaining processes easier. 
+
+* ZOO-Client: A JavaScript library to be used from client side to interact with a WPS implementation
 
 === 5. Why is hosting at OSGeo good for your project? ===
 
-Hosting the ZOO-Project on the OSGeo server infrastructure is not planned.
+Hosting the ZOO-Project on the OSGeo server infrastructure is planned for hosting the dynamic part of the web site (mainly the demonstrations UI).
+
 If 'Hosting' means to be 'under the foundation umbrella' here, then of course it would be great benefit for the project and will help it to target a larger audience. It will also probably help the projects member to promote and spread even more WPS around.
 
 === 6. Type of application does this project represent(client, server, standalone, library, etc.): ===
 
-WPS Server
+OGC WPS Server implementation (versions 1.0.0 and 2.0.0)
+OGC API - Processes 
 
 === 7. Please describe any relationships to other open source projects. ===
 
-Since its inception, ZOO-Project was designed to communicate with the other OSGeo 	librairies, and to make them communicate in a standardized way. The main task of the ZOO-	Project is to make OSGeo libraires run on the server-side as WPS Services.
+Since its inception, ZOO-Project was designed to communicate with the other OSGeo librairies, and to make them communicate in a standardized way. The main task of the ZOO-Project is to make OSGeo libraires run on the server-side as WPS Services.
 
-*GDAL:
-GDAL ZOO Services are available for:
-gdalinfo, gdal_grid, gdal_translate, gdal_extractProfile
-ogrinfo, ogr2ogr 
+* GDAL: the following ZOO Services are available: gdalinfo, gdal_grid, gdal_translate, gdal_extractProfile, ogrinfo, ogr2ogr 
 
-*MapServer:
-ZOO-Kernel has an optional support fo MapServer Support (--with mapserver at compil)
+* MapServer: ZOO-Kernel has an optional support fo MapServer Support (--with mapserver at compil)
 In this case ZOO Kernel is able to spread the ZOO Service results as WMS/WFS/WCS 	(write a mapfile on the fly)
 
-*GRASS 7.0:
-ZOO-Kernel is abale to run most of the raster and vector GRASS 7.0 modules (using 	WPSBridge library)
+* OrfeoToolBox: ZOO-Kernel is able to run most of the OTB applications 
 
 Some other softwares are also supported:
-*R
-*CGAL
-*OpenOffice
-*PyCSW
-*GeoKettle ....
+* R
+* CGAL
+* OpenOffice
+* ...
 
 === 8. Please describe any relationships with commercial companies or products. ===
 
@@ -79,7 +79,7 @@ ZOO-API is published under the term of BSD licence ([browser:trunk/zoo-project/z
 
 === 10. Is there already a beta or official release? ===
 
-Yes. ZOO-Project 1.2 is available here : http://zoo-project.org/site/Downloads
+Yes. ZOO-Project 1.8.0 is available here : http://zoo-project.org/site/Downloads
 
 === 11. What is the origin of your project (commercial, experimental, thesis or other higher education, government, or some other source)? ===
 
@@ -89,9 +89,9 @@ Yes. ZOO-Project 1.2 is available here : http://zoo-project.org/site/Downloads
 
 === 12. Does the project support open standards? Which ones and to what extent? (OGC, w3c, ect.) Has the software been certified to any standard (CITE for example)? If not, is it the intention of the project owners to seek certification at some point? ===
 
-Yes. ZOO-Project is based on the Web Processing Service 1.0 specification.
+Yes. ZOO-Project is based on the Web Processing Service 1.0.0 specification. It also implements WPS 2.0.0 and OGC API - Processes.
 
-The software wasn't certified yet, but we are testing XML validation. 
+The software wasn't certified yet, but we are testing our implementation using basic tool for XML / XSD validation.
 
 === 13. Is the code free of patents, trademarks, and do you control the copyright? ===
 
@@ -105,11 +105,11 @@ ZOO-API is copyrighted by the OpenLayers Contributors and the 3LIZ company
 
 === 14. How many people actively contribute (code, documentation, other?) to the project at this time? ===
 
-	12 people
+	6 people
 
 === 15. How many people have commit access to the source code respository? ===
 
-	6 people
+	12 people
 
 === 16. Approximately how many users are currently using this project? ===
 
@@ -117,13 +117,13 @@ From 100 to 1000 persons
 
 === 17. What type of users does your project attract (government, commercial, hobby, academic research, etc. )? ===
 
-*	Government
-*	Academic
-*	Commercial
+* Government
+* Academic
+* Commercial
 
 === 18. If you do not intend to host any portion of this project using the OSGeo infrastructure, why should you be considered a member project of the OSGeo Foundation? ===
 
-The ZOO-Project is a mature and functionnal open source implementation of WPS 1.0.0 specifications.
+The ZOO-Project is a mature and functional open source implementation of WPS 1.0.0 and 2.0.0 specifications. It also implements the current OGC API - Processes.
 
 Incubation would help to promote the ZOO-Project to a larger audience and that will probably attract new contributors to the project.
 
@@ -133,12 +133,13 @@ ZOO-Project PSC members are active in the OSGeo activities, FOSS4G, code sprints
 
 === 19. Does the project include an automated build and test? ===
 
-Automatic build system is handled by autotools.
+A first test suite was integrated for 1.2.0 release including ZOO-Services (and ZOO-Kernel) testing.
 
-A first test suite was integrated for 1.2.0 release including Services (and Kernel) testing.
+Automatic build system is handled by GitHub Actions. It does include building, deployment and testing of the deployed application.
 
 === 20. What language(s) are used in this project? (C/Java/perl/etc) ===
 
+Mainly in C and C++ but as the ZOO-Kernel does support multiple programming languages, it implies the following list for minimal ZOO-API definition to ease ZOO-Service development:
 *	C/C++
 *	Fortran
 *	Java
@@ -155,7 +156,7 @@ A first test suite was integrated for 1.2.0 release including Services (and Kern
 
 === 22. What is the (estimated) size of a full release of this project? How many users do you expect to download the project when it is released? ===
 
-Size of a release including documentation is approximately 20M.
+Size of a release including documentation is less than 1M.
 
 Expected download per release : 200 - 1000.
 
