@@ -5,7 +5,7 @@ The PSC meeting is to be held on irc.libera.chat in the #zoo-project channel (co
 
 ## Proposed Time and Date
 
-Date: 2021 November 18th [13:00 (CEST)](https://www.timeanddate.com/worldclock/fixedtime.html?year=2021&month=11&day=18&hour=11&min=0&sec=0&msg=ZOO-Project+PSC+Meeting)
+Date: 2021 November 18th [13:00 (CEST)](https://www.timeanddate.com/worldclock/fixedtime.html?year=2021&month=12&day=09&hour=12&min=0&sec=0&msg=ZOO-Project+PSC+Meeting)
 
 ## Agenda
 
