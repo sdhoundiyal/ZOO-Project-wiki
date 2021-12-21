@@ -9,7 +9,7 @@ The official homepage of the project is https://zoo-project.org.
 
 The ZOO Wiki is editable by any GitHub user. Please feel free to [/register Register].
 
-=== Usefull Links on this Trac  ===
+=== Useful Links ===
 
 *[/register Register] to GitHub
 *Read the [http://zoo-project.org/docs/ ZOO documentation]
@@ -17,6 +17,7 @@ The ZOO Wiki is editable by any GitHub user. Please feel free to [/register Regi
 
 === ZOO Community   ===
 *ZOO Project [/ZOO-Project/ZOO-Project/wiki/PSC PSC]
+** [/ZOO-Project/ZOO-Project/wiki/PSC:-meetings PSC meetings]
 *List of the ZOO Trac [[Users]]
 
 === ZOO Google Summer of Code Ideas   ===
