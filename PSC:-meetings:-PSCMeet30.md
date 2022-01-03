@@ -8,7 +8,7 @@ Date: 2022 January 7th [13:00 (CEST)](https://www.timeanddate.com/worldclock/fix
 
 ## Agenda
 
-* Review PSC meeting 29 (https://github.com/ZOO-Project/ZOO-Project/wiki/PSC:-meetings:-PSCMeet28) minutes
+* Review PSC meeting 29 (https://github.com/ZOO-Project/ZOO-Project/wiki/PSC:-meetings:-PSCMeet29) minutes
 * ZOO-Project translation in various natural languages (add new and update the available language)
 * ZOO-Project 1.9.0 Release
 * Updates about OSGeo incubation process effort
