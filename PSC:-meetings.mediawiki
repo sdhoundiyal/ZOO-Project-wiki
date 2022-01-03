@@ -6,7 +6,7 @@ If you don't have an IRC client (such as Thunderbird), then you can use the web 
 
 === Next Meeting ===
 
-*[/ZOO-Project/ZOO-Project/wiki/PSC:-meetings:-PSCMeet30 PSC meeting 30] : PSC meeting scheduled on Thursday, 9 December 2021  [https://www.timeanddate.com/worldclock/fixedtime.html?msg=ZOO-PSC+Meeting&iso=20211209T13&p1=1263&ah=1 at,  13:00 UTC]
+*[/ZOO-Project/ZOO-Project/wiki/PSC:-meetings:-PSCMeet30 PSC meeting 30] : PSC meeting scheduled on Thursday, 7 January 2021  [https://www.timeanddate.com/worldclock/fixedtime.html?year=2022&month=01&day=07&hour=12&min=0&sec=0 at,  12:00 UTC]
 
 === Previous Meetings ===
 
