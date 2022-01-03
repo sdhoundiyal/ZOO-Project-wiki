@@ -9,6 +9,6 @@ Date: 2021 December 9th [13:00 (CEST)](https://www.timeanddate.com/worldclock/fi
 ## Agenda
 
 * Review PSC meeting 29 (https://github.com/ZOO-Project/ZOO-Project/wiki/PSC:-meetings:-PSCMeet28) minutes
-* ZOO-Project Release before the end of 2021
+* ZOO-Project 1.9.0 Release
 * Updates about OSGeo incubation process effort
 * Add agenda point
