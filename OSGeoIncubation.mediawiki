@@ -8,7 +8,7 @@
 
 === 2. Please provide the names and emails of co-project owners (if any). ===
 
-* Venkatesh RAGHAVAN raghavan@media.osaka-cu.ac.jp
+* Venkatesh RAGHAVAN raghavan@osaka-cu.ac.jp
 * Nicolas BOZON nicolas.bozon@gmail.com
 
 === 3. Please provide the names, emails and entity affiliation of all official committers ===
@@ -21,11 +21,13 @@
 * David SAGGIORATO (Cleolys) david@saggiorato.net
 * Marco NEGRETTI (Politecnico di Milano) marco.negretti@polimi.it
 * Angelos Tzotsos (National technical university of Athens) gcpp.kalxas@gmail.com
+* Markus Neteler 
+* Samuel Souk-Aloun
 
 
 === 4. Please describe your Project. ===
 
-ZOO-Project is an Open Geospatial Consortium Web Processing Service (OGC WPS) open source project released under a MIT/X-11 style license . It provides an OGC WPS compliant developer-friendly framework to create and chain WPS Web services. ZOO-Project is made of three parts: 
+ZOO-Project is an Open Geospatial Consortium Web Processing Service (OGC WPS) open source project released under a MIT/X-11 style license. It provides an OGC WPS compliant developer-friendly framework to create and chain WPS Web services. ZOO-Project is made of three parts: 
 
 * ZOO-Kernel: A powerful server-side C Kernel which makes it possible to manage and chain Web services coded in different programming languages. 
 
@@ -37,18 +39,23 @@ ZOO-Project is an Open Geospatial Consortium Web Processing Service (OGC WPS) op
 
 === 5. Why is hosting at OSGeo good for your project? ===
 
+ZOO-Project has been part of the OSGeo ecosystem since 2009 and we would like to continue this relationship to provide robust WPS framework to OSGeo stack.
+
 Hosting the ZOO-Project on the OSGeo server infrastructure is planned for hosting the dynamic part of the web site (mainly the demonstrations UI).
 
 If 'Hosting' means to be 'under the foundation umbrella' here, then of course it would be great benefit for the project and will help it to target a larger audience. It will also probably help the projects member to promote and spread even more WPS around.
 
-=== 6. Type of application does this project represent(client, server, standalone, library, etc.): ===
+=== 6. Type of application this project represent(client, server, standalone, library, etc.): ===
 
-OGC WPS Server implementation (versions 1.0.0 and 2.0.0)
-OGC API - Processes 
+The ZOO-Project provides:
+
+ * OGC WPS Server Implementation (versions 1.0.0 and 2.0.0) and,
+ * OGC API - Processes Server Implementation
+ * OGC WPS Client for version 1.0.0 and 2.0.0 
 
 === 7. Please describe any relationships to other open source projects. ===
 
-Since its inception, ZOO-Project was designed to communicate with the other OSGeo librairies, and to make them communicate in a standardized way. The main task of the ZOO-Project is to make OSGeo libraires run on the server-side as WPS Services.
+Since its inception in 2008, ZOO-Project was designed to communicate with the other OSGeo librairies, and to make them interact in a standardized way. The main task of the ZOO-Project is to make OSGeo libraires run on the server-side to provide WPS Services.
 
 * GDAL: the following ZOO Services are available: gdalinfo, gdal_grid, gdal_translate, gdal_extractProfile, ogrinfo, ogr2ogr 
 
@@ -57,17 +64,18 @@ In this case ZOO Kernel is able to spread the ZOO Service results as WMS/WFS/WCS
 
 * OrfeoToolBox: ZOO-Kernel is able to run most of the OTB applications 
 
-Some other softwares are also supported:
+And other analytical softwares are also supported such as:
+* SAGA-GIS
 * R
 * CGAL
 * OpenOffice
-* ...
+
 
 === 8. Please describe any relationships with commercial companies or products. ===
 
-GeoLabs, Cleolys, Cartogenic and Cartworks (and probably others) are currently using 	ZOO-Project for geospatial business and SDI contracts.
+GeoLabs, Cleolys, Cartogenic, Cartworks, Coillte, GeniFoncier, KelQuartier, Nigelec, Cabinet Sady & Thiam are currently using ZOO-Project for geospatial business and deployment of SDI solutions.
 
-ZOO-Project is used by MapMint, an open source based commercial Web GIS solution powered and edited by Cartoworks Inc (see http://www.mapmint.com)
+ZOO-Project is used by MapMint, an open source based commercial Web GIS solution developed by GeoLabs and Cartoworks (see http://www.mapmint.com)
 
 === 9. Which open source license(s) will the source code be released under? ===
 
@@ -79,19 +87,22 @@ ZOO-API is published under the term of BSD licence ([browser:trunk/zoo-project/z
 
 === 10. Is there already a beta or official release? ===
 
-Yes. ZOO-Project 1.8.0 is available here : http://zoo-project.org/site/Downloads
+Yes. ZOO-Project 1.8.0 official release is available here : http://zoo-project.org/site/Downloads
 
 === 11. What is the origin of your project (commercial, experimental, thesis or other higher education, government, or some other source)? ===
 
-*	Experimental
-*	Higher Educations (Universities, thesis)
-*	Commercial (companies involved)
+The project started as an experimental prototype (2008) to provide proof of concept Web Processing Service Server Implementation. Based on this, the prototype was modified an enhanced in various project in university and several thesis has been. Several University 
+It was used in Research and Development by university that became knowledge partners and involved students in thesis . 
 
-=== 12. Does the project support open standards? Which ones and to what extent? (OGC, w3c, ect.) Has the software been certified to any standard (CITE for example)? If not, is it the intention of the project owners to seek certification at some point? ===
+Since 2012, as the project become stable and robust, more than 100 projects has been deployed as commercial solutions using ZOO-Project features.
+
+=== 12. Does the project support open standards? Which ones and to what extent? (OGC, w3c, etc.) Has the software been certified to any standard (CITE for example)? If not, is it the intention of the project owners to seek certification at some point? ===
+
+The ZOO-Project implements WPS version 1.0.0 and 2.0.0, also try to provide an implementation of the latest OGC API - Processes.
 
 Yes. ZOO-Project is based on the Web Processing Service 1.0.0 specification. It also implements WPS 2.0.0 and OGC API - Processes.
 
-The software wasn't certified yet, but we are testing our implementation using basic tool for XML / XSD validation.
+The software wasn't certified yet because of lack of CITE implementation for the WPS, but we are implementing a testing suite for our implementation using some OpenSource tools: libxml2 and xsltproc to handle the XML / XSD validation.
 
 === 13. Is the code free of patents, trademarks, and do you control the copyright? ===
 
@@ -99,29 +110,40 @@ Yes, the code is free of patents and trademarks.
 
 ZOO-Kernel is copyrighted by the GeoLabs company
 
-ZOO-Services may include their own copyrights
+ZOO-Services may include their own copyrights, for example GDAL services retain the original copyright.
 
 ZOO-API is copyrighted by the OpenLayers Contributors and the 3LIZ company
 
 === 14. How many people actively contribute (code, documentation, other?) to the project at this time? ===
 
-	6 people
+	6 people: Gérald Fenoy, Jeff McKenna
 
 === 15. How many people have commit access to the source code respository? ===
 
-	12 people
+	12 people all people listed in item 3 have commit access
 
 === 16. Approximately how many users are currently using this project? ===
 
-From 100 to 1000 persons
+It is difficult to give the exact number projects using ZOO-Project but it should be more 500 persons.
 
 === 17. What type of users does your project attract (government, commercial, hobby, academic research, etc. )? ===
 
+* Hobby
 * Government
 * Academic
 * Commercial
 
 === 18. If you do not intend to host any portion of this project using the OSGeo infrastructure, why should you be considered a member project of the OSGeo Foundation? ===
+
+Presently, the ZOO-Project mailing list is hosted on OSGeo infrastructure.
+
+As in case of other OSGeo projects, ZOO-Project code repository is also currently moved to GitHub.
+
+If OSGeo provides support for hosting docker-compose system, we would be very glad to host the ZOO-Project web site there.
+
+When any other infrastructure will be available, we would be very happy to use it. Once the ZOO-Project graduates we would like to host the ZOO-Project web site pin the OSGeo infrastructure.
+
+Microsoft is providing hosting budget to the OpenSource project for.
 
 The ZOO-Project is a mature and functional open source implementation of WPS 1.0.0 and 2.0.0 specifications. It also implements the current OGC API - Processes.
 
@@ -135,7 +157,11 @@ ZOO-Project PSC members are active in the OSGeo activities, FOSS4G, code sprints
 
 A first test suite was integrated for 1.2.0 release including ZOO-Services (and ZOO-Kernel) testing.
 
-Automatic build system is handled by GitHub Actions. It does include building, deployment and testing of the deployed application.
+[Describe more]
+
+Automatic build system is handled by GitHub Actions. It does include building, deployment and testing of the application.
+
+[Describe more]
 
 === 20. What language(s) are used in this project? (C/Java/perl/etc) ===
 
@@ -153,12 +179,14 @@ Mainly in C and C++ but as the ZOO-Kernel does support multiple programming lang
 
 *	English
 *	French
+*	Japanese
+*	Thai
 
 === 22. What is the (estimated) size of a full release of this project? How many users do you expect to download the project when it is released? ===
 
 Size of a release including documentation is less than 1M.
 
-Expected download per release : 200 - 1000.
+The Estimated download per release is more than 856 (Docker Hub statistic)[https://hub.docker.com/u/djayzen].
 
 
 
