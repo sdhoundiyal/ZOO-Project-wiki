@@ -21,8 +21,7 @@
 * David SAGGIORATO (Cleolys) david@saggiorato.net
 * Marco NEGRETTI (Politecnico di Milano) marco.negretti@polimi.it
 * Angelos Tzotsos (National technical university of Athens) gcpp.kalxas@gmail.com
-* Markus Neteler 
-* Samuel Souk-Aloun
+* Knut Landmark (Norwegian Defence Research Establishment) Knut.Landmark@ffi.no
 
 
 === 4. Please describe your Project. ===
@@ -49,9 +48,9 @@ If 'Hosting' means to be 'under the foundation umbrella' here, then of course it
 
 The ZOO-Project provides:
 
- * OGC WPS Server Implementation (versions 1.0.0 and 2.0.0) and,
- * OGC API - Processes Server Implementation
- * OGC WPS Client for version 1.0.0 and 2.0.0 
+* OGC WPS Server Implementation (versions 1.0.0 and 2.0.0) and,
+* OGC API - Processes Server Implementation
+* OGC WPS Client for version 1.0.0 and 2.0.0 
 
 === 7. Please describe any relationships to other open source projects. ===
 
@@ -59,12 +58,11 @@ Since its inception in 2008, ZOO-Project was designed to communicate with the ot
 
 * GDAL: the following ZOO Services are available: gdalinfo, gdal_grid, gdal_translate, gdal_extractProfile, ogrinfo, ogr2ogr 
 
-* MapServer: ZOO-Kernel has an optional support fo MapServer Support (--with mapserver at compil)
-In this case ZOO Kernel is able to spread the ZOO Service results as WMS/WFS/WCS 	(write a mapfile on the fly)
+* MapServer: ZOO-Kernel has an optional support fo MapServer Support (--with mapserver at compil). In this case ZOO Kernel is able to spread the ZOO Service results as WMS/WFS/WCS 	(write a mapfile on the fly)
 
-* OrfeoToolBox: ZOO-Kernel is able to run most of the OTB applications 
+* OrfeoToolBox: ZOO-Kernel is able to run most of the OTB applications (or modules) as WPS services
 
-And other analytical softwares are also supported such as:
+Other analytical softwares are also supported such as:
 * SAGA-GIS
 * R
 * CGAL
@@ -73,9 +71,9 @@ And other analytical softwares are also supported such as:
 
 === 8. Please describe any relationships with commercial companies or products. ===
 
-GeoLabs, Cleolys, Cartogenic, Cartworks, Coillte, GeniFoncier, KelQuartier, Nigelec, Cabinet Sady & Thiam are currently using ZOO-Project for geospatial business and deployment of SDI solutions.
+GeoLabs, Cleolys, Cartogenic, Cartworks, Coillte, GeniFoncier, KelFoncier, Nigelec, Cabinet Sady & Thiam are currently using ZOO-Project for geospatial business and deployment of SDI solutions.
 
-ZOO-Project is used by MapMint, an open source based commercial Web GIS solution developed by GeoLabs and Cartoworks (see http://www.mapmint.com)
+ZOO-Project is used by MapMint, an open source Web GIS solution developed by GeoLabs and Cartoworks (see http://www.mapmint.com)
 
 === 9. Which open source license(s) will the source code be released under? ===
 
@@ -91,10 +89,11 @@ Yes. ZOO-Project 1.8.0 official release is available here : http://zoo-project.o
 
 === 11. What is the origin of your project (commercial, experimental, thesis or other higher education, government, or some other source)? ===
 
-The project started as an experimental prototype (2008) to provide proof of concept Web Processing Service Server Implementation. Based on this, the prototype was modified an enhanced in various project in university and several thesis has been. Several University 
-It was used in Research and Development by university that became knowledge partners and involved students in thesis . 
+The project started as an experimental prototype (2008) to provide proof of concept Web Processing Service Server Implementation. Based on this, the prototype was modified an enhanced in various project in university and several thesis has been led using it.
 
-Since 2012, as the project become stable and robust, more than 100 projects has been deployed as commercial solutions using ZOO-Project features.
+Since 2012, as the project become stable and robust, more than 100 projects has been deployed as commercial solutions using the ZOO-Project features.
+
+Various reseach and development projects has been handled using the ZOO-Project as a base for implementing new supports, such as the WPS 2.0 support, the HPC support and it new version.
 
 === 12. Does the project support open standards? Which ones and to what extent? (OGC, w3c, etc.) Has the software been certified to any standard (CITE for example)? If not, is it the intention of the project owners to seek certification at some point? ===
 
@@ -102,7 +101,7 @@ The ZOO-Project implements WPS version 1.0.0 and 2.0.0, also try to provide an i
 
 Yes. ZOO-Project is based on the Web Processing Service 1.0.0 specification. It also implements WPS 2.0.0 and OGC API - Processes.
 
-The software wasn't certified yet because of lack of CITE implementation for the WPS, but we are implementing a testing suite for our implementation using some OpenSource tools: libxml2 and xsltproc to handle the XML / XSD validation.
+The software wasn't certified yet because of lack of CITE implementation for the WPS standard, but we have implemented a testing suite ((cptesting)[https://github.com/WPS-Benchmarking/cptesting]) for our implementation using some OpenSource tools: libxml2 and xsltproc to handle the XML / XSD validation.
 
 === 13. Is the code free of patents, trademarks, and do you control the copyright? ===
 
@@ -116,7 +115,7 @@ ZOO-API is copyrighted by the OpenLayers Contributors and the 3LIZ company
 
 === 14. How many people actively contribute (code, documentation, other?) to the project at this time? ===
 
-	6 people: Gérald Fenoy, Jeff McKenna
+	4 people: Gérald Fenoy, Jeff McKenna, Angelos Tzotsos, Knut Landmark
 
 === 15. How many people have commit access to the source code respository? ===
 
@@ -157,11 +156,7 @@ ZOO-Project PSC members are active in the OSGeo activities, FOSS4G, code sprints
 
 A first test suite was integrated for 1.2.0 release including ZOO-Services (and ZOO-Kernel) testing.
 
-[Describe more]
-
 Automatic build system is handled by GitHub Actions. It does include building, deployment and testing of the application.
-
-[Describe more]
 
 === 20. What language(s) are used in this project? (C/Java/perl/etc) ===
 
