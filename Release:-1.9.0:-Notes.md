@@ -1,7 +1,7 @@
 
 ## ZOO-Project 1.9.0 release notes
 
-This new ZOO-Project release contains new features and fixes.
+This new ZOO-Project release contains new features but also fixes.
 
 In November 2021, the Open Geospatial Consortium approved the OGC API - Processes (Part 1: Core) standard. The new ZOO-Project release supports this newly approved version. The MapServer support was integrated with this new standard, even if the output data are only available through WMS, WFS and WCS OGC standards, by now (see [#1](https://github.com/ZOO-Project/ZOO-Project/issues/1)).
 
