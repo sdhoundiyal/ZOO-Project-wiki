@@ -11,4 +11,5 @@ Date: 2022 February 4th [13:00 (CET)](https://www.timeanddate.com/worldclock/fix
 * Review PSC meeting 30 (https://github.com/ZOO-Project/ZOO-Project/wiki/PSC:-meetings:-PSCMeet30) minutes
 * OSGeo incubation status
 * ZOO-Project @ GSoC 2022
+* ZOO-Project @ [2022 Joint OGC - OSGeo - ASF Code Sprint](https://www.ogc.org/pressroom/pressreleases/4659?utm_content=buffer8993e&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer)
 * Add agenda point
