@@ -48,4 +48,4 @@ Minutes:
 
  djay, venka, jmckenna, omshinde: +1
 
-7. Meeting closed
+8. Meeting closed
