@@ -1,6 +1,6 @@
 # ZOO-Community _@_ GSoC _with_ OSGeo
 
-We are floating the project deas for [ZOO-Project](https://github.com/ZOO-Project/ZOO-Project), [MapMint](https://github.com/mapmint/mapmint) and [MapMint4ME](https://github.com/mapmint/MapMint4ME) projects together at a single wiki page to avoid confusion to the potential contributors. The project ideas are explained in detail below:
+We are floating the project ideas for [ZOO-Project](https://github.com/ZOO-Project/ZOO-Project), [MapMint](https://github.com/mapmint/mapmint) and [MapMint4ME](https://github.com/mapmint/MapMint4ME) projects together at a single wiki page to avoid confusion to the potential contributors. The project ideas are explained in detail below:
 
 _Idea(s):_
 
@@ -106,7 +106,7 @@ The link to the Github repository should be mentioned in the final Contributor p
 
 MapMint is a web-based Geographic Information System (GIS), which is designed to facilitate deployment of Spatial Data Infrastructure (SDI). In an SDI, geographic data, metadata, tools, and the users are connected in an interactive manner in a framework so as to use the spatial information in an efficient and flexible way. MapMint combines various different software in a complete and coherent web mapping platform, thus helping users in building their own maps and web-applications. These web-services are built on top of the ZOO-Project. 
 
-**Mentor**:[  ](https://www.osgeo.org/member/gerald-fenoy/)Aditi Sawant, [Gérald Fenoy](https://www.osgeo.org/member/gerald-fenoy/),[  Rajat Shinde](https://www.osgeo.org/member/shinde/)
+**Mentor**:Aditi Sawant, [Gérald Fenoy](https://www.osgeo.org/member/gerald-fenoy/),[  Rajat Shinde](https://www.osgeo.org/member/shinde/)
 
 **Difficulty**: Medium
 
