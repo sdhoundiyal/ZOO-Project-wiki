@@ -16,7 +16,7 @@ The ZOO-Project is a solid WPS server able to handle services implemented in var
 
 **Pre-requisites**: Python, JavaScript, C++
 
-** Expected Outcome**: Updated ZOO-Kernel with NodeJS support.
+**Expected Outcome**: Updated ZOO-Kernel with NodeJS support.
 
 **Time of the project**: 175 or 350 hrs
 
@@ -52,7 +52,7 @@ The ZOO-Project is a solid WPS server able to handle services implemented in var
 
 **Pre-requisites**: Python, JavaScript, QGIS, OGC Standards
 
-** Expected Outcome**: A new way to execute ZOO services from QGIS.
+**Expected Outcome**: A new way to execute ZOO services from QGIS.
 
 **Time of the project**: 175 or 350 hrs
 
@@ -86,7 +86,7 @@ MapMint is a web-based Geographic Information System (GIS), which is designed to
 
 **Pre-requisites**: Python, JavaScript, 3D Visualization
 
-** Expected Outcome**: Updated MapMint interface with inbuilt Cesium support.
+**Expected Outcome**: Updated MapMint interface with inbuilt Cesium support.
 
 **Time of the project**: 175 or 350 hrs
 
@@ -118,7 +118,7 @@ MapMint is a web-based Geographic Information System (GIS), which is designed to
 
 **Pre-requisites**: Python, JavaScript, 3D Visualization, Azure cloud platform
 
-** Expected Outcome**: Integrated cloud support for the MapMint platform.
+**Expected Outcome**: Integrated cloud support for the MapMint platform.
 
 **Time of the project**: 175 or 350 hrs
 
@@ -154,7 +154,7 @@ MapMint4ME is an android application for the MapMint web service. The android ap
 
 **Pre-requisites**: Python, JavaScript, Augmented Reality, OGC Standards
 
-** Expected Outcome**: Updated MapMint4ME app based on OGC ARML standard.
+**Expected Outcome**: Updated MapMint4ME app based on OGC ARML standard.
 
 **Time of the project**: 175 or 350 hrs
 
