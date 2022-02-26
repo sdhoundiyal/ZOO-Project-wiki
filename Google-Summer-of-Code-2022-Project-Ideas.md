@@ -16,7 +16,9 @@ The ZOO-Project is a solid WPS server able to handle services implemented in var
 
 **Pre-requisites**: Python, JavaScript, C++
 
-**Time of the project**: 175 or 300 hrs
+** Expected Outcome**: Updated ZOO-Kernel with NodeJS support.
+
+**Time of the project**: 175 or 350 hrs
 
 **Idea in Detail**: We are expecting following deliverables from the project:
 
@@ -50,7 +52,9 @@ The ZOO-Project is a solid WPS server able to handle services implemented in var
 
 **Pre-requisites**: Python, JavaScript, QGIS, OGC Standards
 
-**Time of the project**: 175 or 300 hrs
+** Expected Outcome**: A new way to execute ZOO services from QGIS.
+
+**Time of the project**: 175 or 350 hrs
 
 **Idea in Detail**: We are expecting following deliverables from the project:
 
@@ -82,7 +86,9 @@ MapMint is a web-based Geographic Information System (GIS), which is designed to
 
 **Pre-requisites**: Python, JavaScript, 3D Visualization
 
-**Time of the project**: 175 or 300 hrs
+** Expected Outcome**: Updated MapMint interface with inbuilt Cesium support.
+
+**Time of the project**: 175 or 350 hrs
 
 **Idea in Detail**: We are expecting following deliverables from the project:
 
@@ -102,7 +108,7 @@ MapMint is a web-based Geographic Information System (GIS), which is designed to
 
 The link to the Github repository should be mentioned in the final Contributor proposal for the Google Summer of Code 2022.
 
-2. ### Implementing MapMint dashboard based on ZOO services on the Azure Cloud platform
+2. ### Implementing MapMint dashboard based on ZOO services on the Cloud platform
 
 MapMint is a web-based Geographic Information System (GIS), which is designed to facilitate deployment of Spatial Data Infrastructure (SDI). In an SDI, geographic data, metadata, tools, and the users are connected in an interactive manner in a framework so as to use the spatial information in an efficient and flexible way. MapMint combines various different software in a complete and coherent web mapping platform, thus helping users in building their own maps and web-applications. These web-services are built on top of the ZOO-Project. 
 
@@ -112,7 +118,9 @@ MapMint is a web-based Geographic Information System (GIS), which is designed to
 
 **Pre-requisites**: Python, JavaScript, 3D Visualization, Azure cloud platform
 
-**Time of the project**: 175 or 300 hrs
+** Expected Outcome**: Integrated cloud support for the MapMint platform.
+
+**Time of the project**: 175 or 350 hrs
 
 **Idea in Detail**: We are expecting following deliverables from the project:
 
@@ -146,7 +154,9 @@ MapMint4ME is an android application for the MapMint web service. The android ap
 
 **Pre-requisites**: Python, JavaScript, Augmented Reality, OGC Standards
 
-**Time of the project**: 175 or 300 hrs
+** Expected Outcome**: Updated MapMint4ME app based on OGC ARML standard.
+
+**Time of the project**: 175 or 350 hrs
 
 **Idea in Detail**: We are expecting following deliverables from the project:
 
