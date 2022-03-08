@@ -6,9 +6,9 @@ _Idea(s):_
 
 ## **ZOO-Project**
 
-1. ### Moving the ZOO-Kernel JavaScript support from SpiderMonkey to Node JS
+1. ### Adding NodeJS support for service implementation to be run from the ZOO-Kernel
 
-The ZOO-Project is a solid WPS server able to handle services implemented in various different programming languages. The Java bindings have never been tested in advanced configurations and complex data types. The JGrasstools project is a modular processing library and its highly annotated nature makes it possible to adapt quite easily to other toolboxes. One example has been the adaptation to the Geotools Process API. The JGrasstools project, as well as other java based projects (as JTS and even GeoTools) would benefit a lot from the possibility to be used within a WPS environment. The proposal is to bring the Java binding to a mature level and validate them by integrating the JGrasstools libraries. This will allow them to work inside the ZOO-Project and serve its modules under the WPS standard.
+The ZOO-Project is a solid WPS server able to handle services implemented in various different programming languages. The existing ZOO-Kernel supports C, C++, and JS implementations. With this project, the objective is to add support for NodeJS implementation of the ZOO-Kernel.
 
 **Mentor**: [Gérald Fenoy](https://www.osgeo.org/member/gerald-fenoy/), Aditi Sawant,[Rajat Shinde](https://www.osgeo.org/member/shinde/), 
 
