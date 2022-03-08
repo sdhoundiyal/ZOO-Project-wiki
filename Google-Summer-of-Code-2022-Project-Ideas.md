@@ -44,7 +44,8 @@ The link to the Github repository should be mentioned in the final Contributor p
 
 2. ### Integrating ZOO services with QGIS
 
-The ZOO-Project is a solid WPS server able to handle services implemented in various different programming languages. The Java bindings have never been tested in advanced configurations and complex data types. The JGrasstools project is a modular processing library and its highly annotated nature makes it possible to adapt quite easily to other toolboxes. One example has been the adaptation to the Geotools Process API. The JGrasstools project, as well as other java based projects (as JTS and even GeoTools) would benefit a lot from the possibility to be used within a WPS environment. The proposal is to bring the Java binding to a mature level and validate them by integrating the JGrasstools libraries. This will allow them to work inside the ZOO-Project and serve its modules under the WPS standard.
+The ZOO-Project is a solid WPS server able to handle services implemented in various different programming languages. QGIS is a widely used GIS and needs no introduction. With this project, the idea is to be able to reuse processes implemented using the QGIS processing framework (https://docs.qgis.org/2.8/fr/docs/user_manual/processing/index.html) and made them first citizen services from the ZOO-Kernel.
+This would require implementing a new support for service execution, something similar to the existing projects but using Python.
 
 **Mentor**: [Rajat Shinde](https://www.osgeo.org/member/shinde/), [Gérald Fenoy](https://www.osgeo.org/member/gerald-fenoy/), Aditi Sawant
 
