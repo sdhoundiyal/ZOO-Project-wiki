@@ -9,8 +9,8 @@ Date: to be determined.
 ## Agenda
 
 * Review PSC meeting 31 (https://github.com/ZOO-Project/ZOO-Project/wiki/PSC:-meetings:-PSCMeet31) minutes
-* ZOO-Project @ GSoC 2022: feedbacks & option to keep GSoC participants active in the project
 * OSGeo incubation status & future steps
+* ZOO-Project @ GSoC 2022: feedbacks & option to keep GSoC participants active in the project
 * Add agenda point
 
 
