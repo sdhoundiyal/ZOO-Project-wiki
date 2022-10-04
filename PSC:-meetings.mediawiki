@@ -6,7 +6,7 @@ If you don't have an IRC client (such as Thunderbird), then you can use the web 
 
 === Next Meeting ===
 
-* to be defined
+* [https://github.com/ZOO-Project/ZOO-Project/wiki/PSC:-meetings:-PSCMeet32 PSC meeting 32]: PSC meeting scheduled on Friday, 7 October 2022  [https://www.timeanddate.com/worldclock/fixedtime.html?year=2022&month=10&day=07&hour=11&min=0&sec=0 at,  11:00 UTC]
 
 === Previous Meetings ===
 
