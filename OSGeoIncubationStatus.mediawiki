@@ -56,7 +56,7 @@ There was always a link with OSGeo (including branding such as logos) as the ZOO
 === Code Copyright Review ===
 
 ===== Has a Code Provenance Review document been prepared for the project? ===== 
-Yes, the Code Provenance Review is available at: [[Provenance:-20Review]].
+Yes, the Code Provenance Review is available at: [[ProvenanceReview]].
 
 ===== Have issues raised in the provenance review been adequately addressed? ===== 
 Some issue about the mixture between BSD and MIT-X11 was found long time ago in ZOO-API.
