@@ -12,4 +12,5 @@ to be continued...
 * [Project Provenance Review](https://github.com/ZOO-Project/ZOO-Project/wiki/ProvenanceReview)
 * [Project Graduation Checklist](https://github.com/ZOO-Project/ZOO-Project/wiki/OSGeoIncubation)
 * [Issues tagged for OSGeo incubation](https://github.com/ZOO-Project/migration/issues?q=is%3Aissue+is%3Aopen+label%3A%22incubation+process%22) (label=incubation process)
+* [ZOO-Project PSC Membership Process](https://github.com/ZOO-Project/ZOO-Project/wiki/ZOO-Project-PSC-Membership-Process) (label=PSC Election Process)
 
