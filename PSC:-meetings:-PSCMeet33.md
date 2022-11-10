@@ -10,5 +10,5 @@ Date: Friday, 11 November 2022 [at, 11:00 UTC](https://www.timeanddate.com/world
 
 * Review PSC meeting 32 (https://github.com/ZOO-Project/ZOO-Project/wiki/PSC:-meetings:-PSCMeet32) minutes
 * OSGeo incubation status & future steps
-* Applying to [Docker-Sponsored Open Source Program](https://www.docker.com/community/open-source/application/)
+* Should we consider applying to [Docker-Sponsored Open Source Program](https://www.docker.com/community/open-source/application/)
 * Add agenda point
