@@ -40,19 +40,22 @@ No, releases are made available via GitHub releases: https://github.com/ZOO-Proj
 === Community Functioning ===
 
 ===== Is there a functioning user support mechanisms (ie. mailing list)? ===== 
-There is firstly the Trac system where users can fill tickets, it is used when required by users and developper community. There is also the mailing list. Unfortunatelly from our experience it seems that more users prefer to use mailing lit rather than Trac but some prefer tickets.
+Yes.  The project provides mailing lists, IRC channels (libera.chat#zoo-project), as well as via discussions in GitHub issues and Pull Requests.
 
 ===== Are source and binary downloads for the package available? ===== 
-Yes the source code is available for the package. By now, one package is provided but it is possible that, in future, the source code may be splited in smalled packages (ZOO-Kernel, ZOO-Services and ZOO-API). There is no plan for binary distribution except for the WIN32 platform.
+Yes. Source is available at https://github.com/ZOO-Project/ZOO-Project. Download are available via GitHub releases at https://github.com/ZOO-Project/ZOO-Project/releases. ZOO-project is also available on the OSGeo-Live project (https://live.osgeo.org/en/quickstart/zoo-project_quickstart.html), as well as UbuntuGIS packaging.  Linux and Windows builds are available.
+
 
 ===== Has a Project Steering Committee been formed, and given control of the project? ===== 
-Yes a Project Steering Committee has been formed and have effective control on the project.
+Yes a Project Steering Committee has been formed and have effective control on the project (http://zoo-project.org/docs/contribute/contributors.html?highlight=psc#zoo-project-project-steering-commitee).  The PSC consists of 10 members from 7 countries from industry and academia.
 
 ===== Does the Project Steering Committee have documentation on project procedures for PSC decisions, contributor guidelines, etc. ===== 
 Yes, there is a contributor guidelines [http://zoo-project.org/docs/community/developer.html here] and for PSC decisions there is the Project Steering Committee Guidelines available at: [[PSC:-process]].
 
 ===== How many active developers are there? Are they from multiple organizations? ===== 
-Indicate number and some organizations involved. 
+There are 11 developers/committers, and 6 active contributors.
+
+Organizations: GeoLabs SARL), Politecnico di Milano), SUPSI, AppTech, Georepublic, Gateway Geomatics), Fondazione Edmund Mach), Osaka City University), and National Technical University of Athens).
 
 === Foundation Membership ===
 
