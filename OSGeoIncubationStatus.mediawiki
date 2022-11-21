@@ -7,26 +7,35 @@
 Yes 
 
 =====  Has an Incubation Mentor been assigned to the project? ===== 
-Frank Warmerdam.
+
+Yes.  The project has had a few mentors over time:
+
+* Frank Warmerdam (YYYY-YYYY)
+* Dimitris Kotzinos (YYYY-YYYY)
+* Tom Kralidis (@tomkralidis) (2022-)
 
 === Infrastructure Transition ===
 
 Note, for each of the following it isn't necessary to move to foundation infrastructure, but if you aren't a reason should be provided.
 
 ===== Has the zoo-project.osgeo.org domain been populated with the projects web presence? =====
-The zoo-project.osgeo.org was not populated but can be populated by using the current Trac system and some ZOO-Services made for web site access.
+Yes: https://www.osgeo.org/projects/zoo-project. A direct link to http://zoo-project.org/ is also used from the main osgeo.org home page, via the "Projects -> Community Projects" menu.
 
 ===== Is the OSGeo bug tracker being used for the project? ===== 
-We do not use the OSGeo bug tracker cause we already got one in place based on the same technology and available at : http://zoo-project.org/trac .
+No.  Issues are managed via [https://github.com/ZOO-Project/ZOO-Project/issues GitHub] for integration with version control.  The project's previous Trac infrastructure/issue tracker continues to be available at http://zoo-project.org/trac as a reference.
 
-===== Is the OSGeo mailing list manager (http://lists.osgeo.org/) being used for the project? ===== 
-Yes we migrated from Osaka City University (OCU) mailman to OSGeo one.
+===== Is the OSGeo mailing list manager (https://lists.osgeo.org/) being used for the project? ===== 
+Yes we migrated from Osaka City University (OCU) mailman to OSGeo one.  The following mailing lists are available:
+* https://lists.osgeo.org/mailman/listinfo/zoo-discuss (overall project/community discussions)
+* https://lists.osgeo.org/mailman/listinfo/zoo-psc (PSC discussions)
 
 ===== Is the OSGeo SVN being used for the project? ===== 
-We do not use the OSGeo SVN because we already got one in place using the same technology and gracefully hosted at OCU.
+No, the project uses Git/GitHub (https://github.com/ZOO-Project/ZOO-Project) for source code management, wiki and issues.
+
+The project's previous Trac infrastructure/version control continues to be available at http://zoo-project.org/trac/browser as reference.
 
 ===== Are binary and source downloads available from http://download.osgeo.org ? ===== 
-Binary and source downloads are not available on download.osgeo.org cause we do not get access to the FTP server to upload the sources. Note that we try to avoid providing binary versions of our software by now.
+No, releases are made available via GitHub releases: https://github.com/ZOO-Project/ZOO-Project/releases
 
 === Community Functioning ===
 
