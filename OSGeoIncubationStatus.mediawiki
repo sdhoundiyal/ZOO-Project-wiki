@@ -60,10 +60,10 @@ Organizations: GeoLabs SARL), Politecnico di Milano), SUPSI, AppTech, Georepubli
 === Foundation Membership ===
 
 ===== Have project documents been updated to reflect membership in the foundation, and the relationship of the project to the foundation? ===== 
-No, I don't think so.
+Yes. The OSGeo Community project logo is visible on the project homepage. Project presentations also identify the OSGeo project status.
 
 ===== Has an effort been made to brand the project web site with OSGeo foundation web styling and branding marks? ===== 
-There was always a link with OSGeo (including branding such as logos) as the ZOO-Project's initial goal was to become a "standardized bus" on top of OSGeo softwares so reference to OSGeo was there from the begining. note that the OSGeo Project in Incubation was added when we was accepted by the board to enter in incubation process. Nevertheless, there was no adaptation by applying a non-existing style. 
+There was always a link with OSGeo (including branding such as logos) as the ZOO-Project's initial goal was to become a "standardized bus" on top of OSGeo softwares so reference to OSGeo was there from the begining. note that the OSGeo Project in Incubation was added when we was accepted by the board to enter in incubation process. 
 
 === Code Copyright Review ===
 
@@ -73,8 +73,8 @@ Yes, the Code Provenance Review is available at: [[ProvenanceReview]].
 ===== Have issues raised in the provenance review been adequately addressed? ===== 
 Some issue about the mixture between BSD and MIT-X11 was found long time ago in ZOO-API.
 
-===== Are Commiter Responsibilities Guidelines covering legal issues in place? ===== 
-Yes, we used the GDAL Project RFC 3 as a base document to create our own, available [http://zoo-project.org/docs/community/developer.html here].  PSC should adopt the document. Committers agreement are coming.
+===== Are Committer Responsibilities Guidelines covering legal issues in place? ===== 
+Yes, we used the GDAL Project RFC 3 as a base document to create our own, available at [http://zoo-project.org/docs/community/developer.html here].  PSC should adopt the document. Committers agreement are coming.
 
 
 
