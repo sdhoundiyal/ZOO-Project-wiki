@@ -81,7 +81,9 @@ ZOO-Kernel is published under the term of the MIT/X11 open source licence.
 
 ZOO-Services can contain their own licence term, by now only MIT/X11 is used.
 
-ZOO-API is published under the term of BSD licence ([browser:trunk/zoo-project/zoo-api/js/ZOO-api.js ZOO-api.js]) and MIT ([https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-api/js/ZOO-proj4js.js ZOO-proj4js.js]).
+ZOO-API is published under the term of BSD licence ([https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-api/js/ZOO-api.js ZOO-api.js]) and MIT ([https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-api/js/ZOO-proj4js.js ZOO-proj4js.js]).
+
+ZOO-Project documentation is open source and made available under the [https://creativecommons.org/licenses/by-sa/4.0/legalcode Creative Commons Attribution-ShareAlike 4.0 International Public License].
 
 === 10. Is there already a beta or official release? ===
 
