@@ -10,5 +10,5 @@ Date: Friday, 9 December 2022 [at, 12:00 UTC](https://www.timeanddate.com/worldc
 
 * Review PSC meeting 32 (https://github.com/ZOO-Project/ZOO-Project/wiki/PSC:-meetings:-PSCMeet32) minutes
 * OSGeo incubation status & future steps
-* Should we consider applying to [Docker-Sponsored Open Source Program](https://www.docker.com/community/open-source/application/)
+* Application to [Docker-Sponsored Open Source Program](https://www.docker.com/community/open-source/application/), moving binary images to the DockerHub "zooproject" group.
 * Add agenda point
