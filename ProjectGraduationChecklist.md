@@ -17,7 +17,7 @@ The project has demonstrated that it has an open, active and healthy user and de
   - TODO
     - https://github.com/ZOO-Project/ZOO-Project/issues/34
  - code: [MIT/X11](https://github.com/ZOO-Project/ZOO-Project/blob/main/LICENSE.md)
- - docs: TODO https://github.com/ZOO-Project/ZOO-Project/issues/33
+ - docs: CC BY 4.0
 - [x] Open communication channels,
  - [Mailing list](https://lists.osgeo.org/mailman/listinfo/zoo-project)
  - [Twitter](https://twitter.com/ZOO_Project)
