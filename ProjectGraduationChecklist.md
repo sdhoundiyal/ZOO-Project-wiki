@@ -49,7 +49,7 @@ We need to ensure that the project owns or otherwise has obtained the ability to
 - [ ] Project documentation is available under an open license (e.g. Creative Commons): TODO: https://github.com/ZOO-Project/ZOO-Project/issues/33
 - [ ] The project code, documentation and data has been adequately vetted to assure it is all properly licensed, and a copyright notice (As per a Provenance Review) (TODO: [review https://github.com/ZOO-Project/ZOO-Project/wiki/ProvenanceReview](https://github.com/ZOO-Project/ZOO-Project/issues/38))
 - [ ] The project maintains a list of all copyright holders identified in the Provenance Review Document (TODO: https://github.com/ZOO-Project/ZOO-Project/issues/38)
-- [ ]  All code contributors have agreed to abide by the project's license policy, and this agreement has been documented and archived (TODO: https://github.com/ZOO-Project/ZOO-Project/issues/39)
+- [ ]  All code contributors have agreed to abide by the project's license policy, and this agreement has been documented and archived (in progress at https://github.com/ZOO-Project/ZOO-Project/issues/40)
 
 ## Processes
 
