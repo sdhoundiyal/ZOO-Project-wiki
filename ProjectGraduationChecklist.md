@@ -27,7 +27,7 @@ The project has demonstrated that it has an open, active and healthy user and de
 
 - [x] Active and healthy community:
  - [x] The project should have a community of developers and users who actively collaborate and support each other in a healthy way. Eg. collaboration on project activities such as testing, release and feature development.
-   - Release processes and guidelines TODO: https://github.com/ZOO-Project/ZOO-Project/issues/35
+   - Release processes and guidelines https://zoo-project.github.io/docs/contribute/release.html
    - Bugs and features on GitHub at https://github.com/ZOO-Project/ZOO-Project/issues
    - Discussion in mailing lists and IRC
    - http://zoo-project.org/ZOO-Project/ZOO-Tribe provides an entry point for community engagement
