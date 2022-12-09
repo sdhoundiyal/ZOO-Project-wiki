@@ -6,9 +6,12 @@ If you don't have an IRC client (such as Thunderbird), then you can use the web 
 
 === Next Meeting ===
 
-* [https://github.com/ZOO-Project/ZOO-Project/wiki/PSC:-meetings:-PSCMeet33 PSC meeting 33]: PSC meeting scheduled on Friday, 9 December 2022  [https://www.timeanddate.com/worldclock/fixedtime.html?year=2022&month=12&day=9&hour=12&min=0&sec=0 at,  12:00 UTC]
+* [https://github.com/ZOO-Project/ZOO-Project/wiki/PSC:-meetings:-PSCMeet34 PSC meeting 34]: PSC meeting scheduled on Friday, 13 January 2023  [https://www.timeanddate.com/worldclock/fixedtime.html?year=2023&month=01&day=13&hour=12&min=0&sec=0 at,  12:00 UTC]
+
 
 === Previous Meetings ===
+
+* [https://github.com/ZOO-Project/ZOO-Project/wiki/PSC:-meetings:-PSCMeet33 PSC meeting 33]: PSC meeting scheduled on Friday, 9 December 2022  [https://www.timeanddate.com/worldclock/fixedtime.html?year=2022&month=12&day=9&hour=12&min=0&sec=0 at,  12:00 UTC]
 
 * [/ZOO-Project/ZOO-Project/wiki/PSC:-meetings:-PSCMeet32 PSC meeting 32]: PSC meeting scheduled on Friday, 14 October 2022  [https://www.timeanddate.com/worldclock/fixedtime.html?year=2022&month=10&day=14&hour=11&min=0&sec=0 at,  11:00 UTC]
 
