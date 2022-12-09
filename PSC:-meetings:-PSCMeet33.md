@@ -12,3 +12,52 @@ Date: Friday, 9 December 2022 [at, 12:00 UTC](https://www.timeanddate.com/worldc
 * OSGeo incubation status & future steps
 * Application to [Docker-Sponsored Open Source Program](https://www.docker.com/community/open-source/application/), moving binary images to the DockerHub "zooproject" group.
 * Add agenda point
+
+## Participants:
+
+* Venkatesh Raghavan
+* Rajat Shinde
+* Gérald Fenoy
+* Nicolas Bozon
+* Angelos Tzotsos
+* Jeff McKenna
+
+
+## Summary
+
+Minutes:
+1. Roll call: djay (Scribe), venka (Chair), nbozon, omshinde, kalxas
+
+3. Agenda 2: OSGeo incubation status & future steps
+
+The list of issues reported by the mentor were reviewed and discussed.
+
+ * djay to contact commercial support to prepare a list.
+ * djay to list projects in which the ZOO-Project is in use.
+ * Assign provenance review ticket to djay.
+
+3. Agenda 3:  [DockerHub Sponsored Open Source Software](https://hub.docker.com/r/zooproject/zoo-project)
+
+ * Present the DockerHub Open Source Sponsored badge for hosting the official binary Docker images for the project. Three seats are available for volunteer to use to build ZOO-Project docker images.
+
+4. Motion 1: Approve PSCMeet32 minutes
+
+* venka: +1
+* djay: +1 
+* nbozon: +1 
+* omshinde: +1
+* jmckenna: +1
+* kalxas: +1 
+
+5. The date for the next PSC meeting was planed for 2023 January 13th.
+
+6. Motion 2: Close PSC Meeting 33
+
+* venka: +1
+* djay: +1 
+* nbozon: +1 
+* omshinde: +1
+* jmckenna: +1
+* kalxas: +1 
+
+
