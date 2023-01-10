@@ -34,7 +34,7 @@ The project has demonstrated that it has an open, active and healthy user and de
  - [x] Long term viability of the project is demonstrated by showing participation and direction from multiple developers, who come from multiple organizations. Eg. The project is resilient enough to sustain loss of a developer or supporting organisation, often referred to as having a high bus factor. Decisions are made openly instead of behind closed doors, which empowers all developers to take ownership of the project and facilitates spreading of knowledge between current and future team members.
    - There are 11 developers/committers, and 6 active contributors from the following organizations: GeoLabs SARL, Politecnico di Milano, SUPSI, AppTech, Georepublic, Gateway Geomatics, Fondazione Edmund Mach, Osaka City University, and National Technical University of Athens). The very nature of the project provides a kernel and extensible service model that allows for building processes 
    - Various statistics (including number of contributors) for the project can be found at https://www.openhub.net/p/zOO-project
-   - Professional support options TODO: https://github.com/ZOO-Project/ZOO-Project/issues/36
+   - Professional support options are provided in https://zoo-project.github.io/docs/contribute/service_providers.html
    - Decisions are made openly via mailing lists/IRC
    - PSC meetings are documented on IRC
    - The project powers OGC API implementation of numerous high profile activities:
