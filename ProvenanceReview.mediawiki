@@ -1,0 +1,347 @@
+
+== ZOO-Project Provenance review ==
+
+ZOO-Project code providence review, covering issues raised for each part of ZOO-Project. The goal here is to check the headers (fill them in if needed) and confirm that the information is correct. 
+
+=== Source code review === 
+
+ZOO-Project global licensing informations can be found in the [http://www.zoo-project.org/trac/browser/trunk/zoo-project/LICENSE LICENSE] file.
+
+==== Thirds ====
+
+{| border=1 class="simple"
+! Part 
+! Status 
+! message 
+!Link 
+|- 
+|  thirds/cgic 
+|  '''c''' 
+|  
+|  [http://www.zoo-project.org/trac/browser/trunk/thirds/cgic206/license.txt license.txt] 
+|- 
+|  thirds/dirent-win32 
+|  '''c''' 
+|  
+|  [http://www.zoo-project.org/trac/browser/trunk/thirds/dirent-win32/dirent.h#L31 dirent.h] / [http://www.zoo-project.org/trac/browser/trunk/thirds/dirent-win32/dirent.c#L132 dirent.c] 
+|- 
+|  thirds/unistd 
+|  '''c''' 
+|  
+|  [http://www.zoo-project.org/trac/browser/trunk/thirds/include/unistd.h#L1 unistd.h] 
+|}
+
+
+
+==== ZOO-Kernel ====
+
+{| border=1 class="simple"
+! Part 
+! Status 
+! message 
+!Link 
+|- 
+|  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-kernel/caching.c caching.c],[https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-kernel/caching.h caching.h]
+|  '''c''' 
+|  
+|  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/LICENSE LICENSE] 
+|- 
+|  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-kernel/main_conf_read.l main_conf_read.l],[https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-kernel/main_conf_read.y main_conf_read.y]
+|  '''c''' 
+|  
+|  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/LICENSE LICENSE] 
+|- 
+|  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-kernel/meta_sql.c meta_sql.c],[https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-kernel/meta_sql.h meta_sql.h]
+|  '''c''' 
+|  
+|  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/LICENSE LICENSE] 
+|- 
+|  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-kernel/mimetypes.h mimetypes.h]
+|  '''c''' 
+|  
+|  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/LICENSE LICENSE] 
+|- 
+|  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-kernel/mimetypes.h mimetypes.h]
+|  '''w''' 
+|  
+|  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/LICENSE LICENSE] 
+|- 
+|  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-kernel/otbZooWatcher.cxx otbZooWatcher.cxx], [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-kernel/otbZooWatcher.h otbZooWatcher.h]
+|  '''c''' 
+|  
+|  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/LICENSE LICENSE] 
+|- 
+|  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-kernel/request_parser.c request_parser.c], [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-kernel/request_parser.c request_parser.c]
+|  '''c''' 
+|  
+|  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/LICENSE LICENSE] 
+|- 
+|  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-kernel/response_print.c response_print.c], [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-kernel/response_print.h response_print.h]
+|  '''c''' 
+|  
+|  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/LICENSE LICENSE] 
+|- 
+|  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-kernel/server_internal.c server_internal.c], [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-kernel/rserver_internal.h server_internal.h]
+|  '''c''' 
+|  
+|  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/LICENSE LICENSE] 
+|- 
+|  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-kernel/service.c service.c], [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-kernel/service.h service.h]
+|  '''c''' 
+|  
+|  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/LICENSE LICENSE] 
+|- 
+|  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-kernel/service_callback.c service_callback.c], [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-kernel/service_callback.h service_callback.h]
+|  '''c''' 
+|  
+|  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/LICENSE LICENSE] 
+|- 
+|  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-kernel/service_conf.c service_conf.c], [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-kernel/service_conf.h service_conf.h]
+|  '''c''' 
+|  
+|  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/LICENSE LICENSE] 
+|- 
+|  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-kernel/service_internal.c service_internal.c], [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-kernel/service_internal.h service_internal.h]
+|  '''c''' 
+|  
+|  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/LICENSE LICENSE] 
+|- 
+|  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-kernel/service_internal_amqp.c service_internal_amqp.c], [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-kernel/service_internal_amqp.h service_internal_amqp.h]
+|  '''c''' 
+|  
+|  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/LICENSE LICENSE] 
+|- 
+|  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-kernel/service_internal_hpc.c service_internal_hpc.c], [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-kernel/service_internal_hpc.h service_internal_hpc.h]
+|  '''c''' 
+|  
+|  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/LICENSE LICENSE] 
+|- 
+|  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-kernel/service_internal_java.c service_internal_java.c], [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-kernel/service_internal_java.h service_internal_java.h]
+|  '''c''' 
+|  
+|  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/LICENSE LICENSE] 
+|- 
+|  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-kernel/service_internal_js.c service_internal_js.c], [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-kernel/service_internal_js.h service_internal_js.h]
+|  '''c''' 
+|  
+|  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/LICENSE LICENSE] 
+|- 
+|  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-kernel/service_internal_mono.c service_internal_mono.c], [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-kernel/service_internal_mono.h service_internal_mono.h]
+|  '''c''' 
+|  
+|  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/LICENSE LICENSE] 
+|- 
+|  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-kernel/service_internal_ms.c service_internal_ms.c], [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-kernel/service_internal_ms.h service_internal_ms.h]
+|  '''c''' 
+|  
+|  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/LICENSE LICENSE] 
+|- 
+|  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-kernel/service_internal_otb.c service_internal_otb.c], [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-kernel/service_internal_otb.h service_internal_otb.h]
+|  '''c''' 
+|  
+|  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/LICENSE LICENSE] 
+|- 
+|  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-kernel/service_internal_perl.c service_internal_perl.c], [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-kernel/service_internal_perl.h service_internal_perl.h]
+|  '''c''' 
+|  
+|  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/LICENSE LICENSE] 
+|- 
+|  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-kernel/service_internal_php.c service_internal_php.c], [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-kernel/service_internal_php.h service_internal_php.h]
+|  '''c''' 
+|  
+|  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/LICENSE LICENSE] 
+|- 
+|  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-kernel/service_internal_php7.c service_internal_php7.c], [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-kernel/service_internal_php7.h service_internal_php7.h]
+|  '''c''' 
+|  
+|  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/LICENSE LICENSE] 
+|- 
+|  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-kernel/service_internal_python.c service_internal_python.c], [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-kernel/service_internal_python.h service_internal_python.h]
+|  '''c''' 
+|  
+|  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/LICENSE LICENSE] 
+|- 
+|  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-kernel/service_internal_r.c service_internal_r.c], [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-kernel/service_internal_r.h service_internal_r.h]
+|  '''c''' 
+|  
+|  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/LICENSE LICENSE] 
+|- 
+|  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-kernel/service_internal_ruby.c service_internal_ruby.c], [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-kernel/service_internal_ruby.h service_internal_ruby.h]
+|  '''c''' 
+|  
+|  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/LICENSE LICENSE] 
+|- 
+|  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-kernel/service_internal_saga.c service_internal_saga.c], [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-kernel/service_internal_saga.h service_internal_saga.h]
+|  '''c''' 
+|  
+|  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/LICENSE LICENSE] 
+|- 
+|  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-kernel/service_json.c service_json.c], [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-kernel/service_json.h service_json.h]
+|  '''c''' 
+|  
+|  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/LICENSE LICENSE] 
+|- 
+|  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-kernel/service_loader.c service_loader.c], [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-kernel/service_yaml.c service_yaml.c]
+|  '''c''' 
+|  
+|  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/LICENSE LICENSE] 
+|- 
+|  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-kernel/sqlapi.c sqlapi.c], [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-kernel/sqlapi.h sqlapi.h]
+|  '''c''' 
+|  
+|  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/LICENSE LICENSE] 
+|- 
+|  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-kernel/sshapi.c sshapi.c], [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-kernel/sshapi.h sshapi.h]
+|  '''c''' 
+|  
+|  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/LICENSE LICENSE] 
+|- 
+|  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-kernel/service.c service.c], [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-kernel/service.h service.h]
+|  '''c''' 
+|  
+|  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/LICENSE LICENSE] 
+|- 
+|  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-kernel/ulinet.c ulinet.c], [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-kernel/ulinet.h ulinet.h]
+|  '''c''' 
+|  
+|  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/LICENSE LICENSE] 
+|- 
+|  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-kernel/zcfg2yaml.c zcfg2yaml.c]
+|  '''c''' 
+|  
+|  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/LICENSE LICENSE] 
+|- 
+|  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-kernel/zoo_loader.c zoo_loader.c], [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-kernel/zoo_loader_fpm.c zoo_loader_fpm.c], [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-kernel/zoo_service_loader.c zoo_service_loader.c]
+|  '''c''' 
+|  
+|  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/LICENSE LICENSE] 
+|}
+
+
+
+==== ZOO-API ====
+{| border=1 class="simple"
+! Part 
+! Status 
+! message 
+!Link 
+|- 
+|  ZOO-API.js - ZOO-API 
+|  '''c''' 
+|  
+|  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-api/js/ZOO-api.js#L1 ZOO-api.js]  
+|- 
+|  ZOO-proj4js.js - ZOO-API 
+|  '''c''' 
+|  
+|  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-api/js/ZOO-proj4js.js#L1 ZOO-proj4js.js] 
+|}
+
+
+
+==== ZOO-Services ==== 
+{| border=1 class="simple"
+! Part 
+! Status 
+! message 
+!Link 
+|- 
+|  cgal 
+|  '''c''' 
+|  
+| [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-services/cgal/cgal_service.c#L1 cgal_service.c]
+|- 
+|  gdal (dem,grid,translate,warp) 
+|  '''c''' 
+|  
+| [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-services/gdal/dem/service.c#L1 dem] / [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-services/gdal/grid/service.c#L1 grid] / [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-services/gdal/translate/service.c#L1 translate] / [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-services/gdal/warp/service.c#L1 warp] 
+|- 
+|  gdal (profile) 
+|  '''c''' 
+|  
+|  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-services/gdal/profile/service.c#L1 profile] 
+|- 
+|  gdal (ndvi) 
+|  '''c''' 
+|  
+| [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-services/gdal/ndvi/cgi-env/ndvi.py#L1 ndvi.py] 
+|- 
+|  ogr (base-vect-ops) 
+|  '''c''' 
+|  
+| [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-services/ogr/base-vect-ops/service.c#L1 service.c] 
+|- 
+|  ogr (base-vect-ops-py) 
+|  '''c''' 
+|  
+|  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-services/ogr/base-vect-ops-py/cgi-env/ogr_sp.py#L1 ogr_sp.py] 
+|- 
+|  ogr (ogr2ogr) 
+|  '''c''' 
+|  
+|  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-services/ogr/ogr2ogr/service.c#L1 ogr2ogr] 
+|- 
+|  qrencode 
+|  '''c''' 
+|  
+|  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-services/qrencode/qrenc-service.c#L3 qrencode] 
+|- 
+|  utils 
+|  '''c''' 
+|  
+|  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-services/utils/status/service.c#L1 status] 
+|- 
+|  hello-fortran 
+|  '''c''' 
+|  
+|  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-services/hello-fortran/LICENSE#L1 LICENSE] 
+|- 
+|  hello-java 
+|  '''c''' 
+|  
+|  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-services/hello-java/HelloJava.java#L1 HelloJava.java] 
+|- 
+|  hello-js 
+|  '''c''' 
+|  
+|  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-services/hello-js/cgi-env/hello.js#L1 helo.js] 
+|- 
+|  hello-perl 
+|  '''c''' 
+|  
+|  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-services/hello-perl/Hello.pl#L1 Hello.pl] 
+|- 
+|  hello-php 
+|  '''c''' 
+|  
+|  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-services/hello-php/hello.php#L3 helo.php] 
+|- 
+|  hello-py 
+|  '''c''' 
+|  
+|  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-services/hello-py/cgi-env/test_service.py#L1 test_service.py] 
+|- 
+|  openoffice 
+|  '''c''' 
+|  
+|  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-services/openoffice/cgi-env/oo_service.py#L1 oo_service.py] / [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-services/openoffice/cgi-env/Exporter.py#L1 Exporter.py] 
+|}
+
+
+=== Status definitions  ===
+  n::
+    not checked yet
+  p::
+    check in progress
+  s::
+    check is stuck, header or license requires developer attention
+  c::
+    checked, all clear
+  w::
+    checked, warning (missing information)
+  x::
+    checked, fix me! requires developer attention 
+
+
+
+
