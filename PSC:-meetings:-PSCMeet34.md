@@ -4,7 +4,7 @@ The PSC meeting is to be held on irc.libera.chat in the #zoo-project channel (co
 
 ## Proposed Time and Date
 
-Date: Friday, 13 January 2023 [at, 12:00 UTC](https://www.timeanddate.com/worldclock/fixedtime.html?year=2022&month=12&day=9&hour=12&min=0&sec=0)
+Date: Friday, 20 January 2023 [at, 12:00 UTC](https://www.timeanddate.com/worldclock/fixedtime.html?year=2022&month=01&day=20&hour=12&min=0&sec=0)
 
 ## Agenda
 
