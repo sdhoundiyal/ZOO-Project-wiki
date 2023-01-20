@@ -11,4 +11,5 @@ Date: Friday, 20 January 2023 [at, 12:00 UTC](https://www.timeanddate.com/worldc
 * Review PSC meeting 33 (https://github.com/ZOO-Project/ZOO-Project/wiki/PSC:-meetings:-PSCMeet33) minutes
 * OSGeo incubation status & future steps
 * MS4W & ZOO-Project workshop
+  * MS4W [distribution](https://ms4w.com/trac/ticket/305)
 * Add agenda point
