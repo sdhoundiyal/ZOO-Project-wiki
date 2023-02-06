@@ -8,7 +8,7 @@ _Idea(s):_
 
 1. ### Getting ready with ZOO-Project for the OGC Compliance Testing.
 
-The ZOO-Project is a solid WPS server able to handle services implemented in various different programming languages. The existing ZOO-Kernel supports C, C++, and JS implementations. With this project, the objective is to have the ZOO-Kernel passing all the tests for WPS 1.0.0 and 2.0.0.
+The ZOO-Project is a solid WPS server able to handle services implemented in various different programming languages. The existing ZOO-Kernel supports C, C++, and JS implementations. With this project, the objective is to have the ZOO-Kernel passing all the tests for WPS 1.0.0 and 2.0.0 OGC ETS (https://cite.opengeospatial.org/te2/).
 
 **Mentor**: [Gérald Fenoy](https://www.osgeo.org/member/gerald-fenoy/), [Rajat Shinde](https://www.osgeo.org/member/shinde/), 
 
