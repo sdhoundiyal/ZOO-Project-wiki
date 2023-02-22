@@ -1,5 +1,6 @@
 [![OSGeo Project](https://raw.githubusercontent.com/OSGeo/osgeo/master/incubation/OSGeo_incubation.svg)](https://www.osgeo.org/projects/zoo-project/)
 
+<center>
 <div style='text-align:center; border:1px solid #777; border-radius: 5px; background-color: #FFF; padding:12px; width:190px;'>
     <span style='font-weight:bold; color:#000;font-size:106.8%;'>GeoLabs</span>
     <br/>
@@ -17,3 +18,4 @@
         Valid Until: 2024-02-19
     </span>
 </div>
+</center>
