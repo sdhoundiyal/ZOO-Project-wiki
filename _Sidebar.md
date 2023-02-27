@@ -2,12 +2,10 @@
 
 <center>
 <div style='text-align:center; border:1px solid #777; border-radius: 5px; background-color: #FFF; padding:12px; width:190px;'>
-    <span style='font-weight:bold; color:#000;font-size:106.8%;'>GeoLabs</span>
     <br/>
     <img src='https://portal.ogc.org/public_ogc/compliance/OGC_Certified_Badge.png' alt='Certified OGC Compliant Logo' height='124' style='padding:0;margin:0;border:0;'/>
     <br/>
     <br/>
-    <span style='font-weight:bold; font-size:89%;'>ZOO-Project 2.0</span>
     <br/>
     <a href='http://www.ogc.org/resource/products/details/?pid=1767' target='_parent'>
         <img src='https://portal.ogc.org/public_ogc/compliance/badge.php?s=ogcapi-processes-1 1.0&r=1&n=1' height='45px' style='padding:0;margin:0;border:0;'/>
