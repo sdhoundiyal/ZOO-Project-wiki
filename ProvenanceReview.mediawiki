@@ -215,6 +215,10 @@ ZOO-Project global licensing informations can be found in the [http://www.zoo-pr
 
 
 ==== ZOO-API ====
+
+Have to be updated (please do not consider the following list untill this message is present, except for the JavaScript ZOO-API)
+
+
 {| border=1 class="simple"
 ! Part 
 ! Status 
@@ -236,7 +240,7 @@ ZOO-Project global licensing informations can be found in the [http://www.zoo-pr
 
 ==== ZOO-Services ==== 
 
-Have to be update (please do not consider the following list till this message is present)
+Have to be updated (please do not consider the following list till this message is present)
 
 {| border=1 class="simple"
 ! Part 
