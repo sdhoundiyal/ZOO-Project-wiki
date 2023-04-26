@@ -38,7 +38,7 @@ The project has demonstrated that it has an open, active and healthy user and de
    - Decisions are made openly via mailing lists/IRC
    - PSC meetings are documented on IRC
    - The project powers OGC API implementation of numerous high profile activities:
-     - TODO:
+     - TODO: https://github.com/ZOO-Project/ZOO-Project/issues/37
    - In support of an inclusive and welcoming community, the code of conduct can always be found at https://github.com/ZOO-Project/ZOO-Project/blob/main/CODE_OF_CONDUCT.md
 
 ## Copyright and License
@@ -46,10 +46,10 @@ The project has demonstrated that it has an open, active and healthy user and de
 We need to ensure that the project owns or otherwise has obtained the ability to release the project code by completing the following steps:
 
 - [x] All project source code is available under an Open Source license
-- [ ] Project documentation is available under an open license (e.g. Creative Commons): TODO: https://github.com/ZOO-Project/ZOO-Project/issues/33
+- [x] Project documentation is available under an open license (e.g. Creative Commons): documentation is licensed as Creative Commons Attribution 4.0 International License
 - [ ] The project code, documentation and data has been adequately vetted to assure it is all properly licensed, and a copyright notice (As per a Provenance Review) (TODO: [review https://github.com/ZOO-Project/ZOO-Project/wiki/ProvenanceReview](https://github.com/ZOO-Project/ZOO-Project/issues/38))
-- [ ] The project maintains a list of all copyright holders identified in the Provenance Review Document (TODO: https://github.com/ZOO-Project/ZOO-Project/issues/38)
-- [ ]  All code contributors have agreed to abide by the project's license policy, and this agreement has been documented and archived (in progress at https://github.com/ZOO-Project/ZOO-Project/issues/40)
+- [x] The project maintains a list of all copyright holders identified in the Provenance Review Document: done in https://github.com/ZOO-Project/ZOO-Project/issues/38
+- [x]  All code contributors have agreed to abide by the project's license policy, and this agreement has been documented and archived: done at https://github.com/ZOO-Project/ZOO-Project/issues/40
 
 ## Processes
 
@@ -59,7 +59,7 @@ We need to ensure that the project owns or otherwise has obtained the ability to
  - GitHub issues: https://github.com/ZOO-Project/ZOO-Project/issues
 - [x] The project has documented its management processes.  This is typically done within a Developers Guide or Project Management Plan.
  - Developer's guide at https://zoo-project.github.io/docs/contribute/code.html
- - Release packaging guide at TODO: https://github.com/ZOO-Project/ZOO-Project/issues/35
+ - Release packaging guide at https://zoo-project.github.io/docs/contribute/release.html
 - [x] The project has a suitable open governance policy ensuring decisions are made, documented and adhered to in a public manner. This typically means a Project Management Committee has been established with a process for adding new members. A robust Project Management Committee will typically draw upon developers, users and key stakeholders from multiple organisations as there will be a greater variety of technical visions and the project is more resilient to a sponsor leaving.  ** - A [http://zoo-project.org/docs/contribute/contributors.html?highlight=psc#zoo-project-project-steering-commitee Project Steering Committee] exists which implements https://github.com/ZOO-Project/ZOO-Project/wiki/PSC%3A-process.**
  - [x] The project uses public communication channels for decision making to maintain transparency.  **Yes, mailing list, IRC Channel,and GitHub issue tracker/wiki**.
 
@@ -69,7 +69,7 @@ We need to ensure that the project owns or otherwise has obtained the ability to
  - [x] Including sufficient detail to guide a new user through performing the core functionality provided by the application.
 - [x] The project has developer documentation:
  - [x] Including checkout and build instructions. **Yes, see https://zoo-project.github.io/docs/install/index.html**
- - [x] Including commented code, ideally published for developer use. Examples: javadocs for Java applications, or Sphinx documentation for Python. **TODO**
+ - [x] Including commented code, ideally published for developer use. Examples: javadocs for Java applications, or Sphinx documentation for Python: API documentation available at https://zoo-project.github.io/docs/C_API
  - [x] Providing sufficient detail for an experienced programmer to contribute patches or a new module in accordance with the project's programming conventions.  **Yes, see https://zoo-project.github.io/docs/contribute/code.html**
 
 ## Release Procedure
@@ -77,8 +77,8 @@ In order to maintain a consistent level of quality, the project should follow de
 
 - [x] The project follows a defined release process:
  - [x] Which includes execution of the testing process before releasing a stable release
-   *Yes, the full release process is documented step-by-step TODO: https://github.com/ZOO-Project/ZOO-Project/issues/35*
-   * We are using [GitHub Actions](https://github.com/ZOO-Project/ZOO-Project/actions) for CI testing on commits and pull requests to ensure proper testing and functionality*
+   * Yes, the full release process is documented step-by-step https://zoo-project.github.io/docs/contribute/release.html
+   * We are using [GitHub Actions](https://github.com/ZOO-Project/ZOO-Project/actions) for CI testing on commits and pull requests to ensure proper testing and functionality.  Future plans also include addition of the OGC CITE ETA for OGC API - Processes as part of GitHub Actions
 - [x] The project follows a documented testing process. Ideally, this includes both automated and manual testing. Ideally this includes documented conformance to set quality goals, such as reporting Percentage Code. 
   - Yes, automated testing through GitHub Actions
   - Manual and automated testing occurs through the OGC-CITE (https://cite.opengeospatial.org) testing
@@ -89,6 +89,7 @@ In order to maintain a consistent level of quality, the project should follow de
 The OSGeo Foundation is made up of a number of committees, projects and local chapters. This section gathers up information these groups have requested from OSGeo projects. These expectations are not mandatory requirements before graduation, but a project should be prepared to address them in order to be considered a good OSGeo citizen.
 
 ## Board
+
 The OSGeo Board holds ultimate responsibility for all OSGeo activities. The Board requests:
 
 - [x] A project provide a Project Officer as primary contact 
