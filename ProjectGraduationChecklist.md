@@ -14,8 +14,11 @@ The project has demonstrated that it has an open, active and healthy user and de
 
 - [x] Open: projects are expected to function in an open and public manner and include:
 - [x] Open source license(s)
-  - TODO
-    - https://github.com/ZOO-Project/ZOO-Project/issues/34
+   - current license files:
+     - ZOO kernel: https://github.com/ZOO-Project/ZOO-Project/blob/main/LICENSE.md
+     - all ZOO components: https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/LICENSE
+     - the ZOO kernel license at LICENSE.md facilitates license recognition when rendered by GitHub
+     - the all ZOO components license at zoo-project/LICENSE contains ALL licenses
  - code: [MIT/X11](https://github.com/ZOO-Project/ZOO-Project/blob/main/LICENSE.md)
  - docs: CC BY 4.0
 - [x] Open communication channels,
@@ -93,7 +96,7 @@ The OSGeo Foundation is made up of a number of committees, projects and local ch
 The OSGeo Board holds ultimate responsibility for all OSGeo activities. The Board requests:
 
 - [x] A project provide a Project Officer as primary contact 
- - select a project officer:  Gérald Fenoy TODO: verify via PSC vote
+ - select a project officer: TODO: [verify via PSC vote](https://github.com/ZOO-Project/ZOO-Project/issues/48)
  - The Project Officer should be listed at Officers and Board of Directors and Contacts
  - This person is established when the incubation committee recommends the project for graduation
  - Your community can change the project officer as needed
@@ -117,7 +120,7 @@ Access to OSGeo's Marketing_Committee and associated Marketing Pipeline is one o
 
 - [x] Projects do not exist in isolation; and are expected to communicate and collaborate on key issues.
 
-  ZOO-Project works with both upstream (GDAL, PROJ, rasterio, shapely, etc. and downstream projects TODO: provide examples
+  ZOO-Project works with both upstream (GDAL, PROJ, Rasterio, Shapely, etc. and downstream projects such as EOEPCA and KelFoncier.
 
 
 ## SAC
