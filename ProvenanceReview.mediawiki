@@ -57,11 +57,6 @@ ZOO-Project global licensing informations can be found in the [http://www.zoo-pr
 |  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/LICENSE LICENSE] 
 |- 
 |  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-kernel/mimetypes.h mimetypes.h]
-|  '''c''' 
-|  
-|  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/LICENSE LICENSE] 
-|- 
-|  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-kernel/mimetypes.h mimetypes.h]
 |  '''w''' 
 |  
 |  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/LICENSE LICENSE] 
@@ -240,6 +235,9 @@ ZOO-Project global licensing informations can be found in the [http://www.zoo-pr
 
 
 ==== ZOO-Services ==== 
+
+Have to be update (please do not consider the following list till this message is present)
+
 {| border=1 class="simple"
 ! Part 
 ! Status 
