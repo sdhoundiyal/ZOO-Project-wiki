@@ -225,15 +225,35 @@ Have to be updated (please do not consider the following list untill this messag
 ! message 
 !Link 
 |- 
-|  ZOO-API.js - ZOO-API 
+|  js/ZOO-API.js
 |  '''c''' 
 |  
 |  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-api/js/ZOO-api.js#L1 ZOO-api.js]  
 |- 
-|  ZOO-proj4js.js - ZOO-API 
+|  js/ZOO-proj4js.js
 |  '''c''' 
 |  
 |  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-api/js/ZOO-proj4js.js#L1 ZOO-proj4js.js] 
+|- 
+|  java/zoo-api.c
+|  '''w''' 
+|  Missing headers
+|  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-api/java/zoo-api.c zoo-api.c]
+|- 
+|  java/org/zoo_project/ZOO.java
+|  '''w''' 
+|  Missing headers
+|  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-api/java/org/zoo_project/ZOO.java ZOO.java] 
+|- 
+|  mono/ZMaps.cs
+|  '''c''' 
+|  
+|  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-api/mono/ZMaps.cs ZMaps.cs] 
+|- 
+|  r/minimal.r
+|  '''w''' 
+|  Missing headers
+|  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-api/r/minimal.r minimal.r] 
 |}
 
 
@@ -327,6 +347,30 @@ Have to be updated (please do not consider the following list till this message 
 |  '''c''' 
 |  
 |  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-services/openoffice/cgi-env/oo_service.py#L1 oo_service.py] / [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-services/openoffice/cgi-env/Exporter.py#L1 Exporter.py] 
+|}
+
+==== ZOO-Client ==== 
+
+{| border=1 class="simple"
+! Part 
+! Status 
+! message 
+!Link 
+|- 
+|  utils.js 
+|  '''w''' 
+|  headers to be added
+|  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-client/lib/js/wps-client/utils.js utils.js] 
+|- 
+|  wps-payload.js
+|  '''c''' 
+|  
+|  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-client/lib/js/wps-client/wps-payload.js wps-payload.js] 
+|- 
+|  zoo.js
+|  '''c''' 
+|  
+|  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-client/lib/js/wps-client/zoo.js zoo.js]
 |}
 
 
