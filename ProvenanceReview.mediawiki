@@ -311,7 +311,7 @@ Have to be updated (please do not consider the following list till this message 
 |  utils 
 |  '''c''' 
 |  
-|  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-services/utils/status/service.c#L1 status] 
+|  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-services/utils/status/service.c#L1 status]/[https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-services/utils/hpc/service.c#L1 hpc]/[https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-services/utils/registry/service.c#L1 registry]/[https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-services/utils/security/basicAuth/service.c#L1 basicAuth]
 |- 
 |  hello-fortran 
 |  '''c''' 
