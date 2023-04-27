@@ -336,7 +336,7 @@ Have to be updated (please do not consider the following list till this message 
 |  hello-php 
 |  '''c''' 
 |  
-|  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-services/hello-php/hello.php#L3 helo.php] 
+|  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-services/hello-php/cgi-env/hello.php#L3 helo.php] 
 |- 
 |  hello-py 
 |  '''c''' 
