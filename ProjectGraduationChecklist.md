@@ -96,7 +96,7 @@ The OSGeo Foundation is made up of a number of committees, projects and local ch
 The OSGeo Board holds ultimate responsibility for all OSGeo activities. The Board requests:
 
 - [x] A project provide a Project Officer as primary contact 
- - select a project officer: TODO: [verify via PSC vote](https://github.com/ZOO-Project/ZOO-Project/issues/48)
+ - select a project officer: Gérald Fenoy [PSC vote](https://lists.osgeo.org/pipermail/zoo-psc/2023-May/000900.html)
  - The Project Officer should be listed at Officers and Board of Directors and Contacts
  - This person is established when the incubation committee recommends the project for graduation
  - Your community can change the project officer as needed
