@@ -48,35 +48,31 @@ As we did this using the WPS version 1.0.0 standard, it is possible with these c
 
 `````
 {
-  "process": "http://tb17.geolabs.fr:8127/ogc-api/processes/Buffer/execution",
-  "inputs": {
-    "InputPolygon": {
-      "process": "http://tb17.geolabs.fr:8127/ogc-api/processes/Centroid/execution",
-      "inputs": {
-        "InputPolygon": {
-          "href": "https://demo.pygeoapi.io/master/collections/lakes/items?f=json&limit=24"
-        }
-      },
-      "outputs": {
-        "Result": {
-          "format": {
-            "mediaType": "application/json"
-          },
-          "transmissionMode": "value"
-        }
-      },
-      "response": "raw"
+    "process": "http://zookernel/ogc-api/processes/Buffer",
+    "inputs": {
+	"InputPolygon": {
+	    "process": "http://zookernel/ogc-api/processes/Centroid",
+	    "inputs": {
+		"InputPolygon": {
+		    "href": "https://demo.pygeoapi.io/stable/collections/lakes/items?limit=25&f=json"
+		}	
+	    },
+	    "outputs": {
+		"Result": {
+		    "format":{
+			"mediaType": "application/json"
+		    }
+		}
+	    },
+	    "response": "raw"
+	},
+	"bufferDistance": 0.0001
     },
-    "BufferDistance": 0.000001
-  },
-  "outputs": {
-    "Result": {
-      "format": {
-        "mediaType": "application/json"
-      },
-      "transmissionMode": "value"
+    "outputs": {
+	"Result": {
+	    "format": { "mediaType": "application/json" }
+	}
     }
-  }
 }
 `````
 
