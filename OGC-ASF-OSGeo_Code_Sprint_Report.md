@@ -91,4 +91,4 @@ Like any code sprint, meeting real-life participants, sitting together, and disc
 
 ## Thanks
 
-Special thanks go to the OGC, the OSGeo, and the ASF for organizing the code sprint and to CampToCamp for hosting the code sprint.
+Special thanks go to the participants for their great work, the OGC, the OSGeo, and the ASF for organizing the code sprint and to CampToCamp for hosting it.
