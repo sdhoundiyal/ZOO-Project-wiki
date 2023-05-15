@@ -15,6 +15,7 @@ The ZOO Wiki is editable by any GitHub user. Please feel free to [/register Regi
 *Read the [http://zoo-project.org/docs/ ZOO documentation]
 *[[Contact]] section
 * [/ZOO-Project/ZOO-Project/wiki/OSGeoIncubationLandingPage OSGeo Incubation]
+* Have a look at the [https://github.com/ZOO-Project/ZOO-Project/wiki/CodeSprint Code Sprint Reports]
 
 === ZOO Community   ===
 *ZOO Project [/ZOO-Project/ZOO-Project/wiki/PSC PSC]
