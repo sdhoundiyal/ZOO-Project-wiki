@@ -77,7 +77,8 @@ As we did this using the WPS version 1.0.0 standard, it is possible with these c
 }
 `````
 
-If we were successful with the implementation before the end of the code sprint, the time was lacking for setting up a new server instance, including this new functionality. Since then, we have put an instance in place with this basic implementation of the chaining supported. Don't yet look at the result as it  seems to be unusable. 
+If we were successful with the implementation before the end of the code sprint, the time was lacking for setting up a new server instance, including this new functionality. Since then, we have put this updated instance in place with this basic implementation of the chaining supported. I still need to look at the result as it seems unusable immediately. But yet, the nested process Centroid result was used as an input for the processing of the primary Buffer service, which was the goal of this implementation.
+ 
 
 Also, after the implementation provided the expected result, we realized we could not specify that we would like to execute this nested process asynchronously. Even if it would only be an option, we would have wanted to be able to choose between asynchronous and synchronous for nested processes execution. Adding a headers parameter helps define that a nested process should run asynchronously. We were privileged to discuss this with present OGC API - Processes SWG members. The idea is to have a way to define that you are willing to have the nested process run asynchronously. We plan to implement such a capability in upcoming code sprints. We can also imagine a restriction on a process executed with a nested process that requires an asynchronous run to enforce the run of the primary to be asynchronous.
 
