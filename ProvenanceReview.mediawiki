@@ -328,6 +328,11 @@ Have to be updated (please do not consider the following list till this message 
 |  
 |  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-services/hello-js/cgi-env/hello.js#L1 helo.js] 
 |- 
+|  hello-mono 
+|  '''c''' 
+|  
+|  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-services/hello-js/cgi-env/hello.mono#L1 helo.js] 
+|- 
 |  hello-perl 
 |  '''c''' 
 |  
