@@ -268,40 +268,35 @@ Have to be updated (please do not consider the following list till this message 
 ! message 
 !Link 
 |- 
+|  arithmetics 
+|  '''w''' 
+|  
+| [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-services/arithmetics/test_service.c#L1 test_service.c]
+|- 
 |  cgal 
 |  '''c''' 
 |  
 | [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-services/cgal/cgal_service.c#L1 cgal_service.c]
 |- 
-|  gdal (dem,grid,translate,warp) 
-|  '''c''' 
+|  data-api 
+|  '''w''' 
 |  
-| [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-services/gdal/dem/service.c#L1 dem] / [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-services/gdal/grid/service.c#L1 grid] / [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-services/gdal/translate/service.c#L1 translate] / [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-services/gdal/warp/service.c#L1 warp] 
+| [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-services/data-api/cgi-env/service.py#L1 service.py]
 |- 
-|  gdal (profile) 
+|  echo-py (echo, EchoProcess)
 |  '''c''' 
 |  
-|  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-services/gdal/profile/service.c#L1 profile] 
+| [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-services/echo-py/cgi-env/echo_service.py#L1 echo_service.py] / [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-services/echo-py/cgi-env/echon52_service.py#L1 echon52_service.py.py]
+|- 
+|  gdal (contour,dem,grid,profile,translate,warp) 
+|  '''c''' 
+|  
+| [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-services/gdal/contour/service.c#L1 contour] / [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-services/gdal/dem/service.c#L1 dem] / [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-services/gdal/grid/service.c#L1 grid] / [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-services/gdal/profile/service.c#L1 profile] / [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-services/gdal/translate/service.c#L1 translate] / [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-services/gdal/warp/service.c#L1 warp] 
 |- 
 |  gdal (ndvi) 
 |  '''c''' 
 |  
 | [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-services/gdal/ndvi/cgi-env/ndvi.py#L1 ndvi.py] 
-|- 
-|  ogr (base-vect-ops-py,base-vect-ops,ogr2ogr,tindex) 
-|  '''c''' 
-|  
-|  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-services/ogr/base-vect-ops-py/cgi-env/ogr_sp.py#L1 ogr_sp.py] / [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-services/ogr/base-vect-ops/service.c#L1 service.c] / [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-services/ogr/ogr2ogr/service.c#L1 ogr2ogr] / [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-services/ogr/tindex/service.c#L1 tindex] 
-|- 
-|  qrencode 
-|  '''c''' 
-|  
-|  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-services/qrencode/qrenc-service.c#L3 qrencode] 
-|- 
-|  utils 
-|  '''c''' 
-|  
-|  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-services/utils/status/service.c#L1 status]/[https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-services/utils/hpc/service.c#L1 hpc]/[https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-services/utils/registry/service.c#L1 registry]/[https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-services/utils/security/basicAuth/service.c#L1 basicAuth]
 |- 
 |  hello-fortran 
 |  '''c''' 
@@ -343,10 +338,30 @@ Have to be updated (please do not consider the following list till this message 
 |  
 |  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-services/hello-r/cgi-env/hello.R#L1 hello.R] 
 |- 
+|  ogr (base-vect-ops-py,base-vect-ops,ogr2ogr,tindex) 
+|  '''c''' 
+|  
+|  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-services/ogr/base-vect-ops-py/cgi-env/ogr_sp.py#L1 ogr_sp.py] / [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-services/ogr/base-vect-ops/service.c#L1 service.c] / [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-services/ogr/ogr2ogr/service.c#L1 ogr2ogr] / [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-services/ogr/tindex/service.c#L1 tindex] 
+|- 
 |  openoffice 
 |  '''c''' 
 |  
 |  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-services/openoffice/cgi-env/oo_service.py#L1 oo_service.py] / [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-services/openoffice/cgi-env/Exporter.py#L1 Exporter.py] 
+|- 
+|  qrencode 
+|  '''c''' 
+|  
+|  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-services/qrencode/qrenc-service.c#L3 qrencode] 
+|- 
+|  utils 
+|  '''c''' 
+|  
+|  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-services/utils/status/service.c#L1 status]/[https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-services/utils/hpc/service.c#L1 hpc]/[https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-services/utils/registry/service.c#L1 registry]/[https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-services/utils/security/basicAuth/service.c#L1 basicAuth]
+|- 
+|  wcps-proxy
+|  '''c''' 
+|  
+|  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-services/wcps-proxy/cgi-env/WCPS.py#L1 WCPS.py] 
 |}
 
 ==== ZOO-Client ==== 
