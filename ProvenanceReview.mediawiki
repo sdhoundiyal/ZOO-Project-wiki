@@ -288,20 +288,10 @@ Have to be updated (please do not consider the following list till this message 
 |  
 | [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-services/gdal/ndvi/cgi-env/ndvi.py#L1 ndvi.py] 
 |- 
-|  ogr (base-vect-ops) 
+|  ogr (base-vect-ops-py,base-vect-ops,ogr2ogr,tindex) 
 |  '''c''' 
 |  
-| [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-services/ogr/base-vect-ops/service.c#L1 service.c] 
-|- 
-|  ogr (base-vect-ops-py) 
-|  '''c''' 
-|  
-|  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-services/ogr/base-vect-ops-py/cgi-env/ogr_sp.py#L1 ogr_sp.py] 
-|- 
-|  ogr (ogr2ogr) 
-|  '''c''' 
-|  
-|  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-services/ogr/ogr2ogr/service.c#L1 ogr2ogr] 
+|  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-services/ogr/base-vect-ops-py/cgi-env/ogr_sp.py#L1 ogr_sp.py] / [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-services/ogr/base-vect-ops/service.c#L1 service.c] / [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-services/ogr/ogr2ogr/service.c#L1 ogr2ogr] / [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-services/ogr/tindex/service.c#L1 tindex] 
 |- 
 |  qrencode 
 |  '''c''' 
