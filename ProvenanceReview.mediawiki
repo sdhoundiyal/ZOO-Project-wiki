@@ -331,7 +331,7 @@ Have to be updated (please do not consider the following list till this message 
 |  hello-mono 
 |  '''c''' 
 |  
-|  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-services/hello-js/cgi-env/hello.mono#L1 helo.js] 
+|  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-services/hello-js/cgi-env/hello.mono#L1 helo.mono] 
 |- 
 |  hello-perl 
 |  '''c''' 
@@ -347,6 +347,11 @@ Have to be updated (please do not consider the following list till this message 
 |  '''c''' 
 |  
 |  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-services/hello-py/cgi-env/test_service.py#L1 test_service.py] 
+|- 
+|  hello-r 
+|  '''w''' 
+|  
+|  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-services/hello-r/cgi-env/hello.R#L1 hello.R] 
 |- 
 |  openoffice 
 |  '''c''' 
