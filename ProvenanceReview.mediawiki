@@ -66,7 +66,7 @@ ZOO-Project global licensing informations can be found in the [http://www.zoo-pr
 |  
 |  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/LICENSE LICENSE] 
 |- 
-|  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-kernel/request_parser.c request_parser.c], [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-kernel/request_parser.c request_parser.c]
+|  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-kernel/request_parser.c request_parser.c], [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-kernel/request_parser.h request_parser.h]
 |  '''c''' 
 |  
 |  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/LICENSE LICENSE] 
@@ -76,7 +76,7 @@ ZOO-Project global licensing informations can be found in the [http://www.zoo-pr
 |  
 |  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/LICENSE LICENSE] 
 |- 
-|  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-kernel/server_internal.c server_internal.c], [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-kernel/rserver_internal.h server_internal.h]
+|  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-kernel/server_internal.c server_internal.c], [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-kernel/server_internal.h server_internal.h]
 |  '''c''' 
 |  
 |  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/LICENSE LICENSE] 
