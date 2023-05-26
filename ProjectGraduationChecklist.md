@@ -26,7 +26,7 @@ The project has demonstrated that it has an open, active and healthy user and de
  - [Twitter](https://twitter.com/ZOO_Project)
  - [IRC](irc://libera.chat/#zoo-project)
 - [x] Open decision making process.
- - A [http://zoo-project.org/docs/contribute/contributors.html?highlight=psc#zoo-project-project-steering-commitee Project Steering Committee] exists which implements https://github.com/ZOO-Project/ZOO-Project/wiki/PSC%3A-process.
+ - A [Project Steering Committee](http://zoo-project.org/docs/contribute/contributors.html?highlight=psc#zoo-project-project-steering-commitee) exists which implements https://github.com/ZOO-Project/ZOO-Project/wiki/PSC%3A-process.
 
 - [x] Active and healthy community:
  - [x] The project should have a community of developers and users who actively collaborate and support each other in a healthy way. Eg. collaboration on project activities such as testing, release and feature development.
