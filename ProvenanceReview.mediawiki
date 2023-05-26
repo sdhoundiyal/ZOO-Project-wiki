@@ -57,7 +57,7 @@ ZOO-Project global licensing informations can be found in the [http://www.zoo-pr
 |  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/LICENSE LICENSE] 
 |- 
 |  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-kernel/mimetypes.h mimetypes.h]
-|  '''w''' 
+|  '''c''' 
 |  
 |  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/LICENSE LICENSE] 
 |- 
@@ -236,13 +236,13 @@ Have to be updated (please do not consider the following list untill this messag
 |  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-api/js/ZOO-proj4js.js#L1 ZOO-proj4js.js] 
 |- 
 |  java/zoo-api.c
-|  '''w''' 
-|  Missing headers
+|  '''c''' 
+|  
 |  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-api/java/zoo-api.c zoo-api.c]
 |- 
 |  java/org/zoo_project/ZOO.java
-|  '''w''' 
-|  Missing headers
+|  '''c''' 
+|  
 |  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-api/java/org/zoo_project/ZOO.java ZOO.java] 
 |- 
 |  mono/ZMaps.cs
@@ -251,7 +251,7 @@ Have to be updated (please do not consider the following list untill this messag
 |  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-api/mono/ZMaps.cs ZMaps.cs] 
 |- 
 |  r/minimal.r
-|  '''w''' 
+|  '''c''' 
 |  Missing headers
 |  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-api/r/minimal.r minimal.r] 
 |}
@@ -269,7 +269,7 @@ Have to be updated (please do not consider the following list till this message 
 !Link 
 |- 
 |  arithmetics 
-|  '''w''' 
+|  '''c''' 
 |  
 | [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-services/arithmetics/test_service.c#L1 test_service.c]
 |- 
@@ -279,7 +279,7 @@ Have to be updated (please do not consider the following list till this message 
 | [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-services/cgal/cgal_service.c#L1 cgal_service.c]
 |- 
 |  data-api 
-|  '''w''' 
+|  '''c''' 
 |  
 | [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-services/data-api/cgi-env/service.py#L1 service.py]
 |- 
@@ -334,7 +334,7 @@ Have to be updated (please do not consider the following list till this message 
 |  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-services/hello-py/cgi-env/test_service.py#L1 test_service.py] 
 |- 
 |  hello-r 
-|  '''w''' 
+|  '''c''' 
 |  
 |  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-services/hello-r/cgi-env/hello.R#L1 hello.R] 
 |- 
