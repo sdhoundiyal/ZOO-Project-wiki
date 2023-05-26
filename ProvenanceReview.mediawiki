@@ -252,7 +252,7 @@ Have to be updated (please do not consider the following list untill this messag
 |- 
 |  r/minimal.r
 |  '''c''' 
-|  Missing headers
+|  
 |  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-api/r/minimal.r minimal.r] 
 |}
 
