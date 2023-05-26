@@ -131,6 +131,11 @@ ZOO-Project global licensing informations can be found in the [http://www.zoo-pr
 |  
 |  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/LICENSE LICENSE] 
 |- 
+|  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-kernel/service_internal_nodejs.cc service_internal_nodejs.cc], [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-kernel/service_internal_nodejs.h service_internal_nodejs.h]
+|  '''c''' 
+|  
+|  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/LICENSE LICENSE] 
+|- 
 |  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-kernel/service_internal_otb.c service_internal_otb.c], [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-kernel/service_internal_otb.h service_internal_otb.h]
 |  '''c''' 
 |  
@@ -318,6 +323,11 @@ Have to be updated (please do not consider the following list till this message 
 |  
 |  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-services/hello-js/cgi-env/hello.mono#L1 helo.mono] 
 |- 
+|  hello-nodejs 
+|  '''c''' 
+|  
+|  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-services/hello-nodejs/cgi-env/hello-nodejs/hello.cjs#L1 hello.cjs]/[https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-services/hello-nodejs/cgi-env/hello-nodejs/hello.mjs#L1 hello.mjs] 
+|- 
 |  hello-perl 
 |  '''c''' 
 |  
@@ -337,6 +347,11 @@ Have to be updated (please do not consider the following list till this message 
 |  '''c''' 
 |  
 |  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-services/hello-r/cgi-env/hello.R#L1 hello.R] 
+|- 
+|  linestringDem 
+|  '''c''' 
+|  
+|  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-services/linestringDem/linestringDem.js#L1 linestringDem/linestringDem.js] 
 |- 
 |  ogr (base-vect-ops-py,base-vect-ops,ogr2ogr,tindex) 
 |  '''c''' 
