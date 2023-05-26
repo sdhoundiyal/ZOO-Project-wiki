@@ -40,8 +40,8 @@ The project has demonstrated that it has an open, active and healthy user and de
    - Professional support options are provided in https://zoo-project.github.io/docs/contribute/service_providers.html
    - Decisions are made openly via mailing lists/IRC
    - PSC meetings are documented on IRC
-   - The project powers OGC API implementation of numerous high profile activities:
-     - TODO: https://github.com/ZOO-Project/ZOO-Project/issues/37
+   - The project powers OGC WPS and OGC API implementations of numerous high profile activities:
+     - See https://github.com/ZOO-Project/ZOO-Project/wiki/References for list
    - In support of an inclusive and welcoming community, the code of conduct can always be found at https://github.com/ZOO-Project/ZOO-Project/blob/main/CODE_OF_CONDUCT.md
 
 ## Copyright and License
