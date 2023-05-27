@@ -499,7 +499,7 @@ Have to be updated (please do not consider the following list till this message 
 |  utils/open-api 
 |  '''w''' 
 |  No headers in server/publisher.py and server/subscriber.py.
-|  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-services/utils/open-api/cgi-env/service.py#L1 open-api/cgi-env/service.py], [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-services/utils/open-api/locale/produce.sh#L1 open-api/locale/produce.sh], [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-services/utils/open-api/server/publish.py#L1 open-api/server/publish.py], [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-services/utils/open-api/locale/open-api/server/subscriber.py#L1 open-api/server/subscriber.py]
+|  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-services/utils/open-api/cgi-env/service.py#L1 open-api/cgi-env/service.py], [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-services/utils/open-api/locale/produce.sh#L1 open-api/locale/produce.sh], [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-services/utils/open-api/server/publish.py#L1 open-api/server/publish.py], [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-services/utils/open-api/server/subscriber.py#L1 open-api/server/subscriber.py]
 |- 
 |  utils/registry
 |  '''c''' 
