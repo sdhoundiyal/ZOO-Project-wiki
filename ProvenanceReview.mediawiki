@@ -96,8 +96,6 @@ ZOO-Project global licensing informations can be found in the [https://github.co
 
 ==== ZOO-API ====
 
-Have to be updated (please do not consider the following list untill this message is present, except for the JavaScript ZOO-API)
-
 
 {| border=1 class="simple"
 ! Part 
@@ -353,8 +351,6 @@ Have to be updated (please do not consider the following list untill this messag
 
 ==== ZOO-Services ==== 
 
-Have to be updated (please do not consider the following list till this message is present)
-
 {| border=1 class="simple"
 ! Part 
 ! Status 
@@ -502,8 +498,8 @@ Have to be updated (please do not consider the following list till this message 
 |  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-services/utils/hpc/service.c#L1 utils/hpc/service.c]
 |- 
 |  utils/open-api 
-|  '''w''' 
-|  No headers in server/publisher.py and server/subscriber.py.
+|  '''c''' 
+|  
 |  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-services/utils/open-api/cgi-env/service.py#L1 open-api/cgi-env/service.py], [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-services/utils/open-api/locale/produce.sh#L1 open-api/locale/produce.sh], [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-services/utils/open-api/server/publish.py#L1 open-api/server/publish.py], [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-services/utils/open-api/server/subscriber.py#L1 open-api/server/subscriber.py]
 |- 
 |  utils/registry
