@@ -89,7 +89,71 @@ ZOO-Project global licensing informations can be found in the [https://github.co
 |  [https://github.com/ZOO-Project/ZOO-Project/blob/main/thirds/zcfg2sql/zcfg2sql.c#L1 zcfg2sql.c] 
 |}
 
+==== ZOO-API ====
 
+Have to be updated (please do not consider the following list untill this message is present, except for the JavaScript ZOO-API)
+
+
+{| border=1 class="simple"
+! Part 
+! Status 
+! message 
+!Link 
+|- 
+|  js/ZOO-API.js
+|  '''c''' 
+|  
+|  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-api/js/ZOO-api.js#L1 ZOO-api.js]  
+|- 
+|  js/ZOO-proj4js.js
+|  '''c''' 
+|  
+|  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-api/js/ZOO-proj4js.js#L1 ZOO-proj4js.js] 
+|- 
+|  java/zoo-api.c
+|  '''c''' 
+|  
+|  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-api/java/zoo-api.c zoo-api.c]
+|- 
+|  java/org/zoo_project/ZOO.java
+|  '''c''' 
+|  
+|  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-api/java/org/zoo_project/ZOO.java ZOO.java] 
+|- 
+|  mono/ZMaps.cs
+|  '''c''' 
+|  
+|  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-api/mono/ZMaps.cs ZMaps.cs] 
+|- 
+|  r/minimal.r
+|  '''c''' 
+|  
+|  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-api/r/minimal.r minimal.r] 
+|}
+
+==== ZOO-Client ==== 
+
+{| border=1 class="simple"
+! Part 
+! Status 
+! message 
+!Link 
+|- 
+|  utils.js 
+|  '''c''' 
+|  
+|  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-client/lib/js/wps-client/utils.js#L5 utils.js] 
+|- 
+|  wps-payload.js
+|  '''c''' 
+|  
+|  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-client/lib/js/wps-client/wps-payload.js wps-payload.js] 
+|- 
+|  zoo.js
+|  '''c''' 
+|  
+|  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-client/lib/js/wps-client/zoo.js zoo.js]
+|}
 
 ==== ZOO-Kernel ====
 
@@ -282,50 +346,6 @@ ZOO-Project global licensing informations can be found in the [https://github.co
 
 
 
-==== ZOO-API ====
-
-Have to be updated (please do not consider the following list untill this message is present, except for the JavaScript ZOO-API)
-
-
-{| border=1 class="simple"
-! Part 
-! Status 
-! message 
-!Link 
-|- 
-|  js/ZOO-API.js
-|  '''c''' 
-|  
-|  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-api/js/ZOO-api.js#L1 ZOO-api.js]  
-|- 
-|  js/ZOO-proj4js.js
-|  '''c''' 
-|  
-|  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-api/js/ZOO-proj4js.js#L1 ZOO-proj4js.js] 
-|- 
-|  java/zoo-api.c
-|  '''c''' 
-|  
-|  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-api/java/zoo-api.c zoo-api.c]
-|- 
-|  java/org/zoo_project/ZOO.java
-|  '''c''' 
-|  
-|  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-api/java/org/zoo_project/ZOO.java ZOO.java] 
-|- 
-|  mono/ZMaps.cs
-|  '''c''' 
-|  
-|  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-api/mono/ZMaps.cs ZMaps.cs] 
-|- 
-|  r/minimal.r
-|  '''c''' 
-|  
-|  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-api/r/minimal.r minimal.r] 
-|}
-
-
-
 ==== ZOO-Services ==== 
 
 Have to be updated (please do not consider the following list till this message is present)
@@ -344,7 +364,7 @@ Have to be updated (please do not consider the following list till this message 
 |  cgal 
 |  '''c''' 
 |  
-| [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-services/cgal/cgal_service.c#L1 cgal_service.c]
+| [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-services/cgal/cgal_service.c#L1 cgal_service.c],[https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-services/cgal/cgal_service.h#L1 cgal_service.h],[https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-services/cgal/delaunay.c#L1 delaunay.c],[https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-services/cgal/voronoi.c#L1 voronoi.c]
 |- 
 |  data-api 
 |  '''c''' 
@@ -354,22 +374,47 @@ Have to be updated (please do not consider the following list till this message 
 |  echo-py (echo, EchoProcess)
 |  '''c''' 
 |  
-| [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-services/echo-py/cgi-env/echo_service.py#L1 echo_service.py] / [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-services/echo-py/cgi-env/echon52_service.py#L1 echon52_service.py.py]
+| [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-services/echo-py/cgi-env/echo_service.py#L1 echo_service.py], [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-services/echo-py/cgi-env/echon52_service.py#L1 echon52_service.py]
 |- 
-|  gdal (contour,dem,grid,profile,translate,warp) 
+|  GDAL contour 
 |  '''c''' 
 |  
-| [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-services/gdal/contour/service.c#L1 contour] / [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-services/gdal/dem/service.c#L1 dem] / [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-services/gdal/grid/service.c#L1 grid] / [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-services/gdal/profile/service.c#L1 profile] / [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-services/gdal/translate/service.c#L1 translate] / [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-services/gdal/warp/service.c#L1 warp] 
+| [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-services/gdal/contour/service.c#L1 contour/service.c]
 |- 
-|  gdal (ndvi) 
+|  GDAL dem
 |  '''c''' 
 |  
-| [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-services/gdal/ndvi/cgi-env/ndvi.py#L1 ndvi.py] 
+| [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-services/gdal/dem/service.c#L1 dem/service.c]
+|- 
+|  GDAL grid
+|  '''c''' 
+|  
+| [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-services/gdal/grid/service.c#L1 grid/service.c]
+|- 
+|  GDAL profile
+|  '''c''' 
+|  
+| [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-services/gdal/profile/service.c#L1 profile/service.c]
+|- 
+|  GDAL translate
+|  '''c''' 
+|  
+| [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-services/gdal/translate/service.c#L1 translate/service.c]
+|- 
+|  GDAL warp
+|  '''c''' 
+|  
+| [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-services/gdal/warp/service.c#L1 warp/service.c] 
+|- 
+|  GDAL ndvi
+|  '''c''' 
+|  
+| [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-services/gdal/ndvi/cgi-env/ndvi.py#L1 ndvi/cgi-env/ndvi.py] 
 |- 
 |  hello-fortran 
 |  '''c''' 
-|  
-|  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-services/hello-fortran/LICENSE#L1 LICENSE] 
+|  If there is no header it is because of fortran restrictions but there is a LICENSE file in the service directory.
+|  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-services/hello-fortran/LICENSE#L1 LICENSE] [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-services/hello-fortran/service.f#L1 service.f] 
 |- 
 |  hello-java 
 |  '''c''' 
@@ -416,54 +461,65 @@ Have to be updated (please do not consider the following list till this message 
 |  
 |  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-services/linestringDem/linestringDem.js#L1 linestringDem/linestringDem.js] 
 |- 
-|  ogr (base-vect-ops-py,base-vect-ops,ogr2ogr,tindex) 
+|  OGR base-vect-ops-py
 |  '''c''' 
 |  
-|  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-services/ogr/base-vect-ops-py/cgi-env/ogr_sp.py#L1 ogr_sp.py] / [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-services/ogr/base-vect-ops/service.c#L1 service.c] / [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-services/ogr/ogr2ogr/service.c#L1 ogr2ogr] / [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-services/ogr/tindex/service.c#L1 tindex] 
+|  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-services/ogr/base-vect-ops-py/cgi-env/ogr_sp.py#L1 base-vect-ops-py/cgi-env/ogr_sp.py]
+|- 
+|  ogr base-vect-ops
+|  '''c''' 
+|  
+|  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-services/ogr/base-vect-ops/service.c#L1 base-vect-ops/service.c]
+|- 
+|  ogr ogr2ogr
+|  '''c''' 
+|  
+|  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-services/ogr/ogr2ogr/service.c#L1 ogr2ogr/service.c]
+|- 
+|  ogr tindex
+|  '''c''' 
+|  
+|  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-services/ogr/tindex/service.c#L1 tindex/service.c] 
 |- 
 |  openoffice 
 |  '''c''' 
 |  
-|  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-services/openoffice/cgi-env/oo_service.py#L1 oo_service.py] / [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-services/openoffice/cgi-env/Exporter.py#L1 Exporter.py] 
+|  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-services/openoffice/cgi-env/oo_service.py#L1 openoffice/cgi-env/oo_service.py], [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-services/openoffice/cgi-env/Exporter.py#L1 openoffice/cgi-env/Exporter.py] 
 |- 
 |  qrencode 
 |  '''c''' 
 |  
-|  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-services/qrencode/qrenc-service.c#L3 qrencode] 
+|  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-services/qrencode/qrenc-service.c#L3 qrencode/qrenc-service.c] 
 |- 
-|  utils 
+|  utils/hpc 
 |  '''c''' 
 |  
-|  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-services/utils/hpc/service.c#L1 hpc]/[https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-services/utils/open-api/cgi-env/service.py#L1 open-api]/[https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-services/utils/registry/service.c#L1 registry]/[https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-services/utils/security/basicAuth/service.c#L1 basicAuth],[https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-services/utils/security/security/jwt/cgi-env/security_service.py#L1 jwt]/[https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-services/utils/status/service.c#L1 status]
+|  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-services/utils/hpc/service.c#L1 utils/hpc/service.c]
+|- 
+|  utils/open-api 
+|  '''w''' 
+|  No headers in server/publisher.py and server/subscriber.py.
+|  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-services/utils/open-api/cgi-env/service.py#L1 open-api/cgi-env/service.py], [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-services/utils/open-api/locale/produce.sh#L1 open-api/locale/produce.sh], [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-services/utils/open-api/server/publish.py#L1 open-api/server/publish.py], [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-services/utils/open-api/locale/open-api/server/subscriber.py#L1 open-api/server/subscriber.py]
+|- 
+|  utils/registry
+|  '''c''' 
+|  
+|  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-services/utils/registry/service.c#L1 registry/service.c]
+|- 
+|  utils/security 
+|  '''c''' 
+|  
+|  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-services/utils/security/basicAuth/service.c#L1 basicAuth/service.c], [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-services/utils/security/security/jwt/cgi-env/security_service.py#L1 jwt/cgi-env/security_service.py]
+|- 
+|  utils/status 
+|  '''c''' 
+|  
+|  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-services/utils/status/service.c#L1 status/service.c], [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-services/utils/status/cgi-env/service.py#L1 status/cgi-env/service.py], [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-services/utils/status/test.sh#L1 status/test.sh]
 |- 
 |  wcps-proxy
 |  '''c''' 
 |  
 |  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-services/wcps-proxy/cgi-env/WCPS.py#L1 WCPS.py] 
-|}
-
-==== ZOO-Client ==== 
-
-{| border=1 class="simple"
-! Part 
-! Status 
-! message 
-!Link 
-|- 
-|  utils.js 
-|  '''c''' 
-|  
-|  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-client/lib/js/wps-client/utils.js#L5 utils.js] 
-|- 
-|  wps-payload.js
-|  '''c''' 
-|  
-|  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-client/lib/js/wps-client/wps-payload.js wps-payload.js] 
-|- 
-|  zoo.js
-|  '''c''' 
-|  
-|  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-client/lib/js/wps-client/zoo.js zoo.js]
 |}
 
 
