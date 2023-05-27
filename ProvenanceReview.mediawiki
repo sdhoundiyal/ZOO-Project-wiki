@@ -60,7 +60,7 @@ ZOO-Project global licensing informations can be found in the [https://github.co
 |- 
 |  thirds/cgic 
 |  '''c''' 
-|  
+|  No header in source but license.txt
 |  [https://github.com/ZOO-Project/ZOO-Project/blob/main/thirds/cgic206/license.txt license.txt] 
 |- 
 |  thirds/dirent-win32 
@@ -418,7 +418,7 @@ Have to be updated (please do not consider the following list till this message 
 |- 
 |  hello-fortran 
 |  '''c''' 
-|  If there is no header it is because of fortran restrictions but there is a LICENSE file in the service directory.
+|  No header in source but LICENSE file.
 |  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-services/hello-fortran/LICENSE#L1 LICENSE] [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-services/hello-fortran/service.f#L1 service.f] 
 |- 
 |  hello-java 
