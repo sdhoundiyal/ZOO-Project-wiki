@@ -36,13 +36,13 @@ ZOO-Project global licensing informations can be found in the [https://github.co
 |  [https://github.com/ZOO-Project/ZOO-Project/blob/main/thirds/include/unistd.h#L1 unistd.h] 
 |- 
 |  thirds/otb2zcfg 
-|  '''w''' 
-|  Missing headers
+|  '''c''' 
+|  
 |  [https://github.com/ZOO-Project/ZOO-Project/blob/main/thirds/otb2zcfg/otb2zcfg.cxx#L1 otb2zcfg.cxx] 
 |- 
 |  thirds/saga2zcfg 
-|  '''w''' 
-|  Missing headers
+|  '''c''' 
+|  
 |  [https://github.com/ZOO-Project/ZOO-Project/blob/main/thirds/saga2zcfg/saga2zcfg.c#L1 saga2zcfg.c] 
 |- 
 |  thirds/zcfg2sql 
