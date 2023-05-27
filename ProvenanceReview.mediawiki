@@ -25,15 +25,15 @@ ZOO-Project global licensing informations can be found in the [https://github.co
 |  
 |  [https://github.com/ZOO-Project/ZOO-Project/blob/main/docker/ets-ogcapi-processes/test.sh test.sh]
 |- 
-|  docker/test_long_process.py 
-|  '''c''' 
-|  
-|  [https://github.com/ZOO-Project/ZOO-Project/blob/main/docker/test_long_process.py#L1 test_long_process.py]
-|- 
 |  docker/startUp.sh 
 |  '''c''' 
 |  
 |  [https://github.com/ZOO-Project/ZOO-Project/blob/main/docker/startUp.sh#L1 startUp.sh]
+|- 
+|  docker/test_long_process.py 
+|  '''c''' 
+|  
+|  [https://github.com/ZOO-Project/ZOO-Project/blob/main/docker/test_long_process.py#L1 test_long_process.py]
 |}
 
 ==== Testing ====
