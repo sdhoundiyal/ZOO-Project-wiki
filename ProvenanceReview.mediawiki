@@ -7,6 +7,44 @@ ZOO-Project code providence review, covering issues raised for each part of ZOO-
 
 ZOO-Project global licensing informations can be found in the [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/LICENSE LICENSE] file.
 
+==== Docker ====
+
+{| border=1 class="simple"
+! Part 
+! Status 
+! message 
+!Link 
+|- 
+|  docker/ets-ogcapi-processes/build.sh 
+|  '''c''' 
+|  
+|  [https://github.com/ZOO-Project/ZOO-Project/blob/main/docker/ets-ogcapi-processes/build.sh build.sh] 
+|- 
+|  docker/ets-ogcapi-processes/test.sh 
+|  '''c''' 
+|  
+|  [https://github.com/ZOO-Project/ZOO-Project/blob/main/docker/ets-ogcapi-processes/test.sh test.sh]
+|- 
+|  docker/startUp.sh 
+|  '''c''' 
+|  
+|  [https://github.com/ZOO-Project/ZOO-Project/blob/main/docker/startUp.sh#L1 startUp.sh]
+|}
+
+==== Testing ====
+
+{| border=1 class="simple"
+! Part 
+! Status 
+! message 
+!Link 
+|- 
+|  run.sh 
+|  '''c''' 
+|  
+|  [https://github.com/ZOO-Project/ZOO-Project/blob/main/testing/run.sh run.sh] 
+|}
+
 ==== Thirds ====
 
 {| border=1 class="simple"
@@ -60,6 +98,11 @@ ZOO-Project global licensing informations can be found in the [https://github.co
 ! Status 
 ! message 
 !Link 
+|- 
+|  scripts/extract_strings.sh
+|  '''c''' 
+|  
+|  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-kernel/scripts/extract_strings.sh scripts/extract_strings.sh] 
 |- 
 |  [https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-kernel/caching.c caching.c],[https://github.com/ZOO-Project/ZOO-Project/blob/main/zoo-project/zoo-kernel/caching.h caching.h]
 |  '''c''' 
