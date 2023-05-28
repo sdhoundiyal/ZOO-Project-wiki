@@ -128,7 +128,7 @@ Access to OSGeo's Marketing_Committee and associated Marketing Pipeline is one o
 The System Administration Committee is available to help with infrastructure and facilities. Information for this committee is collected as part of the Project Graduation Checklist.
 
 - The following should be set up:
- - [x] A http://projectname.osgeo.org domain name: **Not requested: the osgeo.org website should link to <https://zoo-project.org>**
+ - [x] A http://projectname.osgeo.org domain name: **Not requested**: the osgeo.org website should link to <https://zoo-project.org>
 
 - A project may optionally request SAC help to make use 
  - [x] OSGeo issue tracker: **Not requested**: issues are managed on [GitHub](https://github.com/ZOO-Project/ZOO-Project/issues)
