@@ -131,7 +131,7 @@ The System Administration Committee is available to help with infrastructure and
  - [x] A http://projectname.osgeo.org domain name: **Not requested: the osgeo.org website should link to <https://zoo-project.org>**
 
 - A project may optionally request SAC help to make use 
- - [x] OSGeo issue tracker: **Not requested: issues are managed on [https://github.com/ZOO-Project/ZOO-Project/issues GitHub]**
+ - [x] OSGeo issue tracker: **Not requested**: issues are managed on [GitHub](https://github.com/ZOO-Project/ZOO-Project/issues)
  - [x] OSGeo mailing list: [exists already](https://lists.osgeo.org/mailman/listinfo/zoo-project)
- - [x] OSGeo svn: **Not requested: source code is managed on [https://github.com/ZOO-Project/ZOO-Project GitHub]**
- - [x] https://downloads.osgeo.org: **Not requested: ZOO-Project releases are made available on [GitHub](https://github.com/ZOO-Project/ZOO-Project/releases)**
+ - [x] OSGeo svn: **Not requested**: source code is managed on [GitHub](https://github.com/ZOO-Project/ZOO-Project)
+ - [x] https://downloads.osgeo.org: **Not requested**: ZOO-Project releases are made available on [GitHub](https://github.com/ZOO-Project/ZOO-Project/releases)
