@@ -81,7 +81,7 @@ In order to maintain a consistent level of quality, the project should follow de
 - [x] The project follows a defined release process:
  - [x] Which includes execution of the testing process before releasing a stable release
    * Yes, the full release process is documented step-by-step https://zoo-project.github.io/docs/contribute/release.html
-   * We are using [GitHub Actions](https://github.com/ZOO-Project/ZOO-Project/actions) for CI testing on commits and pull requests to ensure proper testing and functionality.  Future plans also include addition of the OGC CITE ETA for OGC API - Processes as part of GitHub Actions
+   * We are using [GitHub Actions](https://github.com/ZOO-Project/ZOO-Project/actions) for CI testing on commits and pull requests to ensure proper testing and functionality.  Future plans also include addition of the OGC CITE ETS for OGC API - Processes as part of GitHub Actions
 - [x] The project follows a documented testing process. Ideally, this includes both automated and manual testing. Ideally this includes documented conformance to set quality goals, such as reporting Percentage Code. 
   - Yes, automated testing through GitHub Actions
   - Manual and automated testing occurs through the OGC-CITE (https://cite.opengeospatial.org) testing
