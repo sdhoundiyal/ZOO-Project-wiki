@@ -10,8 +10,8 @@ Yes
 
 Yes.  The project has had a few mentors over time:
 
-* Frank Warmerdam (YYYY-YYYY)
-* Dimitris Kotzinos (YYYY-2022)
+* Frank Warmerdam (2012-2016)
+* Dimitris Kotzinos (2016-2022)
 * Tom Kralidis (@tomkralidis) (2022-2023)
 
 === Infrastructure Transition ===
