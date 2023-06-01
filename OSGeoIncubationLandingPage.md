@@ -14,4 +14,6 @@ to be continued...
 * [Project Graduation Checklist](https://github.com/ZOO-Project/ZOO-Project/wiki/ProjectGraduationChecklist)
 * [Issues tagged for OSGeo incubation](https://github.com/ZOO-Project/ZOO-Project/issues?q=is%3Aopen+is%3Aissue+label%3A%22OSGeo+Incubation%22) (label=OSGeo Incubation)
 * [ZOO-Project PSC Membership Process](https://github.com/ZOO-Project/ZOO-Project/wiki/ZOO-Project-PSC-Membership-Process) (label=PSC Election Process)
+* Graduation
+  * [Motion](https://lists.osgeo.org/pipermail/incubator/2023-June/004657.html)
 
