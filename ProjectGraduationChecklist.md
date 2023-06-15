@@ -22,7 +22,7 @@ The project has demonstrated that it has an open, active and healthy user and de
  - code: [MIT/X11](https://github.com/ZOO-Project/ZOO-Project/blob/main/LICENSE.md)
  - docs: CC BY 4.0
 - [x] Open communication channels,
- - [Mailing list](https://lists.osgeo.org/mailman/listinfo/zoo-project)
+ - [ZOO-Discuss Mailing list](https://lists.osgeo.org/mailman/listinfo/ZOO-Discuss) / [ZOO-PSC Mailing list](https://lists.osgeo.org/mailman/listinfo/ZOO-PSC)
  - [Twitter](https://twitter.com/ZOO_Project)
  - [IRC](irc://libera.chat/#zoo-project)
 - [x] Open decision making process.
