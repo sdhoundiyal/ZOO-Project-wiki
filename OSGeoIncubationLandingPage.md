@@ -3,8 +3,7 @@ This are available resources about the OSGeo Incubation process.
 ## Timeline
 
 * [2011-11-09](https://trac.osgeo.org/osgeo/ticket/828#no1): Enters OSGeo incubation
-
-to be continued...
+* [2023-06-21](https://www.loomio.com/p/e05cGCYP/graduate-zoo-project-as-an-osgeo-project): graduates as OSGeo project
 
 ## Resources
 
