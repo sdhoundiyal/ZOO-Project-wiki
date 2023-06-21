@@ -17,6 +17,6 @@ to be continued...
 * Graduation
   * [Motion](https://lists.osgeo.org/pipermail/incubator/2023-June/004657.html) - [passed](https://lists.osgeo.org/pipermail/incubator/2023-June/004673.html)
   * Board approval
-    * Loomio vote
-    * Meeting/Agenda
+    * [Loomio vote](https://www.loomio.com/p/e05cGCYP/graduate-zoo-project-as-an-osgeo-project)
+    * [Meeting/Agenda](https://wiki.osgeo.org/wiki/Board_Meeting_2023-07-01)
 
