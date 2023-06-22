@@ -1,4 +1,4 @@
-[![OSGeo Project](https://raw.githubusercontent.com/OSGeo/osgeo/master/incubation/OSGeo_incubation.svg)](https://www.osgeo.org/projects/zoo-project/)
+[![OSGeo Project](https://raw.githubusercontent.com/OSGeo/osgeo/master/incubation/project/OSGeo_project.svg)](https://www.osgeo.org/projects/zoo-project/)
 
 [![Certified OGC Compliant Logo](https://portal.ogc.org/public_ogc/compliance/OGC_Certified_Badge.png)](http://www.ogc.org/resource/products/details/?pid=1767)
 
