@@ -3,10 +3,11 @@
 
 === Members ===
 
-* Nicolas BOZON ([http://www.esrifrance.fr/ ESRI France]), FR  (irc: nbozon)
+* Nicolas BOZON ([https://maptiler.fr/ MapTiler]), FR  (irc: nbozon)
+* Fabrice Britto ([https://www.terradue.com/portal/ Terradue]), IT
 * Gerald FENOY ([http://www.geolabs.fr/ GeoLabs]), FR''' (Chair)'''  (irc: djay)
 * Jeff McKENNA ([http://www.gatewaygeomatics.com/ Gateway Geomatics]), CA (irc: jmckenna)
-* Venkatesh RAGHAVAN ([http://www.osaka-cu.ac.jp/index-e.html Osaka City University]), JP  (irc: venka)
+* Venkatesh RAGHAVAN ([https://omu.ac.jp Osaka Metropolitan University]), JP  (irc: venka)
 * Rajat SHINDE ([https://www.csre.iitb.ac.in/ IIT Bombay]), INDIA (irc:omshinde)
 * Angelos TZOTSOS ([http://users.ntua.gr/tzotsos/ National Technical University of Athens]), GR  (irc: kalxas)
 
