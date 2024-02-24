@@ -9,6 +9,8 @@ This release introduces the support for [OGC API - Processes - Part 2: Deploy, R
 
 ### New Features and Fixes
 
+  * Update the remote process support to enable multi-valued processes.
+  * Add option to output log on stderr rather than a dedicated file.
   * Update relation type to monitor for the status location.
   * Add support for the conformance class remote processes from the
   OGC API - Processes - Part 3: Workflow & chaining. Execution of
